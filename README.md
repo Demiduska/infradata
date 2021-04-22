@@ -137,7 +137,7 @@ Example:
 ```
 
 ## Create Another HTML Files:
-#### Default: 
+#### Default:
 Automatic creation any html pages:
 1. Create another html file in `./src` (main folder)
 2. Open new page `http://localhost:8081/about.html` (Don't forget to RERUN dev server)
@@ -287,7 +287,7 @@ If ypu need svg or more formaths use another mixin in `src/assets/scss/utils/mix
 
 **Usage:**
 1. Put your font to `src/assets/fonts/FOLDERNAME/FONTNAME`.
-FOLLOW: Files Required: 
+FOLLOW: Files Required:
 Example: `.woff, .woffs` formats;
 2. Go to `fonts.scss`;
 3. Use mixin
@@ -297,4 +297,4 @@ Example 2: `@include font-face("OpenSans", "../fonts/OpenSans/opensansItalic", 4
 ## License
 [MIT](./LICENSE)
 
-Copyright (c) 2018-present, [Evgenii Vedegis](https://github.com/vedees)
+Copyright (c) 2018-present, [Andrey Demidenko](https://github.com/demiduska)
