@@ -1,0 +1,20 @@
+.solutions{
+  display: flex;
+  flex-wrap: wrap;
+  .card--solution{
+    width: 100%;
+  }
+  .card--sub-solution{
+    width: calc(100%/4 - 15px);
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .icon{
+      margin-left: 0;
+    }
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+}

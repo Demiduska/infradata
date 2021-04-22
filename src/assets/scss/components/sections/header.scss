@@ -1,0 +1,113 @@
+.header {
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    min-width: 150px;
+    width: 16%;
+  }
+
+  &__contacts {
+    display: flex;
+    width: 34%;
+    align-items: center;
+
+    &-hours {
+      margin-right: rem(16);
+      font-size: rem(12);
+      line-height: rem(24);
+      color: $gray-3;
+    }
+
+    &-phone {
+      font-size: rem(18);
+      line-height: rem(20);
+      color: $mainFontColor;
+      letter-spacing: -0.01em;
+    }
+  }
+
+  &__search {
+    width: 45%;
+
+    &-form {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      min-width: rem(450);
+      border: 1px solid #CFD2D7;
+      background: $default-color;
+      padding: rem(5) rem(14);
+      margin-right: rem(22);
+      min-height: rem(40);
+      justify-content: space-between;
+
+      &-label {
+        display: flex;
+        align-items: center;
+        flex: 1 1;
+      }
+
+      &-filter {
+        margin-right: rem(14);
+        height: rem(24);
+        overflow-y: hidden;
+
+        .icon {
+          display: block;
+          transition: transform .3s ease;
+        }
+
+        &.active {
+          .icon {
+            transform: translateY(-100%);
+          }
+        }
+      }
+
+      &-advanced {
+        position: absolute;
+        left: 0;
+        top: rem(39);
+      }
+    }
+
+  }
+
+  &__cart {
+    width: 5%;
+    position: relative;
+
+    &-tooltip {
+      padding: rem(12) rem(24);
+      position: absolute;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity .3s ease;
+      background: $accent;
+      color: $default-color;
+      min-width: rem(154);
+      left: -35%;
+      bottom: rem(-50);
+      &:after{
+        position: absolute;
+        content: '';
+        display: block;
+        border: rem(8) solid transparent;
+        border-bottom: rem(8) solid $accent;
+        bottom: rem(42);
+        left: 40%;
+      }
+    }
+
+    &:hover{
+      .header__cart-tooltip{
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
+}

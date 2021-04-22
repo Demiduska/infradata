@@ -1,0 +1,20 @@
+/* Libs:
+   https://github.com/vedees/webpack-template/blob/master/README.md#import-only-sass-or-css-libs
+   ========================================================================== */
+//normalize
+//@import "~normalize-css/normalize.css";
+@import "~selectize/dist/css/selectize.default.css";
+
+// Подключение нужных SCSS исходников Bootstrap 4
+//@import '~bootstrap/scss/_functions';
+//@import '~bootstrap/scss/_variables';
+//@import '~bootstrap/scss/_mixins';
+//@import '~bootstrap/scss/utilities/_flex';
+//@import '~bootstrap/scss/_images';
+
+//animate
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+@import '~animate.css/animate.compat.css';
+
+

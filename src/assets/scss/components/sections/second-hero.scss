@@ -1,0 +1,12 @@
+.second-hero{
+  &--with-image{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__content{
+    max-width: rem(711);
+  }
+  &__image{
+
+  }
+}

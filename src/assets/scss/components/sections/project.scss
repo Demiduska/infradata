@@ -1,0 +1,10 @@
+.project{
+  display: flex;
+  justify-content: space-between;
+  .card{
+    margin-right: rem(40);
+    &:nth-child(3n+3){
+      margin-right: 0;
+    }
+  }
+}

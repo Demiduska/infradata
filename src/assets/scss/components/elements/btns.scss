@@ -1,0 +1,46 @@
+.btn{
+  display: inline-block;
+  &-search{
+    .icon{
+      fill: $accent;
+    }
+      &:disabled{
+        .icon{
+          fill: $gray-4;
+        }
+      }
+
+  }
+  &--red{
+    background: $accent;
+    padding: rem(10) rem(18);
+    line-height: rem(20);
+    letter-spacing: -0.0125em;
+    color: $default-color;
+    cursor: pointer;
+    .icon{
+      fill: $default-color;
+      margin-left: rem(10);
+      transition: all .3s ease;
+    }
+    &:disabled{
+      cursor: default;
+      opacity: .5;
+    }
+    &:hover{
+      &.btn--with-icon{
+        .icon{
+          fill: $accent;
+        }
+      }
+      color: $accent;
+      background: $default-color;
+    }
+  }
+  &--with{
+    &-icon{
+      display: flex;
+      align-items: center;
+    }
+  }
+}

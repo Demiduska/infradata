@@ -1,0 +1,65 @@
+.menu{
+  display: flex;
+  z-index: 100;
+  position: relative;
+  &__item{
+    margin-right: rem(38);
+    position: relative;
+    &.active{
+      >.menu__link{
+        color: $accent;
+        .icon{
+          fill: $accent;
+          transform: rotate(-180deg);
+        }
+      }
+    }
+  }
+  &__link{
+    font-size: rem(17);
+    line-height: rem(24);
+    letter-spacing: -0.02em;
+    color: $mainFontColor;
+    transition: all .3s ease;
+    &-arrow{
+      .icon{
+        transition: all .3s ease;
+      }
+    }
+    &:hover{
+      color: $accent;
+    }
+  }
+}
+.submenu{
+  display: none;
+  position: absolute;
+  background: $default-color;
+  min-width: rem(400);
+  box-shadow: 0px 0px 30px rgb(127, 137, 161);
+  &__item{
+    position: relative;
+    &.active{
+      >.submenu__link{
+        background: $mainFontColor;
+        color: $default-color;
+        .icon{
+          fill: $accent;
+        }
+      }
+    }
+  }
+  &__link{
+    padding: rem(14) rem(10);
+    color: $mainFontColor;
+    transition: all 0.3s ease;
+    font-size: rem(17);
+    display: flex;
+    justify-content: space-between;
+
+  }
+  .submenu{
+    left: 100%;
+    top: 0;
+  }
+}

@@ -1,0 +1,24 @@
+.cart{
+  position: relative;
+  width: rem(24);
+  height: rem(24);
+  margin-left: auto;
+  &__digit{
+    font-weight: 700;
+    color: $default-color;
+    position: absolute;
+    font-size: rem(12);
+    line-height: rem(14);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: $accent;
+    right: rem(-6);
+    top: rem(-4);
+    padding: rem(4);
+    width: rem(20);
+    height: rem(20);
+  }
+
+}

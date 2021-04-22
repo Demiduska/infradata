@@ -1,0 +1,42 @@
+.text{
+  &--uppercase{
+    text-transform: uppercase;
+  }
+  &--white{
+    color: $default-color;
+  }
+  &--accent{
+    color: $accent;
+    .icon{
+      fill: $accent;
+    }
+  }
+  &--gray-4{
+    color: $gray-4;
+  }
+  &--gray-5{
+    color: $gray-5;
+  }
+  &--gray-6{
+    color: $gray-6;
+  }
+  &--gray-7{
+    color: $gray-7;
+  }
+  &--gold{
+    color: $gold;
+  }
+  &--small{
+    &-2{
+      font-size: rem(12);
+      line-height: rem(24);
+    }
+  }
+  &--boxed{
+    background: $gray-6;
+    padding: rem(36) rem(36) rem(44) rem(36);
+    font-size: rem(18);
+    line-height: rem(28);
+    letter-spacing: -0.0075em;
+  }
+}

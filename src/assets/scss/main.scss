@@ -1,0 +1,157 @@
+@import "utils/libs";
+@import "utils/reset";
+@import "utils/vars";
+@import "utils/mixins";
+@import "utils/fonts";
+@import "components/elements/btns";
+@import "utils/spacing";
+@import "utils/flex";
+@import "utils/settings";
+@import "components/elements/icons";
+@import "components/elements/text";
+@import "components/sections/header";
+@import "components/elements/cart";
+@import "components/elements/inputs";
+@import "components/elements/advanced-search";
+@import "components/elements/menu";
+@import "components/elements/list";
+@import "components/sections/hero";
+@import "components/elements/card";
+@import "components/sections/catalog";
+@import "components/sections/about";
+@import "components/sections/benefits";
+@import "components/sections/project";
+@import "components/sections/views";
+@import "components/sections/contacts";
+@import "components/sections/callback";
+@import "components/sections/second-hero";
+@import "components/sections/solutions";
+@import "components/sections/pluses";
+@import "components/sections/who";
+
+
+
+
+a {
+  text-decoration: none;
+}
+
+a, button {
+  transition: all 0.5s ease;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+button {
+  border: none;
+  background: transparent;
+}
+
+.img-fluid {
+  width: 100%;
+  height: auto;
+}
+
+
+
+
+
+
+
+.hamburger {
+  display: none;
+  width: 50px;
+  height: 50px;
+  z-index: 101;
+  padding: 12px;
+  border-radius: 50%;
+  background: #12CBC4;
+
+  &-box {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  &-inner {
+    position: absolute;
+    width: 24px;
+    height: 3px;
+    transition-timing-function: ease;
+    transition-duration: .15s;
+    transition-property: transform;
+    border-radius: 4px;
+    background-color: #fff;
+    top: 2px;
+    transform: translateZ(0) rotate(0deg);
+
+    &:after, &:before {
+      position: absolute;
+      width: 24px;
+      height: 3px;
+      transition-timing-function: ease;
+      transition-duration: .15s;
+      transition-property: transform;
+      border-radius: 4px;
+      background-color: #fff;
+      display: block;
+      content: "";
+    }
+
+    &:before {
+      top: 10px;
+      transition-timing-function: ease;
+      transition-duration: .15s;
+      transition-property: transform, opacity;
+    }
+
+    &:after {
+      top: 20px;
+    }
+  }
+
+  &.active {
+    .hamburger-inner {
+      transform: translate3d(0, 10px, 0) rotate(45deg);
+
+      &:before {
+        transform: rotate(-45deg) translate3d(-5.71429px, -6px, 0);
+        opacity: 0;
+      }
+
+      &:after {
+        transform: translate3d(0, -20px, 0) rotate(-90deg);
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    display: block;
+  }
+}
+#preloader{
+  background: #000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  video{
+    width: 300px;
+    height: 300px;
+  }
+}
+
+
+
+

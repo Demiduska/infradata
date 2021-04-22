@@ -1,0 +1,20 @@
+.contacts{
+  &__item{
+    min-width: rem(281);
+    &-content{
+     >div{
+       font-weight: bold;
+       font-size: rem(18);
+       line-height: rem(28);
+       letter-spacing: -0.0075em;
+       text-transform: uppercase;
+     }
+      margin-left: rem(15);
+    }
+    .link{
+      font-size: rem(18);
+      line-height: rem(24);
+      letter-spacing: -0.0125em;
+    }
+  }
+}

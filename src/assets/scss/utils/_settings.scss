@@ -1,0 +1,209 @@
+html {
+  font-size: rem(16);
+  color: $mainFontColor;
+  overflow-x: hidden;
+  letter-spacing: -0.0075em;
+}
+
+
+body {
+  position: relative;
+  background-color: $default-color;
+  margin: 0;
+  padding: 0;
+  font-family: $mainFont;
+  font-weight: $mainFontWeight;
+}
+p{
+  font-size: rem(18);
+  line-height: rem(28);
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+input, input:active, input:focus, input:hover {
+  outline: none !important;
+  outline-color: transparent !important;
+  outline-width: 0 !important;
+  outline-style: none !important;
+  box-shadow: 0 0 0 0 rgba(0, 123, 255, 0) !important;
+  text-decoration: none !important;
+}
+
+button, button:active, button:focus, button:hover {
+  outline: none;
+  outline-color: transparent;
+  outline-width: 0;
+  outline-style: none;
+  box-shadow: 0 0 0 0 rgba(0, 123, 255, 0);
+  text-decoration: none;
+  border: none;
+}
+
+textarea, textarea:active, textarea:focus, textarea:hover {
+  outline: none;
+  outline-color: transparent;
+  outline-width: 0;
+  outline-style: none;
+  box-shadow: 0 0 0 0 rgba(0, 123, 255, 0);
+  text-decoration: none;
+  border: none;
+}
+
+a, a:active, a:focus, a:hover {
+  outline: none;
+  outline-color: transparent;
+  outline-width: 0;
+  outline-style: none;
+  box-shadow: 0 0 0 0 rgba(0, 123, 255, 0);
+  text-decoration: none;
+}
+input, textarea,button{
+  font-family: $mainFont;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-family: $mainFont;
+  font-weight: bold;
+  color: $mainFontColor;
+}
+h1,.h1{
+  font-weight: bold;
+  font-size: rem(36);
+  line-height: rem(44);
+  letter-spacing: -0.0125em;
+}
+h2,.h2{
+  font-weight: bold;
+  font-size: rem(28);
+  line-height: rem(36);
+  letter-spacing: -0.0175em;
+}
+h3,.h3{
+  font-weight: bold;
+  font-size: rem(24);
+  line-height: rem(28);
+  letter-spacing: -0.02em;
+}
+h4,.h4{
+  font-weight: bold;
+  font-size: rem(20);
+  line-height: rem(24);
+  letter-spacing: -0.005em;
+}
+h5,.h5{
+  font-weight: bold;
+  font-size: rem(18);
+  line-height: rem(24);
+  letter-spacing: -0.0075em;
+}
+h6,.h6{
+  font-weight: bold;
+  font-size: rem(16);
+  line-height: rem(24);
+  letter-spacing: -0.0075em;
+  color: $default-color;
+}
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 80rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  margin: 0 auto;
+  height: 100%;
+  @media (max-width: 769px) {
+
+  }
+}
+section {
+  position: relative;
+}
+.link{
+  font-size: rem(16);
+  line-height: rem(24);
+  letter-spacing: -0.0125em;
+  transition: all .3s linear;
+  &:hover{
+    text-decoration: underline;
+  }
+}
+.heading{
+  &--line{
+    position: relative;
+    padding-bottom: rem(13);
+    &:after{
+      position: absolute;
+      bottom: 0;
+      height: rem(4);
+      width: rem(32);
+      background: $accent;
+      display: block;
+      content: '';
+    }
+  }
+  &--with-right{
+    min-width: rem(254);
+    max-width: rem(254);
+    margin-right: rem(20);
+  }
+}
+.status{
+  font-weight: bold;
+  font-size: rem(10);
+  line-height: rem(12);
+  letter-spacing: -0.005em;
+  width: 100%;
+  position: absolute;
+  bottom: rem(4);
+  right: rem(6);
+}
+.code{
+  opacity: .5;
+  font-size: rem(18);
+  line-height: rem(28);
+  letter-spacing: -0.0075em;
+  margin-top: rem(8);
+  display: block;
+}
+.promo{
+  color: $accent;
+  font-size: rem(18);
+  line-height: rem(28);
+  letter-spacing: -0.0075em;
+  margin-top: rem(32);
+  display: block;
+}
+.section{
+  &--contacts{
+    background: $gray-6;
+  }
+  &--callback{
+    background: $gray;
+  }
+}
+footer{
+  background: #292C2E;
+  font-size: rem(14);
+  line-height: rem(16);
+  text-align: center;
+  color: $default-color;
+}
+.background{
+  &--gray-6{
+    background-color: $gray-6;
+  }
+}
+.w{
+  &-100{
+    width: 100%;
+  }
+}
