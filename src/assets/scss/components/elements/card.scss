@@ -145,4 +145,32 @@
       margin-right: rem(24);
     }
   }
+  &--process{
+    display: flex;
+    background: $default-color;
+    border: 1px solid $gray-4;
+    padding: rem(24) rem(24) rem(28) rem(24);
+    margin-bottom: rem(20);
+    align-items: center;
+    &__digit{
+      font-weight: bold;
+      font-size: rem(40);
+      line-height: rem(40);
+      letter-spacing: -0.0125em;
+      color: $accent;
+      margin-right: rem(24);
+    }
+  }
+  &--competence{
+    display: flex;
+    justify-content: space-between;
+    min-height: rem(140);
+    margin-bottom: rem(20);
+    &__title{
+      max-width: rem(300);
+    }
+    &__image{
+      margin-top: rem(6);
+    }
+  }
 }

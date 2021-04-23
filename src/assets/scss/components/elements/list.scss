@@ -1,0 +1,20 @@
+.list{
+  &__item{
+    margin-bottom: rem(20);
+  }
+  &--square{
+    li{
+      padding-left: rem(7);
+      display: flex;
+      align-items: center;
+      &:before{
+        margin-right: rem(15);
+        content: '';
+        display: block;
+        width: rem(10);
+        height: rem(10);
+        background: $accent;
+      }
+    }
+  }
+}

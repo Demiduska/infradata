@@ -38,5 +38,14 @@
     font-size: rem(18);
     line-height: rem(28);
     letter-spacing: -0.0075em;
+    a{
+      font-size: rem(18);
+      line-height: rem(28);
+      letter-spacing: -0.0075em;
+      color: $accent;
+      &:hover{
+        text-decoration: underline;
+      }
+    }
   }
 }

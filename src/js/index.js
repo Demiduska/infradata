@@ -94,9 +94,14 @@ $(function () {
       $('#checkbox').prop('checked', false);
       $(this).parents('form').find('button').prop('disabled', true);
     }
-
-
-  })
+  });
+  $(".scrollTo").on('click', function(e) {
+    e.preventDefault();
+    let target = $(this).attr('href');
+    $('html, body').animate({
+      scrollTop: ($(target).offset().top)
+    }, 2000);
+  });
 
   $("#contact-form").validate({
     submitHandler: function (e) {

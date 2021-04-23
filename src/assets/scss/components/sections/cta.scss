@@ -1,0 +1,28 @@
+.cta{
+  position: relative;
+  background-position: bottom -29px right 0;
+  background-image: url("/assets/img/cta.svg");
+  background-repeat: no-repeat;
+  &__title{
+    max-width: rem(344);
+    font-weight: bold;
+    font-size: rem(28);
+    line-height: rem(36);
+    letter-spacing: -0.02em;
+  }
+  &__subtitle{
+    font-size: rem(20);
+    line-height: rem(28);
+    letter-spacing: -0.02em;
+    max-width: rem(266);
+  }
+  &__btn{
+    margin-right: rem(68);
+    a{
+      padding: rem(16) rem(30);
+      font-size: rem(18);
+      line-height: rem(24);
+      letter-spacing: -0.0075em;
+    }
+  }
+}
