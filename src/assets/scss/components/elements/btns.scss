@@ -18,6 +18,7 @@
     letter-spacing: -0.0125em;
     color: $default-color;
     cursor: pointer;
+    border: 1px solid transparent;
     .icon{
       fill: $default-color;
       margin-left: rem(10);
@@ -28,6 +29,9 @@
       opacity: .5;
     }
     &:hover{
+      .icon{
+        fill: $accent;
+      }
       &.btn--with-icon{
         .icon{
           fill: $accent;
@@ -35,6 +39,7 @@
       }
       color: $accent;
       background: $default-color;
+      border: 1px solid $accent;
     }
   }
   &--with{

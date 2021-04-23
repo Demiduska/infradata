@@ -1,0 +1,12 @@
+.products{
+  display: flex;
+  flex-wrap: wrap;
+  .card{
+    width: calc(100%/2 - 10px);
+    margin-right: rem(20);
+    margin-bottom: rem(20);
+    &:nth-child(even){
+      margin-right: 0;
+    }
+  }
+}

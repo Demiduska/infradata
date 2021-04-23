@@ -9,13 +9,14 @@
   <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
   <link rel="manifest" href="site.webmanifest">
   <title>Infradata</title>
-<link href="/assets/css/vendors.0b7f900da34910500860.css" rel="stylesheet"><link href="/assets/css/app.f36500364d29c642f4d7.css" rel="stylesheet"></head>
+</head>
 <body data-svg-sprite-url="sprite.svg">
 <header class="header p-xl-b-16 p-xl-t-8">
   <div class="container">
     <div class="header__top">
       <a href="/" class="header__logo logo">
-        <img src="assets/img/logo.svg" alt="title">
+        <img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+             data-src="assets/img/logo.svg" alt="title">
       </a>
       <div class="header__contacts">
         <div class="header__contacts-hours">
@@ -54,7 +55,7 @@
                   Сбросить фильтр
                 </a>
               </div>
-              <select id="" class="advanced-search__filter">
+              <select class="advanced-search__filter">
                 <option value="0">Поиск по каталогу</option>
                 <option value="1">Категория 1</option>
                 <option value="2">Категория 2</option>
@@ -74,7 +75,7 @@
                   Категория
                 </div>
               </div>
-              <select id="" class="advanced-search__filter">
+              <select class="advanced-search__filter">
                 <option value="0">Поиск по каталогу</option>
                 <option value="1">Категория 1</option>
                 <option value="2">Категория 2</option>
@@ -234,209 +235,321 @@
   </div>
 </header>
 <main>
-  <section class="section section--second-hero p-xl-t-120 p-xl-b-60">
+  <section class="section section--second-hero p-xl-t-120">
     <div class="container">
       <div class="second-hero">
-        <div class="second-hero__content">
-          <h1 class="heading--line m-xl-b-32">
-            Решения
-          </h1>
-          <p>
-            Рост скоростей в мире составляет много млн гб и растет каждый год. Цифровая инфраструктура является важной
-            составляющей, обеспечивающей конкурентное преимущество.
-          </p>
+        <h1 class="heading--line m-xl-b-32">
+          Каталог
+        </h1>
+        <div class="filter background--gray-6">
+          <div class="filter__list">
+            <div class="filter__item">
+              <label class="filter__item-title">Поиск по названию</label>
+              <select class="advanced-search__filter">
+                <option value="0">Поиск по каталогу</option>
+                <option value="1">Категория 1</option>
+                <option value="2">Категория 2</option>
+                <option value="3">Категория 3</option>
+                <option value="4">Категория 4</option>
+                <option value="5">Категория 5</option>
+                <option value="6">Категория 6</option>
+                <option value="7">Категория 7</option>
+                <option value="8">Категория 8</option>
+                <option value="9">Категория 9</option>
+                <option value="10">Категория 10</option>
+              </select>
+            </div>
+            <div class="filter__item">
+              <label class="filter__item-title">Поиск по названию</label>
+              <select class="advanced-search__filter">
+                <option value="0">Поиск по каталогу</option>
+                <option value="1">Категория 1</option>
+                <option value="2">Категория 2</option>
+                <option value="3">Категория 3</option>
+                <option value="4">Категория 4</option>
+                <option value="5">Категория 5</option>
+                <option value="6">Категория 6</option>
+                <option value="7">Категория 7</option>
+                <option value="8">Категория 8</option>
+                <option value="9">Категория 9</option>
+                <option value="10">Категория 10</option>
+              </select>
+            </div>
+            <div class="filter__item">
+              <label class="filter__item-title">Поиск по названию</label>
+              <select class="advanced-search__filter">
+                <option value="0">Поиск по каталогу</option>
+                <option value="1">Категория 1</option>
+                <option value="2">Категория 2</option>
+                <option value="3">Категория 3</option>
+                <option value="4">Категория 4</option>
+                <option value="5">Категория 5</option>
+                <option value="6">Категория 6</option>
+                <option value="7">Категория 7</option>
+                <option value="8">Категория 8</option>
+                <option value="9">Категория 9</option>
+                <option value="10">Категория 10</option>
+              </select>
+            </div>
+          </div>
+          <div class="d-flex justify-content-between m-xl-t-34">
+            <div class="d-flex">
+              <div class="checkbox-block">
+                <input type="checkbox" class="checkbox">
+                <label class="checkbox-label" for="promo">Акции</label>
+              </div>
+              <div class="checkbox-block">
+                <input type="checkbox" class="checkbox">
+                <label class="checkbox-label" for="new">Новинки</label>
+              </div>
+              <div class="checkbox-block">
+                <input type="checkbox" class="checkbox">
+                <label class="checkbox-label" for="hits">Хиты</label>
+              </div>
+            </div>
+            <div class="d-flex align-items-center">
+              <a class="filter-reset" href="#">
+                Сбросить фильтры
+              </a>
+              <button class="btn btn--red">
+                Применить
+              </button>
+            </div>
+          </div>
+
         </div>
       </div>
     </div>
   </section>
-  <section class="section section--solutions">
+  <section class="section section--products p-xl-t-48 p-xl-b-120">
     <div class="container">
-      <div class="solutions">
-        <div class="card card--solution m-xl-b-20">
-          <h2 class="text--white m-xl-b-24">
-            Вычислительные комплексы
-          </h2>
-          <div class="d-flex justify-content-end">
-            <a href="#" class="btn btn--red btn--with-icon">
-              Перейти к описанию
-              <svg class="icon">
-                <use xlink:href="#chevron-right"></use>
-              </svg>
+      <div class="products">
+        <div class="card card--product">
+          <a href="#" class="card--product__image">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                 data-src="assets/img/battery.png"
+                 alt="" class="b-lazy"
+            >
+          </a>
+          <div class="card--product__content">
+            <a href="#" class="h5">
+              Tripp Lite сверхкомпактный линейно-интерактивный ИБП
             </a>
+            <div class="code">
+              Артикул: SMX1500LCDT
+            </div>
+            <div class="promo">
+              При заказе от 5 единиц - скидка
+            </div>
+            <div class="d-flex align-items-center justify-content-between m-xl-t-32">
+              <span class="price">
+                Цена по запросу
+              </span>
+              <a class="btn btn--red" href="#">
+                Заказать
+              </a>
+            </div>
+
           </div>
         </div>
-        <div class="card card--sub-solution m-xl-b-20">
-          <h5 class="text--white m-xl-b-12">
-            Управление и мониторинг ИТ инфраструктуры
-          </h5>
-          <div class="d-flex justify-content-end">
-            <a href="#" class="btn btn--red btn--with-icon">
-              <svg class="icon">
-                <use xlink:href="#chevron-right"></use>
-              </svg>
+        <div class="card card--product">
+          <a href="#" class="card--product__image">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                 data-src="assets/img/battery.png"
+                 alt="" class="b-lazy"
+            >
+          </a>
+          <div class="card--product__content">
+            <a href="#" class="h5">
+              Tripp Lite сверхкомпактный линейно-интерактивный ИБП
             </a>
+            <div class="code">
+              Артикул: SMX1500LCDT
+            </div>
+            <div class="promo">
+              При заказе от 5 единиц - скидка
+            </div>
+            <div class="d-flex align-items-center justify-content-between m-xl-t-32">
+              <span class="price">
+                Цена по запросу
+              </span>
+              <a class="btn btn--red" href="#">
+                Заказать
+              </a>
+            </div>
+
           </div>
         </div>
-        <div class="card card--sub-solution m-xl-b-20">
-          <h5 class="text--white m-xl-b-12">
-            Системы хранения данных
-          </h5>
-          <div class="d-flex justify-content-end">
-            <a href="#" class="btn btn--red btn--with-icon">
-              <svg class="icon">
-                <use xlink:href="#chevron-right"></use>
-              </svg>
+        <div class="card card--product">
+          <a href="#" class="card--product__image">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                 data-src="assets/img/battery.png"
+                 alt="" class="b-lazy"
+            >
+          </a>
+          <div class="card--product__content">
+            <a href="#" class="h5">
+              Tripp Lite сверхкомпактный линейно-интерактивный ИБП
             </a>
+            <div class="code">
+              Артикул: SMX1500LCDT
+            </div>
+            <div class="promo">
+              При заказе от 5 единиц - скидка
+            </div>
+            <div class="d-flex align-items-center justify-content-between m-xl-t-32">
+              <span class="price">
+                Цена по запросу
+              </span>
+              <a class="btn btn--red" href="#">
+                Заказать
+              </a>
+            </div>
+
           </div>
         </div>
-        <div class="card card--sub-solution m-xl-b-20">
-          <h5 class="text--white m-xl-b-12">
-            Системы резервного копирования
-          </h5>
-          <div class="d-flex justify-content-end">
-            <a href="#" class="btn btn--red btn--with-icon">
-              <svg class="icon">
-                <use xlink:href="#chevron-right"></use>
-              </svg>
+        <div class="card card--product">
+          <a href="#" class="card--product__image">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                 data-src="assets/img/battery.png"
+                 alt="" class="b-lazy"
+            >
+          </a>
+          <div class="card--product__content">
+            <a href="#" class="h5">
+              Tripp Lite сверхкомпактный линейно-интерактивный ИБП
             </a>
+            <div class="code">
+              Артикул: SMX1500LCDT
+            </div>
+            <div class="promo">
+              При заказе от 5 единиц - скидка
+            </div>
+            <div class="d-flex align-items-center justify-content-between m-xl-t-32">
+              <span class="price">
+                Цена по запросу
+              </span>
+              <a class="btn btn--red" href="#">
+                Заказать
+              </a>
+            </div>
+
           </div>
         </div>
-        <div class="card card--sub-solution m-xl-b-20 m-xl-r-0">
-          <h5 class="text--white m-xl-b-12">
-            Системы Архивирования информации
-          </h5>
-          <div class="d-flex justify-content-end">
-            <a href="#" class="btn btn--red btn--with-icon">
-              <svg class="icon">
-                <use xlink:href="#chevron-right"></use>
-              </svg>
+        <div class="card card--product">
+          <a href="#" class="card--product__image">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                 data-src="assets/img/battery.png"
+                 alt="" class="b-lazy"
+            >
+          </a>
+          <div class="card--product__content">
+            <a href="#" class="h5">
+              Tripp Lite сверхкомпактный линейно-интерактивный ИБП
             </a>
+            <div class="code">
+              Артикул: SMX1500LCDT
+            </div>
+            <div class="promo">
+              При заказе от 5 единиц - скидка
+            </div>
+            <div class="d-flex align-items-center justify-content-between m-xl-t-32">
+              <span class="price">
+                Цена по запросу
+              </span>
+              <a class="btn btn--red" href="#">
+                Заказать
+              </a>
+            </div>
+
           </div>
         </div>
-        <div class="card card--solution m-xl-b-20">
-          <h2 class="text--white m-xl-b-24">
-            Сетевые решения и оборудование
-          </h2>
-          <div class="d-flex justify-content-end">
-            <a href="#" class="btn btn--red btn--with-icon">
-              Перейти к описанию
-              <svg class="icon">
-                <use xlink:href="#chevron-right"></use>
-              </svg>
+        <div class="card card--product">
+          <a href="#" class="card--product__image">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                 data-src="assets/img/battery.png"
+                 alt="" class="b-lazy"
+            >
+          </a>
+          <div class="card--product__content">
+            <a href="#" class="h5">
+              Tripp Lite сверхкомпактный линейно-интерактивный ИБП
             </a>
+            <div class="code">
+              Артикул: SMX1500LCDT
+            </div>
+            <div class="promo">
+              При заказе от 5 единиц - скидка
+            </div>
+            <div class="d-flex align-items-center justify-content-between m-xl-t-32">
+              <span class="price">
+                Цена по запросу
+              </span>
+              <a class="btn btn--red" href="#">
+                Заказать
+              </a>
+            </div>
+
           </div>
         </div>
-        <div class="card card--solution m-xl-b-20">
-          <h2 class="text--white m-xl-b-24">
-            Конференц-Системы и ВКС
-          </h2>
-          <div class="d-flex justify-content-end">
-            <a href="#" class="btn btn--red btn--with-icon">
-              Перейти к описанию
-              <svg class="icon">
-                <use xlink:href="#chevron-right"></use>
-              </svg>
+        <div class="card card--product">
+          <a href="#" class="card--product__image">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                 data-src="assets/img/battery.png"
+                 alt="" class="b-lazy"
+            >
+          </a>
+          <div class="card--product__content">
+            <a href="#" class="h5">
+              Tripp Lite сверхкомпактный линейно-интерактивный ИБП
             </a>
-          </div>
-        </div>
-        <div class="card card--solution m-xl-b-20">
-          <h2 class="text--white m-xl-b-24">
-            Ситуационные центры
-          </h2>
-          <div class="d-flex justify-content-end">
-            <a href="#" class="btn btn--red btn--with-icon">
-              Перейти к описанию
-              <svg class="icon">
-                <use xlink:href="#chevron-right"></use>
-              </svg>
-            </a>
-          </div>
-        </div>
-        <div class="card card--solution m-xl-b-20">
-          <h2 class="text--white m-xl-b-24">
-            СКС и ЛВС
-          </h2>
-          <div class="d-flex justify-content-end">
-            <a href="#" class="btn btn--red btn--with-icon">
-              Перейти к описанию
-              <svg class="icon">
-                <use xlink:href="#chevron-right"></use>
-              </svg>
-            </a>
-          </div>
-        </div>
-        <div class="card card--solution">
-          <h2 class="text--white m-xl-b-24">
-            Видеонаблюдение
-            и системы безопасности
-          </h2>
-          <div class="d-flex justify-content-end">
-            <a href="#" class="btn btn--red btn--with-icon">
-              Перейти к описанию
-              <svg class="icon">
-                <use xlink:href="#chevron-right"></use>
-              </svg>
-            </a>
+            <div class="code">
+              Артикул: SMX1500LCDT
+            </div>
+            <div class="promo">
+              При заказе от 5 единиц - скидка
+            </div>
+            <div class="d-flex align-items-center justify-content-between m-xl-t-32">
+              <span class="price">
+                Цена по запросу
+              </span>
+              <a class="btn btn--red" href="#">
+                Заказать
+              </a>
+            </div>
+
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  <section class="section section--about p-xl-t-120 p-xl-b-120">
-    <div class="container">
-      <div class="about">
-        <h3 class="heading--line text--uppercase">
-          Компания
-        </h3>
-        <div class="text--boxed">
-          ИНФРАДАТА – профессионал в области интеграции IT решений и надежный поставщик серверного, сетевого
-          оборудования и ТМЦ для среднего и крупного бизнеса, государственных предприятий и учреждений. Наши компетенции
-          позволяют закрыть все потребности заказчика в любой области информатизации его предприятия, тем самым
-          сократить материальные и трудовые затраты и обеспечить масштабируемость и гибкость реализуемых решений.
-        </div>
-      </div>
-      <div class="benefits m-xl-t-60">
-        <div class="benefits__item">
-          <div class="benefits__item-image">
-            <img class="b-lazy"
-                 src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==
-                 data-src="assets/img/building.svg" alt="">
-          </div>
-          <h4 class="benefits__item-title">
-            Широкий ассортимент продукции
-          </h4>
-        </div>
-        <div class="benefits__item">
-          <div class="benefits__item-image">
-            <img class="b-lazy"
-                 src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==
-                 data-src="assets/img/hands.svg" alt="">
-          </div>
-          <h4 class="benefits__item-title">
-            Гибкие финансовые условия
-          </h4>
-        </div>
-        <div class="benefits__item">
-          <div class="benefits__item-image">
-            <img class="b-lazy"
-                 src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==
-                 data-src="assets/img/construct.svg" alt="">
-          </div>
-          <h4 class="benefits__item-title">
-            Профессиональная техническая экспертиза
-          </h4>
-        </div>
-        <div class="benefits__item">
-          <div class="benefits__item-image">
-            <img class="b-lazy"
-                 src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==
-                 data-src="assets/img/delivery.svg" alt="">
-          </div>
-          <h4 class="benefits__item-title">
-            Доставка <br>по всей России
-          </h4>
-        </div>
-      </div>
+      <ul class="pagination">
+        <li class="pagination__item disabled">
+          <a class="pagination__link" href="#">Первая</a>
+        </li>
+        <li class="pagination__item disabled">
+          <a class="pagination__link" href="#">«</a>
+        </li>
+        <li class="pagination__item active">
+          <a class="pagination__link" href="#">1</a>
+        </li>
+        <li class="pagination__item">
+          <a class="pagination__link" href="#">2</a>
+        </li>
+        <li class="pagination__item">
+          <a class="pagination__link" href="#">3</a>
+        </li>
+        <li class="pagination__item">
+          <a class="pagination__link" href="#">4</a>
+        </li>
+        <li class="pagination__item">
+          <a class="pagination__link" href="#">5</a>
+        </li>
+        <li class="pagination__item">
+          <a class="pagination__link" href="#">»</a>
+        </li>
+        <li class="pagination__item">
+          <a class="pagination__link" href="#">Последняя</a>
+        </li>
+      </ul>
     </div>
   </section>
   <section class="section section--contacts p-xl-t-80 p-xl-b-80">
@@ -524,5 +637,5 @@
 </footer>
 
 
-<script type="text/javascript" src="/assets/js/vendors.515eadbe85a78d38c573.js"></script><script type="text/javascript" src="/assets/js/app.8c9affe128f1c86e0193.js"></script></body>
+</body>
 </html>

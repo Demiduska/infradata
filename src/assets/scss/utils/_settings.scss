@@ -213,3 +213,9 @@ footer{
 .date{
   color:$mainFontColor;
 }
+.price{
+  font-weight: bold;
+  font-size: rem(18);
+  line-height: rem(24);
+  letter-spacing: -0.0075em;
+}

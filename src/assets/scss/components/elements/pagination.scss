@@ -1,0 +1,33 @@
+.pagination{
+  margin-top: rem(28);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__item{
+    margin-right: rem(4);
+    &:last-child{
+      margin-right: 0;
+    }
+    &:hover,&.active{
+      .pagination__link{
+        background: $accent;
+        color: $default-color;
+      }
+    }
+    &:disabled,&.disabled{
+      .pagination__link{
+        cursor: default;
+        opacity: .5;
+      }
+    }
+  }
+  &__link{
+    padding: rem(4) rem(12);
+    background: transparent;
+    color: $mainFontColor;
+    transition: all .3s linear;
+    font-size: rem(18);
+    line-height: rem(28);
+    letter-spacing: -0.0075em;
+  }
+}
