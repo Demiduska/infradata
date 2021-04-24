@@ -33,4 +33,22 @@
       }
     }
   }
+  &--variant{
+    &-2{
+      display: flex;
+      align-items: center;
+      position: relative;
+      &__content{
+        position: relative;
+        z-index: 50;
+        width: 70%;
+      }
+      &__image{
+        position: absolute;
+        z-index: 40;
+        width: 50%;
+        right: 0;
+      }
+    }
+  }
 }

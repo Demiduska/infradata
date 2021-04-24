@@ -1,0 +1,20 @@
+.digits{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  &__item{
+    width: calc(100%/3);
+    &-big{
+      font-size: rem(40);
+      line-height: rem(40);
+      letter-spacing: -0.0125em;
+      color: $accent;
+      font-weight: bold;
+      margin-bottom: rem(12);
+      span{
+        font-size: rem(16);
+        line-height: rem(20);
+      }
+    }
+  }
+}

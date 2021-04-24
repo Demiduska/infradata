@@ -47,5 +47,10 @@
         text-decoration: underline;
       }
     }
+    &-2{
+      @extend .text--boxed;
+      background: $mainFontColor;
+      color: $default-color;
+    }
   }
 }

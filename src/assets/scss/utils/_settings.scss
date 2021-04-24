@@ -156,6 +156,13 @@ section {
     margin-right: rem(20);
   }
 }
+h1{
+  &.heading--line{
+    &:after{
+      height: rem(8);
+    }
+  }
+}
 .status{
   font-weight: bold;
   font-size: rem(10);
@@ -188,6 +195,12 @@ section {
   }
   &--callback{
     background: $gray;
+  }
+  &--goal{
+    .text--boxed{
+      padding-top: 0;
+      padding-bottom: 0;
+    }
   }
 }
 footer{

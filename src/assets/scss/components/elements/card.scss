@@ -50,7 +50,7 @@
       }
     }
     &__content{
-      padding: rem(12) rem(12) rem(4) rem(12);
+      padding: rem(12);
     }
     .card__link{
       margin-bottom: rem(16);
@@ -186,6 +186,28 @@
     &__content{
       .h5{
         color: $mainFontColor;
+      }
+    }
+  }
+  &--more{
+    min-height: rem(212);
+    padding: rem(24) rem(28) rem(32) rem(20);
+    &__subtitle{
+      margin-top: rem(16);
+      margin-bottom: rem(20);
+      color: $gray-4;
+      font-size: rem(18);
+      line-height: rem(28);
+      letter-spacing: -0.0075em;
+    }
+    &__arrow{
+      transition: all .3s ease;
+      padding: rem(8) rem(7);
+      .icon{
+        transition: all .3s ease;
+      }
+      &:hover{
+        background: $accent;
       }
     }
   }

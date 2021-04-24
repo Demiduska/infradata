@@ -1,0 +1,11 @@
+.more{
+  display: flex;
+  flex-wrap: wrap;
+  .card{
+    margin-right: rem(20);
+    width: calc(100%/3 - 80px/3);
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+}
