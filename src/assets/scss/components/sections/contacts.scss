@@ -17,4 +17,10 @@
       letter-spacing: -0.0125em;
     }
   }
+  &-single{
+    width: 100%;
+    .contacts__item{
+      width: calc(100%/3);
+    }
+  }
 }
