@@ -10,3 +10,42 @@
     }
   }
 }
+.product{
+  display: flex;
+  flex-wrap: wrap;
+  &__images,&__main{
+    width: calc(100%/2 - 37px);
+  }
+  &__images{
+    margin-right: rem(74);
+    img{
+      margin: 0 auto;
+    }
+    .slick-dots{
+      .slick-active{
+        button{
+          background: $accent;
+        }
+      }
+      button{
+        width: rem(12);
+        height: rem(12);
+        background: $gray-4;
+        &:before{
+          display: none;
+        }
+        &:hover{
+          background: $accent-hover;
+        }
+      }
+    }
+  }
+  &__main{
+    ul{
+      li{
+        margin-bottom: rem(12);
+      }
+    }
+  }
+
+}

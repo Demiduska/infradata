@@ -8,6 +8,7 @@ import 'jquery.nicescroll';
 import 'jquery-validation';
 import 'slick-carousel'
 import './menu';
+import './tabs';
 import Inputmask from "inputmask";
 
 $(function () {
@@ -38,6 +39,15 @@ $(function () {
         }
       }
       ]
+  });
+  $(".product__images").slick({
+    dots: true,
+    arrows: false,
+    slidesToShow: 1,
+    infinite: false,
+    slidesToScroll: 1,
+    lazyLoad: 'ondemand',
+    rows: 0,
   });
 
   //check input length
@@ -101,6 +111,24 @@ $(function () {
     $('html, body').animate({
       scrollTop: ($(target).offset().top)
     }, 2000);
+  });
+
+  $(document).on('click', '.counter__item', function (e) {
+    let button = $(this);
+    let type = button.data('type');
+    let oldValue = button.parent().find('input').val();
+    console.log(type);
+    let newValue;
+    if (type === '+'){
+      newValue = parseInt(oldValue) + 1;
+    } else {
+      if(oldValue > 0) {
+        newValue = parseInt(oldValue) - 1;
+      } else {
+        newValue = 0;
+      }
+    }
+    button.parent().find("input").val(newValue);
   });
 
   $("#contact-form").validate({

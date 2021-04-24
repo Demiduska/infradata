@@ -1,0 +1,48 @@
+.tabs{
+  width: 100%;
+  &__nav{
+    display: flex;
+    &-item{
+      margin-right: rem(1);
+      &:last-child{
+        margin-right: 0;
+      }
+    }
+    &-link{
+      font-size: rem(18);
+      line-height: rem(24);
+      letter-spacing: -0.0075em;
+      background: $mainFontColor;
+      padding: rem(13) rem(56);
+      color: $default-color;
+      display: block;
+      transition: all .3s ease;
+      font-weight: bold;
+      &:hover{
+        background: $default-color;
+        color: $mainFontColor;
+      }
+      &.active{
+        background: $gray-6;
+        color: $mainFontColor;
+      }
+    }
+  }
+  &__items{
+
+  }
+  &__item{
+    display: none;
+    background: $gray-6;
+    padding: rem(36) rem(36) rem(44) rem(36);
+    h3{
+      margin-bottom: rem(16);
+    }
+    p{
+      margin-bottom: rem(16);
+    }
+    &.active{
+      display: block;
+    }
+  }
+}

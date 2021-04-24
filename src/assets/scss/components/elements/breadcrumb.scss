@@ -1,0 +1,27 @@
+.breadcrumb{
+  display: flex;
+  align-items: center;
+  &__item{
+    margin-right: rem(10);
+    color: $gray-4;
+  }
+  &__link{
+    color: $mainFontColor;
+    display: flex;
+    font-size: rem(17);
+    line-height: rem(24);
+    letter-spacing: -0.02em;
+    transition: all .3s ease;
+    &:hover{
+      color: $accent;
+    }
+
+    &:after{
+      margin-left: rem(10);
+      display: block;
+      position: relative;
+      content: '/';
+      color: $mainFontColor;
+    }
+  }
+}

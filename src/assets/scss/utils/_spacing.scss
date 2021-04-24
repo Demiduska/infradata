@@ -1,6 +1,9 @@
 .m{
   &-xl{
     &-t{
+      &-12{
+        margin-top: rem(12);
+      }
       &-16{
         margin-top: rem(16);
       }
@@ -32,6 +35,9 @@
     &-b{
       &-12{
         margin-bottom: rem(12);
+      }
+      &-16{
+        margin-bottom: rem(16);
       }
       &-20{
         margin-bottom: rem(20);
