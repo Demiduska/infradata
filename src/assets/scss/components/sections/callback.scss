@@ -9,6 +9,9 @@
       flex: auto;
       display: flex;
     }
+    @media (max-width: $tableWidth) {
+      flex-wrap: wrap;
+    }
     h2{
       @media (max-width: $smDesktopWidth){
         width: calc(50% - 16px);
@@ -17,6 +20,10 @@
         line-height: rem(32);
         letter-spacing: -0.0175em;
         margin-bottom: 0;
+      }
+      @media (max-width: $tableWidth) {
+        width: 100%;
+        margin-bottom: rem(16);
       }
     }
   }
@@ -27,6 +34,11 @@
     }
     &-inputs,textarea{
       width: calc(100%/2 - 16px);
+      @media (max-width: $tableWidth) {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: rem(28);
+      }
     }
   }
   input.input{
@@ -37,6 +49,14 @@
   }
   label{
     position: relative;
+    align-items: flex-start;
+    .link{
+      @media (max-width: $tableWidth) {
+        font-size: rem(16);
+        line-height: rem(20);
+      }
+    }
+
   }
   .input--checkbox{
     margin-right: rem(8);
@@ -64,5 +84,9 @@
         visibility: visible;
       }
     }
+  }
+  .btn{
+    width: 100%;
+    margin-top: rem(36);
   }
 }

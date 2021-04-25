@@ -1,5 +1,8 @@
 .hero{
   display: flex;
+  @media (max-width: $tableWidth) {
+    flex-wrap: wrap;
+  }
   &__content{
     width: 50%;
     background: $mainFontColor;
@@ -8,14 +11,23 @@
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-between;
+    order: 1;
     >*{
       display: inline-block;
       width: 100%;
+    }
+    @media (max-width: $tableWidth) {
+      width: 100%;
+      padding: rem(16) rem(12) rem(48) rem(12);
     }
     &-bottom{
       line-height: rem(21);
       @media (max-width: $smDesktopWidth) {
         line-height: rem(28);
+      }
+      @media (max-width: $tableWidth) {
+        font-size: rem(14);
+        line-height: rem(16);
       }
     }
     h1{
@@ -23,10 +35,20 @@
         font-size: rem(32);
         line-height: rem(40);
       }
+      @media (max-width: $tableWidth) {
+        font-size: rem(24);
+        line-height: rem(32);
+        margin-bottom: rem(16);
+      }
     }
   }
   &__image{
     width: 50%;
+    @media (max-width: $tableWidth) {
+      width: 100%;
+      order: 0;
+      max-height: rem(216);
+    }
     img{
       width: 100%;
     }
@@ -37,6 +59,9 @@
     @media (max-width: $smDesktopWidth) {
       margin-top: rem(16);
     }
+    @media (max-width: $tableWidth) {
+      margin-top: 0;
+    }
     .card{
       width: calc(100%/3 - 40px/3);
       margin-right: 20px;
@@ -44,6 +69,12 @@
         width: calc(100%/3 - 32px/3);
         margin-right: 16px;
       }
+      @media (max-width: $tableWidth) {
+        width: 100%;
+        margin-right: 0;
+        margin-top: rem(16);
+      }
+
       &:last-child{
         margin-right: 0;
       }

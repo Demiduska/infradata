@@ -21,6 +21,9 @@
   }
   &__list{
     display: flex;
+    @media (max-width: $tableWidth) {
+      justify-content: space-between;
+    }
     &-item{
       position: relative;
       margin-right: rem(0);
@@ -144,6 +147,25 @@
 
 }
 .mobile-button-search{
+  &.active{
+    background: $mainFontColor;
+    .hamburger{
+      span{
+        &:last-child{
+          opacity: 0;
+          visibility: hidden;
+        }
+        &:before{
+          transform: translate(0) rotate(-45deg);
+          top: rem(6);
+        }
+        &:after{
+          transform: translate(0) rotate(45deg);
+          top: rem(6);
+        }
+      }
+    }
+  }
   &__icons{
     overflow-y: hidden;
     height: rem(24);

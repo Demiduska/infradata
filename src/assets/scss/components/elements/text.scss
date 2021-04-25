@@ -43,6 +43,10 @@
       line-height: rem(24);
       padding: rem(28) rem(28) rem(32) rem(28);
     }
+    @media (max-width: $tableWidth){
+      padding: rem(20) rem(16);
+      line-height: rem(28);
+    }
     a{
       font-size: rem(18);
       line-height: rem(28);

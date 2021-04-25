@@ -26,6 +26,9 @@
       height: auto;
       background-size: rem(97) rem(88);
     }
+    @media (max-width: $tableWidth) {
+      min-height: rem(108);
+    }
   }
   &--catalog{
     min-height: rem(128);
@@ -246,6 +249,11 @@
       &:hover{
         background: $accent;
       }
+    }
+  }
+  &--slider{
+    &__wrap{
+
     }
   }
 }

@@ -23,3 +23,26 @@
     flex-wrap: wrap;
   }
 }
+.d{
+    &-lg{
+      &-block{
+        display: block;
+      }
+      &-none{
+          display: none;
+
+      }
+    }
+  &-md{
+    &-none{
+      @media (max-width: $tableWidth) {
+        display: none;
+      }
+    }
+    &-block{
+      @media (max-width: $tableWidth) {
+        display: block;
+      }
+    }
+  }
+}

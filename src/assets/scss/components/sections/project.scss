@@ -11,4 +11,53 @@
       margin-right: 0;
     }
   }
+  &-slider{
+    .slick-dots{
+      bottom: auto;
+      top: -44px;
+      left: 16px;
+      text-align: left;
+      li{
+        padding: 0;
+        margin-left: 0;
+        margin-right: rem(10);
+        width: auto;
+        height: auto;
+        &.slick-active{
+          button{
+            background: $accent;
+          }
+        }
+        button{
+          width: rem(4);
+          height: rem(4);
+          background: $gray-4;
+          margin-right: 0;
+          &:before{
+            display: none;
+          }
+        }
+      }
+    }
+    .slick-track{
+      display: flex;
+    }
+    .slick-active{
+      &.card{
+        //width: 85vw!important;
+      }
+    }
+    .card {
+      &--project{
+        width: 80vw;
+        margin-right: rem(16);
+        &__image {
+
+        }
+    }
+      &:nth-child(3n+3){
+        margin-right: rem(16);
+      }
+    }
+  }
 }

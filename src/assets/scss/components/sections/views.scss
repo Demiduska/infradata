@@ -12,6 +12,9 @@
       @media (max-width: $smDesktopWidth) {
         padding: rem(8);
       }
+      @media (max-width: $tableWidth) {
+        top: rem(-48);
+      }
       &:before{
         display: none;
       }
@@ -35,6 +38,14 @@
           stroke: $default-color;
         }
       }
+    }
+  }
+}
+.section--views{
+  h3{
+    @media (max-width: $tableWidth) {
+      max-width: 70%;
+      min-width: 200px;
     }
   }
 }

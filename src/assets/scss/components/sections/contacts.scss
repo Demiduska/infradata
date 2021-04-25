@@ -1,4 +1,7 @@
 .contacts{
+  @media (max-width: $tableWidth) {
+    flex-wrap: wrap;
+  }
   h3{
     @media (max-width: $smDesktopWidth) {
       display: none;
@@ -20,10 +23,21 @@
       font-size: rem(18);
       line-height: rem(24);
       letter-spacing: -0.0125em;
+      @media (max-width: $tableWidth) {
+        font-size: rem(16);
+        line-height: rem(20);
+      }
     }
     @media (max-width: $smDesktopWidth) {
       width: calc(100%/3);
       min-width: auto;
+    }
+    @media (max-width: $tableWidth) {
+      width: 100%;
+      margin-bottom: rem(32);
+    }
+    &:last-child{
+      margin-bottom: 0;
     }
   }
   &-single{

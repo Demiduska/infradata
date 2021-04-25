@@ -1,8 +1,15 @@
 .benefits{
   display: flex;
   justify-content: space-between;
+  @media (max-width: $tableWidth){
+    flex-wrap: wrap;
+  }
   &__item{
     width: calc(100%/4 - 96px/4);
+    @media (max-width: $tableWidth){
+      width: 50%;
+      margin-top: rem(32);
+    }
     &-image{
       img{
         display: block;

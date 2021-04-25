@@ -1,0 +1,41 @@
+.news{
+  &-slider{
+    .card--slider__wrap{
+      display: flex;
+      min-height: rem(112);
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .card{
+      min-height: rem(112);
+      padding: rem(16) rem(12);
+    }
+    .slick-dots{
+      bottom: auto;
+      top: -44px;
+      left: 0;
+      text-align: left;
+      li{
+        padding: 0;
+        margin-left: 0;
+        margin-right: rem(10);
+        width: auto;
+        height: auto;
+        &.slick-active{
+          button{
+            background: $accent;
+          }
+        }
+        button{
+          width: rem(4);
+          height: rem(4);
+          background: $gray-4;
+          margin-right: 0;
+          &:before{
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}

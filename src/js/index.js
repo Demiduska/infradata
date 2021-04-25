@@ -32,10 +32,9 @@ $(function () {
         }
       },
       {
-        breakpoint: 600,
+        breakpoint: 768,
         settings: {
-          slidesToShow: 2,
-          dots: true
+          slidesToShow: 1,
         }
       }
       ]
@@ -48,6 +47,48 @@ $(function () {
     slidesToScroll: 1,
     lazyLoad: 'ondemand',
     rows: 0,
+  });
+  $(".project-slider").slick({
+    dots: false,
+    arrows: false,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    centerMode: true,
+    focusOnSelect: true,
+    swipeToSlide: true,
+    rows: 0,
+    lazyLoad: 'ondemand',
+    variableWidth: true,
+    infinite: true,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          dots: true,
+        }
+      }
+    ]
+  });
+  $(".news-slider").slick({
+    dots: false,
+    arrows: false,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    focusOnSelect: true,
+    swipeToSlide: true,
+    rows: 0,
+    infinite: true,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          dots: true,
+
+
+
+        }
+      }
+    ]
   });
 
   //check input length

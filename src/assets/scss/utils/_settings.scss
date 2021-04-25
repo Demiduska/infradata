@@ -14,6 +14,9 @@ body {
   font-family: $mainFont;
   font-weight: $mainFontWeight;
   overflow-x: hidden;
+  @media (max-width: $tableWidth) {
+    padding-bottom: rem(66);
+  }
 }
 p{
   font-size: rem(18);
@@ -91,6 +94,10 @@ h2,.h2{
   font-size: rem(28);
   line-height: rem(36);
   letter-spacing: -0.0175em;
+  @media (max-width: $tableWidth) {
+    font-size: rem(24);
+    line-height: rem(32);
+  }
 }
 h3,.h3{
   font-weight: bold;
@@ -111,6 +118,10 @@ h4,.h4{
     font-size: rem(18);
     line-height: rem(20);
   }
+  @media (max-width: $tableWidth) {
+    font-size: rem(16);
+    line-height: rem(24);
+  }
 }
 h5,.h5{
   font-weight: bold;
@@ -118,6 +129,10 @@ h5,.h5{
   line-height: rem(24);
   letter-spacing: -0.0075em;
   @media (max-width: $smDesktopWidth) {
+    font-size: rem(16);
+    line-height: rem(20);
+  }
+  @media (max-width: $tableWidth) {
     font-size: rem(16);
     line-height: rem(20);
   }
@@ -143,6 +158,9 @@ h6,.h6{
     width: 100%;
     max-width: 100%;
   }
+  @media (max-width: $tableWidth) {
+    padding: 0 rem(16);
+  }
 }
 section {
   position: relative;
@@ -152,8 +170,26 @@ section {
   line-height: rem(24);
   letter-spacing: -0.0125em;
   transition: all .3s linear;
+  @media (max-width:$tableWidth){
+    font-size: rem(14);
+    line-height: rem(24);
+  }
   &:hover{
     text-decoration: underline;
+  }
+  &--show{
+    display: none;
+    @media (max-width:$tableWidth) {
+      color: $gray-6;
+      background: $mainFontColor;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: rem(14);
+      line-height: rem(16);
+      padding: rem(14) rem(16);
+      font-weight: bold;
+    }
   }
 }
 .heading{
@@ -213,20 +249,6 @@ h1{
   display: block;
   @media (max-width: $smDesktopWidth) {
     margin-right: rem(28);
-  }
-}
-.section{
-  &--contacts{
-    background: $gray-6;
-  }
-  &--callback{
-    background: $gray;
-  }
-  &--goal{
-    .text--boxed{
-      padding-top: 0;
-      padding-bottom: 0;
-    }
   }
 }
 footer{
@@ -301,4 +323,57 @@ footer{
       display: none;
     }
   }
+}
+.section{
+  &--contacts{
+    background: $gray-6;
+  }
+  &--callback{
+    background: $gray;
+  }
+  &--goal{
+    .text--boxed{
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+  }
+  &--catalog{
+    @media (max-width: $tableWidth) {
+      display: none;
+    }
+    &-mobile{
+      display: none;
+      @media (max-width: $tableWidth) {
+       display: block;
+      }
+      .card{
+        @media (max-width: $tableWidth) {
+          min-height: rem(108);
+          padding: rem(13) rem(16);
+          overflow-y: hidden;
+          margin-bottom: 0;
+        }
+        &--catalog__image{
+          @media (max-width: $tableWidth) {
+            right: rem(16);
+            bottom: rem(-16);
+          }
+        }
+      }
+    }
+  }
+  &--partners{
+    @media (max-width: $tableWidth) {
+      display: none;
+    }
+  }
+}
+.show-categories{
+  background: $gray;
+}
+.show-vendors{
+  background: $secondary;
+}
+.slick-dotted.slick-slider {
+  margin-bottom: 0;
 }
