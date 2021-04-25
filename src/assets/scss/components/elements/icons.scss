@@ -11,6 +11,9 @@
   &--accent{
     fill: $accent;
   }
+  &--white{
+    fill: $default-color;
+  }
   &--arrow-right{
     stroke: $default-color;
   }

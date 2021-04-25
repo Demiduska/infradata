@@ -1,9 +1,19 @@
 .about{
   display: flex;
   align-items: flex-start;
+  @media (max-width: $smDesktopWidth) {
+    flex-wrap: wrap;
+  }
   h3{
     min-width: rem(254);
     max-width: rem(254);
     margin-right: rem(20);
+    @media (max-width: $smDesktopWidth) {
+      min-width: auto;
+      max-width: 100%;
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: rem(20);
+    }
   }
 }

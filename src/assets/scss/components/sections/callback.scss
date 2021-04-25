@@ -1,6 +1,24 @@
 .callback{
+  @media (max-width: $smDesktopWidth) {
+    flex-wrap: wrap;
+  }
   &__title{
     flex: 1 1;
+    @media (max-width: $smDesktopWidth) {
+      width: 100%;
+      flex: auto;
+      display: flex;
+    }
+    h2{
+      @media (max-width: $smDesktopWidth){
+        width: calc(50% - 16px);
+        margin-right: rem(16);
+        font-size: rem(24);
+        line-height: rem(32);
+        letter-spacing: -0.0175em;
+        margin-bottom: 0;
+      }
+    }
   }
   &__form{
     flex: 2 1;

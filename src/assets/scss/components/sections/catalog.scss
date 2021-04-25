@@ -3,11 +3,22 @@
     display: flex;
     flex-wrap: wrap;
     .card{
-      width: calc(100%/4 - 20px);
+      width: calc(100%/4 - 60px/4);
       margin-right: 20px;
+      @media (max-width: $smDesktopWidth) {
+        width: calc(100%/3 - 32px/3);
+        margin-right: 16px;
+      }
+      &:nth-child(3n+3){
+        @media (max-width: $smDesktopWidth){
+          margin-right: 0px;
+        }
+      }
       &:nth-child(4n+4){
-        width: calc(100%/4);
         margin-right: 0;
+        @media (max-width: $smDesktopWidth){
+          margin-right: 16px;
+        }
       }
     }
   }

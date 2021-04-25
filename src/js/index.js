@@ -152,12 +152,6 @@ $(function () {
     }
   });
 
-  $(document).on('click', '.hamburger', function () {
-    $(this).toggleClass('active');
-    $('.menu-wrap').fadeToggle(500);
-    $('body').toggleClass('no-scroll');
-  });
-
 
 });
 

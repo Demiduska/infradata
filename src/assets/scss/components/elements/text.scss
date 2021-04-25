@@ -38,6 +38,11 @@
     font-size: rem(18);
     line-height: rem(28);
     letter-spacing: -0.0075em;
+    @media (max-width: $smDesktopWidth) {
+      font-size: rem(16);
+      line-height: rem(24);
+      padding: rem(28) rem(28) rem(32) rem(28);
+    }
     a{
       font-size: rem(18);
       line-height: rem(28);

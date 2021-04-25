@@ -1,0 +1,175 @@
+.mobile-menu{
+  display: none;
+  background: #6C7482;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 200;
+  ul{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: transform 0.3s ease-in-out;
+  }
+  @media (max-width: $smDesktopWidth) {
+    display: block;
+  }
+  &-head{
+    margin-bottom: rem(10);
+    width: 100%;
+    padding: 0 rem(16);
+  }
+  &__list{
+    display: flex;
+    &-item{
+      position: relative;
+      margin-right: rem(0);
+      width: rem(64);
+      padding: rem(13) rem(0);
+      &:last-child{
+        margin-right: 0;
+      }
+      &-title{
+        font-size: rem(12);
+        line-height: rem(12);
+        text-align: center;
+        letter-spacing: -0.03em;
+        color: $default-color;
+        margin-top: rem(4);
+        position: relative;
+      }
+      .icon{
+        display: block;
+        margin: 0 auto;
+      }
+      .cart__digit{
+        right: rem(10);
+        top: rem(7);
+      }
+    }
+  }
+  &-nav{
+    display: none;
+    position: fixed;
+    width: 100%;
+    overflow-y: scroll;
+    height: 100vh;
+    background: #f5f6f7;
+    z-index: 150;
+    top: 0;
+    padding-bottom: rem(66);
+    padding-top: rem(20);
+    &-wrap{
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      height: 100%;
+      flex-wrap: wrap;
+      position: relative;
+    }
+    &-list{
+      padding: 0;
+      width: 100%;
+      &__item{
+        display: flex;
+        justify-content: space-between;
+      }
+      &__link{
+        padding: rem(12) rem(16);
+        font-size: rem(17);
+        line-height: rem(24);
+        letter-spacing: -0.02em;
+        color: $mainFontColor;
+      }
+    }
+  }
+  &-icon{
+    &__button{
+      padding: 0 rem(16) 0 0;
+    }
+  }
+  &__back{
+    display: flex;
+    align-items: center;
+    font-size: rem(17);
+    line-height: rem(24);
+    padding: rem(18) rem(16);
+    letter-spacing: -0.02em;
+    background: $gray-4;
+  }
+}
+.mobile-menu__button{
+  &.active{
+    background: $mainFontColor;
+    .hamburger{
+      span{
+        &:last-child{
+          opacity: 0;
+          visibility: hidden;
+        }
+        &:before{
+          transform: translate(0) rotate(-45deg);
+          top: rem(6);
+        }
+        &:after{
+          transform: translate(0) rotate(45deg);
+          top: rem(6);
+        }
+      }
+    }
+  }
+}
+.mobile-submenu{
+  display: none;
+  width: 100%;
+  padding: 0;
+  bottom: 0;
+  z-index: 100;
+  position: absolute;
+  transition: all .3s ease-in-out;
+  &.opened{
+
+  }
+  &__item{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__link{
+    padding: rem(12) rem(16);
+    font-size: rem(17);
+    line-height: rem(24);
+    letter-spacing: -0.02em;
+    color: $mainFontColor;
+  }
+
+}
+.mobile-button-search{
+  &__icons{
+    overflow-y: hidden;
+    height: rem(24);
+  }
+  .icon{
+    transition: transform .3s ease;
+    stroke: $default-color;
+  }
+  &.active{
+    .icon{
+      transform: translateY(-100%);
+    }
+  }
+}
+.mobile-search{
+  display: none;
+  .header__search-form{
+    display: flex;
+    position: fixed;
+    width: 100%;
+    bottom: rem(66);
+    z-index: 300;
+  }
+  .advanced-search{
+    position: absolute;
+    top: auto;
+    bottom: 100%;
+  }
+}

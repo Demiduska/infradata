@@ -3,6 +3,10 @@
   justify-content: space-between;
   .card{
     margin-right: rem(40);
+    @media (max-width: $smDesktopWidth) {
+      width: calc(100%/3 - 32px/3);
+      margin-right: rem(16);
+    }
     &:nth-child(3n+3){
       margin-right: 0;
     }

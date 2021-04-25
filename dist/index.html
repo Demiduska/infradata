@@ -9,13 +9,14 @@
   <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
   <link rel="manifest" href="site.webmanifest">
   <title>Infradata</title>
-<link href="/assets/css/vendors.0b7f900da34910500860.css" rel="stylesheet"><link href="/assets/css/app.31b6d6039b5618d15a2d.css" rel="stylesheet"></head>
+<link href="/assets/css/vendors.0b7f900da34910500860.css" rel="stylesheet"><link href="/assets/css/app.4e5b9b7bc9f8dafde38c.css" rel="stylesheet"></head>
 <body data-svg-sprite-url="sprite.svg">
 <header class="header p-xl-b-16 p-xl-t-8">
   <div class="container">
     <div class="header__top">
       <a href="/" class="header__logo logo">
-        <img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="assets/img/logo.svg" alt="title">
+        <img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+             data-src="assets/img/logo.svg" alt="title">
       </a>
       <div class="header__contacts">
         <div class="header__contacts-hours">
@@ -54,7 +55,7 @@
                   Сбросить фильтр
                 </a>
               </div>
-              <select id="" class="advanced-search__filter">
+              <select class="advanced-search__filter">
                 <option value="0">Поиск по каталогу</option>
                 <option value="1">Категория 1</option>
                 <option value="2">Категория 2</option>
@@ -232,13 +233,275 @@
       </nav>
     </div>
   </div>
+  <div class="mobile-menu">
+    <div class="mobile-menu__list">
+      <button class="mobile-menu__list-item mobile-menu__button">
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+        </div>
+        <div class="mobile-menu__list-item-title">
+          Меню
+        </div>
+      </button>
+      <a href="tel:" class="mobile-menu__list-item">
+        <svg class="icon icon--white">
+          <use xlink:href="#phone"></use>
+        </svg>
+        <div class="mobile-menu__list-item-title">
+          Позвонить
+        </div>
+      </a>
+      <button class="mobile-menu__list-item mobile-button-search">
+        <div class="mobile-button-search__icons">
+          <svg class="icon icon--white">
+            <use xlink:href="#search"></use>
+          </svg>
+          <svg class="icon icon--white">
+            <use xlink:href="#close"></use>
+          </svg>
+        </div>
+
+        <div class="mobile-menu__list-item-title">
+          Поиск
+        </div>
+      </button>
+      <a href="mailto:" class="mobile-menu__list-item">
+        <svg class="icon icon--white">
+          <use xlink:href="#mail"></use>
+        </svg>
+        <div class="mobile-menu__list-item-title">
+          Написать
+        </div>
+      </a>
+      <a href="#" class="mobile-menu__list-item">
+        <svg class="icon icon--white">
+          <use xlink:href="#cart"></use>
+        </svg>
+        <div class="mobile-menu__list-item-title">
+          Корзина
+        </div>
+        <div class="cart__digit">
+          10
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class="mobile-menu-nav">
+    <div class="mobile-menu-nav-wrap">
+      <ul class="mobile-menu-nav-list">
+        <li class="mobile-menu-head">
+          <h3>Главное меню</h3>
+        </li>
+        <li class="mobile-menu-nav-list__item mobile-menu-nav-list__list-sub">
+          <a href="#" class="mobile-menu-nav-list__link mobile-menu-nav-list__link-arrow">
+            Решения
+          </a>
+          <button class="mobile-menu-icon__button">
+            <svg class="icon">
+              <use xlink:href="#chevron-right"></use>
+            </svg>
+          </button>
+          <ul class="mobile-submenu">
+            <li class="mobile-menu-head">
+              <h3>Решения</h3>
+            </li>
+            <li class="mobile-submenu__item">
+              <a class="mobile-submenu__link" href="#" title="Управление и мониторинг ИТ инфраструктуры">
+                Управление и мониторинг ИТ инфраструктуры 0
+              </a>
+              <button class="mobile-menu-icon__button">
+                <svg class="icon">
+                  <use xlink:href="#chevron-right"></use>
+                </svg>
+              </button>
+              <ul class="mobile-submenu">
+                <li class="mobile-menu-head">
+                  <h3>Управление и мониторинг ИТ инфраструктуры 0</h3>
+                </li>
+                <li class="mobile-submenu__item">
+                  <a class="mobile-submenu__link" href="#">
+                    Управление и мониторинг ИТ инфраструктуры
+                  </a>
+                </li>
+                <li class="mobile-submenu__item">
+                  <a class="mobile-submenu__link" href="#">
+                    Управление и мониторинг ИТ инфраструктуры
+                  </a>
+                </li>
+                <li class="mobile-menu__back">
+                  <svg class="icon">
+                    <use xlink:href="#chevron-left"></use>
+                  </svg>
+                  <span>
+                    Решения
+                  </span>
+                </li>
+              </ul>
+            </li>
+            <li class="mobile-submenu__item">
+              <a class="mobile-submenu__link" href="#" title="Управление и мониторинг ИТ инфраструктуры">
+                Управление и мониторинг ИТ инфраструктуры 1
+              </a>
+              <button class="mobile-menu-icon__button">
+                <svg class="icon">
+                  <use xlink:href="#chevron-right"></use>
+                </svg>
+              </button>
+              <ul class="mobile-submenu">
+                <li class="mobile-submenu__item">
+                  <a class="mobile-submenu__link" href="#">
+                    Управление и мониторинг ИТ инфраструктуры
+                  </a>
+                </li>
+                <li class="mobile-submenu__item">
+                  <a class="mobile-submenu__link" href="#">
+                    Управление и мониторинг ИТ инфраструктуры
+                  </a>
+                </li>
+                <li class="mobile-menu__back">
+                  <svg class="icon">
+                    <use xlink:href="#chevron-left"></use>
+                  </svg>
+                  <span>
+                    Решения
+                  </span>
+                </li>
+              </ul>
+            </li>
+            <li class="mobile-submenu__item">
+              <a class="mobile-submenu__link" href="#" title="Системы резервного копирования">
+                Системы резервного копирования
+              </a>
+            </li>
+            <li class="mobile-submenu__item">
+              <a class="mobile-submenu__link" href="#" title="Системы архивирования информации">
+                Системы архивирования информации
+              </a>
+            </li>
+            <li class="mobile-menu__back">
+              <svg class="icon">
+                <use xlink:href="#chevron-left"></use>
+              </svg>
+              <span>
+                Главное меню
+              </span>
+            </li>
+          </ul>
+        </li>
+        <li class="mobile-menu-nav-list__item">
+          <a class="mobile-menu-nav-list__link" href="#">
+            Контакты
+          </a>
+        </li>
+        <li class="mobile-menu-nav-list__item">
+          <a class="mobile-menu-nav-list__link" href="#">
+            О компании
+          </a>
+        </li>
+        <li class="mobile-menu-nav-list__item">
+          <a class="mobile-menu-nav-list__link" href="#">
+            Каталог
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="mobile-search">
+    <form class="header__search-form">
+      <label class="label header__search-form-label" for="header__input-search">
+        <a class="header__search-form-filter" href="#">
+          <svg class="icon icon--filter">
+            <use xlink:href="#filter"></use>
+          </svg>
+          <svg class="icon">
+            <use xlink:href="#close"></use>
+          </svg>
+        </a>
+        <input class="input input-search header__search-form-input" placeholder="Поиск по каталогу" type="text"
+               id="header__input-search-mobile">
+      </label>
+      <button disabled class="btn-search" id="header__search-button-mobile">
+        <svg class="icon icon--search">
+          <use xlink:href="#search"></use>
+        </svg>
+      </button>
+      <div class="advanced-search header__search-form-advanced">
+        <div class="advanced-search__block">
+          <div class="advanced-search__block-head d-flex justify-content-between align-items-center">
+            <div class="advanced-search__block-title">
+              Категория
+            </div>
+            <a href="#" class="advanced-search__block-reset">
+              Сбросить фильтр
+            </a>
+          </div>
+          <select class="advanced-search__filter">
+            <option value="0">Поиск по каталогу</option>
+            <option value="1">Категория 1</option>
+            <option value="2">Категория 2</option>
+            <option value="3">Категория 3</option>
+            <option value="4">Категория 4</option>
+            <option value="5">Категория 5</option>
+            <option value="6">Категория 6</option>
+            <option value="7">Категория 7</option>
+            <option value="8">Категория 8</option>
+            <option value="9">Категория 9</option>
+            <option value="10">Категория 10</option>
+          </select>
+        </div>
+        <div class="advanced-search__block">
+          <div class="advanced-search__block-head">
+            <div class="advanced-search__block-title">
+              Категория
+            </div>
+          </div>
+          <select class="advanced-search__filter">
+            <option value="0">Поиск по каталогу</option>
+            <option value="1">Категория 1</option>
+            <option value="2">Категория 2</option>
+            <option value="3">Категория 3</option>
+            <option value="4">Категория 4</option>
+            <option value="5">Категория 5</option>
+            <option value="6">Категория 6</option>
+            <option value="7">Категория 7</option>
+            <option value="8">Категория 8</option>
+            <option value="9">Категория 9</option>
+            <option value="10">Категория 10</option>
+          </select>
+        </div>
+        <div class="advanced-search__bottom">
+          <div class="advanced-search__bottom-checkboxes">
+            <div class="checkbox-block">
+              <input type="checkbox" class="checkbox" id="promo-1">
+              <label class="checkbox-label" for="promo-1">Акции</label>
+            </div>
+            <div class="checkbox-block">
+              <input type="checkbox" class="checkbox" id="new-1">
+              <label class="checkbox-label" for="new-1">Новинки</label>
+            </div>
+            <div class="checkbox-block">
+              <input type="checkbox" class="checkbox" id="hits-1">
+              <label class="checkbox-label" for="hits-1">Хиты</label>
+            </div>
+          </div>
+          <button disabled class="btn--red d-flex align-items-center advanced-search-button">
+            Найти
+            <svg class="icon">
+              <use xlink:href="#chevron-right"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
 </header>
 <main>
-  <section class="section section--hero m-xl-t-16 m-xl-b-80">
+  <section class="section section--hero m-xl-t-16 m-lg-b-60 m-xl-b-80">
     <div class="container">
       <div class="hero">
         <div class="hero__content text--white">
-          <h1 class="h1 text--white text--uppercase">
+          <h1 class="text--white text--uppercase">
             Цифровая <br> трансформация
           </h1>
           <p class="hero__content-bottom">
@@ -292,8 +555,8 @@
           </svg>
         </a>
       </div>
-      <div class="catalog__cards m-xl-t-24">
-        <a href="#" class="card card--catalog m-xl-b-24">
+      <div class="catalog__cards m-lg-t-20 m-xl-t-24">
+        <a href="#" class="card card--catalog">
           <h6 class="card__link text--uppercase">
             Коммутаторы
           </h6>
@@ -306,7 +569,7 @@
                  class="b-lazy">
           </div>
         </a>
-        <a href="#" class="card card--catalog m-xl-b-24">
+        <a href="#" class="card card--catalog">
           <h6 class="card__link text--uppercase">
             Маршрутизаторы
           </h6>
@@ -319,7 +582,7 @@
                  class="b-lazy">
           </div>
         </a>
-        <a href="#" class="card card--catalog m-xl-b-24">
+        <a href="#" class="card card--catalog">
           <h6 class="card__link text--uppercase">
             Системы хранения
             данных
@@ -333,7 +596,7 @@
                  class="b-lazy">
           </div>
         </a>
-        <a href="#" class="card card--catalog m-xl-b-24">
+        <a href="#" class="card card--catalog">
           <h6 class="card__link text--uppercase">
             Серверы
           </h6>
@@ -346,7 +609,7 @@
                  class="b-lazy">
           </div>
         </a>
-        <a href="#" class="card card--catalog m-xl-b-24">
+        <a href="#" class="card card--catalog">
           <h6 class="card__link text--uppercase">
             Коммутаторы
           </h6>
@@ -359,7 +622,7 @@
                  class="b-lazy">
           </div>
         </a>
-        <a href="#" class="card card--catalog m-xl-b-24">
+        <a href="#" class="card card--catalog">
           <h6 class="card__link text--uppercase">
             Маршрутизаторы
           </h6>
@@ -372,7 +635,7 @@
                  class="b-lazy">
           </div>
         </a>
-        <a href="#" class="card card--catalog m-xl-b-24">
+        <a href="#" class="card card--catalog">
           <h6 class="card__link text--uppercase">
             Системы хранения
             данных
@@ -386,7 +649,7 @@
                  class="b-lazy">
           </div>
         </a>
-        <a href="#" class="card card--catalog m-xl-b-24">
+        <a href="#" class="card card--catalog">
           <h6 class="card__link text--uppercase">
             Серверы
           </h6>
@@ -402,9 +665,9 @@
       </div>
     </div>
   </section>
-  <section class="section section--partners m-xl-t-40">
+  <section class="section section--partners m-lg-t-36 m-xl-t-40">
     <div class="container">
-      <div class="d-flex justify-content-between">
+      <div class="d-flex justify-content-between align-items-center">
         <a href="#" rel="nofollow">
           <img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
                data-src="assets/img/partners/cisco.svg" alt="">
@@ -440,7 +703,7 @@
       </div>
     </div>
   </section>
-  <section class="section section--about p-xl-t-120 p-xl-b-120">
+  <section class="section section--about p-lg-t-88 p-lg-b-88 p-xl-t-120 p-xl-b-120">
     <div class="container">
       <div class="about">
         <h3 class="heading--line text--uppercase">
@@ -453,7 +716,7 @@
           сократить материальные и трудовые затраты и обеспечить масштабируемость и гибкость реализуемых решений.
         </div>
       </div>
-      <div class="benefits m-xl-t-60">
+      <div class="benefits m-lg-t-48 m-xl-t-60">
         <div class="benefits__item">
           <div class="benefits__item-image">
             <img class="b-lazy"
@@ -500,7 +763,7 @@
   <section class="section section--project p-xl-t-40">
     <div class="container">
       <h3 class="text--uppercase">Наши проекты</h3>
-      <div class="d-flex justify-content-between m-xl-b-24">
+      <div class="d-flex justify-content-between m-lg-b-20 m-xl-b-24">
         <div class="text--small-2 text--accent">
           26 277 товаров
         </div>
@@ -578,12 +841,12 @@
       </div>
     </div>
   </section>
-  <section class="section section--suppliers p-xl-t-120 p-xl-b-120">
+  <section class="section section--suppliers p-lg-t-88 p-lg-b-68 p-xl-t-120 p-xl-b-100">
     <div class="container">
       <h3 class="heading--line text--uppercase">
-        Компания
+        Поставщики и производители
       </h3>
-      <div class="d-flex justify-content-end m-xl-b-24">
+      <div class="d-flex justify-content-end m-lg-b-20 m-xl-b-24">
         <a class="link text--accent" href="#">
           Узнать больше
           <svg class="icon">
@@ -592,7 +855,7 @@
         </a>
       </div>
       <div class="suppliers d-flex justify-content-between flex-wrap">
-        <a href="#" class="card card--suppliers m-xl-b-20">
+        <a href="#" class="card card--suppliers">
           <div class="card--suppliers__image">
             <img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
                  data-src="assets/img/partners/cisco.svg" alt="">
@@ -601,7 +864,7 @@
             Золотой партнер
           </div>
         </a>
-        <a href="#" class="card card--suppliers m-xl-b-20">
+        <a href="#" class="card card--suppliers">
           <div class="card--suppliers__image">
             <img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
                  data-src="assets/img/partners/hp.svg" alt="">
@@ -610,7 +873,7 @@
             Золотой партнер
           </div>
         </a>
-        <a href="#" class="card card--suppliers m-xl-b-20">
+        <a href="#" class="card card--suppliers">
           <div class="card--suppliers__image">
             <img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
                  data-src="assets/img/partners/fujitsu.svg" alt="">
@@ -619,7 +882,7 @@
             Серебрянный партнер
           </div>
         </a>
-        <a href="#" class="card card--suppliers m-xl-b-20">
+        <a href="#" class="card card--suppliers">
           <div class="card--suppliers__image">
             <img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
                  data-src="assets/img/partners/h3c.svg" alt="">
@@ -660,7 +923,7 @@
       <h3 class="heading--line text--uppercase">
         Новости
       </h3>
-      <div class="d-flex justify-content-end m-xl-b-24">
+      <div class="d-flex justify-content-end m-lg-b-20 m-xl-b-24">
         <a class="link text--accent" href="#">
           Перейти к новостям
           <svg class="icon">
@@ -696,12 +959,12 @@
       </div>
     </div>
   </section>
-  <section class="section section--views p-xl-t-120 p-xl-b-120">
+  <section class="section section--views p-lg-t-88 p-lg-b-88 p-xl-t-120 p-xl-b-120">
     <div class="container">
       <h3 class="text--uppercase">
         Просмотренные товары
       </h3>
-      <div class="d-flex justify-content-between m-xl-b-24">
+      <div class="d-flex justify-content-between m-lg-b-20 m-xl-b-24">
         <div class="text--small-2 text--accent">
           26 277 товаров
         </div>
@@ -780,7 +1043,7 @@
       </div>
     </div>
   </section>
-  <section class="section section--contacts p-xl-t-80 p-xl-b-80">
+  <section class="section section--contacts p-lg-t-60 p-lg-b-60 p-xl-t-80 p-xl-b-80">
     <div class="container">
       <div class="contacts d-flex justify-content-between align-items-start">
         <h3 class="heading--line text--uppercase">
@@ -788,9 +1051,9 @@
         </h3>
         <div class="d-flex justify-content-between">
           <div class="contacts__item d-flex">
-              <svg class="icon icon--accent">
-                <use xlink:href="#map"></use>
-              </svg>
+            <svg class="icon icon--accent">
+              <use xlink:href="#map"></use>
+            </svg>
             <div class="contacts__item-content">
               <div>Телефон</div>
               <a class="link text--accent" href="tel:">+7 (499) 288-27-81</a>
@@ -818,10 +1081,10 @@
       </div>
     </div>
   </section>
-  <section class="section section--callback p-xl-t-80 p-xl-b-80">
+  <section class="section section--callback p-lg-t-60 p-lg-b-60 p-xl-t-80 p-xl-b-80">
     <div class="container">
       <div class="callback d-flex justify-content-between">
-        <div class="callback__title">
+        <div class="callback__title m-lg-b-32">
           <h2 class="text--gray-5 m-xl-b-20">
             У вас есть вопросы или необходима консультация?
           </h2>
@@ -837,7 +1100,8 @@
                 <input required name="an-email" type="text" class="input input--form input--email" placeholder="E-mail">
                 <input required name="an-phone" type="tel" class="input input--form" placeholder="Телефон">
               </div>
-              <textarea name="an-message" class="input input--textarea" cols="30" rows="10" placeholder="Текст сообщения"></textarea>
+              <textarea name="an-message" class="input input--textarea" cols="30" rows="10"
+                        placeholder="Текст сообщения"></textarea>
             </div>
             <div class="m-xl-t-32 d-flex justify-content-between align-items-center">
               <label class="d-flex align-items-center">
@@ -864,5 +1128,5 @@
 </footer>
 
 
-<script type="text/javascript" src="/assets/js/vendors.ee9a2f7563b9f54751fd.js"></script><script type="text/javascript" src="/assets/js/app.b1603658cafc551189dd.js"></script></body>
+<script type="text/javascript" src="/assets/js/vendors.ee9a2f7563b9f54751fd.js"></script><script type="text/javascript" src="/assets/js/app.47f3a24e02b593ab6792.js"></script></body>
 </html>

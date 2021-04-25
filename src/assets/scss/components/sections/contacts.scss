@@ -1,4 +1,9 @@
 .contacts{
+  h3{
+    @media (max-width: $smDesktopWidth) {
+      display: none;
+    }
+  }
   &__item{
     min-width: rem(281);
     &-content{
@@ -15,6 +20,10 @@
       font-size: rem(18);
       line-height: rem(24);
       letter-spacing: -0.0125em;
+    }
+    @media (max-width: $smDesktopWidth) {
+      width: calc(100%/3);
+      min-width: auto;
     }
   }
   &-single{

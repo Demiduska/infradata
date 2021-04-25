@@ -14,6 +14,13 @@
     display: flex;
     width: 34%;
     align-items: center;
+    @media (max-width: $smDesktopWidth) {
+      width: 70%;
+      justify-content: flex-end;
+    }
+    @media (max-width: $tableWidth) {
+      display: none;
+    }
 
     &-hours {
       margin-right: rem(16);
@@ -32,12 +39,14 @@
 
   &__search {
     width: 45%;
+    @media (max-width: $smDesktopWidth) {
+      display: none;
+    }
 
     &-form {
       position: relative;
       z-index: 101;
       display: flex;
-      min-width: rem(450);
       border: 1px solid #CFD2D7;
       background: $default-color;
       padding: rem(5) rem(14);
@@ -58,6 +67,7 @@
 
         .icon {
           display: block;
+          stroke: $accent;
           transition: transform .3s ease;
         }
 
@@ -80,6 +90,9 @@
   &__cart {
     width: 5%;
     position: relative;
+    @media (max-width: $smDesktopWidth) {
+      display: none;
+    }
 
     &-tooltip {
       padding: rem(12) rem(24);
@@ -108,6 +121,12 @@
         opacity: 1;
         visibility: visible;
       }
+    }
+  }
+
+  &__bottom{
+    @media (max-width: $smDesktopWidth) {
+      display: none;
     }
   }
 }

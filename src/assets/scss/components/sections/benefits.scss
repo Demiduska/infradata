@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   &__item{
-
+    width: calc(100%/4 - 96px/4);
     &-image{
       img{
         display: block;
