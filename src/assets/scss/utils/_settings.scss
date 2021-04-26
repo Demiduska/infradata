@@ -14,7 +14,7 @@ body {
   font-family: $mainFont;
   font-weight: $mainFontWeight;
   overflow-x: hidden;
-  @media (max-width: $tableWidth) {
+  @media (max-width: $smDesktopWidth) {
     padding-bottom: rem(66);
   }
 }
@@ -107,6 +107,10 @@ h3,.h3{
   @media (max-width: $smDesktopWidth) {
     font-size: rem(22);
     line-height: rem(28);
+  }
+  @media (max-width: $tableWidth) {
+    font-size: rem(20);
+    line-height: rem(24);
   }
 }
 h4,.h4{
@@ -376,4 +380,14 @@ footer{
 }
 .slick-dotted.slick-slider {
   margin-bottom: 0;
+}
+.loader{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

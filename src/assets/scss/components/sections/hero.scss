@@ -51,6 +51,11 @@
     }
     img{
       width: 100%;
+      @media (max-width: $tableWidth) {
+        height: 100%;
+        object-fit: cover;
+        max-height: rem(216);
+      }
     }
   }
   &__cards{

@@ -86,7 +86,9 @@
     }
   }
   .btn{
-    width: 100%;
-    margin-top: rem(36);
+    @media (max-width: $tableWidth) {
+      width: 100%;
+      margin-top: rem(36);
+    }
   }
 }

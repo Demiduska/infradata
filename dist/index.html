@@ -9,7 +9,7 @@
   <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
   <link rel="manifest" href="site.webmanifest">
   <title>Infradata</title>
-<link href="/assets/css/vendors.0b7f900da34910500860.css" rel="stylesheet"><link href="/assets/css/app.93c7640306f7f078f468.css" rel="stylesheet"></head>
+<link href="/assets/css/vendors.0b7f900da34910500860.css" rel="stylesheet"><link href="/assets/css/app.020ff665d1f3ad0b2ef6.css" rel="stylesheet"></head>
 <body data-svg-sprite-url="sprite.svg">
 <header class="header p-md-t-18 p-md-b-18 p-xl-b-16 p-xl-t-8 ">
   <div class="container">
@@ -680,11 +680,11 @@
                class="b-lazy">
         </div>
       </a>
-      <a class="link--show show-categories" href="#">
+      <a data-action="getCategories" class="link--show show-categories" href="javascript:;">
         Посмотреть категории
         <img src="assets/img/menu.svg" alt="">
       </a>
-      <a class="link--show show-vendors" href="#">
+      <a data-action="getVendors" class="link--show show-vendors" href="javascript:;">
         Посмотреть производителей
         <img src="assets/img/menu.svg" alt="">
       </a>
@@ -1334,7 +1334,56 @@
     ООО "Инфрадата" © 2019
   </div>
 </footer>
+<div class="popup" id="popup-result">
+  <div class="popup__content">
+    <div>
+      <h3>Категории</h3>
+      <div class="text--body m-xl-t-20">
+        Выберите производителя чтобы перейти к списку товаров в каталоге
+      </div>
+    </div>
+    <div class="popup__content-main">
+      <a class="popup__vendor-item" href="#">
+        <img src="assets/img/partners/cisco.svg" alt="">
+      </a>
+      <a class="popup__vendor-item" href="#">
+        <img src="assets/img/partners/hp.svg" alt="">
+      </a>
+      <a class="popup__vendor-item" href="#">
+        <img src="assets/img/partners/huawei.svg" alt="">
+      </a>
+      <a class="popup__vendor-item" href="#">
+        <img src="assets/img/partners/cisco.svg" alt="">
+      </a>
+      <a class="popup__vendor-item" href="#">
+        <img src="assets/img/partners/hp.svg" alt="">
+      </a>
+      <a class="popup__vendor-item" href="#">
+        <img src="assets/img/partners/huawei.svg" alt="">
+      </a>
+      <a class="popup__vendor-item" href="#">
+        <img src="assets/img/partners/cisco.svg" alt="">
+      </a>
+      <a class="popup__vendor-item" href="#">
+        <img src="assets/img/partners/hp.svg" alt="">
+      </a>
+    </div>
+  </div>
+  <div class="popup__bottom">
+    <a class="link text--accent" href="#">
+      Перейти к проектам
+      <svg class="icon">
+        <use xlink:href="#chevron-right"></use>
+      </svg>
+    </a>
+    <a class="link text--accent popup-close" href="javascript:;">
+      Закрыть
+      <svg class="icon icon--accent">
+        <use xlink:href="#close"></use>
+      </svg>
+    </a>
+  </div>
+</div>
 
-
-<script type="text/javascript" src="/assets/js/vendors.ee9a2f7563b9f54751fd.js"></script><script type="text/javascript" src="/assets/js/app.f3b896af9e3d3fb0a638.js"></script></body>
+<script type="text/javascript" src="/assets/js/vendors.ee9a2f7563b9f54751fd.js"></script><script type="text/javascript" src="/assets/js/app.6fe91a7b8ae8ad67468e.js"></script></body>
 </html>

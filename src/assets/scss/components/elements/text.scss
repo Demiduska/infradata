@@ -62,4 +62,10 @@
       color: $default-color;
     }
   }
+  &--body{
+    @media(max-width: $tableWidth){
+      font-size: rem(16);
+      line-height: rem(28);
+    }
+  }
 }
