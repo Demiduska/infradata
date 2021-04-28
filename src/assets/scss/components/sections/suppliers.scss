@@ -1,3 +1,13 @@
+.suppliers{
+  .card{
+    width: calc(100%/4 - 60px/4);
+    margin-right: rem(20);
+    &:nth-child(4n+4){
+      margin-right: 0;
+    }
+  }
+}
+
 .suppliers-slider{
   .card{
     width: 70vw;

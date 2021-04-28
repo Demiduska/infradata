@@ -1,4 +1,4 @@
-import 'jquery';
+window.$ = global.$ = global.jQuery = $;
 
 $(function () {
   $( ".menu__item-sub" ).hover(function(){

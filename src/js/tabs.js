@@ -1,4 +1,4 @@
-import 'jquery';
+window.$ = global.$ = global.jQuery = $;
 
 $(function () {
   $(".tabs__nav-link").on('click', function(e) {

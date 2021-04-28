@@ -366,6 +366,25 @@ footer{
     }
   }
   &--partners{
+    a{
+      width: calc(100%/8 - 560px/7);
+      margin-right: rem(80);
+      margin-bottom: rem(20);
+      &:nth-child(8n+8){
+        margin-right: 0;
+      }
+      &:nth-child(n+8){
+        margin-bottom: 0;
+      }
+      @media (max-width: $smDesktopWidth) {
+        width: calc(100%/8 - 280px/7);
+        margin-right: rem(40);
+      }
+      img{
+        margin: 0 auto;
+        display: block;
+      }
+    }
     @media (max-width: $tableWidth) {
       display: none;
     }

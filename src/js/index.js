@@ -1,8 +1,7 @@
 // Main js file
 // see more: https://github.com/vedees/webpack-template/blob/master/README.md#import-js-files
-// window.$ = global.$ = global.jQuery = $;
+window.$ = global.$ = global.jQuery = $;
 import Blazy from 'blazy';
-import 'jquery';
 import 'selectize';
 import 'jquery.nicescroll';
 import 'jquery-validation';
@@ -262,6 +261,10 @@ $(function () {
     e.preventDefault();
     $(this).parents('.popup').fadeOut();
   });
+
+  // Антиспам
+  $('.ajax_form').append('<input type="text" name="org" value="" class="_org" style="visibility:hidden; height: 0; width: 0; padding: 0; border:none;"/>')
+  // Антиспам х
 
 
 });
