@@ -11,11 +11,42 @@ import './menu';
 import './tabs';
 import Inputmask from "inputmask";
 
+const md = 768;
+const lg = 1024;
+
 $(function () {
   $(window).on('load resize', function () {
     const bLazy = new Blazy();
     console.log('resize');
+    setEmptyCards();
+    // console.log(document.body.clientWidth);
   });
+  const setEmptyCards = () => {
+    let colMd = $('.empty-cards').data('md');
+    let colLg = $('.empty-cards').data('lg');
+    let count = $('.empty-cards').data('count');
+    $('.empty-cards').find('.card--empty').remove();
+    let limitLg = (count + colLg) - (count % colLg);
+    let limitMd = (count + colMd) - (count % colMd);
+    let classes = $('.empty-cards').find('.card:first-child').attr('class');
+    if (document.body.clientWidth > lg) {
+      let i = count;
+      while (i < limitLg) {
+        $('.empty-cards').append('<div class="'+classes+' card--empty"></div>');
+        i++;
+      }
+    }
+    if ( document.body.clientWidth <= lg) {
+      let i = count;
+      while (i < limitMd) {
+        $('.empty-cards').append('<div class="'+classes+' card--empty"></div>');
+        i++;
+      }
+    }
+    if (document.body.clientWidth <= md) {
+
+    }
+  }
 
   icons_load();
   $(".views__slider").slick({
@@ -41,7 +72,7 @@ $(function () {
           slidesToShow: 1,
         }
       }
-      ]
+    ]
   });
   $(".product__images").slick({
     dots: true,
@@ -87,7 +118,6 @@ $(function () {
         breakpoint: 768,
         settings: {
           dots: true,
-
 
 
         }
@@ -142,15 +172,15 @@ $(function () {
 
   $(document).on('click', '.input--checkbox', function (e) {
     $(this).toggleClass('active');
-    if($(this).hasClass('active')){
+    if ($(this).hasClass('active')) {
       $('#checkbox').prop('checked', true);
       $(this).parents('form').find('button').prop('disabled', false);
-    } else{
+    } else {
       $('#checkbox').prop('checked', false);
       $(this).parents('form').find('button').prop('disabled', true);
     }
   });
-  $(".scrollTo").on('click', function(e) {
+  $(".scrollTo").on('click', function (e) {
     e.preventDefault();
     let target = $(this).attr('href');
     $('html, body').animate({
@@ -164,10 +194,10 @@ $(function () {
     let oldValue = button.parent().find('input').val();
     console.log(type);
     let newValue;
-    if (type === '+'){
+    if (type === '+') {
       newValue = parseInt(oldValue) + 1;
     } else {
-      if(oldValue > 0) {
+      if (oldValue > 0) {
         newValue = parseInt(oldValue) - 1;
       } else {
         newValue = 0;
@@ -211,11 +241,11 @@ $(function () {
       type: "POST",
       beforeSend: function (response) {
         $container.fadeIn();
-        $container.addClass("with-loader").append("<div class='loader loader--top'>"+loaderGetCode()+"</div>");
+        $container.addClass("with-loader").append("<div class='loader loader--top'>" + loaderGetCode() + "</div>");
       },
       success: function (response) {
         if (response) {
-          $container.find('.popup__content-main').empty().append(response);
+          $container.find('.popup__content').empty().append(response);
           $container.removeClass("with-loader");
           $container.find(".loader").remove();
           console.log(response);
@@ -228,7 +258,7 @@ $(function () {
     });
   })
 
-  $(document).on('click','.popup-close',function (e){
+  $(document).on('click', '.popup-close', function (e) {
     e.preventDefault();
     $(this).parents('.popup').fadeOut();
   });

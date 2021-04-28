@@ -9,7 +9,7 @@
   <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
   <link rel="manifest" href="site.webmanifest">
   <title>Infradata</title>
-<link href="/assets/css/vendors.0b7f900da34910500860.css" rel="stylesheet"><link href="/assets/css/app.020ff665d1f3ad0b2ef6.css" rel="stylesheet"></head>
+<link href="/assets/css/vendors.0b7f900da34910500860.css" rel="stylesheet"><link href="/assets/css/app.8bfe75ed10c3f89e3f44.css" rel="stylesheet"></head>
 <body data-svg-sprite-url="sprite.svg">
 <header class="header p-md-t-18 p-md-b-18 p-xl-b-16 p-xl-t-8 ">
   <div class="container">
@@ -555,7 +555,7 @@
           </svg>
         </a>
       </div>
-      <div class="catalog__cards m-lg-t-20 m-xl-t-24">
+      <div class="catalog__cards m-lg-t-20 m-xl-t-24 empty-cards" data-count="7" data-md="3" data-lg="4">
         <a href="#" class="card card--catalog">
           <h6 class="card__link text--uppercase">
             Коммутаторы
@@ -649,19 +649,7 @@
                  class="b-lazy">
           </div>
         </a>
-        <a href="#" class="card card--catalog">
-          <h6 class="card__link text--uppercase">
-            Серверы
-          </h6>
-          <div class="text--small-2 text--gray-4">
-            188 позиций
-          </div>
-          <div class="card--catalog__image">
-            <img data-src="assets/img/server.png"
-                 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="title-card"
-                 class="b-lazy">
-          </div>
-        </a>
+        <div class="card card--catalog card--empty"></div>
       </div>
     </div>
   </section>
@@ -1338,36 +1326,79 @@
   <div class="popup__content">
     <div>
       <h3>Категории</h3>
-      <div class="text--body m-xl-t-20">
+      <div class="text--body m-xl-t-20 m-xl-b-32">
         Выберите производителя чтобы перейти к списку товаров в каталоге
       </div>
     </div>
     <div class="popup__content-main">
-      <a class="popup__vendor-item" href="#">
-        <img src="assets/img/partners/cisco.svg" alt="">
+      <a class="popup__category-item" href="kommutatoryi">
+      <h6 class="popup__category-title">Коммутаторы</h6>
+      <div class="popup__category-info">
+        <div class="text--small-2 text--gray-4">
+          188 позиций
+        </div>
+        <div class="popup__category-image">
+          <img src="assets/img/switch.png" alt="Коммутаторы">
+        </div>
+      </div>
+    </a>
+      <a class="popup__category-item" href="istochniki-besperebojnogo-pitaniya">
+        <h6 class="popup__category-title">Источники бесперебойного питания</h6>
+        <div class="popup__category-info">
+          <div class="text--small-2 text--gray-4">
+            30 позиций
+          </div>
+        </div>
       </a>
-      <a class="popup__vendor-item" href="#">
-        <img src="assets/img/partners/hp.svg" alt="">
+      <a class="popup__category-item" href="routeryi">
+        <h6 class="popup__category-title">Маршрутизаторы</h6>
+        <div class="popup__category-info">
+          <div class="text--small-2 text--gray-4">
+            9 позиций
+          </div>
+          <div class="popup__category-image">
+            <img src="assets/img/marshrutisator.png" alt="Маршрутизаторы">
+          </div>
+        </div>
       </a>
-      <a class="popup__vendor-item" href="#">
-        <img src="assets/img/partners/huawei.svg" alt="">
+      <a class="popup__category-item" href="serveryi">
+        <h6 class="popup__category-title">Серверы</h6>
+        <div class="popup__category-info">
+          <div class="text--small-2 text--gray-4">
+            46 позиций
+          </div>
+          <div class="popup__category-image">
+            <img src="assets/img/shd.png" alt="Серверы">
+          </div>
+        </div>
       </a>
-      <a class="popup__vendor-item" href="#">
-        <img src="assets/img/partners/cisco.svg" alt="">
+      <a class="popup__category-item" href="transiveryi">
+        <h6 class="popup__category-title">Трансиверы</h6>
+        <div class="popup__category-info">
+          <div class="text--small-2 text--gray-4">
+            13 позиций
+          </div>
+        </div>
       </a>
-      <a class="popup__vendor-item" href="#">
-        <img src="assets/img/partners/hp.svg" alt="">
+      <a class="popup__category-item" href="bloki-pitaniya">
+        <h6 class="popup__category-title">Блоки питания</h6>
+        <div class="popup__category-info">
+          <div class="text--small-2 text--gray-4">
+            2 позиций
+          </div>
+        </div>
       </a>
-      <a class="popup__vendor-item" href="#">
-        <img src="assets/img/partners/huawei.svg" alt="">
-      </a>
-      <a class="popup__vendor-item" href="#">
-        <img src="assets/img/partners/cisco.svg" alt="">
-      </a>
-      <a class="popup__vendor-item" href="#">
-        <img src="assets/img/partners/hp.svg" alt="">
-      </a>
-    </div>
+      <a class="popup__category-item" href="sxd">
+        <h6 class="popup__category-title">СХД</h6>
+        <div class="popup__category-info">
+          <div class="text--small-2 text--gray-4">
+            1 позиций
+          </div>
+          <div class="popup__category-image">
+            <img src="assets/img/shd.png" alt="СХД">
+          </div>
+        </div>
+      </a></div>
   </div>
   <div class="popup__bottom">
     <a class="link text--accent" href="#">
@@ -1385,5 +1416,5 @@
   </div>
 </div>
 
-<script type="text/javascript" src="/assets/js/vendors.ee9a2f7563b9f54751fd.js"></script><script type="text/javascript" src="/assets/js/app.6fe91a7b8ae8ad67468e.js"></script></body>
+<script type="text/javascript" src="/assets/js/vendors.ee9a2f7563b9f54751fd.js"></script><script type="text/javascript" src="/assets/js/app.b7eb155a1ad823a83fa7.js"></script></body>
 </html>

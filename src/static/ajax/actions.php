@@ -1,4 +1,11 @@
 <?php
+
+define('MODX_API_MODE', true);
+require_once dirname(dirname(__FILE__)) . '/index.php'; //путь до index.php, который лежит в корне
+
+$modx->getService('error', 'error.modError');
+$modx->setLogLevel(modX::LOG_LEVEL_ERROR);
+$modx->setLogTarget('FILE');
 // Откликаться будет ТОЛЬКО на ajax запросы
 if (empty($_SERVER['HTTP_X_REQUESTED_WITH']) || $_SERVER['HTTP_X_REQUESTED_WITH'] != 'XMLHttpRequest') {return;}
 
@@ -10,7 +17,28 @@ if (empty($_POST['action'])) {return;}
 $res = '';
 switch ($_POST['action']) {
   case 'getCategories':
-    $res = 'Hello World!';
+    $res .= '<div>';
+    $res .= '<h3>Категории</h3>';
+    $res .= '<div class="text--body m-xl-t-20">Выберите категорию, чтобы перейти к списку товаров в каталоге.</div>';
+    $res .= '</div>';
+    $res .= '<div class="popup__content-main">';
+    $res .= '</div>';
+    break;
+  case 'getVendors':
+    $params = array();
+    $params['class'] = 'msVendor';
+    $params['sortby'] = 'name';
+    $params['sortdir'] = 'ASC';
+    $params['limit'] = 0;
+    $params['tpl'] = 'tpl.popup_vendor';
+    $items = $modx->runSnippet('pdoResources', $params);
+    $res .= '<div>';
+    $res .= '<h3>Производители</h3>';
+    $res .= '<div class="text--body m-xl-t-20">Выберите производителя, чтобы перейти к списку товаров в каталоге.</div>';
+    $res .= '</div>';
+    $res .= '<div class="popup__content-main">';
+    $res .= $items;
+    $res .= '</div>';
     break;
   // А вот сюда потом добавлять новые методы
 }

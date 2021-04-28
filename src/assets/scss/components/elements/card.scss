@@ -3,6 +3,9 @@
   background-color: $mainFontColor;
   padding: rem(17) rem(22);
   position: relative;
+  &--empty{
+    background: $gray-6;
+  }
   &__link{
     transition: all .3s ease;
     color: $default-color;
