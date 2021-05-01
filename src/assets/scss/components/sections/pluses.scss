@@ -3,9 +3,33 @@
 
   .card {
     margin-right: rem(20);
+    @media (max-width: $smDesktopWidth) {
+      margin-bottom: rem(16);
+      width: calc(50% - 8px);
+      margin-right: rem(16);
+    }
 
     &:nth-child(2n) {
       margin-right: 0;
+    }
+  }
+  &-wrap{
+    @media (max-width: $smDesktopWidth) {
+      flex-wrap: wrap;
+    }
+    h3{
+      @media (max-width: $smDesktopWidth) {
+        min-width: 100%;
+        max-width: 100%;
+        margin-bottom: rem(20);
+      }
+
+      br{
+        @media (max-width: $smDesktopWidth){
+          display: none;
+        }
+
+      }
     }
   }
 }

@@ -24,13 +24,19 @@
   }
 }
 .d{
+  &-none{
+    display: none;
+  }
     &-lg{
       &-block{
-        display: block;
+        @media (max-width: $smDesktopWidth) {
+          display: block;
+        }
       }
       &-none{
+        @media (max-width: $smDesktopWidth) {
           display: none;
-
+        }
       }
     }
   &-md{

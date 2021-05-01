@@ -51,54 +51,10 @@
       }
     }
   }
-  &-nav{
-    display: none;
-    position: fixed;
-    width: 100%;
-    overflow-y: scroll;
-    height: 100vh;
-    background: #f5f6f7;
-    z-index: 150;
-    top: 0;
-    padding-bottom: rem(66);
-    padding-top: rem(20);
-    &-wrap{
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
-      height: 100%;
-      flex-wrap: wrap;
-      position: relative;
-    }
-    &-list{
-      padding: 0;
-      width: 100%;
-      &__item{
-        display: flex;
-        justify-content: space-between;
-      }
-      &__link{
-        padding: rem(12) rem(16);
-        font-size: rem(17);
-        line-height: rem(24);
-        letter-spacing: -0.02em;
-        color: $mainFontColor;
-      }
-    }
-  }
   &-icon{
     &__button{
       padding: 0 rem(16) 0 0;
     }
-  }
-  &__back{
-    display: flex;
-    align-items: center;
-    font-size: rem(17);
-    line-height: rem(24);
-    padding: rem(18) rem(16);
-    letter-spacing: -0.02em;
-    background: $gray-4;
   }
 }
 .mobile-menu__button{
@@ -121,30 +77,6 @@
       }
     }
   }
-}
-.mobile-submenu{
-  display: none;
-  width: 100%;
-  padding: 0;
-  bottom: 0;
-  z-index: 100;
-  position: absolute;
-  transition: all .3s ease-in-out;
-  &.opened{
-
-  }
-  &__item{
-    display: flex;
-    justify-content: space-between;
-  }
-  &__link{
-    padding: rem(12) rem(16);
-    font-size: rem(17);
-    line-height: rem(24);
-    letter-spacing: -0.02em;
-    color: $mainFontColor;
-  }
-
 }
 .mobile-button-search{
   &.active{
@@ -194,4 +126,32 @@
     top: auto;
     bottom: 100%;
   }
+}
+.mm-ocd {
+  color: $mainFontColor;
+  --mm-spn-item-height: 48px;
+  --mm-ocd-width: 100%;
+  bottom: rem(66);
+  visibility: hidden;
+
+  &--open{
+    visibility: visible;
+  }
+  li{
+    a{
+      font-size: rem(17);
+      line-height: rem(24);
+      letter-spacing: -0.02em;
+      color: $mainFontColor;
+    }
+  }
+}
+.mm-spn.mm-spn--navbar:after{
+  opacity: 1;
+  font-size: rem(20);
+  line-height:rem(24);
+  letter-spacing: -0.01em;
+  color: $mainFontColor;
+  top: rem(12);
+  font-weight: bold;
 }

@@ -62,4 +62,39 @@
     left: 100%;
     top: 0;
   }
+  .menu{
+    &__item{
+      margin-right: 0;
+      &.active{
+        .menu__link{
+          background: #2f3338;
+          color: #fff;
+        }
+        .icon{
+          transform: rotate(-90deg);
+        }
+      }
+      .icon{
+        transform: rotate(-90deg);
+      }
+    }
+    &__link{
+      padding: .875rem .625rem;
+      color: #2f3338;
+      -webkit-transition: all .3s ease;
+      -o-transition: all .3s ease;
+      transition: all .3s ease;
+      font-size: 1.0625rem;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      &:hover{
+        background: #2f3338;
+        color: #fff;
+      }
+    }
+  }
 }

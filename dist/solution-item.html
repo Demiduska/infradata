@@ -9,13 +9,14 @@
   <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
   <link rel="manifest" href="site.webmanifest">
   <title>Infradata</title>
-<link href="/assets/css/vendors.0b7f900da34910500860.css" rel="stylesheet"><link href="/assets/css/app.f121dc9f8a1e7ea55175.css" rel="stylesheet"></head>
+<link href="/assets/css/vendors.4be646e7e9d1a2174f4f.css" rel="stylesheet"><link href="/assets/css/app.c075702fed9110238688.css" rel="stylesheet"></head>
 <body data-svg-sprite-url="sprite.svg">
-<header class="header p-xl-b-16 p-xl-t-8">
+<header class="header p-md-t-18 p-md-b-18 p-xl-b-16 p-xl-t-8 ">
   <div class="container">
     <div class="header__top">
       <a href="/" class="header__logo logo">
-        <img src="assets/img/logo.svg" alt="title">
+        <img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+             data-src="assets/img/logo.svg" alt="title">
       </a>
       <div class="header__contacts">
         <div class="header__contacts-hours">
@@ -54,7 +55,7 @@
                   Сбросить фильтр
                 </a>
               </div>
-              <select id="" class="advanced-search__filter">
+              <select class="advanced-search__filter">
                 <option value="0">Поиск по каталогу</option>
                 <option value="1">Категория 1</option>
                 <option value="2">Категория 2</option>
@@ -131,114 +132,1065 @@
     <div class="header__bottom">
       <nav class="menu-main header__menu-main m-xl-t-24">
         <ul class="header__menu menu">
-          <li class="menu__item menu__item-sub">
-            <a href="#" class="menu__link menu__link-arrow">
-              Решения
-              <svg class="icon">
-                <use xlink:href="#chevron-down"></use>
-              </svg>
-            </a>
-            <ul class="submenu">
-              <li class="submenu__item">
-                <a class="submenu__link" href="#" title="Управление и мониторинг ИТ инфраструктуры">
-                  Управление и мониторинг ИТ инфраструктуры
-                  <svg class="icon">
-                    <use xlink:href="#chevron-right"></use>
-                  </svg>
-                </a>
-                <ul class="submenu">
-                  <li class="submenu__item">
-                    <a class="submenu__link" href="#">
-                      Управление и мониторинг ИТ инфраструктуры
-
-                    </a>
+          <li class="menu__item menu__item-sub menu__item first"><a class="menu__link menu__link-arrow"
+                                                                    href="/resheniya">Решения
+            <svg class="icon">
+              <use xlink:href="#chevron-down"></use>
+            </svg>
+          </a>
+            <ul class="submenu " style="display: none;">
+              <li class="menu__item menu__item-sub menu__item first"><a class="menu__link menu__link-arrow"
+                                                                        href="/resheniya/vyichislitelnyie-kompleksyi">Вычислительные
+                комплексы
+                <svg class="icon">
+                  <use xlink:href="#chevron-down"></use>
+                </svg>
+              </a>
+                <ul class="submenu " style="display: none;">
+                  <li class="submenu__item"><a class="submenu__link"
+                                               href="/resheniya/vyichislitelnyie-kompleksyi/upravlenie-i-monitoring-it-infrastrukturyi">Управление
+                    и мониторинг ИТ инфраструктуры</a></li>
+                  <li class="submenu__item"><a class="submenu__link"
+                                               href="/resheniya/vyichislitelnyie-kompleksyi/sistemyi-xraneniya-dannyix">Системы
+                    хранения данных</a></li>
+                  <li class="submenu__item"><a class="submenu__link"
+                                               href="/resheniya/vyichislitelnyie-kompleksyi/sistemyi-rezervnogo-kopirovaniya">Системы
+                    резервного копирования</a></li>
+                  <li class="submenu__item"><a class="submenu__link"
+                                               href="/resheniya/vyichislitelnyie-kompleksyi/sistemyi-arxivirovaniya-informaczii">Системы
+                    архивирования информации</a></li>
+                </ul>
+              </li>
+              <li class="submenu__item"><a class="submenu__link" href="/resheniya/setevie-resheniya">Сетевые решения и
+                оборудование</a></li>
+              <li class="submenu__item"><a class="submenu__link" href="/resheniya/konferencz-sistemyi-i-vks">Конференц-системы
+                и ВКС</a></li>
+              <li class="submenu__item"><a class="submenu__link" href="/resheniya/situaczionnyie-czentryi">Ситуационные
+                центры</a></li>
+              <li class="submenu__item"><a class="submenu__link" href="/resheniya/sks-i-lvs">СКС и ЛВС</a></li>
+              <li class="submenu__item"><a class="submenu__link"
+                                           href="/resheniya/videonablyudenie-i-sistemyi-bezopasnosti">Видеонаблюдение и
+                системы безопасности</a></li>
+            </ul>
+          </li>
+          <li class="menu__item menu__item-sub menu__item"><a class="menu__link menu__link-arrow" href="/produktyi">Продукты
+            <svg class="icon">
+              <use xlink:href="#chevron-down"></use>
+            </svg>
+          </a>
+            <ul class="submenu ">
+              <li class="submenu__item"><a class="submenu__link" href="/produktyi/it-oborudovanie">ИТ оборудование и
+                расходные материалы</a></li>
+              <li class="submenu__item"><a class="submenu__link" href="/produktyi/kompleksnoe-obespechenie-tmcz">Комплексное
+                обеспечение ТМЦ</a></li>
+            </ul>
+          </li>
+          <li class="menu__item"><a class="menu__link" href="/kontaktyi">Контакты</a></li>
+          <li class="menu__item menu__item-sub menu__item last"><a class="menu__link menu__link-arrow" href="/magazin">Каталог
+            <svg class="icon">
+              <use xlink:href="#chevron-down"></use>
+            </svg>
+          </a>
+            <ul class="submenu ">
+              <li class="submenu__item"><a class="submenu__link" href="/linejno-interaktivnyij-ibp">Tripp Lite
+                линейно-интерактивный ИБП</a></li>
+              <li class="submenu__item"><a class="submenu__link"
+                                           href="/tripp-lite-sverxkompaktnyij-linejno-interaktivnyij-ibp">Tripp Lite
+                сверхкомпактный линейно-интерактивный ИБП</a></li>
+              <li class="submenu__item"><a class="submenu__link"
+                                           href="/tripp-lite-onlajn-ibp-s-dvojnyim-preobrazovaniem">Tripp Lite онлайн
+                ИБП с двойным преобразованием</a></li>
+              <li class="submenu__item"><a class="submenu__link"
+                                           href="/tripp-lite-linejno-interaktivnyij-ibp-serii-omnivs">Tripp Lite
+                линейно-интерактивный ИБП серии OmniVS</a></li>
+              <li class="submenu__item"><a class="submenu__link" href="/tripp-lite-linejno-interaktivnyij-ibp">Tripp
+                Lite линейно-интерактивный ИБП</a></li>
+              <li class="submenu__item"><a class="submenu__link" href="/tripp-lite-linejno-interaktivnyij-ibp-smartpro">Tripp
+                Lite линейно-интерактивный ИБП SmartPro</a></li>
+              <li class="submenu__item"><a class="submenu__link"
+                                           href="/tripp-lite-linejno-interaktivnyij-ibp-serii-avr">Tripp Lite
+                линейно-интерактивный ИБП серии AVR</a></li>
+              <li class="submenu__item"><a class="submenu__link" href="/tripp-lite-sverxkompaktnyij-ibp-serii-avr">Tripp
+                Lite сверхкомпактный ИБП серии AVR</a></li>
+              <li class="submenu__item"><a class="submenu__link" href="/tripp-lite-ibp-vertikalnogo-montazha">Tripp Lite
+                ИБП вертикального монтажа</a></li>
+              <li class="submenu__item"><a class="submenu__link"
+                                           href="/tripp-lite-linejno-interaktivnyij-ibp-s-8-rozetkami">Tripp Lite
+                линейно-интерактивный ИБП с 8 розетками</a></li>
+              <li class="submenu__item"><a class="submenu__link" href="/tripp-lite-onlajn-ibp-semejstva-smartonline">Tripp
+                Lite онлайн ИБП семейства SmartOnline</a></li>
+              <li class="submenu__item"><a class="submenu__link"
+                                           href="/tripp-lite-ibp-vertikalnogo-montazha-serii-smartpro">Tripp Lite ИБП
+                вертикального монтажа серии SmartPro</a></li>
+              <li class="submenu__item"><a class="submenu__link"
+                                           href="/tripp-lite-onlajn-ibp-ustanavlivaemyij-vertikalno">Tripp Lite онлайн
+                ИБП устанавливаемый вертикально</a></li>
+              <li class="submenu__item"><a class="submenu__link"
+                                           href="/tripp-lite-ibp-serii-omnivs-moshhnostyu-1000-va">Tripp Lite ИБП серии
+                OmniVS мощностью 1000 ВА</a></li>
+              <li class="submenu__item"><a class="submenu__link" href="/tripp-lite-ibp-mediczinskogo-naznacheniya">Tripp
+                Lite ИБП медицинского назначения</a></li>
+              <li class="submenu__item"><a class="submenu__link"
+                                           href="/tripp-lite-ibp-mediczinskogo-naznacheniya-omnismart">Tripp Lite ИБП
+                медицинского назначения OmniSmart</a></li>
+              <li class="submenu__item"><a class="submenu__link"
+                                           href="/tripp-lite-ibp-semejstva-smartpro-(230-v;-3-kva)">Tripp Lite ИБП
+                семейства SmartPro (230 В; 3 кВА)</a></li>
+              <li class="submenu__item"><a class="submenu__link" href="/tripp-lite-ibp-s-4-rozetkami-shuko">Tripp Lite
+                ИБП с 4 розетками Шуко</a></li>
+              <li class="submenu__item"><a class="submenu__link"
+                                           href="/tripp-lite-ibp-mediczinskogo-naznacheniya-s-6-rozetkami">Tripp Lite
+                ИБП медицинского назначения с 6 розетками</a></li>
+              <li class="submenu__item"><a class="submenu__link"
+                                           href="/tripp-lite-sverxkompaktnyij-ibp-serii-avr-(550-va)">Tripp Lite
+                сверхкомпактный ИБП серии AVR (550 ВА)</a></li>
+              <li class="submenu__item"><a class="submenu__link" href="/tripp-lite-ibp-semejstva-smartpro-(230-v)">Tripp
+                Lite ИБП семейства SmartPro (230 В)</a></li>
+              <li class="submenu__item"><a class="submenu__link"
+                                           href="/tripp-lite-linejno-interaktivnyij-ibp-(230-v;-750-va)">Tripp Lite
+                линейно-интерактивный ИБП (230 В; 750 ВА)</a></li>
+              <li class="submenu__item"><a class="submenu__link"
+                                           href="/tripp-lite-ibp-(230-v;-1-kva)-s-8-rozetkami-c13">Tripp Lite ИБП (230
+                В; 1 кВА) с 8 розетками C13</a></li>
+              <li class="submenu__item"><a class="submenu__link"
+                                           href="/tripp-lite-ibp-(230-v;-850-va)-s-4-rozetkami-shuko">Tripp Lite ИБП
+                (230 В; 850 ВА) с 4 розетками Шуко</a></li>
+              <li class="submenu__item"><a class="submenu__link" href="/tripp-lite-ibp-s-4-rozetkami-shuko-(cee-7/7)">Tripp
+                Lite ИБП с 4 розетками Шуко (CEE 7/7)</a></li>
+              <li class="submenu__item"><a class="submenu__link" href="/tripp-lite-ibp-smartpro-medical-grade">Tripp
+                Lite ИБП SmartPro Medical-Grade</a></li>
+              <li class="submenu__item"><a class="submenu__link" href="/tripp-lite-ibp-sverxkompaktnoj-konstrukczii">Tripp
+                Lite ИБП сверхкомпактной конструкции</a></li>
+              <li class="submenu__item"><a class="submenu__link"
+                                           href="/tripp-lite-linejno-interaktivnyij-ibp-(230-v;-850-va)">Tripp Lite
+                линейно-интерактивный ИБП (230 В; 850 ВА)</a></li>
+              <li class="menu__item menu__item-sub menu__item"><a class="menu__link menu__link-arrow"
+                                                                  href="/kommutatoryi">Коммутаторы
+                <svg class="icon">
+                  <use xlink:href="#chevron-down"></use>
+                </svg>
+              </a>
+                <ul class="submenu ">
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/kommutator-yadra-czod">H3C
+                    Коммутатор ядра ЦОД</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/h3c-kommutator-yadra-czod">H3C
+                    Коммутатор ядра ЦОД</a></li>
+                  <li class="submenu__item"><a class="submenu__link"
+                                               href="/kommutatoryi/h3c-kommutator-yadra-czod-s12516x-af">H3C Коммутатор
+                    ядра ЦОД</a></li>
+                  <li class="submenu__item"><a class="submenu__link"
+                                               href="/kommutatoryi/h3c-kommutator-dostupa-urovnya-czod">H3C коммутатор
+                    уровня доступа ЦОД</a></li>
+                  <li class="submenu__item"><a class="submenu__link"
+                                               href="/kommutatoryi/h3c-kommutator-urovnya-dostupa-czod">H3C Коммутатор
+                    уровня доступа ЦОД</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/s9850-4c">H3C коммутатор уровня
+                    доступа ЦОД</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/6850-56hf">H3C коммутатор
+                    уровня доступа ЦОД</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/6850-2c">H3C Коммутатор уровня
+                    доступа ЦОД</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/s6890-54hf">H3C коммутатор
+                    уровня доступа ЦОД</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/s6890-30hf">H3C коммутатор
+                    уровня доступа ЦОД</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/s6800-32q">H3C коммутатор
+                    уровня доступа ЦОД</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/s6800-54qf">H3C коммутатор
+                    уровня доступа ЦОД</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/s6800-54qt">H3C коммутатор
+                    уровня доступа ЦОД</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/s6800-54hf">H3C коммутатор
+                    уровня доступа ЦОД</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/s6800-54ht">H3C коммутатор
+                    уровня доступа ЦОД</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/s6800-2c">H3C коммутатор уровня
+                    доступа ЦОД</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/s6800-4c">H3C коммутатор уровня
+                    доступа ЦОД</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/6860-54hf">H3C коммутатор
+                    уровня доступа ЦОД</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/6860-54ht">H3C коммутатор
+                    уровня доступа ЦОД</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/s6300-42qf">H3C коммутатор
+                    уровня доступа ЦОД</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/s6300-42qt">H3C коммутатор
+                    уровня доступа ЦОД</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/s6300-52qf">H3C коммутатор
+                    уровня доступа ЦОД</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/s6300-48s">H3C коммутатор
+                    уровня доступа ЦОД</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/s10510x">H3C кампусный
+                    коммутатор</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/s10508x">H3C кампусный
+                    коммутатор</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/s10506x">H3C кампусный
+                    коммутатор</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/s7510x-poe">H3C кампусный
+                    коммутатор</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/s7506x-poe">H3C кампусный
+                    коммутатор</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/s7503x">H3C кампусный
+                    коммутатор</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/s7506e-np">H3C кампусный
+                    коммутатор</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/s7503e-m">H3C кампусный
+                    коммутатор</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/s6520x-30hc-hi">H3C кампусный
+                    коммутатор доступа</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/s6520x-54hc-hi">H3C кампусный
+                    коммутатор доступа</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/s6520x-30qc-hi">H3C кампусный
+                    коммутатор доступа</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/s6520x-54qc-hi">H3C кампусный
+                    коммутатор доступа</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/s6520x-30hc-ei">H3C кампусный
+                    коммутатор доступа</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/s6520x-30qc-ei">H3C кампусный
+                    коммутатор доступа</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/s6520x-54hc-ei">H3C кампусный
+                    коммутатор доступа</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/s6520x-54qc-ei">H3C кампусный
+                    коммутатор доступа</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/s6520x-18c-si">H3C кампусный
+                    коммутатор доступа</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/s6520x-26c-si">H3C кампусный
+                    коммутатор доступа</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/s6520x-26mc-si">H3C кампусный
+                    коммутатор доступа</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/s6520x-26mcupwr-si">H3C
+                    кампусный коммутатор доступа</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/s6520x-16st-si">H3C кампусный
+                    коммутатор доступа</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/s6520x-24st-si">H3C кампусный
+                    коммутатор доступа</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/s5560x-30c-ei">H3C кампусный
+                    коммутатор доступа</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/s5560x-54c-ei">H3C кампусный
+                    коммутатор доступа</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/s5560x-30f-ei">H3C кампусный
+                    коммутатор доступа</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/s5560x-54f-ei">H3C кампусный
+                    коммутатор доступа</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/s5560x-30cpwr-ei">H3C кампусный
+                    коммутатор доступа</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/s5560x-54cpwr-ei">H3C кампусный
+                    коммутатор доступа</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/s5560x-34s-e">H3C кампусный
+                    коммутатор доступа</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/s5560x-54s-ei">H3C кампусный
+                    коммутатор доступа</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/s5560s-28s-ei">H3C кампусный
+                    коммутатор доступа</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/s5560s-52s-ei">H3C кампусный
+                    коммутатор доступа</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/s5560s-28p-ei">H3C кампусный
+                    коммутатор доступа</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/s5560s-52p-ei">H3C кампусный
+                    коммутатор доступа</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/s5130s-28s-hi">H3C кампусный
+                    коммутатор доступа</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/s5130s-52s-hi">H3C кампусный
+                    коммутатор доступа</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/s5130s-28spwr-hi">H3C кампусный
+                    коммутатор доступа</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/s5130s-52spwr-hi">H3C кампусный
+                    коммутатор доступа</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/s5130s-10p-ei">H3C кампусный
+                    коммутатор доступа</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/s5130s-12tp-ei">H3C кампусный
+                    коммутатор доступа</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/s5130s-20p-ei">H3C кампусный
+                    коммутатор доступа</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/s5130s-28p-ei">H3C кампусный
+                    коммутатор доступа</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/s5130s-52p-ei">H3C кампусный
+                    коммутатор доступа</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/s5130s-28tp-ei">H3C кампусный
+                    коммутатор доступа</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/s5130s-52tp-ei">H3C кампусный
+                    коммутатор доступа</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/s5130s-28s-ei">H3C кампусный
+                    коммутатор доступа</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/s5130s-52s-ei">H3C кампусный
+                    коммутатор доступа</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/s5130s-28f-ei">H3C кампусный
+                    коммутатор доступа</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/s5130s-52f-ei">H3C кампусный
+                    коммутатор доступа</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/s5130s-10phpwr-ei">H3C
+                    кампусный коммутатор доступа</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/s5130s-12tphpwr-ei">H3C
+                    кампусный коммутатор доступа</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/s5130s-20ppwr-ei">H3C кампусный
+                    коммутатор доступа</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/s5130s-28ppwr-ei">H3C кампусный
+                    коммутатор доступа</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/s5130s-28phpwr-ei">H3C
+                    кампусный коммутатор доступа</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/s5130s-52ppwr-ei">H3C кампусный
+                    коммутатор доступа</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/s5130s-28spwr-ei">H3C кампусный
+                    коммутатор доступа</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/s5130s-28shpwr-ei">H3C
+                    кампусный коммутатор доступа</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/s5130s-52spwr-ei">H3C кампусный
+                    коммутатор доступа</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/s5130s-52mp-ei">H3C кампусный
+                    коммутатор доступа</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/s5130s-28mp-ei">H3C кампусный
+                    коммутатор доступа</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/s5130s-28mphpwr-ei">H3C
+                    кампусный коммутатор доступа</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/s3100v3-10tp-ei">H3C кампусный
+                    коммутатор доступа</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/s3100v3-18tp-ei">H3C кампусный
+                    коммутатор доступа</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/s3100v3-28tp-ei">H3C кампусный
+                    коммутатор доступа</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/s3100v3-52tp-ei">H3C кампусный
+                    коммутатор доступа</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/s3100v3-10tppwr-ei">H3C
+                    кампусный коммутатор доступа</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/s3100v3-20tppwr-ei">H3C
+                    кампусный коммутатор доступа</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/s3100v3-28tppwr-ei">H3C
+                    кампусный коммутатор доступа</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/x1008-aeiq-01">DELL Networking
+                    X1008 с веб-интерфейсом, 8 портов 1GbE, без PoE</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/x1008p-aeir-01">DELL Networking
+                    X1008P с веб-интерфейсом, 8 портов 1GbE, c PoE</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/x1018-aeik-01">DELL Networking
+                    X1018 с веб-интерфейсом, 16 портов 1GbE и 2 порта 1GbE SFP, без PoE</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/x1018p-aeil-01">DELL Networking
+                    X1018P с веб-интерфейсом, 16 портов 1GbE и 2 порта 1GbE SFP, без PoE</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/x1026-aeim-01">DELL Networking
+                    X1026 с веб-интерфейсом, 24 порта 1GbE и 2 порта 1GbE SFP без PoE</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/x1026p-aein-01">DELL Networking
+                    X1026P с веб-интерфейсом, 24 порта 1GbE и 2 порта 1GbE SFP с PoE</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/x1052-aeio-01">DELL Networking
+                    X1052 с веб-интерфейсом, 48 портов 1GbE и 4 порта 10GbE SFP+</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/x1052p-aeip-01">DELL Networking
+                    X1052P с веб-интерфейсом, 48 портов 1GbE и 4 порта 10GbE SFP+ c PoE</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/x4012-aeoq-01">DELL Networking
+                    X4012 с веб-интерфейсом, 12 портов 10GbE SFP+ без PoE</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/n1108t-on">DELL N1108T с
+                    веб-интерфейсом, 8 портов RJ45 1GbE, 2 порта SFP 1GbE, без PoE</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/n1108p-on">DELL N1108P с
+                    веб-интерфейсом, 8 портов RJ45 1GbE, 2 порта SFP 1GbE, c PoE</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/n1124t-on">DELL N1124T с
+                    веб-интерфейсом, 24 порта RJ45 1GbE, 4 порта SFP+ 10GbE, без PoE</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/n1124p-on">DELL N1124P с
+                    веб-интерфейсом, 24 порта RJ45 1GbE, 4 порта SFP+ 10GbE, 12 портов PoE</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/n1148t-on">DELL N1148T с
+                    веб-интерфейсом, 48 портов RJ45 1GbE, 4 порта SFP+ 10GbE, без PoE</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/n1148p-on">DELL N1148P с
+                    веб-интерфейсом, 48 портов RJ45 1GbE, 4 порта SFP+ 10GbE, 24 порта PoE</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/n1524-aevx-01">DELL N1524 с
+                    веб-интерфейсом, 24 порта RJ45 1GbE, 4 порта SFP+ 10GbE, без PoE</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/n1524p-aevy-01">DELL N1524P с
+                    веб-интерфейсом, 24 порта RJ45 1GbE, 4 порта SFP+ 10GbE, c PoE</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/n1548-aevz-01">DELL N1548 с
+                    веб-интерфейсом, 48 портов RJ45 1GbE, 4 порта SFP+ 10GbE, без PoE</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/n1548p-aewb-01">DELL N1548P с
+                    веб-интерфейсом, 48 портов RJ45 1GbE, 4 порта SFP+ 10GbE, PoE+</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/n2024-abnv-01">DELL N2024 с
+                    веб-интерфейсом, 24 порта RJ45 1GbE, 2 порта SFP+ 10GbE, без PoE</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/n2048-abnx-01">DELL N2048 с
+                    веб-интерфейсом, 48 портов RJ45 1GbE, 2 порта SFP+ 10GbE, без PoE</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/n2048p-abny-01">DELL N2048P с
+                    веб-интерфейсом, 48 портов RJ45 1GbE, 2 порта SFP+ 10GbE, PoE+</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/n4032f-abvt-01">DELL N4032F с
+                    веб-интерфейсом, 24 порта RJ45 1GbE, до 32 портов 10GbE, без PoE</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/s5720-28p-si-ac">Huawei
+                    коммутатор 24 порта 10/100/1000BASE-T, 4 порта 10/100/1000BASE-T+SFP</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/s5720-28x-si-dc">Huawei
+                    коммутатор 24 порта 10/100/1000BASE-T, 4 порта 10/100/1000BASE-T+SFP, 4*10GE SFP+, 1*150W DC</a>
                   </li>
-                  <li class="submenu__item">
-                    <a class="submenu__link" href="#">
-                      Управление и мониторинг ИТ инфраструктуры
-                    </a>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/s5720s-28p-si-ac">Huawei
+                    коммутатор 24 порта 10/100/1000BASE-T, 4 порта GE SFP AC</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/s5720s-28x-si-ac">Huawei
+                    коммутатор 24 порта 10/100/1000BASE-T, 4 порта 10GE SFP+ AC</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/s2720-28tp-pwr-ei">Huawei
+                    коммутатор 16 Ethernet-портов 10/100 Base-TX; 8 портов GE, 4 порта GE, POE, AC</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/s5720-52x-pwr-si">Huawei
+                    коммутатор 48 портов 10/100/1000BASE-T, 4 порта 10GE SFP+, PoE+, AC</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/s5720-52x-si">Huawei коммутатор
+                    48 портов 10/100/1000BASE-T, 4 порта 10GE SFP+, 1*AC</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/s5720-52p-si">Huawei коммутатор
+                    48 портов 10/100/1000BASE-T, 4 порта GE SFP, 1*AC</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/s5720s-52p-si-ac">Huawei
+                    коммутатор 48 портов 10/100/1000BASE-T, 4 порта GE SFP, AC</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/s5720-52p-li-ac">Huawei
+                    коммутатор 48 Ethernet-портов 10/100/1000 Base-T, 4 порта Gig SFP</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/jh407aabb">HPE 1405 5G v3
+                    коммутатор (5 портов 10/100/1000, неуправляемый)</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/jh408a">HPE 1405 8G v3
+                    коммутатор (8 портов 10/100/1000, неуправляемый)</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/jh327a">HPE 1420 5G коммутатор
+                    (5 портов 10/100/1000, неуправляемый)</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/jh329a">HPE 1420 8G коммутатор
+                    (8 портов 10/100/1000, неуправляемый)</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/jh328a">HPE 1420 5G PoE+ (32W)
+                    коммутатор (4 порта 10/100/1000 PoE+ + 1 порт 10/100/1000, неуправляемый)</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/jh016a">HPE 1420 16G коммутатор
+                    (16 портов 10/100/1000, неуправляемый, 19")</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/jh330a">HPE 1420 8G PoE+
+                    коммутатор (64W)</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/jh017a">HPE 1420 24G 2SFP
+                    коммутатор (24 порта 10/100/1000 + 2 SFP 100/1000, неуправляемый, 19")</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/jh018a">HPE 1420 24G 2SFP+
+                    коммутатор (24 порта 10/100/1000 + 2 SFP+ 1G/10G, неуправляемый, 19")</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/jg708b">HPE 1420 24G коммутатор
+                    (24 порта 10/100/1000, неуправляемый, 19')</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/j9979a">HPE 1820 8G коммутатор
+                    (8 портов 10/100/1000, веб-интерфейс)</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/j9984a">HPE 1820 48G PoE+
+                    коммутатор (24 порта 10/100/1000 + 24 порта 10/100/1000 PoE+ + 4 SFP, веб-интерфейс)</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/j9983a">HPE 1820 24G PoE+
+                    (185W) коммутатор (12 портов 10/100/1000 + 12 портов 10/100/1000 PoE+ + 2 SFP, веб-интерфейс)</a>
+                  </li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/j9981a">HPE 1820 48G коммутатор
+                    (48 портов 10/100/1000 + 4 SFP, веб-интерфейс)</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/j9982a">HPE 1820 8G PoE+ (65W)
+                    коммутатор (4 порта 10/100/1000 + 4 порта 10/100/1000 PoE+, веб-интерфейс)</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/j9980a">HPE 1820 24G коммутатор
+                    (24 порта 10/100/1000 + 2 SFP, веб-интерфейс)</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/jl380a">HPE 1920S 8G коммутатор
+                    (8x10/100/1000 RJ-45, веб-интерфейс, 19')</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/jl381a">HPE 1920S 24G 2SFP
+                    коммутатор (24x10/100/1000 RJ-45 + 2xSFP, веб-интерфейс, 19')</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/jl383a">HPE 1920S 8G PPoE+ 65W
+                    коммутатор (4x10/100/1000 RJ-45 PoE+ + 4x10/100/1000 RJ-45, веб-интерфейс, 19')</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/jl382a">HPE 1920S 48G 4SFP
+                    коммутатор (48x10/100/1000 RJ-45 + 4xSFP, веб-интерфейс, 19')</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/jl384a">HPE 1920S 24G 2SFP
+                    PPoE+ 185W коммутатор (12x10/100/1000 RJ-45 PoE+ + 12x10/100/1000 RJ-45 + 2xSFP, веб-интерфейс,
+                    19')</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/jl385a">HPE 1920S 24G 2SFP PoE+
+                    370W коммутатор (24x10/100/1000 RJ-45 PoE+ + 2xSFP, веб-интерфейс, 19')</a></li>
+                  <li class="submenu__item"><a class="submenu__link"
+                                               href="/kommutatoryi/hpe-1920s-24g-2sfp-poe-370w-kommutator-(24x10/100/1000-rj-45-poe-2xsfp,-veb-interfejs,-19)">HPE
+                    1920S 48G 4SFP PPoE+ 370W коммутатор (24x10/100/1000 RJ-45 PoE+ + 24x10/100/1000 RJ-45 + 4xSFP,
+                    веб-интерфейс, 19')</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/jg962a">HPE 1950 коммутатор
+                    (24x10/100/1000 RJ-45 PoE+ + 2x1G/10G RJ-45 + 2x1G/10G SFP+, веб-интерфейс, PoE 370W, 19")</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/jg960a">HPE 1950 коммутатор
+                    (24x10/100/1000 RJ-45 + 2x1G/10G RJ-45 + 2x1G/10G SFP+, веб-интерфейс, 19")</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/jg961a">HPE 1950 коммутатор
+                    (48x10/100/1000 RJ-45 + 2x1G/10G RJ-45 + 2x1G/10G SFP+, веб-интерфейс, 19")</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/jh295a">HPE 1950 коммутатор
+                    (12x1/10G RJ-45 + 4x1G/10G SFP+, веб-интерфейс, 19")</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/jg963a">HPE 1950 коммутатор
+                    (48x10/100/1000 RJ-45 PoE+ + 2x1G/10G RJ-45 + 2x1G/10G SFP+, веб-интерфейс, PoE 370W, 19")</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/jg932a">HPE 5130 коммутатор
+                    (24x10/100/1000 RJ-45 + 4x1/10G SFP+, 19')</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/jg936a">HPE 5130 коммутатор
+                    (24x10/100/1000 PoE+ RJ-45 + 4x1/10G SFP+, 370W, 19')</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/jg933a">HPE 5130 коммутатор
+                    (16x100/1000 SFP + 8x100/1000 SFP or RJ-45 + 4x1/10G SFP+, 19')</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/jg934a">HPE 5130 коммутатор
+                    (48x10/100/1000 RJ-45 + 4x1/10G SFP+, 19')</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/jg914a">HPE 1620 48G коммутатор
+                    (48x10/100/1000 RJ-45, 19'')</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/j9783a">Aruba 2530 8 коммутатор
+                    (8 x 10/100 + 2 x SFP or 10/100/1000, 19")</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/j9774a">Aruba 2530 8G PoE+
+                    коммутатор (8 x 10/100/1000 + 2 x SFP or 10/100/1000, PoE+ 67W, 19")</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/j9780a">Aruba 2530 8 PoE+
+                    коммутатор (8 x 10/100 + 2 x SFP or 10/100/1000, PoE+ 67W, 19")</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/j9782a">Aruba 2530 24
+                    коммутатор (24 x 10/100 + 2 x SFP + 2 x 10/100/1000, 19")</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/j9777a">Aruba 2530 8G
+                    коммутатор (8 x 10/100/1000 + 2 x SFP or 10/100/1000, 19")</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/j9774aa">Aruba 2530 8G PoE+
+                    коммутатор (8 x 10/100/1000 + 2 x SFP or 10/100/1000, PoE+ 67W, 19")</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/j9779a">Aruba 2530 24 PoE+
+                    коммутатор (24 x 10/100 + 2 x SFP + 2 x 10/100/1000, POE+ 195W, 19")</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/j9776a">Aruba 2530 24G
+                    коммутатор (24 x 10/100/1000 + 4 x SFP, L2, 19")</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/j9775a">Aruba 2530 48G
+                    коммутатор (48 x 10/100/1000 + 4 x SFP, L2, 19")</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/j9781a">Aruba 2530 48
+                    коммутатор (48 x 10/100 + 2 x SFP + 2 x 10/100/1000, L2, 19")</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/j9625a">Aruba 2620 24 PoE+
+                    коммутатор (24x10/100 PoE+, 2x10/100/1000, 2xSFP, L3, PoE 382W, 19')</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/j9775aabb">Aruba 2530 48G
+                    коммутатор (48 x 10/100/1000 + 4 x SFP, L2, 19")</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/j9773a">Aruba 2530 24G PoE+
+                    коммутатор (24 x 10/100/1000 + 4 x SFP, L2, PoE+ 195W, 19")</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/j9778a">Aruba 2530 48 PoE+
+                    коммутатор (48 x 10/100 + 2 x SFP + 2 x 10/100/1000, L2, POE+ 382W, 19")</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/j9772a">Aruba 2530 48G PoE+
+                    коммутатор (48 x 10/100/1000 + 4 x SFP, L2, POE+ 382W, 19")</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/jl356a">Aruba 2540 24G PoE+
+                    4SFP+ коммутатор (24x10/100/1000 PoE+ RJ-45 + 4x1/10G SFP+, L2, 19")</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/jl354a">Aruba 2540 24G 4SFP+
+                    коммутатор (24x10/100/1000 RJ-45 + 4x1/10G SFP+, L2, 19")</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/jl357a">Aruba 2540 48G PoE+
+                    4SFP+ коммутатор (48x10/100/1000 PoE+ RJ-45 + 4x1/10G SFP+, L2, 19")</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/jl355a">Aruba 2540 48G 4SFP+
+                    коммутатор (48x10/100/1000 RJ-45 + 4x1/10G SFP+, L2, 19")</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/jl259a">Aruba 2930F 24G 4SFP
+                    коммутатор (24x10/100/1000 RJ-45, 4xSFP, L3 lite, 19")</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/jl261a">Aruba 2930F 24G PoE+
+                    4SFP коммутатор (24x10/100/1000 RJ-45 PoE+, 4xSFP, L3 lite, PoE 370W, 19")</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/jl253a">Aruba 2930F 24G 4SFP+
+                    коммутатор (24x10/100/1000 RJ-45, 4x1/10G SFP+, L3 lite, 19")</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/jl260a">Aruba 2930F 48G 4SFP
+                    коммутатор (48x10/100/1000 RJ-45, 4xSFP, L3 lite, 19")</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/jl255a">Aruba 2930F 24G PoE+
+                    4SFP+ коммутатор (24x10/100/1000 RJ-45 PoE+, 4x1/10G SFP+, L3 lite, PoE 370W, 19")</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/jl254a">Aruba 2930F 48G 4SFP+
+                    коммутатор (48x10/100/1000 RJ-45, 4x1/10G SFP+, L3 lite, 19")</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/jl262a">Aruba 2930F 48G PoE+
+                    4SFP коммутатор (48x10/100/1000 RJ-45 PoE+, 4xSFP, L3 lite, PoE 370W, 19")</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/jl557a">Aruba 2930F 48GPoE+4SFP
+                    740W коммутатор</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/jl256a">Aruba 2930F 48G PoE+
+                    4SFP+ коммутатор (48x10/100/1000 RJ-45 PoE+, 4x1/10G SFP+, L3 lite, PoE 370W, 19")</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/jl558a">Aruba 2930F
+                    48GPoE+4SFP+740W коммутатор</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/jl319a">Aruba 2930M 24G
+                    коммутатор</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kommutatoryi/syuda-artikul">сюда артикул</a>
                   </li>
                 </ul>
               </li>
-              <li class="submenu__item">
-                <a class="submenu__link" href="#" title="Системы хранения данных">
-                  Системы хранения данных
-                  <svg class="icon">
-                    <use xlink:href="#chevron-right"></use>
-                  </svg>
-                </a>
-                <ul class="submenu">
-                  <li class="submenu__item">
-                    <a class="submenu__link" href="#">
-                      Управление и мониторинг ИТ инфраструктуры 1
-
-                    </a>
+              <li class="submenu__item"><a class="submenu__link" href="/tripp-lite-ibp-sverxkompaktnyij-s-4-rozetkami">Tripp
+                Lite ИБП сверхкомпактный с 4 розетками</a></li>
+              <li class="submenu__item"><a class="submenu__link" href="/tripp-lite-ibp-s-2-razemami-tipa-cee-7/7-shuko">Tripp
+                Lite ИБП с 2 разъемами типа CEE 7/7 Шуко</a></li>
+              <li class="menu__item menu__item-sub menu__item"><a class="menu__link menu__link-arrow" href="/routeryi">Маршрутизаторы
+                <svg class="icon">
+                  <use xlink:href="#chevron-down"></use>
+                </svg>
+              </a>
+                <ul class="submenu ">
+                  <li class="submenu__item"><a class="submenu__link" href="/routeryi/cr19000-8">H3C кластерный
+                    маршрутизатор</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/routeryi/cr19000-8-(b2b)">H3C кластерный
+                    маршрутизатор</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/routeryi/cr19000-20">H3C кластерный
+                    маршрутизатор</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/routeryi/cr19000-20-(b2b)">H3C кластерный
+                    маршрутизатор</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/routeryi/cr19000-(312)">H3C кластерный
+                    маршрутизатор</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/routeryi/cr16006-f">H3C маршрутизатор</a>
                   </li>
-                  <li class="submenu__item">
-                    <a class="submenu__link" href="#">
-                      Управление и мониторинг ИТ инфраструктуры 1
-                    </a>
+                  <li class="submenu__item"><a class="submenu__link" href="/routeryi/cr16010-f">H3C маршрутизатор</a>
+                  </li>
+                  <li class="submenu__item"><a class="submenu__link" href="/routeryi/cr16010hf">H3C маршрутизатор</a>
+                  </li>
+                  <li class="submenu__item"><a class="submenu__link" href="/routeryi/cr16018-f">H3C маршрутизатор</a>
                   </li>
                 </ul>
               </li>
-              <li class="submenu__item">
-                <a class="submenu__link" href="#" title="Системы резервного копирования">
-                  Системы резервного копирования
-                </a>
+              <li class="submenu__item"><a class="submenu__link" href="/istochniki-besperebojnogo-pitaniya">Источники
+                бесперебойного питания</a></li>
+              <li class="menu__item menu__item-sub menu__item"><a class="menu__link menu__link-arrow" href="/sks">СКС
+                <svg class="icon">
+                  <use xlink:href="#chevron-down"></use>
+                </svg>
+              </a>
+                <ul class="submenu ">
+                  <li class="submenu__item"><a class="submenu__link" href="/sks/datarex-kommutaczionnaya-panel-kat.5e">Datarex
+                    Коммутационная панель кат.5е</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/sks/dr-4021">Datarex коммутационная панель
+                    кат.5е</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/sks/dr-4003">Datarex коммутационная панель
+                    кат.6</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/sks/dr-4002">Datarex кабельный организатор
+                    задний для DR-4001</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/sks/dr-4071">Datarex коммутационная панель
+                    кат. 3</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/sks/dr-4401">Datarex Организатор кабельный
+                    19"</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/sks/dr-5102">Datarex розеточный модуль
+                    Keystone кат.5e</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/sks/dr-5103">Datarex розеточный модуль
+                    Keystone кат. 6</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/sks/dr-5301">Datarex адаптер Mosaic для
+                    модуля Keystone</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/sks/dr-5303">Datarex адаптер Mosaic 45х45 мм
+                    для модуля Keystone</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/sks/dr-5002">Datarex корпус розетки для
+                    модуля Keystone, 2 порта</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/sks/dr-5001">Datarex корпус розетки для
+                    модуля Keystone, 1 порт</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/sks/dr-180005">Datarex коммутационный шнур
+                    U/UTP категория 5e, 0,5м</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/sks/dr-180007">Datarex коммутационный шнур
+                    U/UTP категория 5e, 1,0м</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/sks/dr-180008">Datarex коммутационный шнур
+                    U/UTP категория 5e, 1,5м</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/sks/dr-180009">Datarex коммутационный шнур
+                    U/UTP категория 5e, 2м</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/sks/dr-180011">Datarex коммутационный шнур
+                    U/UTP категория 5e, 3 м</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/sks/dr-180015">Datarex коммутационный шнур
+                    U/UTP категория 5e, 5 м</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/sks/dr-180017">Datarex коммутационный шнур
+                    U/UTP категория 5e, 7 м</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/sks/dr-180020">Datarex коммутационный шнур
+                    U/UTP категория 5е, 10 м</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/sks/dr-181005">Datarex коммутационный шнур
+                    U/UTP кат. 5e LSZH, 0,5м</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/sks/dr-181007">Datarex коммутационный шнур
+                    U/UTP кат. 5e LSZH, 1 м</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/sks/dr-181008">Datarex коммутационный шнур
+                    U/UTP кат. 5e LSZH, 1,5м</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/sks/dr-181009">Datarex коммутационный шнур
+                    U/UTP кат. 5e LSZH, 2 м</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/sks/dr-181011">Datarex коммутационный шнур
+                    U/UTP кат. 5e LSZH, 3 м</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/sks/dr-181015">Datarex коммутационный шнур
+                    U/UTP кат. 5e LSZH, 5 м</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/sks/dr-181017">Datarex коммутационный шнур
+                    U/UTP кат. 5e LSZH, 7 м</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/sks/dr-181020">Datarex коммутационный шнур
+                    U/UTP кат. 5e LSZH, 10 м</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/sks/dr-181025">Datarex коммутационный шнур
+                    U/UTP кат. 5е LSZH, 15 м</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/sks/dr-181027">Datarex коммутационный шнур
+                    U/UTP кат. 5e LSZH, 20 м</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/sks/dr-201005">Datarex коммутационный шнур
+                    U/UTP кат. 6 LSZH 0,5 м</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/sks/dr-201010">Datarex коммутационный шнур
+                    U/UTP кат. 6 LSZH 1 м</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/sks/dr-201015">Datarex коммутационный шнур
+                    U/UTP кат. 6 LSZH 1,5 м</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/sks/dr-201020">Datarex коммутационный шнур
+                    U/UTP кат. 6 LSZH 2 м</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/sks/dr-201030">Datarex коммутационный шнур
+                    U/UTP кат. 6 LSZH 3 м</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/sks/dr-201050">Коммутационный шнур U/UTP
+                    кат. 6 LSZH 5 м</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/sks/dr-201070">Datarex коммутационный шнур
+                    U/UTP кат. 6 LSZH 7 м</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/sks/dr-201100">Коммутационный шнур U/UTP
+                    кат. 6 LSZH 10 м</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/sks/dr-140000">Datarex кабель кат. 5е, 2
+                    пары U/UTP, 24AWG, PVC</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/sks/dr-140006">Datarex кабель кат. 5е, 4
+                    пары U/UTP, 24AWG, PVC</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/sks/dr-140004">Datarex кабель кат. 5е, 4
+                    пары U/UTP, 24AWG, LSZH</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/sks/dr-140002">Datarex кабель кат. 5е, 4
+                    пары U/UTP, 24AWG, PE</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/sks/dr-140201">Datarex кабель кат. 5е, 4
+                    пары U/UTP, 24AWG, PE</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/sks/dr-140013">Datarex кабель кат. 5е, 4
+                    пары U/UTP, 24AWG, LSZH</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/sks/dr-140101">Datarex кабель 5е, 4 пары
+                    F/UTP, PVC нг(А)-LS, 305м</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/sks/dr-140102">Datarex кабель 5е, 4 пары
+                    F/UTP, LSZH нг(А)-HF, 305м</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/sks/dr-140103">Datarex кабель 5е, 4 пары
+                    F/UTP PE, 24AWG, 305 м</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/sks/dr-140017">Datarex кабель 5е, 4п U/UTP,
+                    PVCLS нг(А)-LSLTx, 305м</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/sks/dr-140027">Datarex кабель 5е,4 п U/UTP,
+                    PVCLS нг(А)-LSLTx, 305м</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/sks/dr-141011">Datarex кабель к.6,4п. U/UTP,
+                    PVCLS нг(А)-LSLTx, 500</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/sks/dr-141003">Datarex Кабель кат.6, 4 пары
+                    U/UTP, 23AWG, РЕ, 500м</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/sks/dr-141004">Datarex кабель к.6, 4п U/UTP,
+                    LSZH нг(А)-HF, 500м</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/sks/dr-143001">Datarex кабель к. 5е, 4 пары
+                    U/UTP, 24AWG, PVC, 305м</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/sks/dr-3001">Datarex колпачок пластиковый
+                    для шнуров, прозр,10 шт</a></li>
+                </ul>
               </li>
-              <li class="submenu__item">
-                <a class="submenu__link" href="#" title="Системы архивирования информации">
-                  Системы архивирования информации
-                </a>
+              <li class="menu__item menu__item-sub menu__item"><a class="menu__link menu__link-arrow" href="/serveryi">Серверы
+                <svg class="icon">
+                  <use xlink:href="#chevron-down"></use>
+                </svg>
+              </a>
+                <ul class="submenu ">
+                  <li class="submenu__item"><a class="submenu__link"
+                                               href="/serveryi/stoechnyij-server-fusion-server-huawei-2288h-v5-2u">Стоечный
+                    сервер Huawei 2288H V5 2U 512 GB 2.1 GHz</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/serveryi/hpe-ml350t09">Башенный сервер HPE
+                    ML350T09 16 GB 2.1 GHz</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/serveryi/ml350-gen10">Башенный сервер HPE
+                    ML350 Gen10 4U 8 GB 1.7 GHz</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/serveryi/hpe-ml350-gen10-16-gb">Башенный
+                    сервер HPE ML350 Gen10 4U 16 GB 1.7 GHz</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/serveryi/hpe-ml350-gen10">Башенный сервер
+                    HPE ML350 Gen10 4U 16 GB 2.1 GHz</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/serveryi/hpe-ml350-gen10-5u">Башенный сервер
+                    HPE ML350 Gen10 5U 32 GB 2.2 GHz</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/serveryi/hpe-ml350-gen10-32-gb">Башенный
+                    сервер HPE ML350 Gen10 4U 32 GB 2.3 GHz</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/serveryi/hpe-ml-110-gen10">Башенный сервер
+                    HPE ML 110 Gen10 U4,5 16GB 2.1 GHz</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/serveryi/hpe-ml110-gen10-8-gb">Башенный
+                    сервер HPE ML110 Gen10 4,5U 8 GB 1.7 GHz</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/serveryi/hpe-ml110-gen10-16gb-1.7-ghz">Башенный
+                    сервер HPE ML110 Gen10 4,5U 16GB 1.7 GHz</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/serveryi/hpe-ml110-gen10-16-gb-1.8-ghz">Башенный
+                    сервер HPE ML110 Gen10 4,5U 16 GB 1.8 GHz</a></li>
+                  <li class="submenu__item"><a class="submenu__link"
+                                               href="/serveryi/hpe-micro-gen10-umtower-8gb-1.6ghz">Башенный сервер HPE
+                    Micro Gen10 UMTower 8GB 1.6GHz</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/serveryi/hpe-micro-gen10-umtower-8g-1.6ghz">Башенный
+                    сервер HPE Micro Gen10 UMTower SATA ZM 8GB 1.6GHz</a></li>
+                  <li class="submenu__item"><a class="submenu__link"
+                                               href="/serveryi/hpe-micro-gen10-sata-zm-umtower-8gb-2.1-ghz">Башенный
+                    сервер HPE Micro Gen10 SATA ZM UMTower 8GB 2.1 GHz</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/serveryi/hpe-ml30-gen9-4u-8gb-3.0-ghz">Башенный
+                    сервер HPE ML30 Gen9 4U 8GB 3.0 GHz</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/serveryi/hpe-ml30-gen9-4u-16-gb-4-ghz">Башенный
+                    сервер HPE ML30 Gen9 4U 16 GB 4 GHz</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/serveryi/hpe-ml350-gen10-4u-16gb-2.1-ghz">Башенный
+                    сервер HPE ML350 Gen10 4U 16GB 2.1 GHz</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/serveryi/hpe-ml30-gen10-u4-8gb-3.3-ghz">Башенный
+                    сервер HPE ML30 Gen10 U4 8GB 3.3 GHz</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/serveryi/hpe-ml30-gen10-4u-16-gb-3.3-ghz">Башенный
+                    сервер HPE ML30 Gen10 4U 16 GB 3.3 GHz</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/serveryi/hpe-ml30-gen10-4u-16gb-3.5ghz">Башенный
+                    сервер HPE ML30 Gen10 4U 16GB 3.5GHz</a></li>
+                  <li class="submenu__item"><a class="submenu__link"
+                                               href="/serveryi/hpe-ml30-gen10-4u-16gb-3.5-ghz-nohdd-(8-sff-2.5-hp)">Башенный
+                    сервер HPE ML30 Gen10 4U 16GB 3.5 GHz noHDD (8 SFF 2.5" HP)</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/serveryi/hpe-ml110-gen10-4,5u-8gb-1.9ghz">Башенный
+                    сервер HPE ML110 Gen10 4,5U 8GB 1.9 GHz</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/serveryi/hpe-ml110-gen10-4.5u-16gb-1.9ghz">Башенный
+                    сервер HPE ML110 Gen10 4.5U 16GB 1.9GHz</a></li>
+                  <li class="submenu__item"><a class="submenu__link"
+                                               href="/serveryi/hpe-ml110-gen10-4,5u-16-gb-2.2-ghz">Башенный сервер HPE
+                    ML110 Gen10 4,5U 16 GB 2.2 GHz</a></li>
+                  <li class="submenu__item"><a class="submenu__link"
+                                               href="/serveryi/hpe-proliant-ml350-gen10-8gb-1.9ghz">Башенный сервер HPE
+                    ProLiant ML350 Gen10 8GB 1.9GHz</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/serveryi/p11049-421">Башенный сервер HPE
+                    ProLiant ML350 Gen10 16GB 1.9GHz</a></li>
+                  <li class="submenu__item"><a class="submenu__link"
+                                               href="/serveryi/hpe-proliant-ml350-gen10-16-gb-2.1-ghz">Башенный сервер
+                    HPE ProLiant ML350 Gen10 8-core 16 GB 2.1 GHz</a></li>
+                  <li class="submenu__item"><a class="submenu__link"
+                                               href="/serveryi/hpe-proliant-ml350-gen10-10-core-16gb-2.2ghz">Башенный
+                    сервер HPE ProLiant ML350 Gen10 10-core 16GB 2.2GHz</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/serveryi/hpe-proliant-ml350-gen10">Башенный
+                    сервер HPE ProLiant ML350 Gen10 12-core 32GB 2.2GHz</a></li>
+                  <li class="submenu__item"><a class="submenu__link"
+                                               href="/serveryi/hpe-proliant-ml350-gen1016-core-1p-32gb-2.3ghz">Башенный
+                    сервер HPE ProLiant ML350 Gen10 16-core 1P 32GB 2.3GHz</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/serveryi/803860-b21">Стоечный сервер HPE
+                    DL380 Gen9 2U 8-core 21GB 2.6GHz</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/serveryi/818209-b21">Стоечный сервер HPE
+                    DL360 Gen9 1U 12-core 32GB 2.2GHz</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/serveryi/819784-001">Стоечный сервер HPE
+                    DL20 Gen9 1U 4-core 16 GB 3 GHz</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/serveryi/826564-b21">Стоечный сервер HPE
+                    DL380 Gen10 2U 8-core 16 GB 1.7 GHz</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/serveryi/826565-b21">Стоечный сервер HPE
+                    DL380 Gen10 2U 10-core 32 GB 2.2 GHz</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/serveryi/artikul-826566-b21">Стоечный сервер
+                    HPE DL380 Gen10 2U 12-core 64 GB 2.3 GHz</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/serveryi/826682-b21">Стоечный сервер HPE
+                    DL380 Gen9 2U 8-core 16 GB 2.1 GHz</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/serveryi/835264-421">Стоечный сервер HPE
+                    ML350R09 5U 10-core 32 GB 2.2 GHz</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/serveryi/867959-001">Стоечный сервер HPE
+                    DL360 Gen10 1U 10-core 16 GB 2.2 GHz</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/serveryi/867961-b21">Стоечный сервер HPE
+                    DL360 Gen10 1U 8-core 16 GB 1.7 GHz</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/serveryi/867962-b21">Стоечный сервер HPE
+                    DL360 Gen10 1U 10-core 16 GB 2.2 GHz</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/serveryi/867963-b21">Стоечный сервер HPE
+                    DL360 Gen10 1U 12-core 32 GB 2.3 GHz</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/serveryi/867964-b21">Стоечный сервер HPE
+                    DL360 Gen10 1U 16-core 64 GB 2.1 GHz</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/serveryi/868709-b21">Стоечный сервер HPE
+                    DL380 Gen10 2U 8-core 16 GB 1.7 GHz</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/serveryi/868710-b21">Стоечный сервер HPE
+                    DL380 Gen10 2U 8-core 32 GB 2.1 GHz</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/serveryi/869845-b21">Стоечный сервер HPE
+                    DL580 Gen10 4U 26-core 256 GB 2 GHz</a></li>
+                </ul>
+              </li>
+              <li class="menu__item menu__item-sub menu__item"><a class="menu__link menu__link-arrow"
+                                                                  href="/transiveryi">Трансиверы
+                <svg class="icon">
+                  <use xlink:href="#chevron-down"></use>
+                </svg>
+              </a>
+                <ul class="submenu ">
+                  <li class="submenu__item"><a class="submenu__link" href="/transiveryi/2315203">Huawei оптический
+                    трансивер, eSFP, FE, BIDI Single-mode Module (TX1310/RX1550, 15km, LC)</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/transiveryi/2315202">Huawei оптический
+                    трансивер, eSFP, FE, BIDI Single-mode Module(TX1550/RX1310, 15km, LC)</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/transiveryi/2317348">Huawei оптический
+                    трансивер, eSFP,GE,Single-mode Module(1550nm,80km,LC)</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/transiveryi/2315204">Huawei оптический
+                    трансивер, eSFP, GE, Multi-mode Module (850nm, 0.55km, LC)</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/transiveryi/2315200">Huawei оптический
+                    трансивер, eSFP, GE, Single-mode Module (1310nm,10km, LC)</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/transiveryi/2318169">Huawei оптический
+                    трансивер, SFP+,10G, Multi-mode Module (850nm, 0.3km, LC)</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/transiveryi/2318170">Huawei оптический
+                    трансивер, SFP+, 10G, Single-mode Module (1310nm, 10km, LC)</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/transiveryi/2314171">Huawei трансивер, SFP,
+                    GE, Electrical Interface Module (100m, RJ45)</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/transiveryi/jd092b">HPE трансивер X130 10G
+                    SFP+ LC SR</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/transiveryi/j4858c">HPE X121 трансивер 1G
+                    SFP LC SX</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/transiveryi/jd089b">HPE X120 трансивер 1G
+                    SFP RJ45 T</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/transiveryi/jd118b">HPE X120 трансивер 1G
+                    SFP LC SX</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/transiveryi/jd119b">HPE X120 трансивер 1G
+                    SFP LC LX</a></li>
+                </ul>
+              </li>
+              <li class="menu__item menu__item-sub menu__item"><a class="menu__link menu__link-arrow"
+                                                                  href="/bloki-pitaniya">Блоки питания
+                <svg class="icon">
+                  <use xlink:href="#chevron-down"></use>
+                </svg>
+              </a>
+                <ul class="submenu ">
+                  <li class="submenu__item"><a class="submenu__link" href="/bloki-pitaniya/02310jfa">Huawei блок питания
+                    AC 150W (черный)</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/bloki-pitaniya/02311bxv">Huawei блок питания
+                    500W AC PoE (PAC-500WA-BE)</a></li>
+                </ul>
+              </li>
+              <li class="menu__item menu__item-sub menu__item"><a class="menu__link menu__link-arrow" href="/kabel">Кабель
+                <svg class="icon">
+                  <use xlink:href="#chevron-down"></use>
+                </svg>
+              </a>
+                <ul class="submenu ">
+                  <li class="submenu__item"><a class="submenu__link" href="/kabel/sfp-10g-cu1m">Huawei кабель SFP+,10G,
+                    1m, SFP+20M, CC2P0.254B(S), SFP+20M</a></li>
+                  <li class="submenu__item"><a class="submenu__link" href="/kabel/sfp-10g-cu3m">Huawei кабель SFP+,10G,
+                    3m, SFP+20M, CC2P0.254B(S), SFP+20M</a></li>
+                </ul>
+              </li>
+              <li class="menu__item menu__item-sub menu__item last"><a class="menu__link menu__link-arrow" href="/sxd">СХД
+                <svg class="icon">
+                  <use xlink:href="#chevron-down"></use>
+                </svg>
+              </a>
+                <ul class="submenu ">
+                  <li class="submenu__item"><a class="submenu__link" href="/sxd/me4024">DELL POWERVAULT ME4024</a></li>
+                </ul>
               </li>
             </ul>
-          </li>
-          <li class="menu__item menu__item-sub">
-            <a href="#" class="menu__link menu__link-arrow">
-              Продукты
-              <svg class="icon">
-                <use xlink:href="#chevron-down"></use>
-              </svg>
-            </a>
-            <ul class="submenu">
-              <li class="submenu__item">
-                <a class="submenu__link" href="#" title="Управление и мониторинг ИТ инфраструктуры">
-                  Управление и мониторинг ИТ инфраструктуры
-                </a>
-              </li>
-              <li class="submenu__item">
-                <a class="submenu__link" href="#" title="Системы хранения данных">
-                  Системы хранения данных
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="#">
-              Контакты
-            </a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="#">
-              О компании
-            </a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="#">
-              Каталог
-            </a>
           </li>
         </ul>
       </nav>
     </div>
   </div>
+  <div class="mobile-menu">
+    <div class="mobile-menu__list">
+      <a href="#mobile-menu-nav" class="mobile-menu__list-item mobile-menu__button">
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+        </div>
+        <div class="mobile-menu__list-item-title">
+          Меню
+        </div>
+      </a>
+      <a href="tel:" class="mobile-menu__list-item">
+        <svg class="icon icon--white">
+          <use xlink:href="#phone"></use>
+        </svg>
+        <div class="mobile-menu__list-item-title">
+          Позвонить
+        </div>
+      </a>
+      <button class="mobile-menu__list-item mobile-button-search">
+        <div class="mobile-button-search__icons">
+          <svg class="icon icon--white">
+            <use xlink:href="#search"></use>
+          </svg>
+          <svg class="icon icon--white">
+            <use xlink:href="#close"></use>
+          </svg>
+        </div>
+
+        <div class="mobile-menu__list-item-title">
+          Поиск
+        </div>
+      </button>
+      <a href="mailto:" class="mobile-menu__list-item">
+        <svg class="icon icon--white">
+          <use xlink:href="#mail"></use>
+        </svg>
+        <div class="mobile-menu__list-item-title">
+          Написать
+        </div>
+      </a>
+      <a href="#" class="mobile-menu__list-item">
+        <svg class="icon icon--white">
+          <use xlink:href="#cart"></use>
+        </svg>
+        <div class="mobile-menu__list-item-title">
+          Корзина
+        </div>
+        <div class="cart__digit">
+          10
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <nav class="" id="mobile-menu-nav">
+    <ul>
+      <li><a href="#">Решения</a>
+        <ul>
+          <li><a href="#">Решение 1</a>
+            <ul>
+              <li><a href="">Подрешение 1</a></li>
+              <li><a href="">Подрешение 2</a></li>
+              <li><a href="">Подрешение 3</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Решение 2</a>
+            <ul>
+              <li><a href="">Подрешение 4</a></li>
+              <li><a href="">Подрешение 5</a></li>
+              <li><a href="">Подрешение 6</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Решение 3</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Продуткы </a>
+        <ul>
+          <li><a href="#">Продукт 1</a></li>
+          <li><a href="#">Продукт 2</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Контакты</a></li>
+      <li><a href="#">О компании</a></li>
+      <li><a href="#">Каталог</a></li>
+    </ul>
+  </nav>
+
+  <div class="mobile-search">
+    <form class="header__search-form">
+      <label class="label header__search-form-label" for="header__input-search">
+        <a class="header__search-form-filter" href="#">
+          <svg class="icon icon--filter">
+            <use xlink:href="#filter"></use>
+          </svg>
+          <svg class="icon">
+            <use xlink:href="#close"></use>
+          </svg>
+        </a>
+        <input class="input input-search header__search-form-input" placeholder="Поиск по каталогу" type="text"
+               id="header__input-search-mobile">
+      </label>
+      <button disabled class="btn-search" id="header__search-button-mobile">
+        <svg class="icon icon--search">
+          <use xlink:href="#search"></use>
+        </svg>
+      </button>
+      <div class="advanced-search header__search-form-advanced">
+        <div class="advanced-search__block">
+          <div class="advanced-search__block-head d-flex justify-content-between align-items-center">
+            <div class="advanced-search__block-title">
+              Категория
+            </div>
+            <a href="#" class="advanced-search__block-reset">
+              Сбросить фильтр
+            </a>
+          </div>
+          <select class="advanced-search__filter">
+            <option value="0">Поиск по каталогу</option>
+            <option value="1">Категория 1</option>
+            <option value="2">Категория 2</option>
+            <option value="3">Категория 3</option>
+            <option value="4">Категория 4</option>
+            <option value="5">Категория 5</option>
+            <option value="6">Категория 6</option>
+            <option value="7">Категория 7</option>
+            <option value="8">Категория 8</option>
+            <option value="9">Категория 9</option>
+            <option value="10">Категория 10</option>
+          </select>
+        </div>
+        <div class="advanced-search__block">
+          <div class="advanced-search__block-head">
+            <div class="advanced-search__block-title">
+              Категория
+            </div>
+          </div>
+          <select class="advanced-search__filter">
+            <option value="0">Поиск по каталогу</option>
+            <option value="1">Категория 1</option>
+            <option value="2">Категория 2</option>
+            <option value="3">Категория 3</option>
+            <option value="4">Категория 4</option>
+            <option value="5">Категория 5</option>
+            <option value="6">Категория 6</option>
+            <option value="7">Категория 7</option>
+            <option value="8">Категория 8</option>
+            <option value="9">Категория 9</option>
+            <option value="10">Категория 10</option>
+          </select>
+        </div>
+        <div class="advanced-search__bottom">
+          <div class="advanced-search__bottom-checkboxes">
+            <div class="checkbox-block">
+              <input type="checkbox" class="checkbox" id="promo-1">
+              <label class="checkbox-label" for="promo-1">Акции</label>
+            </div>
+            <div class="checkbox-block">
+              <input type="checkbox" class="checkbox" id="new-1">
+              <label class="checkbox-label" for="new-1">Новинки</label>
+            </div>
+            <div class="checkbox-block">
+              <input type="checkbox" class="checkbox" id="hits-1">
+              <label class="checkbox-label" for="hits-1">Хиты</label>
+            </div>
+          </div>
+          <button disabled class="btn--red d-flex align-items-center advanced-search-button">
+            Найти
+            <svg class="icon">
+              <use xlink:href="#chevron-right"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
 </header>
+<section class="section d-none d-lg-block">
+  <div class="container">
+    <ul class="breadcrumb">
+      <li class="breadcrumb__item">
+        <a class="breadcrumb__link" href="/">
+          Главная
+        </a>
+      </li>
+      <li class="breadcrumb__item">
+        <a class="breadcrumb__link" href="#">
+          Каталог
+        </a>
+      </li>
+      <li class="breadcrumb__item active">
+        Tripp Lite линейно-интерактивный ИБП
+      </li>
+    </ul>
+  </div>
+</section>
 <main>
-  <section class="section section--second-hero p-xl-t-120 p-xl-b-60">
+  <section class="section section--second-hero p-md-b-60 p-md-t-60 p-lg-b-88 p-lg-t-88 p-xl-t-120 p-xl-b-60">
     <div class="container">
       <div class="second-hero second-hero--with-image">
         <div class="second-hero__content">
-          <h1 class="heading--line m-xl-b-32">
+          <h1 class="heading--line m-lg-b-28 m-xl-b-32">
             Вычислительные комплексы
           </h1>
           <p>
@@ -257,10 +1209,33 @@
         </div>
       </div>
     </div>
-  </section>
-  <section class="section section--pluses p-xl-t-80 p-xl-b-80 background--gray-6">
     <div class="container">
-      <div class="d-flex align-items-start">
+      <div class="popup__links m-lg-t-60">
+        <a class="link--more" data-action="getBenefits" data-title="Преимущества работы" href="javascript:;">
+          Преимущества
+          <svg class="icon">
+            <use xlink:href="#arrow-right"></use>
+          </svg>
+        </a>
+        <a class="link--more" data-action="getClients" data-title="Клиенты" href="javascript:;">
+          Направления работы
+          <svg class="icon">
+            <use xlink:href="#arrow-right"></use>
+          </svg>
+        </a>
+        <a class="link--more" data-action="getClients" data-title="Процесс Работы" href="javascript:;">
+          Процесс работы
+          <svg class="icon">
+            <use xlink:href="#arrow-right"></use>
+          </svg>
+        </a>
+
+      </div>
+    </div>
+  </section>
+  <section class="section section--pluses d-md-none d-lg-block p-lg-b-60 p-lg-t-60 p-xl-t-80 p-xl-b-80 background--gray-6">
+    <div class="container">
+      <div class="d-flex align-items-start pluses-wrap">
         <h3 class="heading--with-right heading--line text--uppercase">
           Польза <br> от внедрения
         </h3>
@@ -294,14 +1269,14 @@
       </div>
     </div>
   </section>
-  <section class="section section--who p-xl-t-120 p-xl-b-120">
+  <section class="section section--who d-md-none d-lg-block p-lg-t-88 p-lg-b-88 p-xl-t-120 p-xl-b-120">
     <div class="container">
-      <div class="d-flex align-items-start">
-        <h3 class="heading--with-right heading--line text--uppercase">
-          Клиенты
+      <div class="d-flex align-items-start who-wrap">
+        <h3 class="heading--with-right heading--line text--uppercase m-lg-b-24">
+          Для кого
         </h3>
         <div class="w-100">
-          <div class="d-flex flex-wrap justify-content-between m-xl-b-96">
+          <div class="d-flex flex-wrap justify-content-between m-lg-b-36 m-lg-t-24 m-xl-b-96">
             <div class="card card--who">
               <div class="card--who__image">
                 <img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
@@ -321,8 +1296,8 @@
               </h4>
             </div>
           </div>
-          <div class="">
-            <h3 class="m-xl-b-24">
+          <div class="p-lg-t-36">
+            <h3 class="m-lg-b-20 m-xl-b-24">
               Отрасли
             </h3>
             <ul class="who__list list list--square d-flex justify-content-between flex-wrap">
@@ -339,9 +1314,9 @@
       </div>
     </div>
   </section>
-  <section class="section section--cta background--main">
+  <section class="section section--cta background--main d-md-none d-lg-block p-lg-b-48 p-lg-t-48 p-xl-t-60 p-xl-b-60">
     <div class="container">
-      <div class="cta p-xl-t-60 p-xl-b-60 d-flex justify-content-between align-items-center">
+      <div class="cta d-flex justify-content-between align-items-center">
         <div class="cta__title text--white">
           У вас есть вопросы или необходима консультация?
         </div>
@@ -356,21 +1331,21 @@
       </div>
     </div>
   </section>
-  <section class="section section--process p-xl-t-120 p-xl-b-120">
+  <section class="section section--process d-md-none d-lg-block p-lg-t-88 p-lg-b-88 p-xl-t-120 p-xl-b-120">
     <div class="container">
-      <div class="d-flex align-items-start">
-        <h3 class="heading--with-right text--uppercase heading--line">
+      <div class="d-flex align-items-start process-wrap">
+        <h3 class="heading--with-right text--uppercase heading--line m-lg-b-20">
           Процесс работы
         </h3>
         <div>
-          <div class="text--boxed m-xl-b-60">
+          <div class="text--boxed m-lg-b-48 m-xl-b-60">
             Наши компетенции позволяют закрыть все потребности заказчика в любой области информатизации его предприятия,
             тем самым сократить материальные и трудовые затраты и обеспечить
             <a href="#">
               масштабируемость и гибкость реализуемых решений.
             </a>
           </div>
-          <h3 class="m-xl-b-24">
+          <h3 class="m-lg-b-20 m-xl-b-24">
             Ключевые шаги
           </h3>
           <div class="process d-flex flex-wrap">
@@ -411,10 +1386,10 @@
       </div>
     </div>
   </section>
-  <section class="section section--competence p-xl-t-80 p-xl-b-60 background--gray-6">
+  <section class="section section--competence d-md-none d-lg-block p-lg-t-60 p-xl-t-80 p-xl-b-60 background--gray-6">
     <div class="container">
-      <div class="d-flex align-items-start">
-        <h3 class="heading--with-right text--uppercase heading--line">
+      <div class="d-flex align-items-start competence-wrap">
+        <h3 class="heading--with-right text--uppercase heading--line m-lg-b-20">
           Наши <br> компетенции
         </h3>
         <div class="competence d-flex flex-wrap w-100">
@@ -492,31 +1467,20 @@
       </div>
     </div>
   </section>
-  <section class="section section--about p-xl-t-120 p-xl-b-120">
+  <section class="section section--about d-md-none d-lg-block p-md-t-60 p-md-b-60 p-lg-t-88 p-lg-b-88 p-xl-t-120 p-xl-b-120">
     <div class="container">
       <div class="about">
         <h3 class="heading--line text--uppercase">
           Компания
         </h3>
         <div class="text--boxed">
-          <p>
-            ИНФРАДАТА – профессионал в области интеграции IT решений и надежный поставщик серверного, сетевого
-            оборудования и ТМЦ для среднего и крупного бизнеса, государственных предприятий и учреждений. Наши
-            компетенции
-            позволяют закрыть все потребности заказчика в любой области информатизации его предприятия, тем самым
-            сократить материальные и трудовые затраты и обеспечить масштабируемость и гибкость реализуемых решений.
-          </p>
-          <br>
-          <p>
-            ИНФРАДАТА – профессионал в области интеграции IT решений и надежный поставщик серверного, сетевого
-            оборудования и ТМЦ для среднего и крупного бизнеса, государственных предприятий и учреждений. Наши
-            компетенции
-            позволяют закрыть все потребности заказчика в любой области информатизации его предприятия, тем самым
-            сократить материальные и трудовые затраты и обеспечить масштабируемость и гибкость реализуемых решений.
-          </p>
+          ИНФРАДАТА – профессионал в области интеграции IT решений и надежный поставщик серверного, сетевого
+          оборудования и ТМЦ для среднего и крупного бизнеса, государственных предприятий и учреждений. Наши компетенции
+          позволяют закрыть все потребности заказчика в любой области информатизации его предприятия, тем самым
+          сократить материальные и трудовые затраты и обеспечить масштабируемость и гибкость реализуемых решений.
         </div>
       </div>
-      <div class="benefits m-xl-t-60">
+      <div class="benefits m-md-t-0 m-lg-t-48 m-xl-t-60">
         <div class="benefits__item">
           <div class="benefits__item-image">
             <img class="b-lazy"
@@ -560,13 +1524,13 @@
       </div>
     </div>
   </section>
-  <section class="section section--contacts p-xl-t-80 p-xl-b-80">
+  <section class="section section--contacts p-mb-t-36 p-mb-b-36 p-lg-t-60 p-lg-b-60 p-xl-t-80 p-xl-b-80">
     <div class="container">
       <div class="contacts d-flex justify-content-between align-items-start">
         <h3 class="heading--line text--uppercase">
           Контакты
         </h3>
-        <div class="d-flex justify-content-between">
+        <div class="d-flex contacts justify-content-between">
           <div class="contacts__item d-flex">
             <svg class="icon icon--accent">
               <use xlink:href="#map"></use>
@@ -598,10 +1562,10 @@
       </div>
     </div>
   </section>
-  <section class="section section--callback p-xl-t-80 p-xl-b-80" id="callback">
+  <section class="section section--callback p-mb-t-36 p-mb-b-36 p-lg-t-60 p-lg-b-60 p-xl-t-80 p-xl-b-80">
     <div class="container">
       <div class="callback d-flex justify-content-between">
-        <div class="callback__title">
+        <div class="callback__title m-lg-b-32">
           <h2 class="text--gray-5 m-xl-b-20">
             У вас есть вопросы или необходима консультация?
           </h2>
@@ -611,7 +1575,7 @@
         </div>
         <div class="callback__form">
           <form class="form" action="#">
-            <div class="d-flex">
+            <div class="d-flex flex-wrap">
               <div class="callback__form-inputs">
                 <input required name="an-name" type="text" class="input input--form" placeholder="Имя">
                 <input required name="an-email" type="text" class="input input--form input--email" placeholder="E-mail">
@@ -620,7 +1584,7 @@
               <textarea name="an-message" class="input input--textarea" cols="30" rows="10"
                         placeholder="Текст сообщения"></textarea>
             </div>
-            <div class="m-xl-t-32 d-flex justify-content-between align-items-center">
+            <div class="m-md-t-0 m-xl-t-32 d-flex justify-content-between align-items-center flex-wrap">
               <label class="d-flex align-items-center">
                 <input class="input--checkbox" type="checkbox">
                 <img src="assets/img/check.svg" alt="">
@@ -643,7 +1607,302 @@
     ООО "Инфрадата" © 2019
   </div>
 </footer>
-
-
-<script type="text/javascript" src="/assets/js/vendors.8bd62ceaf3ca0bf50528.js"></script><script type="text/javascript" src="/assets/js/app.64e65830507992e9750b.js"></script></body>
+<div class="popup" id="popup-result">
+  <div class="popup__content">
+    <div>
+      <h3>Категории</h3>
+      <div class="text--body m-xl-t-20 m-xl-b-32">
+        Выберите производителя чтобы перейти к списку товаров в каталоге
+      </div>
+    </div>
+    <div class="popup__content-main">
+      <a class="popup__category-item" href="kommutatoryi">
+        <h6 class="popup__category-title">Коммутаторы</h6>
+        <div class="popup__category-info">
+          <div class="text--small-2 text--gray-4">
+            188 позиций
+          </div>
+          <div class="popup__category-image">
+            <img src="assets/img/switch.png" alt="Коммутаторы">
+          </div>
+        </div>
+      </a>
+      <a class="popup__category-item" href="istochniki-besperebojnogo-pitaniya">
+        <h6 class="popup__category-title">Источники бесперебойного питания</h6>
+        <div class="popup__category-info">
+          <div class="text--small-2 text--gray-4">
+            30 позиций
+          </div>
+        </div>
+      </a>
+      <a class="popup__category-item" href="routeryi">
+        <h6 class="popup__category-title">Маршрутизаторы</h6>
+        <div class="popup__category-info">
+          <div class="text--small-2 text--gray-4">
+            9 позиций
+          </div>
+          <div class="popup__category-image">
+            <img src="assets/img/marshrutisator.png" alt="Маршрутизаторы">
+          </div>
+        </div>
+      </a>
+      <a class="popup__category-item" href="serveryi">
+        <h6 class="popup__category-title">Серверы</h6>
+        <div class="popup__category-info">
+          <div class="text--small-2 text--gray-4">
+            46 позиций
+          </div>
+          <div class="popup__category-image">
+            <img src="assets/img/shd.png" alt="Серверы">
+          </div>
+        </div>
+      </a>
+      <a class="popup__category-item" href="transiveryi">
+        <h6 class="popup__category-title">Трансиверы</h6>
+        <div class="popup__category-info">
+          <div class="text--small-2 text--gray-4">
+            13 позиций
+          </div>
+        </div>
+      </a>
+      <a class="popup__category-item" href="bloki-pitaniya">
+        <h6 class="popup__category-title">Блоки питания</h6>
+        <div class="popup__category-info">
+          <div class="text--small-2 text--gray-4">
+            2 позиций
+          </div>
+        </div>
+      </a>
+      <a class="popup__category-item" href="sxd">
+        <h6 class="popup__category-title">СХД</h6>
+        <div class="popup__category-info">
+          <div class="text--small-2 text--gray-4">
+            1 позиций
+          </div>
+          <div class="popup__category-image">
+            <img src="assets/img/shd.png" alt="СХД">
+          </div>
+        </div>
+      </a></div>
+  </div>
+  <div class="popup__bottom">
+    <a class="link text--accent" href="#">
+      Перейти к проектам
+      <svg class="icon">
+        <use xlink:href="#chevron-right"></use>
+      </svg>
+    </a>
+    <a class="link text--accent popup-close" href="javascript:;">
+      Закрыть
+      <svg class="icon icon--accent">
+        <use xlink:href="#close"></use>
+      </svg>
+    </a>
+  </div>
+</div>
+<div class="popup" id="popup-result-more-1">
+  <div class="popup__content">
+    <div>
+      <h3 class="heading--line m-xl-b-24">Название раздела</h3>
+    </div>
+    <div class="popup__content-main">
+      <div class="card card--pluses m-xl-b-20 popup__benefits"
+           style="background-image: url('assets/img/plus-1.svg')"
+      >
+        <h5 class="card--pluses__title text--uppercase text--white">
+          автоматизация бизнес-процессов
+        </h5>
+      </div>
+      <div class="card card--pluses m-xl-b-20 popup__benefits"
+           style="background-image: url('assets/img/plus-1.svg')"
+      >
+        <h5 class="card--pluses__title text--uppercase text--white">
+          автоматизация бизнес-процессов
+        </h5>
+      </div>
+      <div class="card card--pluses m-xl-b-20 popup__benefits"
+           style="background-image: url('assets/img/plus-1.svg')"
+      >
+        <h5 class="card--pluses__title text--uppercase text--white">
+          автоматизация бизнес-процессов
+        </h5>
+      </div>
+      <div class="card card--pluses m-xl-b-20 popup__benefits"
+           style="background-image: url('assets/img/plus-1.svg')"
+      >
+        <h5 class="card--pluses__title text--uppercase text--white">
+          автоматизация бизнес-процессов
+        </h5>
+      </div>
+    </div>
+  </div>
+  <div class="popup__bottom">
+    <a class="link text--accent popup-close" href="javascript:;">
+      Закрыть
+      <svg class="icon icon--accent">
+        <use xlink:href="#close"></use>
+      </svg>
+    </a>
+  </div>
+</div>
+<div class="popup" id="popup-result-more-2">
+  <div class="popup__content">
+    <div>
+      <h3 class="heading--line m-xl-b-24">Клиенты</h3>
+    </div>
+    <div class="popup__content-main">
+      <div class="w-100">
+        <div class="card card--who popup__who">
+          <div class="card--who__image">
+            <img src="assets/img/government.svg" alt="">
+          </div>
+          <h4>
+            Государственный сектор
+          </h4>
+        </div>
+        <div class="card card--who popup__who">
+          <div class="card--who__image">
+            <img src="assets/img/buisness.svg" alt="">
+          </div>
+          <h4>
+            Коммерческие организации
+          </h4>
+        </div>
+      </div>
+      <div class="w-100">
+        <h3 class="m-xl-b-20 m-xl-t-27">
+          Отрасли
+        </h3>
+        <ul class="list list--square w-100 popup__list">
+          <li class="list__item">Промышленные предприятия</li>
+          <li class="list__item">Финансовые организации</li>
+          <li class="list__item">Судостроительные заводы</li>
+          <li class="list__item">Ритейл</li>
+          <li class="list__item">Учебные учреждения</li>
+          <li class="list__item">Гостиницы</li>
+          <li class="list__item">Медицинские учреждения</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="popup__bottom">
+    <a class="link text--accent popup-close" href="javascript:;">
+      Закрыть
+      <svg class="icon icon--accent">
+        <use xlink:href="#close"></use>
+      </svg>
+    </a>
+  </div>
+</div>
+<div class="popup" id="popup-result-more-3">
+  <div class="popup__content">
+    <div>
+      <h3 class="heading--line m-xl-b-24">Наши компетенции</h3>
+    </div>
+    <div class="popup__content-main">
+      <div class="card card--competence popup__competence">
+        <h4 class="text--white card--competence__title">
+          Проведение обследований IT-инфраструктуры;
+        </h4>
+        <div class="card--competence__image">
+          <img src="assets/img/wheel.svg" alt="">
+        </div>
+      </div>
+      <div class="card card--competence popup__competence">
+        <h4 class="text--white card--competence__title">
+          Проведение обследований IT-инфраструктуры;
+        </h4>
+        <div class="card--competence__image">
+          <img src="assets/img/wheel.svg" alt="">
+        </div>
+      </div>
+      <div class="card card--competence popup__competence">
+        <h4 class="text--white card--competence__title">
+          Проведение обследований IT-инфраструктуры;
+        </h4>
+        <div class="card--competence__image">
+          <img src="assets/img/wheel.svg" alt="">
+        </div>
+      </div>
+      <div class="card card--competence popup__competence">
+        <h4 class="text--white card--competence__title">
+          Проведение обследований IT-инфраструктуры;
+        </h4>
+        <div class="card--competence__image">
+          <img src="assets/img/wheel.svg" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="popup__bottom">
+    <a class="link text--accent popup-close" href="javascript:;">
+      Закрыть
+      <svg class="icon icon--accent">
+        <use xlink:href="#close"></use>
+      </svg>
+    </a>
+  </div>
+</div>
+<div class="popup" id="popup-result-more">
+  <div class="popup__content">
+    <div>
+      <h3 class="heading--line m-xl-b-24">Процесс Работы</h3>
+    </div>
+    <div class="popup__content-main">
+      <div class="text--body">
+        Наши компетенции позволяют закрыть все потребности заказчика в любой области информатизации его предприятия,
+        тем самым сократить материальные и трудовые затраты и обеспечить
+        <a href="#">
+          масштабируемость и гибкость реализуемых решений.
+        </a>
+      </div>
+      <div>
+        <h3 class="m-xl-t-32 m-xl-b-20">
+          Ключевые шаги
+        </h3>
+        <div class="card card--process popup__process">
+          <div class="card--process__digit">
+            01
+          </div>
+          <h5 class="text--uppercase">
+            Формирование и согласование спецификации
+          </h5>
+        </div>
+        <div class="card card--process popup__process">
+          <div class="card--process__digit">
+            02
+          </div>
+          <h5 class="text--uppercase">
+            Подписание договора
+          </h5>
+        </div>
+        <div class="card card--process popup__process">
+          <div class="card--process__digit">
+            03
+          </div>
+          <h5 class="text--uppercase">
+            Реализация проекта или отгрузка оборудования
+          </h5>
+        </div>
+        <div class="card card--process popup__process">
+          <div class="card--process__digit">
+            04
+          </div>
+          <h5 class="text--uppercase">
+            Сервисное обслуживание и техническая поддержка
+          </h5>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="popup__bottom">
+    <a class="link text--accent popup-close" href="javascript:;">
+      Закрыть
+      <svg class="icon icon--accent">
+        <use xlink:href="#close"></use>
+      </svg>
+    </a>
+  </div>
+</div>
+<script type="text/javascript" src="/assets/js/vendors.9c46b697585bd7976b84.js"></script><script type="text/javascript" src="/assets/js/app.ab99083e0bffb4c12b3c.js"></script></body>
 </html>

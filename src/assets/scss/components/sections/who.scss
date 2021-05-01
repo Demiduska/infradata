@@ -3,6 +3,28 @@
     li{
       min-width: rem(315);
       max-width: rem(315);
+      @media (max-width: $smDesktopWidth) {
+        width: 50%;
+        min-width: auto;
+        max-width: 50%;
+      }
+    }
+  }
+  &-wrap{
+    @media (max-width: $smDesktopWidth) {
+      flex-wrap: wrap;
+    }
+    h3{
+      @media (max-width: $smDesktopWidth){
+        min-width: 100%;
+        max-width: 100%;
+      }
+
+    }
+    .card{
+      @media (max-width: $smDesktopWidth) {
+        width: 50%;
+      }
     }
   }
 }

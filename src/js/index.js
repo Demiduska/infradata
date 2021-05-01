@@ -230,9 +230,42 @@ $(function () {
 
   $(document).on('click', '.link--show', function (e) {
     let action = $(this).data('action');
+    let title = $(this).data('title');
     let $container = $('#popup-result');
     let data = {
-      action: action
+      action: action,
+      title: title
+    }
+    $.ajax({
+      url: 'ajax/actions.php',
+      data: data,
+      type: "POST",
+      beforeSend: function (response) {
+        $container.fadeIn();
+        $container.addClass("with-loader").append("<div class='loader loader--top'>" + loaderGetCode() + "</div>");
+      },
+      success: function (response) {
+        if (response) {
+          $container.find('.popup__content').empty().append(response);
+          $container.removeClass("with-loader");
+          $container.find(".loader").remove();
+          console.log(response);
+        }
+      },
+      error: function (jqXHR) {
+        $container.find(".loader").remove();
+        console.log('error');
+      }
+    });
+  })
+
+  $(document).on('click', '.link--more', function (e) {
+    let action = $(this).data('action');
+    let title = $(this).data('title');
+    let $container = $('#popup-result-more');
+    let data = {
+      action: action,
+      title: title
     }
     $.ajax({
       url: 'ajax/actions.php',

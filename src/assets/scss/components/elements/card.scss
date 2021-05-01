@@ -195,6 +195,9 @@
     padding: rem(24) rem(24) rem(28) rem(24);
     margin-bottom: rem(20);
     align-items: center;
+    @media (max-width: $smDesktopWidth) {
+      padding: rem(22) rem(20) rem(26) rem(20);
+    }
     &__digit{
       font-weight: bold;
       font-size: rem(40);
@@ -202,6 +205,11 @@
       letter-spacing: -0.0125em;
       color: $accent;
       margin-right: rem(24);
+      @media (max-width: $smDesktopWidth) {
+        font-size: rem(36);
+        line-height: rem(36);
+        margin-right: rem(16);
+      }
     }
   }
   &--competence{
@@ -209,6 +217,10 @@
     justify-content: space-between;
     min-height: rem(140);
     margin-bottom: rem(20);
+    @media (max-width: $smDesktopWidth) {
+      min-height: rem(128);
+      padding: rem(20) rem(16);
+    }
     &__title{
       max-width: rem(300);
     }

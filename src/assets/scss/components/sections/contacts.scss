@@ -1,4 +1,7 @@
 .contacts{
+  @media (max-width: $smDesktopWidth) {
+    width: 100%;
+  }
   @media (max-width: $tableWidth) {
     flex-wrap: wrap;
   }

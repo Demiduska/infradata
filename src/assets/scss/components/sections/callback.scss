@@ -91,4 +91,11 @@
       margin-top: rem(36);
     }
   }
+  span.error{
+    margin-top: rem(-15);
+    margin-bottom: rem(10);
+  }
+  input.error{
+    border: 1px solid $accent;
+  }
 }

@@ -5,8 +5,20 @@
   }
   &__content{
     max-width: rem(711);
+    @media (max-width: $smDesktopWidth) {
+      max-width: 70%;
+    }
+    @media (max-width: $tableWidth) {
+      max-width: 100%;
+    }
   }
   &__image{
-
+    @media (max-width:$smDesktopWidth) {
+      position: absolute;
+      right: -10%;
+    }
+    @media (max-width:$tableWidth) {
+      top: 100%;
+    }
   }
 }

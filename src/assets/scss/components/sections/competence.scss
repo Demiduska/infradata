@@ -1,8 +1,17 @@
 .competence{
-
+  &-wrap{
+    @media (max-width: $smDesktopWidth) {
+      flex-wrap: wrap;
+    }
+  }
   .card{
     width: calc(100%/2 - 10px);
     margin-right: rem(20);
+    @media (max-width: $smDesktopWidth) {
+      width: calc(100%/2 - 8px);
+      margin-right: rem(16);
+      margin-bottom: rem(16);
+    }
     &:nth-child(even){
       margin-right: 0;
     }

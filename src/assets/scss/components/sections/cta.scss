@@ -1,20 +1,38 @@
-.cta{
+.section--cta{
   position: relative;
   background-position: bottom -29px right 0;
   background-image: url("/assets/img/cta.svg");
   background-repeat: no-repeat;
+}
+.cta{
+    @media (max-width: $smDesktopWidth) {
+      flex-wrap: wrap;
+    }
   &__title{
     max-width: rem(344);
     font-weight: bold;
     font-size: rem(28);
     line-height: rem(36);
     letter-spacing: -0.02em;
+    @media (max-width: $smDesktopWidth) {
+      max-width: 70%;
+      width: 100%;
+      font-size: rem(24);
+      line-height: rem(32);
+      letter-spacing: -0.0175em;
+      margin-bottom: rem(12);
+    }
   }
   &__subtitle{
     font-size: rem(20);
     line-height: rem(28);
     letter-spacing: -0.02em;
     max-width: rem(266);
+    @media (max-width: $smDesktopWidth){
+      max-width: 70%;
+      font-size: rem(16);
+      line-height: rem(24);
+    }
   }
   &__btn{
     margin-right: rem(68);

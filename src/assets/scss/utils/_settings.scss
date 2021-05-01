@@ -94,9 +94,13 @@ h2,.h2{
   font-size: rem(28);
   line-height: rem(36);
   letter-spacing: -0.0175em;
-  @media (max-width: $tableWidth) {
+  @media (max-width: $smDesktopWidth) {
     font-size: rem(24);
     line-height: rem(32);
+  }
+  @media (max-width: $tableWidth) {
+    font-size: rem(22);
+    line-height: rem(28);
   }
 }
 h3,.h3{
@@ -194,6 +198,24 @@ section {
       font-weight: bold;
     }
   }
+  &--more{
+    font-weight: bold;
+    font-size: rem(14);
+    line-height: rem(16);
+    color: $gray-6;
+    padding: rem(18) rem(16);
+    background: $gray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: rem(8);
+    &:last-child{
+      margin-bottom: 0;
+    }
+    .icon{
+      stroke: $default-color;
+    }
+  }
 }
 .heading{
   &--line{
@@ -213,6 +235,17 @@ section {
     min-width: rem(254);
     max-width: rem(254);
     margin-right: rem(20);
+    @media (max-width: $smDesktopWidth) {
+      margin-right: 0;
+      max-width: 100%;
+      min-width: auto;
+      width: 100%;
+    }
+    br{
+      @media (max-width: $smDesktopWidth){
+        display: none;
+      }
+    }
   }
 }
 h1{
@@ -373,9 +406,6 @@ footer{
       &:nth-child(8n+8){
         margin-right: 0;
       }
-      &:nth-child(n+8){
-        margin-bottom: 0;
-      }
       @media (max-width: $smDesktopWidth) {
         width: calc(100%/8 - 280px/7);
         margin-right: rem(40);
@@ -408,4 +438,7 @@ footer{
   display: flex;
   align-items: center;
   justify-content: center;
+}
+#msMiniCart, .msMiniCart{
+  font-size: rem(12);
 }
