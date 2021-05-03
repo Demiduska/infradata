@@ -130,6 +130,11 @@
           margin-bottom: rem(36);
         }
       }
+      &-40{
+        @media (max-width: $smDesktopWidth) {
+          margin-bottom: rem(44);
+        }
+      }
       &-44{
         @media (max-width: $smDesktopWidth) {
           margin-bottom: rem(44);

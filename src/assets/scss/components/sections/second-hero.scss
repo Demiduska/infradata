@@ -11,6 +11,9 @@
     @media (max-width: $tableWidth) {
       max-width: 100%;
     }
+    a{
+      color: $accent;
+    }
   }
   &__image{
     @media (max-width:$smDesktopWidth) {

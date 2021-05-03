@@ -191,7 +191,7 @@ $(function () {
     let button = $(this);
     let type = button.data('type');
     let oldValue = button.parent().find('input').val();
-    console.log(type);
+    // console.log(type);
     let newValue;
     if (type === '+') {
       newValue = parseInt(oldValue) + 1;
@@ -234,7 +234,8 @@ $(function () {
     let $container = $('#popup-result');
     let data = {
       action: action,
-      title: title
+      title: title,
+      id: id
     }
     $.ajax({
       url: 'ajax/actions.php',
@@ -249,7 +250,7 @@ $(function () {
           $container.find('.popup__content').empty().append(response);
           $container.removeClass("with-loader");
           $container.find(".loader").remove();
-          console.log(response);
+          // console.log(response);
         }
       },
       error: function (jqXHR) {
@@ -265,7 +266,8 @@ $(function () {
     let $container = $('#popup-result-more');
     let data = {
       action: action,
-      title: title
+      title: title,
+      id: id
     }
     $.ajax({
       url: 'ajax/actions.php',
@@ -280,7 +282,7 @@ $(function () {
           $container.find('.popup__content').empty().append(response);
           $container.removeClass("with-loader");
           $container.find(".loader").remove();
-          console.log(response);
+          // console.log(response);
         }
       },
       error: function (jqXHR) {
@@ -294,6 +296,45 @@ $(function () {
     e.preventDefault();
     $(this).parents('.popup').fadeOut();
   });
+
+  const checkOnEmptyFilterFields = () => {
+    let checked = [];
+    $('.filter__checkbox input:checked').each(function() {
+      checked.push($(this).val());
+    });
+    $('.filter .advanced-search__filter').each(function() {
+      checked.push($(this).val());
+    });
+
+    let countInputSearch = $('.filter .input-filter-search').val().length;
+    if (countInputSearch > 2){
+      checked.push(countInputSearch);
+    }
+    const empty = (element) => element  !== '';
+
+    if (checked.some(empty)) {
+      $('.filter .filter-reset').prop('disabled', false);
+    } else{
+      $('.filter .filter-reset').prop('disabled', true);
+    }
+    // console.log(checked);
+  }
+  $(document).on('click','.filter__checkbox input', function(e){
+    checkOnEmptyFilterFields();
+  });
+  $(document).on('change','.filter .advanced-search__filter', function(e){
+    checkOnEmptyFilterFields();
+  });
+  $(document).on('input','.filter .input-filter-search', function(e){
+    checkOnEmptyFilterFields();
+  });
+
+  $(document).on('input','.filter .filter-reset', function(e){
+    e.preventDefault();
+    mSearch2.reset();
+  });
+
+
 
   // Антиспам
   $('.ajax_form').append('<input type="text" name="org" value="" class="_org" style="visibility:hidden; height: 0; width: 0; padding: 0; border:none;"/>')

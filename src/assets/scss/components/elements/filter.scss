@@ -1,5 +1,8 @@
 .filter {
   padding: rem(36);
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
   &__list{
     display: flex;
   }
@@ -20,10 +23,55 @@
     }
   }
   &-reset{
+    &:disabled{
+      color: $gray-3;
+      cursor: default;
+    }
     margin-right: rem(26);
     font-size: rem(16);
     line-height: rem(20);
     letter-spacing: -0.0125em;
-    color: $gray-3;
+    color: $mainFontColor;
+    cursor: pointer;
+  }
+  &-filters{
+    width: calc(100% - (100%/3) - 16px);
+    display: flex;
+    flex-wrap: wrap;
+    .filter__item{
+      width: calc(100%/2 - 12px);
+    }
+  }
+  &__vendor{
+    margin-right: 0;
+  }
+  &__checkbox{
+    position: absolute;
+    left: rem(36);
+    bottom: rem(46);
+    label{
+      display: flex;
+      align-items: center;
+      &:first-child{
+        display: none;
+      }
+    }
+    &.type-popular{
+      left: rem(141);
+    }
+    &.type-new{
+      left: rem(234);
+    }
+  }
+}
+.input-filter-search{
+  padding: rem(12);
+  display: inline-block;
+  width: 100%;
+  border: 1px solid #b8b8b8;
+  border-radius: 3px;
+  color: $mainFontColor;
+  &::placeholder{
+    color: $mainFontColor;
   }
 }

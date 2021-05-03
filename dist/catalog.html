@@ -9,7 +9,7 @@
   <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
   <link rel="manifest" href="site.webmanifest">
   <title>Infradata</title>
-<link href="/assets/css/vendors.4be646e7e9d1a2174f4f.css" rel="stylesheet"><link href="/assets/css/app.c075702fed9110238688.css" rel="stylesheet"></head>
+<link href="/assets/css/vendors.4be646e7e9d1a2174f4f.css" rel="stylesheet"><link href="/assets/css/app.4bcaf696ec3eb0dd7127.css" rel="stylesheet"></head>
 <body data-svg-sprite-url="sprite.svg">
 <header class="header p-xl-b-16 p-xl-t-8">
   <div class="container">
@@ -235,95 +235,81 @@
   </div>
 </header>
 <main>
-  <section class="section section--second-hero p-xl-t-120">
+  <section class="section section--products p-xl-t-120 p-xl-b-120">
     <div class="container">
-      <div class="second-hero">
-        <h1 class="heading--line m-xl-b-32">
-          Каталог
-        </h1>
-        <div class="filter background--gray-6">
-          <div class="filter__list">
-            <div class="filter__item">
-              <label class="filter__item-title">Поиск по названию</label>
-              <select class="advanced-search__filter">
-                <option value="0">Поиск по каталогу</option>
-                <option value="1">Категория 1</option>
-                <option value="2">Категория 2</option>
-                <option value="3">Категория 3</option>
-                <option value="4">Категория 4</option>
-                <option value="5">Категория 5</option>
-                <option value="6">Категория 6</option>
-                <option value="7">Категория 7</option>
-                <option value="8">Категория 8</option>
-                <option value="9">Категория 9</option>
-                <option value="10">Категория 10</option>
-              </select>
-            </div>
-            <div class="filter__item">
-              <label class="filter__item-title">Поиск по названию</label>
-              <select class="advanced-search__filter">
-                <option value="0">Поиск по каталогу</option>
-                <option value="1">Категория 1</option>
-                <option value="2">Категория 2</option>
-                <option value="3">Категория 3</option>
-                <option value="4">Категория 4</option>
-                <option value="5">Категория 5</option>
-                <option value="6">Категория 6</option>
-                <option value="7">Категория 7</option>
-                <option value="8">Категория 8</option>
-                <option value="9">Категория 9</option>
-                <option value="10">Категория 10</option>
-              </select>
-            </div>
-            <div class="filter__item">
-              <label class="filter__item-title">Поиск по названию</label>
-              <select class="advanced-search__filter">
-                <option value="0">Поиск по каталогу</option>
-                <option value="1">Категория 1</option>
-                <option value="2">Категория 2</option>
-                <option value="3">Категория 3</option>
-                <option value="4">Категория 4</option>
-                <option value="5">Категория 5</option>
-                <option value="6">Категория 6</option>
-                <option value="7">Категория 7</option>
-                <option value="8">Категория 8</option>
-                <option value="9">Категория 9</option>
-                <option value="10">Категория 10</option>
-              </select>
-            </div>
+      <h1 class="heading--line m-xl-b-32">
+        Каталог
+      </h1>
+      <div class="filter background--gray-6">
+        <form data-key="c5ddab64ce209d26ac69dbcbadd32cc3dac26569" action="/magazin" method="get"
+              class="well msearch2 search-cat filter__item" id="mse2_form-cat">
+          <label class="filter__item-title">Поиск по названию</label>
+          <div class="form-group">
+            <span role="status" aria-live="polite" class="ui-helper-hidden-accessible"></span>
+            <input type="text" class="form-control input-filter-search ui-autocomplete-input" name="query"
+                   placeholder="Введите название/артикул" value="" autocomplete="off">
           </div>
-          <div class="d-flex justify-content-between m-xl-t-34">
-            <div class="d-flex">
-              <div class="checkbox-block">
-                <input type="checkbox" class="checkbox">
-                <label class="checkbox-label" for="promo">Акции</label>
-              </div>
-              <div class="checkbox-block">
-                <input type="checkbox" class="checkbox">
-                <label class="checkbox-label" for="new">Новинки</label>
-              </div>
-              <div class="checkbox-block">
-                <input type="checkbox" class="checkbox">
-                <label class="checkbox-label" for="hits">Хиты</label>
-              </div>
-            </div>
-            <div class="d-flex align-items-center">
-              <a class="filter-reset" href="#">
-                Сбросить фильтры
-              </a>
-              <button class="btn btn--red">
-                Применить
-              </button>
-            </div>
+          <div class="cat-error"></div>
+          <input type="hidden" name="ms|popular" disabled="" id="pop-hid">
+          <input type="hidden" name="ms|new" id="new-hid" disabled="">
+          <input type="hidden" name="ms|favorite" disabled="" id="fav-hid">
+          <input type="hidden" name="resource|parent" disabled="" id="par-hid">
+          <input type="hidden" name="ms|vendor" disabled="" id="ven-hid">
+        </form>
+        <form class="filter-filters" action="" method="post" id="mse2_filters">
+          <div class="filter__item" id="mse2_resource|parent">
+            <label class="filter__item-title">Категория</label>
+            <select class="advanced-search__filter" name="resource|parent" id="resource|parent_0">
+              <option value="" selected="selected">Категории</option>
+              <option value="1" selected="selected">Категория 1</option>
+            </select>
           </div>
+          <div class="filter__item filter__vendor" id="mse2_ms|vendor">
+            <label class="filter__item-title">Производитель</label>
+            <select class="advanced-search__filter selectized" name="ms|vendor" id="ms|vendor_0">
+              <option value="" selected="selected">Все производители</option>
+              <option value="1" selected="selected">Производитель 1</option>
+            </select>
+          </div>
+          <div id="mse2_ms|favorite" class="filter__checkbox type-favorite">
+            <label for="mse2_ms|favorite_0" class="">
+              <input class="check0 checkbox" type="checkbox" name="ms|favorite" id="mse2_ms|favorite_0" value="1">
+              <p>Акция</p>
+            </label><label for="mse2_ms|favorite_0" class="">
+            <input class="check0 checkbox" type="checkbox" name="ms|favorite" id="mse2_ms|favorite_0" value="1">
+            <p>Акция</p>
+          </label>
+          </div>
+          <div id="mse2_ms|popular" class="filter__checkbox type-popular">
+            <label for="mse2_ms|popular_0" class="">
+              <input class="check0 checkbox" type="checkbox" name="ms|popular" id="mse2_ms|popular_0" value="1">
+              <p>Хит</p>
+            </label><label for="mse2_ms|popular_0" class="">
+            <input class="check0 checkbox" type="checkbox" name="ms|popular" id="mse2_ms|popular_0" value="1">
+            <p>Хит</p>
+          </label>
+          </div>
+          <div id="mse2_ms|new" class="filter__checkbox type-new">
+            <label for="mse2_ms|new_0" class="">
+              <input class="check0 checkbox" type="checkbox" name="ms|new" id="mse2_ms|new_0" value="1">
+              <p>Новинка</p>
+            </label><label for="mse2_ms|new_0" class="">
+            <input class="check0 checkbox" type="checkbox" name="ms|new" id="mse2_ms|new_0" value="1">
+            <p>Новинка</p>
+          </label>
+          </div>
+          <div class="w-100 d-flex justify-content-end align-items-center m-xl-t-24">
+            <button disabled class="filter-reset">
+              Сбросить фильтры
+            </button>
+            <button class="btn btn--red filter-submit">
+              Применить
+            </button>
+          </div>
+        </form>
 
-        </div>
       </div>
-    </div>
-  </section>
-  <section class="section section--products p-xl-t-48 p-xl-b-120">
-    <div class="container">
-      <div class="products">
+      <div class="products m-xl-t-48">
         <div class="card card--product">
           <a href="#" class="card--product__image">
             <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
@@ -522,32 +508,32 @@
         </div>
       </div>
       <ul class="pagination">
-        <li class="pagination__item disabled">
-          <a class="pagination__link" href="#">Первая</a>
+        <li class="page-item disabled">
+          <a class="page-link" href="#">Первая</a>
         </li>
-        <li class="pagination__item disabled">
-          <a class="pagination__link" href="#">«</a>
+        <li class="page-item disabled">
+          <a class="page-link" href="#">«</a>
         </li>
-        <li class="pagination__item active">
-          <a class="pagination__link" href="#">1</a>
+        <li class="page-item active">
+          <a class="page-link" href="#">1</a>
         </li>
-        <li class="pagination__item">
-          <a class="pagination__link" href="#">2</a>
+        <li class="page-item">
+          <a class="page-link" href="#">2</a>
         </li>
-        <li class="pagination__item">
-          <a class="pagination__link" href="#">3</a>
+        <li class="page-item">
+          <a class="page-link" href="#">3</a>
         </li>
-        <li class="pagination__item">
-          <a class="pagination__link" href="#">4</a>
+        <li class="page-item">
+          <a class="page-link" href="#">4</a>
         </li>
-        <li class="pagination__item">
-          <a class="pagination__link" href="#">5</a>
+        <li class="page-item">
+          <a class="page-link" href="#">5</a>
         </li>
-        <li class="pagination__item">
-          <a class="pagination__link" href="#">»</a>
+        <li class="page-item">
+          <a class="page-link" href="#">»</a>
         </li>
-        <li class="pagination__item">
-          <a class="pagination__link" href="#">Последняя</a>
+        <li class="page-item">
+          <a class="page-link" href="#">Последняя</a>
         </li>
       </ul>
     </div>
@@ -637,5 +623,5 @@
 </footer>
 
 
-<script type="text/javascript" src="/assets/js/vendors.9c46b697585bd7976b84.js"></script><script type="text/javascript" src="/assets/js/app.ab99083e0bffb4c12b3c.js"></script></body>
+<script type="text/javascript" src="/assets/js/vendors.9c46b697585bd7976b84.js"></script><script type="text/javascript" src="/assets/js/app.b14930ea78457b3a02a9.js"></script></body>
 </html>

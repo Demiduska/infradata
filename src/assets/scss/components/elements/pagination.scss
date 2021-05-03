@@ -3,7 +3,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  &__item{
+}
+.page{
+  &-item{
     margin-right: rem(4);
     &:last-child{
       margin-right: 0;
@@ -21,7 +23,7 @@
       }
     }
   }
-  &__link{
+  &-link{
     padding: rem(4) rem(12);
     background: transparent;
     color: $mainFontColor;
