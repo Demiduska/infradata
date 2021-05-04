@@ -78,6 +78,11 @@
   }
   &-lg{
     &-t{
+      &-0{
+        @media (max-width: $smDesktopWidth) {
+          margin-top: rem(0);
+        }
+      }
       &-20{
         @media (max-width: $smDesktopWidth) {
           margin-top: rem(20);
@@ -187,6 +192,11 @@
       &-18{
         @media (max-width:$tableWidth) {
           margin-bottom: rem(18);
+        }
+      }
+      &-24{
+        @media (max-width:$tableWidth) {
+          margin-bottom: rem(24);
         }
       }
       &-28{

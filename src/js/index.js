@@ -9,6 +9,7 @@ import 'slick-carousel'
 import './menu';
 import './tabs';
 import Inputmask from "inputmask";
+import './cookie';
 
 const md = 768;
 const lg = 1024;
@@ -329,9 +330,49 @@ $(function () {
     checkOnEmptyFilterFields();
   });
 
-  $(document).on('input','.filter .filter-reset', function(e){
+  $(document).on('click','.filter .filter-reset', function(e){
     e.preventDefault();
     mSearch2.reset();
+    $('.filter .input-filter-search').val('');
+  });
+
+  $(document).on('click','.filter .filter-submit', function(e){
+    e.preventDefault();
+    let form = $('.filter .search-cat');
+    if ($('.filter .type-favorite .check0').is(':checked')){
+      $('.filter #fav-hid').removeAttr('disabled');
+      $('.filter #fav-hid').prop('checked', true);
+      $('.filter #fav-hid').val('1');
+    }
+    if ($('.filter .type-popular .check0').is(':checked')){
+      $('.filter #pop-hid').removeAttr('disabled');
+      $('.filter #pop-hid').prop('checked', true);
+      $('.filter #pop-hid').val('1');
+    }
+    if ($('.filter .type-new .check0').is(':checked')){
+      $('.filter #new-hid').removeAttr('disabled');
+      $('.filter #new-hid').prop('checked', true);
+      $('.filter #new-hid').val('1');
+    }
+    let selCat = $('.filter .select-category select').val();
+    if (selCat!=''){
+      $('.filter #par-hid').removeAttr('disabled');
+      $('.filter #par-hid').val(selCat);
+    }
+    let selVen = $('.filter .select-vendor select').val();
+    if (selVen!=''){
+      $('.filter #ven-hid').removeAttr('disabled');
+      $('.filter #ven-hid').val(selVen);
+    }
+    let l = 0;
+    l = $('.search-cat input[name="query"]').val().length;
+    if (l>=3) {
+      form.submit();
+    }
+    else {
+      $('.filter .cat-error').html('Длина поиска меньше 3')
+      console.log('длина меньше 3');
+    }
   });
 
 
@@ -373,4 +414,9 @@ function loaderGetCode() {
   return '<svg version="1.1" id="loader-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="40px" height="40px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">        <path fill="#4647a8" d="M25.251,6.461c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615V6.461z" transform="rotate(243.722 25 25)">        <animateTransform attributeType="xml" attributeName="transform" type="rotate" from="0 25 25" to="360 25 25" dur="0.6s" repeatCount="indefinite"></animateTransform>        </path>        </svg>';
 }
 
+if (typeof miniShop2 !== 'undefined'){
+  miniShop2.Callbacks.Cart.add.response.success = function() {
+    console.log('товар добавлен');
+  }
+}
 

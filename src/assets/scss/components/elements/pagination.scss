@@ -11,13 +11,13 @@
       margin-right: 0;
     }
     &:hover,&.active{
-      .pagination__link{
+      .page-link{
         background: $accent;
         color: $default-color;
       }
     }
     &:disabled,&.disabled{
-      .pagination__link{
+      .page-link{
         cursor: default;
         opacity: .5;
       }

@@ -3,6 +3,9 @@
   display: flex;
   flex-wrap: wrap;
   position: relative;
+  @media (max-width: $smDesktopWidth) {
+    display: none;
+  }
   &__list{
     display: flex;
   }
@@ -74,4 +77,7 @@
   &::placeholder{
     color: $mainFontColor;
   }
+}
+.cat-error{
+  color: $accent;
 }
