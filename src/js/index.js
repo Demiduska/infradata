@@ -320,6 +320,21 @@ $(function () {
     }
     // console.log(checked);
   }
+
+  const clearFilterFields = () => {
+    $('.filter__checkbox input:checked').each(function() {
+      $(this).prop('checked', false);
+    });
+    $('.filter select.advanced-search__filter').each(function() {
+      var $select = $( this ).selectize();
+      var selectize = $select[0].selectize;
+      let nameOption =  $select[0].selectize.options[''].text;
+      if (nameOption !== ''){
+        selectize.setValue(selectize.search(nameOption).items[0].id);
+      }
+    });
+    $('.filter .input-filter-search').val('');
+  }
   $(document).on('click','.filter__checkbox input', function(e){
     checkOnEmptyFilterFields();
   });
@@ -332,8 +347,7 @@ $(function () {
 
   $(document).on('click','.filter .filter-reset', function(e){
     e.preventDefault();
-    mSearch2.reset();
-    $('.filter .input-filter-search').val('');
+    clearFilterFields();
   });
 
   $(document).on('click','.filter .filter-submit', function(e){

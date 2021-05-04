@@ -42,8 +42,6 @@ $(function () {
     $('.cookie').fadeIn();
   }
 
-
-
   $(document).on('click','#cookie-btn',function (e){
     e.preventDefault();
     setCookie('Cookie', 'ok', {secure: true, 'max-age': 889200});
