@@ -320,7 +320,7 @@ $(function () {
     }
     // console.log(checked);
   }
-
+  checkOnEmptyFilterFields();
   const clearFilterFields = () => {
     $('.filter__checkbox input:checked').each(function() {
       $(this).prop('checked', false);
@@ -334,6 +334,8 @@ $(function () {
       }
     });
     $('.filter .input-filter-search').val('');
+    window.history.pushState(null, null, window.location.pathname);
+    location.reload();
   }
   $(document).on('click','.filter__checkbox input', function(e){
     checkOnEmptyFilterFields();

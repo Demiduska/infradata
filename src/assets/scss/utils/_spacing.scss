@@ -54,6 +54,9 @@
       &-32{
         margin-bottom: rem(32);
       }
+      &-36{
+        margin-bottom: rem(36);
+      }
       &-48{
         margin-bottom: rem(48);
       }
@@ -182,8 +185,18 @@
           margin-top: rem(18);
         }
       }
+      &-24{
+        @media (max-width:$tableWidth) {
+          margin-top: rem(24);
+        }
+      }
     }
     &-b{
+      &-8{
+        @media (max-width:$tableWidth) {
+          margin-bottom: rem(8);
+        }
+      }
       &-16{
         @media (max-width:$tableWidth) {
           margin-bottom: rem(16);
