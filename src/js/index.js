@@ -299,12 +299,14 @@ $(function () {
   $(document).on('click', '.link--product', function (e) {
     let action = $(this).data('action');
     let title = $(this).data('title');
+    let html = $('#tab-2').html();
     let $container = $('#popup-result-product');
     let id = $(this).data('id');
     let data = {
       action: action,
       title: title,
-      id: id
+      id: id,
+      html: html
     }
     $.ajax({
       url: 'ajax/actions.php',
