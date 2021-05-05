@@ -18,6 +18,11 @@
       display: block;
       transition: all .3s ease;
       font-weight: bold;
+      @media (max-width: $smDesktopWidth) {
+        font-size: rem(16);
+        line-height: rem(24);
+        padding: rem(9) rem(36);
+      }
       &:hover{
         background: $default-color;
         color: $mainFontColor;

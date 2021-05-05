@@ -189,6 +189,7 @@ $(function () {
   });
 
   $(document).on('click', '.counter__item', function (e) {
+    e.preventDefault();
     let button = $(this);
     let type = button.data('type');
     let oldValue = button.parent().find('input').val();
@@ -299,26 +300,28 @@ $(function () {
   });
 
   const checkOnEmptyFilterFields = () => {
-    let checked = [];
-    $('.filter__checkbox input:checked').each(function() {
-      checked.push($(this).val());
-    });
-    $('.filter .advanced-search__filter').each(function() {
-      checked.push($(this).val());
-    });
+    if ($('.filter').length){
+      let checked = [];
+      $('.filter__checkbox input:checked').each(function() {
+        checked.push($(this).val());
+      });
+      $('.filter .advanced-search__filter').each(function() {
+        checked.push($(this).val());
+      });
 
-    let countInputSearch = $('.filter .input-filter-search').val().length;
-    if (countInputSearch > 2){
-      checked.push(countInputSearch);
-    }
-    const empty = (element) => element  !== '';
+      let countInputSearch = $('.filter .input-filter-search').val().length;
+      if (countInputSearch > 2){
+        checked.push(countInputSearch);
+      }
+      const empty = (element) => element  !== '';
 
-    if (checked.some(empty)) {
-      $('.filter .filter-reset').prop('disabled', false);
-    } else{
-      $('.filter .filter-reset').prop('disabled', true);
+      if (checked.some(empty)) {
+        $('.filter .filter-reset').prop('disabled', false);
+      } else{
+        $('.filter .filter-reset').prop('disabled', true);
+      }
+      // console.log(checked);
     }
-    // console.log(checked);
   }
   checkOnEmptyFilterFields();
   const clearFilterFields = () => {

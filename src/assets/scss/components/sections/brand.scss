@@ -10,13 +10,15 @@
     }
     &__image{
       width: 20%;
+      margin-right: 10%;
       @media (max-width: $tableWidth) {
         width: 100%;
         margin-bottom: rem(12);
+        margin-right: 0;
       }
     }
     &__content{
-      width: 80%;
+      width: 70%;
       @media (max-width: $tableWidth) {
         width: 100%;
       }
