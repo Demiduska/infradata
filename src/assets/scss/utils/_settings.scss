@@ -216,6 +216,22 @@ section {
       stroke: $default-color;
     }
   }
+  &--product{
+    font-weight: bold;
+    color: $default-color;
+    background: $mainFontColor;
+    padding: rem(11) rem(12) rem(13) rem(16);
+    font-size: rem(16);
+    line-height: rem(24);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: rem(1);
+    width: 100%;
+    .icon{
+      stroke: $default-color;
+    }
+  }
 }
 .heading{
   &--line{
@@ -471,11 +487,18 @@ footer{
   }
 }
 .section--delivery{
+  @media (max-width: $tableWidth) {
+    margin-bottom: rem(1);
+  }
   ul{
     li{
       padding-left: rem(7);
       display: flex;
       align-items: center;
+      margin-bottom: rem(20);
+      @media (max-width: $tableWidth) {
+        margin-bottom: rem(16);
+      }
       &:before{
         margin-right: rem(15);
         content: '';
@@ -484,6 +507,14 @@ footer{
         height: rem(10);
         background: $accent;
       }
+    }
+  }
+  .w-50{
+    @media (max-width: $smDesktopWidth) {
+      width: 48%;
+    }
+    @media (max-width: $tableWidth) {
+      width: 100%;
     }
   }
 }

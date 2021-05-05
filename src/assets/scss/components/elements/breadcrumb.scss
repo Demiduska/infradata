@@ -3,10 +3,14 @@
   align-items: center;
   @media (max-width: $smDesktopWidth) {
     flex-wrap: wrap;
+    margin-bottom: rem(8);
   }
   &__item{
     margin-right: rem(10);
     color: $gray-4;
+    @media (max-width: $smDesktopWidth) {
+      margin-bottom: rem(8);
+    }
   }
   &__link{
     color: $mainFontColor;
@@ -15,9 +19,7 @@
     line-height: rem(24);
     letter-spacing: -0.02em;
     transition: all .3s ease;
-    @media (max-width: $smDesktopWidth) {
-      margin-bottom: rem(8);
-    }
+
     &:hover{
       color: $accent;
     }

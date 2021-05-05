@@ -40,6 +40,9 @@ switch ($_POST['action']) {
     $res .= $items;
     $res .= '</div>';
     break;
+  case 'getDescription':
+    $res .= 'test';
+    break;
   // А вот сюда потом добавлять новые методы
 }
 

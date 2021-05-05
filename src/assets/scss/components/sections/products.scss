@@ -91,6 +91,10 @@
       margin-right: rem(36);
       width: rem(282);
     }
+    @media (max-width: $tableWidth) {
+      margin-right: 0;
+      width: 100%;
+    }
     img{
       margin: 0 auto;
     }
@@ -117,6 +121,9 @@
     @media (max-width: $smDesktopWidth) {
       width: calc(100% - 282px - 36px);
     }
+    @media (max-width: $tableWidth) {
+      width: 100%;
+    }
     ul{
       li{
         margin-bottom: rem(12);
@@ -134,11 +141,20 @@
     @media (max-width: $smDesktopWidth) {
       margin-top: rem(12);
     }
+    @media (max-width: $tableWidth) {
+      font-size: rem(16);
+      line-height: rem(28);
+    }
   }
   .promo{
     @media (max-width: $smDesktopWidth) {
       margin-top: rem(24);
       margin-right: 0;
+    }
+    @media (max-width: $tableWidth) {
+      font-size: rem(16);
+      line-height: rem(28);
+      margin-top: rem(20);
     }
   }
   .price{
@@ -147,10 +163,32 @@
       font-size: rem(16);
       line-height: rem(24);
     }
+    @media (max-width: $tableWidth) {
+      line-height: rem(28);
+      margin-bottom: rem(16);
+    }
   }
   .slick-dots{
     @media (max-width: $smDesktopWidth) {
       position: relative;
+    }
+    @media (max-width: $tableWidth) {
+      margin-top: rem(16);
+      bottom: 0;
+      margin-bottom: rem(20);
+    }
+  }
+  .tabs{
+    @media (max-width: $tableWidth) {
+      display: none;
+    }
+    &-links{
+      display: none;
+      @media (max-width: $tableWidth) {
+        margin-top: rem(44);
+        width: 100%;
+        display: block;
+      }
     }
   }
 }

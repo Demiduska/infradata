@@ -234,6 +234,7 @@ $(function () {
     let action = $(this).data('action');
     let title = $(this).data('title');
     let $container = $('#popup-result');
+    let id = $(this).data('id');
     let data = {
       action: action,
       title: title,
@@ -266,6 +267,40 @@ $(function () {
     let action = $(this).data('action');
     let title = $(this).data('title');
     let $container = $('#popup-result-more');
+    let id = $(this).data('id');
+    let data = {
+      action: action,
+      title: title,
+      id: id
+    }
+    $.ajax({
+      url: 'ajax/actions.php',
+      data: data,
+      type: "POST",
+      beforeSend: function (response) {
+        $container.fadeIn();
+        $container.addClass("with-loader").append("<div class='loader loader--top'>" + loaderGetCode() + "</div>");
+      },
+      success: function (response) {
+        if (response) {
+          $container.find('.popup__content').empty().append(response);
+          $container.removeClass("with-loader");
+          $container.find(".loader").remove();
+          // console.log(response);
+        }
+      },
+      error: function (jqXHR) {
+        $container.find(".loader").remove();
+        console.log('error');
+      }
+    });
+  })
+
+  $(document).on('click', '.link--product', function (e) {
+    let action = $(this).data('action');
+    let title = $(this).data('title');
+    let $container = $('#popup-result-product');
+    let id = $(this).data('id');
     let data = {
       action: action,
       title: title,
