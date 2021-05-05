@@ -464,6 +464,10 @@ footer{
   color: $default-color!important;
   background: $mainFontColor!important;
   min-width: rem(434)!important;
+  @media (max-width: $tableWidth) {
+    min-width: auto!important;
+    max-width: 100%!important;
+  }
 }
 .ms2-message-success {
   background-color: $mainFontColor!important;

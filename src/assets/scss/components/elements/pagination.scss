@@ -7,6 +7,11 @@
 .page{
   &-item{
     margin-right: rem(4);
+    &:first-child,&:last-child{
+      @media (max-width: $tableWidth) {
+        display: none;
+      }
+    }
     &:last-child{
       margin-right: 0;
     }

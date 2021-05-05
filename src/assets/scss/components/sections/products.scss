@@ -123,6 +123,7 @@
     }
     @media (max-width: $tableWidth) {
       width: 100%;
+      margin-top: rem(20);
     }
     ul{
       li{
@@ -175,7 +176,6 @@
     @media (max-width: $tableWidth) {
       margin-top: rem(16);
       bottom: 0;
-      margin-bottom: rem(20);
     }
   }
   .tabs{
