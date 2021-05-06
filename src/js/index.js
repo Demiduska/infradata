@@ -27,6 +27,13 @@ $(function () {
       $('.header__search .advanced-search__filter').selectize({
         'allowEmptyOption': true
       });
+      $(".header__search .selectize-dropdown ").niceScroll({
+        cursorcolor: "#f82249",
+        cursorwidth: "24px",
+        cursorborderradius: "0",
+        autohidemode: false,
+        cursordragontouch: true
+      });
     }
     // console.log(document.body.clientWidth);
   });
