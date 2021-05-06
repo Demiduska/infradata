@@ -463,6 +463,11 @@ $(function () {
       $('#ven-hid-header').removeAttr('disabled');
       $('#ven-hid-header').val(selVenHead);
     }
+    let selCatHead = $('.select-cat-header').val();
+    if (selCatHead!=''){
+      $('#par-hid-header').removeAttr('disabled');
+      $('#par-hid-header').val(selCatHead);
+    }
     // let l = 0;
     // l = $('.input-search ').val().length;
     // console.log(l);
