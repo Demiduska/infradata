@@ -15,11 +15,11 @@ const md = 768;
 const lg = 1024;
 
 $(function () {
+  const htmlForm = $('.header__search').html();
   $(window).on('load resize', function () {
     const bLazy = new Blazy();
     console.log('resize');
     setEmptyCards();
-    let htmlForm = $('.header__search').html();
     if (document.body.clientWidth <= lg) {
       $('.header__search').empty();
     } else {
