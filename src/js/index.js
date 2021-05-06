@@ -463,7 +463,7 @@ $(function () {
     }
   });
 
-  $(document).on('click','#header__search-button',function (e){
+  $(document).on('click','#header__search-button,.advanced-search-button',function (e){
     e.preventDefault();
     let selVenHead = $('.select-ven-header').val();
     if (selVenHead!=''){
