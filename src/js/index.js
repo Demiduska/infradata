@@ -19,6 +19,12 @@ $(function () {
     const bLazy = new Blazy();
     console.log('resize');
     setEmptyCards();
+    let htmlForm = $('.header__search').html();
+    if (document.body.clientWidth <= lg) {
+      $('.header__search').remove();
+    } else {
+      $('.header__search').empty().html(htmlForm);
+    }
     // console.log(document.body.clientWidth);
   });
   const setEmptyCards = () => {
