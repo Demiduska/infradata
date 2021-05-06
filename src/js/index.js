@@ -21,7 +21,7 @@ $(function () {
     setEmptyCards();
     let htmlForm = $('.header__search').html();
     if (document.body.clientWidth <= lg) {
-      $('.header__search').remove();
+      $('.header__search').empty();
     } else {
       $('.header__search').empty().html(htmlForm);
     }
