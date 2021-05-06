@@ -24,6 +24,9 @@ $(function () {
       $('.header__search').empty();
     } else {
       $('.header__search').empty().html(htmlForm);
+      $('.header__search .advanced-search__filter').selectize({
+        'allowEmptyOption': true
+      });
     }
     // console.log(document.body.clientWidth);
   });
