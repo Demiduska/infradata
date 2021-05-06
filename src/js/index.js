@@ -377,6 +377,22 @@ $(function () {
     window.history.pushState(null, null, window.location.pathname);
     location.reload();
   }
+  const clearHeaderFilterFields = () => {
+    $('.header__search-form input:checked').each(function() {
+      $(this).prop('checked', false);
+    });
+    $('.header__search-form select.advanced-search__filter').each(function() {
+      var $select = $( this ).selectize();
+      var selectize = $select[0].selectize;
+      let nameOption =  $select[0].selectize.options[''].text;
+      if (nameOption !== ''){
+        selectize.setValue(selectize.search(nameOption).items[0].id);
+      }
+    });
+    $('.header__search-form .input-search').val('');
+
+  }
+
   $(document).on('click','.filter__checkbox input', function(e){
     checkOnEmptyFilterFields();
   });
@@ -431,6 +447,30 @@ $(function () {
     }
   });
 
+  $(document).on('click','#header__search-button',function (e){
+    e.preventDefault();
+    let selVenHead = $('.select-ven-header').val();
+    if (selVenHead!=''){
+      $('#ven-hid-header').removeAttr('disabled');
+      $('#ven-hid-header').val(selVenHead);
+    }
+    // let l = 0;
+    // l = $('.input-search ').val().length;
+    // console.log(l);
+    // if (l>=3) {
+      $('#mse2_form-header').submit();
+    // }
+    // else {
+    //   $('.cat-error__head').html('Длина поиска меньше 3')
+    //   console.log('длина меньше 3');
+    // }
+
+  });
+
+  $(document).on('click','.header__search-form .advanced-search__block-reset',function (e){
+    e.preventDefault();
+    clearHeaderFilterFields();
+  });
 
 
   // Антиспам

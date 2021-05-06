@@ -49,10 +49,8 @@
       display: flex;
       border: 1px solid #CFD2D7;
       background: $default-color;
-      padding: rem(5) rem(14);
-      margin-right: rem(22);
-      min-height: rem(40);
       justify-content: space-between;
+      margin-right: rem(22);
 
       &-label {
         display: flex;
@@ -60,10 +58,25 @@
         flex: 1 1;
       }
 
+      input{
+        padding: rem(5) rem(52);
+        min-height: rem(40);
+        width: 100%;
+      }
+      .btn-search{
+        position: absolute;
+        right: rem(14);
+        height: 100%;
+        cursor: pointer;
+        .icon{
+          height: rem(24);
+        }
+      }
       &-filter {
-        margin-right: rem(14);
         height: rem(24);
         overflow-y: hidden;
+        position: absolute;
+        left: 14px;
 
         .icon {
           display: block;

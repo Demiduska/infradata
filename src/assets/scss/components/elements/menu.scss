@@ -14,6 +14,14 @@
         }
       }
     }
+    &.current{
+      >.menu__link{
+        color: $accent;
+        .icon{
+          fill: $accent;
+        }
+      }
+    }
   }
   &__link{
     font-size: rem(17);
