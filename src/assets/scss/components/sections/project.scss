@@ -61,4 +61,23 @@
       }
     }
   }
+  &-single{
+    &__title{
+      margin-bottom: rem(16);
+    }
+    &__content{
+
+    }
+    &__bottom{
+      margin-top: rem(40);
+      display: flex;
+      >div{
+        margin-right: rem(20);
+        color: $secondary;
+        strong{
+          color: $default-color;
+        }
+      }
+    }
+  }
 }

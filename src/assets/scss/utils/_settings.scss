@@ -578,3 +578,20 @@ footer{
     }
   }
 }
+.who-wrap-project{
+  @media (max-width:$tableWidth) {
+    flex-wrap: wrap;
+  }
+  .list__item{
+    @media (max-width:$tableWidth){
+      width: 100%;
+      max-width: 100%;
+      margin-bottom: rem(16);
+    }
+    &:last-child{
+      @media (max-width:$tableWidth){
+        margin-bottom: 0;
+      }
+    }
+  }
+}

@@ -51,6 +51,9 @@
       &-24{
         margin-bottom: rem(24);
       }
+      &-28{
+        margin-bottom: rem(28);
+      }
       &-32{
         margin-bottom: rem(32);
       }
@@ -317,6 +320,11 @@
       }
     }
     &-b{
+      &-36{
+        @media (max-width: $smDesktopWidth) {
+          padding-bottom: rem(36);
+        }
+      }
       &-48{
         @media (max-width: $smDesktopWidth) {
           padding-bottom: rem(48);

@@ -6,6 +6,7 @@ import 'selectize';
 import 'jquery.nicescroll';
 import 'jquery-validation';
 import 'slick-carousel'
+import '@fancyapps/fancybox';
 import './menu';
 import './tabs';
 import Inputmask from "inputmask";
@@ -136,6 +137,33 @@ $(function () {
           dots: true,
 
 
+        }
+      }
+    ]
+  });
+  $(".gallery-slider").slick({
+    dots: false,
+    arrows: true,
+    slidesToShow: 2.3,
+    infinite: false,
+    slidesToScroll: 1,
+    lazyLoad: 'ondemand',
+    rows: 0,
+    prevArrow: '<button type="button" class="slick-prev"><svg class="icon"><use xlink:href="#arrow-left"></use></svg></button>',
+    nextArrow: '<button type="button" class="slick-next"><svg class="icon"><use xlink:href="#arrow-right"></use></svg></button>',
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 1.3
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: false,
+          dots: true,
+          slidesToShow: 1,
         }
       }
     ]

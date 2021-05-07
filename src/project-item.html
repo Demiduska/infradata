@@ -9,7 +9,7 @@
   <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
   <link rel="manifest" href="site.webmanifest">
   <title>Infradata</title>
-<link href="/assets/css/vendors.ae8073dddc79cd026d66.css" rel="stylesheet"><link href="/assets/css/app.2c72b61ca0e4736f03a6.css" rel="stylesheet"></head>
+</head>
 <body data-svg-sprite-url="sprite.svg">
 <header class="header p-md-t-18 p-md-b-18 p-xl-b-16 p-xl-t-8 ">
   <div class="container">
@@ -37,7 +37,8 @@
                 <use xlink:href="#close"></use>
               </svg>
             </a>
-            <input class="input input-search header__search-form-input" placeholder="Поиск по каталогу" type="text" id="header__input-search">
+            <input class="input input-search header__search-form-input" placeholder="Поиск по каталогу" type="text"
+                   id="header__input-search">
             <div class="cat-error"></div>
           </label>
           <button disabled class="btn-search" id="header__search-button">
@@ -1044,38 +1045,38 @@
     </div>
   </div>
 
-    <nav class="" id="mobile-menu-nav">
-      <ul>
-        <li><a href="#">Решения</a>
-          <ul>
-            <li><a href="#">Решение 1</a>
-              <ul>
-                <li><a href="">Подрешение 1</a></li>
-                <li><a href="">Подрешение 2</a></li>
-                <li><a href="">Подрешение 3</a></li>
-              </ul>
-            </li>
-            <li><a href="#">Решение 2</a>
+  <nav class="" id="mobile-menu-nav">
+    <ul>
+      <li><a href="#">Решения</a>
+        <ul>
+          <li><a href="#">Решение 1</a>
+            <ul>
+              <li><a href="">Подрешение 1</a></li>
+              <li><a href="">Подрешение 2</a></li>
+              <li><a href="">Подрешение 3</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Решение 2</a>
             <ul>
               <li><a href="">Подрешение 4</a></li>
               <li><a href="">Подрешение 5</a></li>
               <li><a href="">Подрешение 6</a></li>
             </ul>
-            </li>
-            <li><a href="#">Решение 3</a></li>
-          </ul>
-        </li>
-        <li><a href="#">Продуткы </a>
-          <ul>
-            <li><a href="#">Продукт 1</a></li>
-            <li><a href="#">Продукт 2</a></li>
-          </ul>
-        </li>
-        <li><a href="#">Контакты</a></li>
-        <li><a href="#">О компании</a></li>
-        <li><a href="#">Каталог</a></li>
-      </ul>
-    </nav>
+          </li>
+          <li><a href="#">Решение 3</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Продуткы </a>
+        <ul>
+          <li><a href="#">Продукт 1</a></li>
+          <li><a href="#">Продукт 2</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Контакты</a></li>
+      <li><a href="#">О компании</a></li>
+      <li><a href="#">Каталог</a></li>
+    </ul>
+  </nav>
 
   <div class="mobile-search">
     <form class="header__search-form">
@@ -1167,177 +1168,182 @@
   </div>
 </header>
 <main>
-  <section class="section section--hero m-md-b-28 m-md-t-0 m-xl-t-16 m-lg-b-60 m-xl-b-80">
+  <section class="section">
     <div class="container">
-      <div class="hero">
-        <div class="hero__content text--white">
-          <h1 class="text--white text--uppercase">
-            Цифровая <br> трансформация
-          </h1>
-          <p class="hero__content-bottom">
-            ИНФРАДАТА - Ваш надежный партнер
-          </p>
+      <ul class="breadcrumb">
+        <li class="breadcrumb__item"><a class="breadcrumb__link" href="/">ИНФРАДАТА</a></li>
+        <li class="breadcrumb__item active">Проекты</li>
+      </ul>
+    </div>
+  </section>
+  <section class="section section--second-hero p-md-t-60 p-md-b-0 p-lg-t-88 p-xl-t-120">
+    <div class="container">
+      <h1 class="heading--line m-md-b-24 m-lg-b-28 m-xl-b-32">Название проекта может быть длинным</h1>
+      <div class="hero--variant-2">
+        <div class="hero--variant-2__content text--boxed-2 project-single">
+          <div class="project-single__title">
+            <strong>Суть проекта:</strong>
+          </div>
+          <div class="project-single__content">
+            <p>
+              Суть задачи заключается в реализации проекта для судостриотельного завода в г. Мурманск. Мы реализовали
+              <a href="#">поставку оборудования под ключ</a> и проектирование стадий П и РД.
+            </p>
+          </div>
+          <div class="project-single__bottom">
+            <div>
+              <strong>Год:</strong> 2019
+            </div>
+            <div>
+              <strong>Отрасль:</strong> Судостроение
+            </div>
+          </div>
         </div>
-        <div class="hero__image">
-          <img class="b-lazy"
-               src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==
-               data-src="assets/img/hero.png">
+
+        <div class="hero--variant-2__image">
+          <img class="b-lazy b-loaded" src="assets/img/project-item.png" alt="О компании">
         </div>
       </div>
-      <div class="hero__cards m-md-t-0 m-xl-t-20">
-        <a href="#" class="card card--promo b-lazy" data-src="assets/img/eagle.svg"
-           src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==
-        >
-          <h4 class="h4 card__link">
-            Поставки оборудования
-          </h4>
+    </div>
+  </section>
+  <section class="section section--tasks p-md-t-60 p-lg-t-88 p-xl-t-120">
+    <div class="container">
+      <div class="d-flex align-items-start who-wrap who-wrap-project">
+        <h3 class="heading--with-right heading--line text--uppercase m-md-b-16 m-lg-b-20 m-lg-b-24">
+          Задачи Проекта
+        </h3>
+        <div class="w-100">
+          <div class="">
+            <ul class="who__list list list--square d-flex justify-content-between flex-wrap">
+              <li class="list__item">Промышленные предприятия</li>
+              <li class="list__item">Финансовые организации</li>
+              <li class="list__item">Судостроительные заводы</li>
+              <li class="list__item">Ритейл</li>
+              <li class="list__item">Учебные учреждения</li>
+              <li class="list__item">Гостиницы</li>
+              <li class="list__item">Медицинские учреждения</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section section--about p-md-t-60 p-md-b-60 p-lg-b-88 p-lg-t-88 p-xl-b-120 p-xl-t-120 ">
+    <div class="container">
+      <div class="about">
+        <h3 class="heading--line text--uppercase">
+          Результаты проекта
+        </h3>
+        <div class="text--boxed">
+          <p>ИНФРАДАТА – профессионал в области интеграции IT решений и надежный поставщик серверного, сетевого
+            оборудования и ТМЦ для среднего и крупного бизнеса, государственных предприятий и учреждений. Наши
+            компетенции позволяют закрыть все потребности заказчика в любой области информатизации его предприятия, тем
+            самым сократить материальные и трудовые затраты и обеспечить масштабируемость и гибкость реализуемых
+            решений.</p>
+          <p>&nbsp;</p>
+          <p>ИНФРАДАТА – профессионал в области интеграции IT решений и надежный поставщик серверного, сетевого
+            оборудования и ТМЦ для среднего и крупного бизнеса, государственных предприятий и учреждений. Наши
+            компетенции позволяют закрыть все потребности заказчика в любой области информатизации его предприятия, тем
+            самым сократить материальные и трудовые затраты и обеспечить масштабируемость и гибкость реализуемых
+            решений.</p></div>
+      </div>
+    </div>
+  </section>
+  <section class="section section--gallery background--gray-6 p-xl-t-60 p-xl-b-60">
+    <div class="container">
+      <h3 class="heading--line m-lg-b-20 m-xl-b-28 text--uppercase">Фотогалерея</h3>
+      <div class="gallery-slider">
+        <a class="gallery-slider__item" href="assets/img/gallery-1.png" data-fancybox="gallery">
+          <img data-lazy="assets/img/gallery-1.png" alt="">
         </a>
-        <a href="#" class="card card--promo b-lazy" data-src="assets/img/eagle.svg"
-           src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==
-        >
-          <h4 class="h4 card__link">
-            Комплексное оснащение
-          </h4>
+        <a class="gallery-slider__item" href="assets/img/gallery-2.png" data-fancybox="gallery">
+          <img data-lazy="assets/img/gallery-2.png" alt="">
         </a>
-        <a href="#" class="card card--promo b-lazy" data-src="assets/img/eagle.svg"
-           src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==
-        >
-          <h4 class="h4 card__link">
-            Индивидуальные и нестандартные решения
-          </h4>
+        <a class="gallery-slider__item" href="assets/img/gallery-1.png" data-fancybox="gallery">
+          <img data-lazy="assets/img/gallery-1.png" alt="">
+        </a>
+        <a class="gallery-slider__item" href="assets/img/gallery-2.png" data-fancybox="gallery">
+          <img data-lazy="assets/img/gallery-2.png" alt="">
         </a>
       </div>
     </div>
   </section>
-  <section class="section section--catalog">
+  <section class="section section--catalog p-lg-b-36 p-lg-t-88 p-xl-t-120 p-xl-b-48">
     <div class="container">
       <h3 class="text--uppercase">
-        Каталог
-      </h3>
+        Каталог </h3>
       <div class="d-flex justify-content-between">
         <div class="text--small-2 text--accent">
-          26 277 товаров
+          346 товаров
         </div>
-        <a class="link text--accent" href="#">
+        <a class="link text--accent" href="magazin">
           Перейти в каталог
           <svg class="icon">
             <use xlink:href="#chevron-right"></use>
           </svg>
         </a>
       </div>
-      <div class="catalog__cards m-lg-t-20 m-xl-t-24 empty-cards" data-count="7" data-md="3" data-lg="4">
-        <a href="#" class="card card--catalog">
+      <div class="catalog__cards m-lg-t-20 m-xl-t-24 empty-cards" data-count="3">
+        <a href="kommutatoryi" class="card card--catalog">
           <h6 class="card__link text--uppercase">
-            Коммутаторы
-          </h6>
+            Коммутаторы </h6>
           <div class="text--small-2 text--gray-4">
-            188 позиций
+            189 позиций
           </div>
           <div class="card--catalog__image">
-            <img data-src="assets/img/switch.png"
-                 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="title-card"
-                 class="b-lazy">
+            <img src="assets/img/switch.png" alt=" Коммутаторы" class="b-lazy b-loaded">
           </div>
         </a>
-        <a href="#" class="card card--catalog">
+        <a href="istochniki-besperebojnogo-pitaniya" class="card card--catalog">
           <h6 class="card__link text--uppercase">
-            Маршрутизаторы
-          </h6>
+            Источники бесперебойного питания </h6>
           <div class="text--small-2 text--gray-4">
-            188 позиций
+            30 позиций
+          </div>
+        </a>
+        <a href="routeryi" class="card card--catalog">
+          <h6 class="card__link text--uppercase">
+            Маршрутизаторы </h6>
+          <div class="text--small-2 text--gray-4">
+            9 позиций
           </div>
           <div class="card--catalog__image">
-            <img data-src="assets/img/marshrutisator.png"
-                 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="title-card"
-                 class="b-lazy">
+            <img src="assets/img/marshrutisator.png" alt=" Маршрутизаторы" class="b-lazy b-loaded">
           </div>
         </a>
-        <a href="#" class="card card--catalog">
-          <h6 class="card__link text--uppercase">
-            Системы хранения
-            данных
-          </h6>
-          <div class="text--small-2 text--gray-4">
-            188 позиций
-          </div>
-          <div class="card--catalog__image">
-            <img data-src="assets/img/shd.png"
-                 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="title-card"
-                 class="b-lazy">
-          </div>
-        </a>
-        <a href="#" class="card card--catalog">
-          <h6 class="card__link text--uppercase">
-            Серверы
-          </h6>
-          <div class="text--small-2 text--gray-4">
-            188 позиций
-          </div>
-          <div class="card--catalog__image">
-            <img data-src="assets/img/server.png"
-                 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="title-card"
-                 class="b-lazy">
-          </div>
-        </a>
-        <a href="#" class="card card--catalog">
-          <h6 class="card__link text--uppercase">
-            Коммутаторы
-          </h6>
-          <div class="text--small-2 text--gray-4">
-            188 позиций
-          </div>
-          <div class="card--catalog__image">
-            <img data-src="assets/img/AP505.png"
-                 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="title-card"
-                 class="b-lazy">
-          </div>
-        </a>
-        <a href="#" class="card card--catalog">
-          <h6 class="card__link text--uppercase">
-            Маршрутизаторы
-          </h6>
-          <div class="text--small-2 text--gray-4">
-            188 позиций
-          </div>
-          <div class="card--catalog__image">
-            <img data-src="assets/img/marshrutisator.png"
-                 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="title-card"
-                 class="b-lazy">
-          </div>
-        </a>
-        <a href="#" class="card card--catalog">
-          <h6 class="card__link text--uppercase">
-            Системы хранения
-            данных
-          </h6>
-          <div class="text--small-2 text--gray-4">
-            188 позиций
-          </div>
-          <div class="card--catalog__image">
-            <img data-src="assets/img/shd.png"
-                 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="title-card"
-                 class="b-lazy">
-          </div>
-        </a>
-        <div class="card card--catalog card--empty"></div>
       </div>
     </div>
   </section>
-  <section class="section section--catalog-mobile">
+  <section class="section section--partners p-lg-b-88 p-xl-b-120">
     <div class="container">
-      <a href="#" class="card card--catalog">
-        <h5 class="card__link text--uppercase">
-          Каталог товаров
-        </h5>
-        <div class="text--small-2 text--gray-4">
-          188 позиций
-        </div>
-        <div class="card--catalog__image">
-          <img data-src="assets/img/server.png"
-               src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="title-card"
-               class="b-lazy">
-        </div>
-      </a>
+      <div class="d-flex align-items-center flex-wrap">
+        <a href="brands/Tripp Lite">
+          <img class="b-lazy b-loaded" src="assets/img/partners/tripp-lite.svg" alt="Tripp Lite">
+        </a>
+
+        <a href="brands/Sony">
+          <img class="b-lazy b-loaded" src="assets/img/partners/tripp-lite.svg" alt="Sony">
+        </a>
+
+        <a href="brands/Sennheiser">
+          <img class="b-lazy b-loaded" src="assets/img/partners/tripp-lite.svg" alt="Sennheiser">
+        </a>
+      </div>
+    </div>
+  </section>
+  <section class="section section--solutions-project p-md-t-60">
+    <div class="container">
+      <h3 class="heading--line text--uppercase">
+        Решения и продукты
+      </h3>
+      <div class="d-flex justify-content-end m-md-b-16 m-lg-b-20 m-xl-b-24">
+        <a class="link text--accent" href="#">
+          Узнать больше
+          <svg class="icon">
+            <use xlink:href="#chevron-right"></use>
+          </svg>
+        </a>
+      </div>
       <a data-action="getCategories" class="link--show show-categories" href="javascript:;">
         Посмотреть категории
         <img src="assets/img/menu.svg" alt="">
@@ -1346,119 +1352,54 @@
         Посмотреть производителей
         <img src="assets/img/menu.svg" alt="">
       </a>
-    </div>
-  </section>
-  <section class="section section--partners m-lg-t-36 m-xl-t-40">
-    <div class="container">
-      <div class="d-flex align-items-center flex-wrap">
-        <a href="#" rel="nofollow">
-          <img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-               data-src="assets/img/partners/cisco.svg" alt="">
-        </a>
-        <a href="#" rel="nofollow">
-          <img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-               data-src="assets/img/partners/cisco.svg" alt="">
-        </a>
-        <a href="#" rel="nofollow">
-          <img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-               data-src="assets/img/partners/cisco.svg" alt="">
-        </a>
-        <a href="#" rel="nofollow">
-          <img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-               data-src="assets/img/partners/hp.svg" alt="">
-        </a>
-        <a href="#" rel="nofollow">
-          <img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-               data-src="assets/img/partners/huawei.svg" alt="">
-        </a>
-        <a href="#" rel="nofollow">
-          <img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-               data-src="assets/img/partners/fujitsu.svg" alt="">
-        </a>
-        <a href="#" rel="nofollow">
-          <img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-               data-src="assets/img/partners/extreme.svg" alt="">
-        </a>
-        <a href="#" rel="nofollow">
-          <img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-               data-src="assets/img/partners/dell.svg" alt="">
-        </a>
-        <a href="#" rel="nofollow">
-          <img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-               data-src="assets/img/partners/tripp-lite.svg" alt="">
-        </a>
-        <a href="#" rel="nofollow">
-          <img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-               data-src="assets/img/partners/h3c.svg" alt="">
-        </a>
-      </div>
-    </div>
-  </section>
-  <section class="section section--about p-md-t-60 p-md-b-60 p-lg-t-88 p-lg-b-88 p-xl-t-120 p-xl-b-120">
-    <div class="container">
-      <div class="about">
-        <h3 class="heading--line text--uppercase">
-          Компания
-        </h3>
-        <div class="text--boxed">
-          ИНФРАДАТА – профессионал в области интеграции IT решений и надежный поставщик серверного, сетевого
-          оборудования и ТМЦ для среднего и крупного бизнеса, государственных предприятий и учреждений. Наши компетенции
-          позволяют закрыть все потребности заказчика в любой области информатизации его предприятия, тем самым
-          сократить материальные и трудовые затраты и обеспечить масштабируемость и гибкость реализуемых решений.
-        </div>
-      </div>
-      <div class="benefits m-md-t-0 m-lg-t-48 m-xl-t-60">
-        <div class="benefits__item">
-          <div class="benefits__item-image">
-            <img class="b-lazy"
-                 src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==
-                 data-src="assets/img/building.svg" alt="">
+      <div class="solutions-project">
+        <div class="card card--sub-solution ">
+          <h5 class="text--white m-xl-b-12">
+            Управление и мониторинг ИТ инфраструктуры </h5>
+          <div class="d-flex justify-content-end">
+            <a href="/resheniya/vyichislitelnyie-kompleksyi/upravlenie-i-monitoring-it-infrastrukturyi"
+               class="btn btn--red btn--with-icon">
+              <svg class="icon">
+                <use xlink:href="#chevron-right"></use>
+              </svg>
+            </a>
           </div>
-          <h4 class="benefits__item-title">
-            Широкий ассортимент продукции
-          </h4>
         </div>
-        <div class="benefits__item">
-          <div class="benefits__item-image">
-            <img class="b-lazy"
-                 src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==
-                 data-src="assets/img/hands.svg" alt="">
+        <div class="card card--sub-solution ">
+          <h5 class="text--white m-xl-b-12">
+            Системы хранения данных </h5>
+          <div class="d-flex justify-content-end">
+            <a href="/resheniya/vyichislitelnyie-kompleksyi/sistemyi-xraneniya-dannyix"
+               class="btn btn--red btn--with-icon">
+              <svg class="icon">
+                <use xlink:href="#chevron-right"></use>
+              </svg>
+            </a>
           </div>
-          <h4 class="benefits__item-title">
-            Гибкие финансовые условия
-          </h4>
         </div>
-        <div class="benefits__item">
-          <div class="benefits__item-image">
-            <img class="b-lazy"
-                 src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==
-                 data-src="assets/img/construct.svg" alt="">
+        <div class="card card--sub-solution ">
+          <h5 class="text--white m-xl-b-12">
+            Системы резервного копирования </h5>
+          <div class="d-flex justify-content-end">
+            <a href="/resheniya/vyichislitelnyie-kompleksyi/sistemyi-rezervnogo-kopirovaniya"
+               class="btn btn--red btn--with-icon">
+              <svg class="icon">
+                <use xlink:href="#chevron-right"></use>
+              </svg>
+            </a>
           </div>
-          <h4 class="benefits__item-title">
-            Профессиональная техническая экспертиза
-          </h4>
-        </div>
-        <div class="benefits__item">
-          <div class="benefits__item-image">
-            <img class="b-lazy"
-                 src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==
-                 data-src="assets/img/delivery.svg" alt="">
-          </div>
-          <h4 class="benefits__item-title">
-            Доставка <br>по всей России
-          </h4>
         </div>
       </div>
     </div>
   </section>
-  <section class="section section--project d-md-none d-lg-block p-md-t-0 p-xl-t-40">
+  <section class="section section--project d-md-none d-lg-block p-lg-b-88 p-lg-t-88 p-xl-b-120 p-xl-t-120">
     <div class="container">
       <h3 class="text--uppercase">Наши проекты</h3>
       <div class="d-flex justify-content-between m-lg-b-20 m-xl-b-24">
         <div class="text--small-2 text--accent">
-          26 277 проектов
+          3 проектов
         </div>
-        <a class="link text--accent" href="#">
+        <a class="link text--accent" href="proektyi">
           Перейти к проектам
           <svg class="icon">
             <use xlink:href="#chevron-right"></use>
@@ -1467,19 +1408,17 @@
       </div>
       <div class="project">
         <div class="card card--project">
-          <a href="#" class="card--project__image">
-            <img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                 data-src="assets/img/project.png" alt="">
+          <a href="proektyi/nazvanie-mozhet-byit-2-stroki" class="card--project__image">
+            <img class="b-lazy b-loaded" src="assets/img/project.png" alt="Название может быть 2 строки">
           </a>
           <div class="card--project__content">
-            <a href="#" class="card__link text--white h5">
-              Название проекта иногда может быть в две строки
-            </a>
+            <a href="proektyi/nazvanie-mozhet-byit-2-stroki" class="card__link text--white h5">
+              Название может быть 2 строки </a>
             <div class="d-flex justify-content-between align-items-center">
               <div class="date text--gray-4">
-                2018
+                2021
               </div>
-              <a class="card--project__arrow" href="#">
+              <a class="card--project__arrow" href="proektyi/nazvanie-mozhet-byit-2-stroki">
                 <svg class="icon icon--arrow-right">
                   <use xlink:href="#arrow-right"></use>
                 </svg>
@@ -1488,19 +1427,17 @@
           </div>
         </div>
         <div class="card card--project">
-          <a href="#" class="card--project__image">
-            <img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                 data-src="assets/img/project.png" alt="">
+          <a href="proektyi/nazvanie-mozhet-byit" class="card--project__image">
+            <img class="b-lazy b-loaded" src="assets/img/project.png" alt="Название может быть">
           </a>
           <div class="card--project__content">
-            <a href="#" class="card__link text--white h5">
-              Название проекта иногда может быть в две строки
-            </a>
+            <a href="proektyi/nazvanie-mozhet-byit" class="card__link text--white h5">
+              Название может быть </a>
             <div class="d-flex justify-content-between align-items-center">
               <div class="date text--gray-4">
-                2018
+                2021
               </div>
-              <a class="card--project__arrow" href="#">
+              <a class="card--project__arrow" href="proektyi/nazvanie-mozhet-byit">
                 <svg class="icon icon--arrow-right">
                   <use xlink:href="#arrow-right"></use>
                 </svg>
@@ -1509,19 +1446,17 @@
           </div>
         </div>
         <div class="card card--project">
-          <a href="#" class="card--project__image">
-            <img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                 data-src="assets/img/project.png" alt="">
+          <a href="proektyi/byit-nazvanie-mozhet" class="card--project__image">
+            <img class="b-lazy b-loaded" src="assets/img/project.png" alt="Быть название может">
           </a>
           <div class="card--project__content">
-            <a href="#" class="card__link text--white h5">
-              Название проекта иногда может быть в две строки
-            </a>
+            <a href="proektyi/byit-nazvanie-mozhet" class="card__link text--white h5">
+              Быть название может </a>
             <div class="d-flex justify-content-between align-items-center">
               <div class="date text--gray-4">
-                2018
+                2021
               </div>
-              <a class="card--project__arrow" href="#">
+              <a class="card--project__arrow" href="proektyi/byit-nazvanie-mozhet">
                 <svg class="icon icon--arrow-right">
                   <use xlink:href="#arrow-right"></use>
                 </svg>
@@ -1532,11 +1467,11 @@
       </div>
     </div>
   </section>
-  <section class="section section section--project-slider d-md-block d-none">
+  <section class="section section section--project-slider d-md-block d-none p-md-t-60 p-md-b-60">
     <div class="container">
       <h3 class="text--uppercase">Наши проекты</h3>
       <div class="d-flex justify-content-end m-md-b-16 m-lg-b-20 m-xl-b-24">
-        <a class="link text--accent" href="#">
+        <a class="link text--accent" href="proektyi">
           Перейти к проектам
           <svg class="icon">
             <use xlink:href="#chevron-right"></use>
@@ -1545,19 +1480,41 @@
       </div>
     </div>
     <div class="project-slider">
+
+
+
+
+          <div class="card card--project">
+            <a href="proektyi/nazvanie-mozhet-byit" class="card--project__image" >
+              <img class="b-lazy" src="assets/img/project.png" alt="Название может быть">
+            </a>
+            <div class="card--project__content">
+              <a href="proektyi/nazvanie-mozhet-byit" class="card__link text--white h5" >
+                Название может быть </a>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="date text--gray-4">
+                  2021
+                </div>
+                <a class="card--project__arrow" href="proektyi/nazvanie-mozhet-byit" tabindex="-1">
+                  <svg class="icon icon--arrow-right">
+                    <use xlink:href="#arrow-right"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
       <div class="card card--project">
-        <a href="#" class="card--project__image">
-          <img data-lazy="assets/img/project.png" alt="">
+        <a href="proektyi/nazvanie-mozhet-byit" class="card--project__image" >
+          <img class="b-lazy" src="assets/img/project.png" alt="Название может быть">
         </a>
         <div class="card--project__content">
-          <a href="#" class="card__link text--white h5">
-            Название проекта иногда может быть в две строки
-          </a>
+          <a href="proektyi/nazvanie-mozhet-byit" class="card__link text--white h5" >
+            Название может быть </a>
           <div class="d-flex justify-content-between align-items-center">
             <div class="date text--gray-4">
-              2018
+              2021
             </div>
-            <a class="card--project__arrow" href="#">
+            <a class="card--project__arrow" href="proektyi/nazvanie-mozhet-byit" tabindex="-1">
               <svg class="icon icon--arrow-right">
                 <use xlink:href="#arrow-right"></use>
               </svg>
@@ -1565,356 +1522,7 @@
           </div>
         </div>
       </div>
-      <div class="card card--project">
-        <a href="#" class="card--project__image">
-          <img data-lazy="assets/img/project.png" alt="">
-        </a>
-        <div class="card--project__content">
-          <a href="#" class="card__link text--white h5">
-            Название проекта иногда может быть в две строки
-          </a>
-          <div class="d-flex justify-content-between align-items-center">
-            <div class="date text--gray-4">
-              2018
-            </div>
-            <a class="card--project__arrow" href="#">
-              <svg class="icon icon--arrow-right">
-                <use xlink:href="#arrow-right"></use>
-              </svg>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="card card--project">
-        <a href="#" class="card--project__image">
-          <img data-lazy="assets/img/project.png" alt="">
-        </a>
-        <div class="card--project__content">
-          <a href="#" class="card__link text--white h5">
-            Название проекта иногда может быть в две строки
-          </a>
-          <div class="d-flex justify-content-between align-items-center">
-            <div class="date text--gray-4">
-              2018
-            </div>
-            <a class="card--project__arrow" href="#">
-              <svg class="icon icon--arrow-right">
-                <use xlink:href="#arrow-right"></use>
-              </svg>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="section section--suppliers d-md-none d-lg-block p-lg-t-88 p-lg-b-68 p-xl-t-120 p-xl-b-100">
-    <div class="container">
-      <h3 class="heading--line text--uppercase">
-        Поставщики и производители
-      </h3>
-      <div class="d-flex justify-content-end m-lg-b-20 m-xl-b-24">
-        <a class="link text--accent" href="#">
-          Узнать больше
-          <svg class="icon">
-            <use xlink:href="#chevron-right"></use>
-          </svg>
-        </a>
-      </div>
-      <div class="suppliers d-flex flex-wrap">
-        <a href="#" class="card card--suppliers">
-          <div class="card--suppliers__image">
-            <img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                 data-src="assets/img/partners/cisco.svg" alt="">
-          </div>
-          <div class="status text--gold text--uppercase d-flex justify-content-end">
-            Золотой партнер
-          </div>
-        </a>
-        <a href="#" class="card card--suppliers">
-          <div class="card--suppliers__image">
-            <img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                 data-src="assets/img/partners/hp.svg" alt="">
-          </div>
-          <div class="status text--gold text--uppercase d-flex justify-content-end">
-            Золотой партнер
-          </div>
-        </a>
-        <a href="#" class="card card--suppliers">
-          <div class="card--suppliers__image">
-            <img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                 data-src="assets/img/partners/fujitsu.svg" alt="">
-          </div>
-          <div class="status text--gray-7 text--uppercase d-flex justify-content-end">
-            Серебрянный партнер
-          </div>
-        </a>
-        <a href="#" class="card card--suppliers">
-          <div class="card--suppliers__image">
-            <img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                 data-src="assets/img/partners/h3c.svg" alt="">
-          </div>
-          <div class="status text--accent text--uppercase d-flex justify-content-end">
-            Иной статус партнера
-          </div>
-        </a>
-        <a href="#" class="card card--suppliers">
-          <div class="card--suppliers__image">
-            <img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                 data-src="assets/img/partners/extreme.svg" alt="">
-          </div>
-        </a>
-        <a href="#" class="card card--suppliers">
-          <div class="card--suppliers__image">
-            <img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                 data-src="assets/img/partners/tripp-lite.svg" alt="">
-          </div>
-        </a>
-        <a href="#" class="card card--suppliers">
-          <div class="card--suppliers__image">
-            <img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                 data-src="assets/img/partners/huawei.svg" alt="">
-          </div>
-        </a>
-        <a href="#" class="card card--suppliers">
-          <div class="card--suppliers__image">
-            <img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                 data-src="assets/img/partners/dell.svg" alt="">
-          </div>
-        </a>
-      </div>
-    </div>
-  </section>
-  <section class="section section--suppliers-slider d-md-block d-none p-md-t-60 p-md-b-60">
-    <div class="container">
-      <h3 class="text--uppercase">Поставщики и <br> производители</h3>
-      <div class="d-flex justify-content-end m-md-b-16 m-lg-b-20 m-xl-b-24">
-        <a class="link text--accent" href="#">
-          Узнать больше
-          <svg class="icon">
-            <use xlink:href="#chevron-right"></use>
-          </svg>
-        </a>
-      </div>
-    </div>
-    <div class="project-slider suppliers-slider">
-      <a href="#" class="card card--suppliers">
-        <div class="card--suppliers__image">
-          <img data-lazy="assets/img/partners/cisco.svg" alt="">
-        </div>
-        <div class="status text--gold text--uppercase d-flex justify-content-end">
-          Золотой партнер
-        </div>
-      </a>
-      <a href="#" class="card card--suppliers">
-        <div class="card--suppliers__image">
-          <img data-lazy="assets/img/partners/cisco.svg" alt="">
-        </div>
-        <div class="status text--gold text--uppercase d-flex justify-content-end">
-          Золотой партнер
-        </div>
-      </a>
-      <a href="#" class="card card--suppliers">
-        <div class="card--suppliers__image">
-          <img data-lazy="assets/img/partners/cisco.svg" alt="">
-        </div>
-        <div class="status text--gold text--uppercase d-flex justify-content-end">
-          Золотой партнер
-        </div>
-      </a>
-      <a href="#" class="card card--suppliers">
-        <div class="card--suppliers__image">
-          <img data-lazy="assets/img/partners/cisco.svg" alt="">
-        </div>
-        <div class="status text--gold text--uppercase d-flex justify-content-end">
-          Золотой партнер
-        </div>
-      </a>
-      <a href="#" class="card card--suppliers">
-        <div class="card--suppliers__image">
-          <img data-lazy="assets/img/partners/cisco.svg" alt="">
-        </div>
-        <div class="status text--gold text--uppercase d-flex justify-content-end">
-          Золотой партнер
-        </div>
-      </a>
-      <a href="#" class="card card--suppliers">
-        <div class="card--suppliers__image">
-          <img data-lazy="assets/img/partners/cisco.svg" alt="">
-        </div>
-        <div class="status text--gold text--uppercase d-flex justify-content-end">
-          Золотой партнер
-        </div>
-      </a>
-    </div>
-  </section>
-  <section class="section section--news d-md-none d-lg-block">
-    <div class="container">
-      <h3 class="heading--line text--uppercase">
-        Новости
-      </h3>
-      <div class="d-flex justify-content-end m-lg-b-20 m-xl-b-24">
-        <a class="link text--accent" href="#">
-          Перейти к новостям
-          <svg class="icon">
-            <use xlink:href="#chevron-right"></use>
-          </svg>
-        </a>
-      </div>
-      <div class="news d-flex justify-content-between">
-        <a href="#" class="card card--news">
-          <h5>
-            Дневник трейдера: когда стоит фиксировать прибыль со сделки
-          </h5>
-          <div class="date">
-            13 ноября 2020
-          </div>
-        </a>
-        <a href="#" class="card card--news">
-          <h5>
-            Дневник трейдера: когда стоит фиксировать прибыль со сделки
-          </h5>
-          <div class="date">
-            13 ноября 2020
-          </div>
-        </a>
-        <a href="#" class="card card--news">
-          <h5>
-            Дневник трейдера: когда стоит фиксировать прибыль со сделки
-          </h5>
-          <div class="date">
-            13 ноября 2020
-          </div>
-        </a>
-      </div>
-    </div>
-  </section>
-  <section class="section section--news-mobile d-md-block d-none">
-    <div class="container">
-      <h3 class="text--uppercase">Новости</h3>
-      <div class="d-flex justify-content-end m-md-b-16 m-lg-b-20 m-xl-b-24">
-        <a class="link text--accent" href="#">
-          Все новости
-          <svg class="icon">
-            <use xlink:href="#chevron-right"></use>
-          </svg>
-        </a>
-      </div>
-      <div class="news news-slider">
-        <a href="#" class="card card--news">
-          <div class="card--slider__wrap">
-            <h5>
-              Дневник трейдера: когда стоит фиксировать прибыль со сделки
-            </h5>
-            <div class="date">
-              13 ноября 2020
-            </div>
-          </div>
-        </a>
-        <a href="#" class="card card--news">
-          <div class="card--slider__wrap">
-            <h5>
-              Дневник трейдера: когда стоит фиксировать прибыль со сделки
-            </h5>
-            <div class="date">
-              13 ноября 2020
-            </div>
-          </div>
-        </a>
-        <a href="#" class="card card--news">
-          <div class="card--slider__wrap">
-            <h5>
-              Дневник трейдера: когда стоит фиксировать прибыль со сделки
-            </h5>
-            <div class="date">
-              13 ноября 2020
-            </div>
-          </div>
-        </a>
-      </div>
-    </div>
-  </section>
-  <section class="section section--views p-lg-t-88 p-lg-b-88 p-xl-t-120 p-xl-b-120">
-    <div class="container">
-      <h3 class="text--uppercase">
-        Просмотренные товары
-      </h3>
-      <div class="d-flex justify-content-between m-lg-b-20 m-xl-b-24">
-        <div class="text--small-2 text--accent">
-          26 277 товаров
-        </div>
-      </div>
-      <div class="views__slider">
-        <div class="card card--view">
-          <a href="#" class="card--view__image">
-            <img class="" data-lazy="assets/img/product.png" alt="">
-          </a>
-          <a href="#" class="h5 card--view__title">
-            Tripp Lite сверхкомпактный линейно-интерактивный ИБП
-          </a>
-          <span class="code">
-            Артикул: SMX1500LCDT
-          </span>
-          <span class="promo">
-            При заказе от 5 единиц - скидка
-          </span>
-        </div>
-        <div class="card card--view">
-          <a href="#" class="card--view__image">
-            <img class="" data-lazy="assets/img/product.png" alt="">
-          </a>
-          <a href="#" class="h5 card--view__title">
-            Tripp Lite сверхкомпактный линейно-интерактивный ИБП
-          </a>
-          <span class="code">
-            Артикул: SMX1500LCDT
-          </span>
-          <span class="promo">
-            При заказе от 5 единиц - скидка
-          </span>
-        </div>
-        <div class="card card--view">
-          <a href="#" class="card--view__image">
-            <img class="" data-lazy="assets/img/product.png" alt="">
-          </a>
-          <a href="#" class="h5 card--view__title">
-            Tripp Lite сверхкомпактный линейно-интерактивный ИБП
-          </a>
-          <span class="code">
-            Артикул: SMX1500LCDT
-          </span>
-          <span class="promo">
-            При заказе от 5 единиц - скидка
-          </span>
-        </div>
-        <div class="card card--view">
-          <a href="#" class="card--view__image">
-            <img class="" data-lazy="assets/img/product.png" alt="">
-          </a>
-          <a href="#" class="h5 card--view__title">
-            Tripp Lite сверхкомпактный линейно-интерактивный ИБП
-          </a>
-          <span class="code">
-            Артикул: SMX1500LCDT
-          </span>
-          <span class="promo">
-            При заказе от 5 единиц - скидка
-          </span>
-        </div>
-        <div class="card card--view">
-          <a href="#" class="card--view__image">
-            <img class="" data-lazy="assets/img/product.png" alt="">
-          </a>
-          <a href="#" class="h5 card--view__title">
-            Tripp Lite сверхкомпактный линейно-интерактивный ИБП
-          </a>
-          <span class="code">
-            Артикул: SMX1500LCDT
-          </span>
-          <span class="promo">
-            При заказе от 5 единиц - скидка
-          </span>
-        </div>
-      </div>
+
     </div>
   </section>
   <section class="section section--contacts p-mb-t-36 p-mb-b-36 p-lg-t-60 p-lg-b-60 p-xl-t-80 p-xl-b-80">
@@ -2094,5 +1702,5 @@
   </div>
 </div>
 
-<script type="text/javascript" src="/assets/js/vendors.d34acfbddfafc4fee03c.js"></script><script type="text/javascript" src="/assets/js/app.4d83b2db5154cce0ffbc.js"></script></body>
+</body>
 </html>
