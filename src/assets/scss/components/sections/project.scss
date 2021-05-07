@@ -1,8 +1,9 @@
 .project{
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
   .card{
     margin-right: rem(40);
+    width: calc(100%/3 - 80px/3);
     @media (max-width: $smDesktopWidth) {
       width: calc(100%/3 - 32px/3);
       margin-right: rem(16);

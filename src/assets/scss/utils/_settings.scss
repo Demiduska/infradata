@@ -459,6 +459,38 @@ footer{
       }
     }
   }
+  &--project{
+    &-single{
+      .card{
+        margin-bottom: rem(40);
+        @media (max-width: $smDesktopWidth) {
+          margin-bottom: rem(32);
+        }
+        @media (max-width: $tableWidth) {
+          width: 100%;
+          margin-bottom: rem(20);
+          margin-right: 0;
+          display: flex;
+        }
+        &--project{
+          &__image{
+            @media (max-width: $tableWidth){
+              width: 30%;
+            }
+          }
+          &__content{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            @media (max-width: $tableWidth){
+              width: 70%;
+              padding: rem(12);
+            }
+          }
+        }
+      }
+    }
+  }
 }
 .show-categories{
   background: $gray;
