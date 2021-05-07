@@ -387,6 +387,10 @@ footer{
     .text--boxed{
       padding-top: 0;
       padding-bottom: 0;
+        @media (max-width: $smDesktopWidth) {
+          padding: 0;
+          margin-bottom: rem(0);
+        }
     }
   }
   &--catalog{
@@ -433,6 +437,26 @@ footer{
     }
     @media (max-width: $tableWidth) {
       display: none;
+    }
+  }
+  &--process{
+    &-about{
+      .process{
+        .card{
+          @media (max-width: $tableWidth) {
+            width: 100%;
+            padding: rem(20);
+            margin-right: 0;
+            margin-bottom: rem(12);
+          }
+          @media (max-width: $tableWidth) {
+            &:last-child{
+              margin-bottom: 0;
+            }
+          }
+
+        }
+      }
     }
   }
 }

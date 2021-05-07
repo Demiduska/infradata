@@ -3,7 +3,12 @@
   flex-wrap: wrap;
   .card{
     margin-right: rem(20);
-    width: calc(100%/3 - 80px/3);
+    width: calc(100%/3 - 40px/3);
+    @media (max-width: $tableWidth) {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: rem(12);
+    }
     &:last-child{
       margin-right: 0;
     }

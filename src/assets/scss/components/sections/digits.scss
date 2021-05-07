@@ -2,8 +2,15 @@
   display: flex;
   width: 100%;
   justify-content: space-between;
+  @media (max-width: $tableWidth) {
+    flex-wrap: wrap;
+  }
   &__item{
     width: calc(100%/3);
+    @media (max-width: $tableWidth) {
+      width: 100%;
+      margin-top: rem(32);
+    }
     &-big{
       font-size: rem(40);
       line-height: rem(40);
@@ -11,9 +18,28 @@
       color: $accent;
       font-weight: bold;
       margin-bottom: rem(12);
-      span{
+      @media (max-width: $tableWidth) {
+        font-size: rem(32);
+        line-height: rem(44);
+        margin-bottom: 0;
+      }
+      span,strong{
         font-size: rem(16);
         line-height: rem(20);
+      }
+    }
+  }
+  &-wrap{
+    @media (max-width: $smDesktopWidth) {
+      flex-wrap: wrap;
+    }
+    h3{
+      @media (max-width: $smDesktopWidth) {
+        width: 100%;
+        margin-bottom: rem(20);
+      }
+      @media (max-width: $tableWidth) {
+        margin-bottom: 0;
       }
     }
   }

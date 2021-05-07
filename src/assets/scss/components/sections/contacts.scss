@@ -45,8 +45,15 @@
   }
   &-single{
     width: 100%;
+    @media (max-width: $tableWidth) {
+      flex-wrap: wrap;
+      display: flex;
+    }
     .contacts__item{
       width: calc(100%/3);
+      @media (max-width: $tableWidth) {
+        width: 100%;
+      }
     }
   }
 }

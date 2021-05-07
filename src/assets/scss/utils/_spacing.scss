@@ -190,6 +190,11 @@
           margin-top: rem(24);
         }
       }
+      &-36{
+        @media (max-width:$tableWidth) {
+          margin-top: rem(36);
+        }
+      }
     }
     &-b{
       &-8{

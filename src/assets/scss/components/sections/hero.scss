@@ -90,16 +90,36 @@
       display: flex;
       align-items: center;
       position: relative;
+      padding-top: rem(46);
+      @media (max-width: $tableWidth) {
+        flex-wrap: wrap;
+        padding-top: 0;
+      }
       &__content{
         position: relative;
         z-index: 50;
         width: 70%;
+        @media (max-width: $smDesktopWidth) {
+          width: 85%;
+        }
+        @media (max-width: $tableWidth) {
+          width: 100%;
+          order: 1;
+        }
       }
       &__image{
         position: absolute;
         z-index: 40;
         width: 50%;
         right: 0;
+        @media (max-width: $smDesktopWidth) {
+          width: 70%;
+        }
+        @media (max-width: $tableWidth) {
+          position: relative;
+          width: 100%;
+          order: 0;
+        }
       }
     }
   }

@@ -248,6 +248,18 @@
   &--more{
     min-height: rem(212);
     padding: rem(24) rem(28) rem(32) rem(20);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    @media (max-width: $smDesktopWidth) {
+      padding: rem(20) rem(16) rem(24) rem(16);
+      min-height: rem(248);
+    }
+    @media (max-width: $tableWidth){
+      min-height: rem(112);
+      padding: rem(16);
+
+    }
     &__subtitle{
       margin-top: rem(16);
       margin-bottom: rem(20);
@@ -255,6 +267,14 @@
       font-size: rem(18);
       line-height: rem(28);
       letter-spacing: -0.0075em;
+      @media (max-width: $smDesktopWidth) {
+        margin-top: rem(12);
+        font-size: rem(16);
+        line-height: rem(24);
+      }
+      @media (max-width: $tableWidth){
+        display: none;
+      }
     }
     &__arrow{
       transition: all .3s ease;
