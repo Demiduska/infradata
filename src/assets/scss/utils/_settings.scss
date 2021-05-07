@@ -467,9 +467,9 @@ footer{
           margin-bottom: rem(32);
         }
         @media (max-width: $tableWidth) {
-          width: 100%;
+          width: 100%!important;
           margin-bottom: rem(20);
-          margin-right: 0;
+          margin-right: 0!important;
           display: flex;
         }
         &--project{
