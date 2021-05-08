@@ -3,7 +3,8 @@
     padding: rem(16) rem(23);
     border: 1px solid $gray-4;
     margin-bottom: rem(16);
-    display: block;
+    display: flex;
+    align-items: center;
     .image{
       max-width: rem(122);
       margin-right: rem(62);
@@ -19,7 +20,15 @@
       }
     }
     .counter{
-
+      justify-content: center;
+      margin-right: 0;
+      &__item{
+        background: $accent;
+        .icon{
+          stroke: $default-color;
+          fill: $default-color;
+        }
+      }
     }
     .price{
       span{
@@ -41,5 +50,40 @@
 #msCart{
   table{
     width: 100%;
+    td,th{
+      display: block;
+    }
+    tr{
+      display: flex;
+      .title{
+        width: 50%;
+        text-align: center;
+      }
+      .count{
+        width: 20%;
+        text-align: center;
+      }
+      .price{
+        width: 20%;
+        text-align: center;
+      }
+      .remove{
+        width: 10%;
+        text-align: center;
+      }
+    }
+    .header{
+      padding: 0 rem(23) rem(20) rem(23);
+      font-size: rem(18);
+    }
+    .footer{
+      font-size: rem(18);
+      display: flex;
+      justify-content: flex-end;
+      margin-top: rem(24);
+    }
   }
+}
+.tab-stages-2{
+  display: none;
 }

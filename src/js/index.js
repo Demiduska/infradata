@@ -523,7 +523,16 @@ $(function () {
     e.preventDefault();
     clearHeaderFilterFields();
   });
-
+  $(document).on('click','#to-step-2',function (e){
+    e.preventDefault();
+    $('.tab-stages-1').fadeOut();
+    $('.tab-stages-2').fadeIn();
+  });
+  $(document).on('click','#to-step-1',function (e){
+    e.preventDefault();
+    $('.tab-stages-1').fadeIn();
+    $('.tab-stages-2').fadeOut();
+  });
 
   // Антиспам
   $('.ajax_form').append('<input type="text" name="org" value="" class="_org" style="visibility:hidden; height: 0; width: 0; padding: 0; border:none;"/>')
