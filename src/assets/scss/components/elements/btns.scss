@@ -57,6 +57,7 @@
     color: $accent;
     padding: rem(10) rem(18);
     line-height: rem(20);
+    background: $default-color;
     &:hover{
       color: $default-color;
       background: $accent;

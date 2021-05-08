@@ -5,9 +5,22 @@
     margin-bottom: rem(16);
     display: flex;
     align-items: center;
+    @media (max-width: $smDesktopWidth) {
+      padding: rem(16);
+      margin-bottom: rem(12);
+    }
+    @media (max-width: $tableWidth) {
+      padding: rem(48) rem(16) rem(16) rem(16);
+      flex-wrap: wrap;
+      position: relative;
+    }
     .image{
       max-width: rem(122);
       margin-right: rem(62);
+      @media (max-width: $smDesktopWidth) {
+        margin-right: rem(24);
+        max-width: rem(81);
+      }
     }
     .title{
       font-weight: bold;
@@ -17,11 +30,18 @@
 
       a{
         color: $mainFontColor;
+        @media (max-width: $smDesktopWidth) {
+          font-size: rem(18);
+          line-height: rem(20);
+        }
       }
     }
     .counter{
       justify-content: center;
       margin-right: 0;
+      @media (max-width: $tableWidth) {
+        justify-content: flex-start;
+      }
       &__item{
         background: $accent;
         .icon{
@@ -61,29 +81,85 @@
       .title{
         width: 50%;
         text-align: center;
+        @media (max-width: $smDesktopWidth) {
+          width: 55%;
+        }
+        @media (max-width: $tableWidth) {
+          width: 100%;
+          text-align: left;
+        }
       }
       .count{
         width: 20%;
         text-align: center;
+        @media (max-width: $smDesktopWidth) {
+          width: 25%;
+        }
+        @media (max-width: $tableWidth) {
+          width: 60%;
+          margin-top: rem(24);
+          order: 3;
+        }
       }
       .price{
         width: 20%;
         text-align: center;
+        @media (max-width: $smDesktopWidth) {
+          width: 15%;
+
+        }
+        @media (max-width: $tableWidth) {
+          width: 40%;
+          margin-top: rem(24);
+          order: 2;
+          text-align: left;
+        }
       }
       .remove{
         width: 10%;
         text-align: center;
+        @media (max-width: $smDesktopWidth) {
+          width: 5%;
+        }
+        @media (max-width: $tableWidth){
+          position: absolute;
+          right: rem(22);
+          top: rem(22);
+        }
       }
     }
     .header{
       padding: 0 rem(23) rem(20) rem(23);
       font-size: rem(18);
+      @media (max-width: $smDesktopWidth) {
+        padding: 0 rem(16) rem(16) rem(16);
+      }
+      @media (max-width: $tableWidth) {
+        display: none;
+      }
     }
     .footer{
       font-size: rem(18);
       display: flex;
       justify-content: flex-end;
       margin-top: rem(24);
+      @media (max-width: $tableWidth) {
+        justify-content: flex-start;
+      }
+    }
+    +div{
+      @media (max-width: $tableWidth) {
+        width: 100%;
+      }
+      .btn{
+        @media (max-width: $tableWidth) {
+          width: 100%;
+          text-align: center;
+          font-size: rem(18);
+          line-height: rem(24);
+        }
+      }
+
     }
   }
 }
@@ -94,6 +170,12 @@
     margin: 0 auto;
     >div{
       margin-bottom: rem(28);
+      @media (max-width: $smDesktopWidth) {
+        margin-bottom: rem(24);
+      }
+      @media (max-width: $tableWidth){
+        margin-bottom: rem(20);
+      }
       label{
         display: block;
         margin-bottom: rem(8);
@@ -108,10 +190,14 @@
         font-size: rem(16);
         line-height: rem(20);
         color: $mainFontColor;
-        opacity: 0.5;
         border: 1px solid $gray-4;
         width: 100%;
         height: rem(44);
+        opacity: 1;
+        &::placeholder{
+          opacity: 0.5;
+        }
+
       }
     }
 
@@ -152,14 +238,55 @@
 
   }
 }
+
+.warning{
+  padding: rem(22) rem(20) rem(26) rem(20);
+  background: $warning;
+  margin-top: rem(48);
+  @media (max-width: $smDesktopWidth) {
+    margin-bottom: rem(36);
+  }
+  @media (max-width: $tableWidth) {
+    margin-top: rem(28);
+    padding: rem(20) rem(16) rem(24) rem(16);
+  }
+}
+#msOrder{
+  margin-top: 0!important;
+}
 .order-buttons{
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-top: rem(80);
+  @media (max-width: $smDesktopWidth) {
+    margin-top: rem(60);
+    margin-bottom: 0;
+  }
+  @media (max-width: $tableWidth) {
+    margin-top: rem(68);
+    flex-wrap: wrap;
+  }
+  .btn{
+    display: flex;
+    align-items: center;
+    @media (max-width: $tableWidth) {
+      width: 100%;
+      margin-bottom: rem(20);
+      text-align: center;
+      font-size: rem(18);
+      line-height: rem(24);
+      justify-content: center;
+    }
+    &:last-child{
+      @media (max-width: $tableWidth) {
+        margin-bottom: rem(12);
+      }
+    }
+  }
 }
-.warning{
-  padding: rem(22) rem(20) rem(26) rem(20);
-  background: $warning;
-  margin-top: rem(48);
+.tab-stages-2__content>div.order-buttons{
+  @media (max-width: $smDesktopWidth) {
+    margin-bottom: 0;
+  }
 }

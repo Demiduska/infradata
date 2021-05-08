@@ -540,8 +540,7 @@ $(function () {
 
   if (typeof miniShop2 !== 'undefined'){
     miniShop2.Callbacks.Cart.add.response.success = function() {
-      $('.jGrowl-notification.ms2-message-success').append('<div class="message-button">Test block</div>');
-      console.log('товар добавлен');
+      // console.log('товар добавлен');
     }
   }
   if (typeof pdoPage !== 'undefined') {

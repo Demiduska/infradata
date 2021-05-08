@@ -595,3 +595,11 @@ footer{
     }
   }
 }
+.jgrowl-bottom{
+  margin-top: rem(60);
+  display: flex;
+  align-items: center;
+  .btn--red{
+    background-color: $accent;
+  }
+}
