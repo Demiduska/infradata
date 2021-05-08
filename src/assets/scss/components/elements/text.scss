@@ -52,6 +52,10 @@
       line-height: rem(28);
       letter-spacing: -0.0075em;
       color: $accent;
+      @media (max-width: $tableWidth){
+        font-size: rem(16);
+        line-height: rem(24);
+      }
       &:hover{
         text-decoration: underline;
       }

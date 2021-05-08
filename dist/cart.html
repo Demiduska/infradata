@@ -39,6 +39,7 @@
             </a>
             <input class="input input-search header__search-form-input" placeholder="Поиск по каталогу" type="text"
                    id="header__input-search">
+            <div class="cat-error"></div>
           </label>
           <button disabled class="btn-search" id="header__search-button">
             <svg class="icon icon--search">
@@ -1166,360 +1167,145 @@
     </form>
   </div>
 </header>
-<section class="section d-none d-lg-block">
-  <div class="container">
-    <ul class="breadcrumb">
-      <li class="breadcrumb__item">
-        <a class="breadcrumb__link" href="/">
-          Главная
-        </a>
-      </li>
-      <li class="breadcrumb__item">
-        <a class="breadcrumb__link" href="#">
-          Каталог
-        </a>
-      </li>
-      <li class="breadcrumb__item active">
-        Tripp Lite линейно-интерактивный ИБП
-      </li>
-    </ul>
-  </div>
-</section>
 <main>
-  <section class="section section--second-hero p-md-b-60 p-md-t-60 p-lg-b-88 p-lg-t-88 p-xl-t-120 p-xl-b-60">
+  <section class="section">
     <div class="container">
-      <div class="second-hero second-hero--with-image">
-        <div class="second-hero__content">
-          <h1 class="heading--line m-lg-b-28 m-xl-b-32">
-            Вычислительные комплексы
-          </h1>
-          <p>
-            Рост скоростей в мире составляет много млн гб и растет каждый год. Цифровая инфраструктура является важной
-            составляющей, обеспечивающей конкурентное преимущество.
-          </p>
-          <br>
-          <p>
-            Infra-data предоставляет услуги по созданию и модификации вычислительных комплексов. Реализация проекта
-            приведет к <span class="text--accent">росту эффективности бизнеса</span>.
-          </p>
-        </div>
-        <div class="second-hero__image">
-          <img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-               data-src="assets/img/solution-image.svg" alt="">
-        </div>
-      </div>
+      <ul class="breadcrumb">
+        <li class="breadcrumb__item"><a class="breadcrumb__link" href="/">ИНФРАДАТА</a></li>
+        <li class="breadcrumb__item active">Проекты</li>
+      </ul>
     </div>
+  </section>
+  <section class="section section--cart p-xl-t-120">
     <div class="container">
-      <div class="popup__links m-lg-t-60">
-        <a class="link--more" data-id="30" data-action="getBenefits" data-title="Преимущества работы" href="javascript:;">
-          Преимущества
-          <svg class="icon">
-            <use xlink:href="#arrow-right"></use>
-          </svg>
-        </a>
-        <a class="link--more" data-id="30" data-action="getClients" data-title="Клиенты" href="javascript:;">
-          Направления работы
-          <svg class="icon">
-            <use xlink:href="#arrow-right"></use>
-          </svg>
-        </a>
-        <a class="link--more" data-id="30" data-action="getClients" data-title="Процесс Работы" href="javascript:;">
-          Процесс работы
-          <svg class="icon">
-            <use xlink:href="#arrow-right"></use>
-          </svg>
-        </a>
+      <h1 class="m-xl-b-12">
+        Заказ
+      </h1>
+      <div class="tab-stages">
+        <div class="tab-stages-1">
+          <div class="text text--accent">
+            Шаг 1 и 2. Список товаров
+          </div>
+          <div id="msCart" class="p-xl-t-80">
+            <div class="table-responsive">
+              <table class="table table-striped">
+                <tbody>
+                <tr class="header">
+                  <th class="title">Название товара</th>
+                  <th class="count">Количество</th>
+                  <th class="price">Сумма</th>
+                  <th class="remove"></th>
+                </tr>
 
-      </div>
-    </div>
-  </section>
-  <section class="section section--pluses d-md-none d-lg-block p-lg-b-40 p-lg-t-60 p-xl-t-80 p-xl-b-60 background--gray-6">
-    <div class="container">
-      <div class="d-flex align-items-start pluses-wrap">
-        <h3 class="heading--with-right heading--line text--uppercase">
-          Польза <br> от внедрения
-        </h3>
-        <div class="pluses d-flex flex-wrap">
-          <div src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-               data-src="assets/img/plus-1.svg" class="b-lazy card card--pluses m-xl-b-20">
-            <h5 class="card--pluses__title text--uppercase text--white">
-              автоматизация бизнес-процессов
-            </h5>
-          </div>
-          <div src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-               data-src="assets/img/plus-2.svg" class="b-lazy card card--pluses m-xl-b-20">
-            <h5 class="card--pluses__title text--uppercase text--white">
-              построение современной информационной структуры бизнеса
-            </h5>
-          </div>
-          <div src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-               data-src="assets/img/plus-3.svg" class="b-lazy card card--pluses m-xl-b-0">
-            <h5 class="card--pluses__title text--uppercase text--white">
-              снижение технологических и финансовых рисков
-            </h5>
-          </div>
-          <div src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-               data-src="assets/img/plus-4.svg" class="b-lazy card card--pluses m-xl-b-0">
-            <h5 class="card--pluses__title text--uppercase text--white">
-              Повышение
-              безопасности
-            </h5>
+
+                <tr class="cart__item">
+                  <td class="title">
+                    <div class="d-flex align-items-center">
+                      <div class="image mw-100 pr-3">
+                        <a href="/kommutatoryi/s9850-4c"> <img
+                          src="/assets/img/dizajn-bez-nazvaniya-(8).jpg"
+                          alt="H3C коммутатор уровня доступа ЦОД" title="H3C коммутатор уровня доступа ЦОД">
+                        </a>
+                      </div>
+                      <div class="title">
+                        <a href="/kommutatoryi/s9850-4c">H3C коммутатор уровня доступа ЦОД</a>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="count">
+                    <form method="post" class="ms2_form" role="form">
+                      <input type="hidden" name="key" value="09871475c9b60e4a49fc1837cd52188b">
+                      <div class="form-group">
+                        <div class="input-group input-group-sm">
+                          <input type="number" name="count" value="1" class="form-control">
+                          <div class="input-group-append">
+                            <span class="input-group-text">шт.</span>
+                          </div>
+                        </div>
+                        <button class="btn btn-sm" type="submit" name="ms2_action" value="cart/change">↻</button>
+                      </div>
+                    </form>
+                  </td>
+                  <td class="price">
+                    <span class="mr-2 text-nowrap">0 руб.</span>
+                  </td>
+                  <td class="remove">
+                    <form method="post" class="ms2_form text-md-right">
+                      <input type="hidden" name="key" value="09871475c9b60e4a49fc1837cd52188b">
+                      <button class="btn btn-sm btn-danger" type="submit" name="ms2_action" value="cart/remove">
+                        <svg class="icon">
+                          <use xlink:href="#close"></use>
+                        </svg>
+                      </button>
+                    </form>
+                  </td>
+                </tr>
+
+                <tr class="cart__item">
+                  <td class="title">
+                    <div class="d-flex align-items-center">
+                      <div class="image mw-100 pr-3">
+                        <a href="/kommutatoryi/s9850-4c"> <img
+                          src="/assets/img/dizajn-bez-nazvaniya-(8).jpg"
+                          alt="H3C коммутатор уровня доступа ЦОД" title="H3C коммутатор уровня доступа ЦОД">
+                        </a>
+                      </div>
+                      <div class="title">
+                        <a href="/kommutatoryi/s9850-4c">H3C коммутатор уровня доступа ЦОД</a>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="count">
+                    <form method="post" class="ms2_form" role="form">
+                      <input type="hidden" name="key" value="09871475c9b60e4a49fc1837cd52188b">
+                      <div class="form-group">
+                        <div class="input-group input-group-sm">
+                          <input type="number" name="count" value="1" class="form-control">
+                          <div class="input-group-append">
+                            <span class="input-group-text">шт.</span>
+                          </div>
+                        </div>
+                        <button class="btn btn-sm" type="submit" name="ms2_action" value="cart/change">↻</button>
+                      </div>
+                    </form>
+                  </td>
+                  <td class="price">
+                    <span class="mr-2 text-nowrap">0 руб.</span>
+                  </td>
+                  <td class="remove">
+                    <form method="post" class="ms2_form text-md-right">
+                      <input type="hidden" name="key" value="09871475c9b60e4a49fc1837cd52188b">
+                      <button class="btn btn-sm btn-danger" type="submit" name="ms2_action" value="cart/remove">×
+                      </button>
+                    </form>
+                  </td>
+                </tr>
+
+
+                <tr class="footer">
+                  <th class="total">Итого:</th>
+                  <th class="total_count">
+                    <span class="ms2_total_count">3</span>
+                    шт.
+                  </th>
+                  <th class="total_cost text-nowrap" colspan="2">
+                    <span class="ms2_total_cost">0</span>
+                    руб.
+                  </th>
+                </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <form method="post">
+              <button type="submit" name="ms2_action" value="cart/clean" class="btn btn-danger">
+                Очистить корзину
+              </button>
+            </form>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
-  <section class="section section--who d-md-none d-lg-block p-lg-t-88 p-lg-b-88 p-xl-t-120 p-xl-b-120">
-    <div class="container">
-      <div class="d-flex align-items-start who-wrap">
-        <h3 class="heading--with-right heading--line text--uppercase m-lg-b-24">
-          Для кого
-        </h3>
-        <div class="w-100">
-          <div class="d-flex flex-wrap justify-content-between m-lg-b-36 m-lg-t-24 m-xl-b-96">
-            <div class="card card--who">
-              <div class="card--who__image">
-                <img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                     data-src="assets/img/government.svg" alt="">
-              </div>
-              <h4>
-                Государственный сектор
-              </h4>
-            </div>
-            <div class="card card--who">
-              <div class="card--who__image">
-                <img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                     data-src="assets/img/buisness.svg" alt="">
-              </div>
-              <h4>
-                Коммерческие организации
-              </h4>
-            </div>
-          </div>
-          <div class="p-lg-t-36">
-            <h3 class="m-lg-b-20 m-xl-b-24">
-              Отрасли
-            </h3>
-            <ul class="who__list list list--square d-flex justify-content-between flex-wrap">
-              <li class="list__item">Промышленные предприятия</li>
-              <li class="list__item">Финансовые организации</li>
-              <li class="list__item">Судостроительные заводы</li>
-              <li class="list__item">Ритейл</li>
-              <li class="list__item">Учебные учреждения</li>
-              <li class="list__item">Гостиницы</li>
-              <li class="list__item">Медицинские учреждения</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="section section--cta background--main d-md-none d-lg-block p-lg-b-48 p-lg-t-48 p-xl-t-60 p-xl-b-60">
-    <div class="container">
-      <div class="cta d-flex justify-content-between align-items-center">
-        <div class="cta__title text--white">
-          У вас есть вопросы или необходима консультация?
-        </div>
-        <div class="cta__subtitle text--white">
-          Отправьте нам сообщение и специалист свяжется с вами
-        </div>
-        <div class="cta__btn">
-          <a href="#callback" class="btn btn--red scrollTo">
-            Отправить сообщение
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="section section--process d-md-none d-lg-block p-lg-t-88 p-lg-b-88 p-xl-t-120 p-xl-b-120">
-    <div class="container">
-      <div class="d-flex align-items-start process-wrap">
-        <h3 class="heading--with-right text--uppercase heading--line m-lg-b-20">
-          Процесс работы
-        </h3>
-        <div>
-          <div class="text--boxed m-lg-b-48 m-xl-b-60">
-            Наши компетенции позволяют закрыть все потребности заказчика в любой области информатизации его предприятия,
-            тем самым сократить материальные и трудовые затраты и обеспечить
-            <a href="#">
-              масштабируемость и гибкость реализуемых решений.
-            </a>
-          </div>
-          <h3 class="m-lg-b-20 m-xl-b-24">
-            Ключевые шаги
-          </h3>
-          <div class="process d-flex flex-wrap">
-            <div class="card card--process">
-              <div class="card--process__digit">
-                01
-              </div>
-              <h5 class="text--uppercase">
-                Формирование и согласование спецификации
-              </h5>
-            </div>
-            <div class="card card--process">
-              <div class="card--process__digit">
-                02
-              </div>
-              <h5 class="text--uppercase">
-                Подписание договора
-              </h5>
-            </div>
-            <div class="card card--process">
-              <div class="card--process__digit">
-                03
-              </div>
-              <h5 class="text--uppercase">
-                Реализация проекта или отгрузка оборудования
-              </h5>
-            </div>
-            <div class="card card--process">
-              <div class="card--process__digit">
-                04
-              </div>
-              <h5 class="text--uppercase">
-                Сервисное обслуживание и техническая поддержка
-              </h5>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="section section--competence d-md-none d-lg-block p-lg-t-60 p-xl-t-80 p-xl-b-60 background--gray-6">
-    <div class="container">
-      <div class="d-flex align-items-start competence-wrap">
-        <h3 class="heading--with-right text--uppercase heading--line m-lg-b-20">
-          Наши <br> компетенции
-        </h3>
-        <div class="competence d-flex flex-wrap w-100">
-          <div class="card card--competence">
-              <h4 class="text--white card--competence__title">
-                Проведение обследований IT-инфраструктуры;
-              </h4>
-              <div class="card--competence__image">
-                <img class="b-lazy"
-                     src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                     data-src="assets/img/wheel.svg" alt="">
-              </div>
-          </div>
-          <div class="card card--competence">
-              <h4 class="text--white card--competence__title">
-                Проведение обследований IT-инфраструктуры;
-              </h4>
-              <div class="card--competence__image">
-                <img class="b-lazy"
-                     src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                     data-src="assets/img/wheel.svg" alt="">
-              </div>
-          </div>
-          <div class="card card--competence">
-            <h4 class="text--white card--competence__title">
-              Проведение обследований IT-инфраструктуры;
-            </h4>
-            <div class="card--competence__image">
-              <img class="b-lazy"
-                   src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                   data-src="assets/img/wheel.svg" alt="">
-            </div>
-          </div>
-          <div class="card card--competence">
-            <h4 class="text--white card--competence__title">
-              Проведение обследований IT-инфраструктуры;
-            </h4>
-            <div class="card--competence__image">
-              <img class="b-lazy"
-                   src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                   data-src="assets/img/wheel.svg" alt="">
-            </div>
-          </div>
-          <div class="card card--competence">
-            <h4 class="text--white card--competence__title">
-              Проведение обследований IT-инфраструктуры;
-            </h4>
-            <div class="card--competence__image">
-              <img class="b-lazy"
-                   src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                   data-src="assets/img/wheel.svg" alt="">
-            </div>
-          </div>
-          <div class="card card--competence">
-            <h4 class="text--white card--competence__title">
-              Проведение обследований IT-инфраструктуры;
-            </h4>
-            <div class="card--competence__image">
-              <img class="b-lazy"
-                   src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                   data-src="assets/img/wheel.svg" alt="">
-            </div>
-          </div>
-          <div class="card card--competence">
-            <h4 class="text--white card--competence__title">
-              Проведение обследований IT-инфраструктуры;
-            </h4>
-            <div class="card--competence__image">
-              <img class="b-lazy"
-                   src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                   data-src="assets/img/wheel.svg" alt="">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="section section--about d-md-none d-lg-block p-md-t-60 p-md-b-60 p-lg-t-88 p-lg-b-88 p-xl-t-120 p-xl-b-120">
-    <div class="container">
-      <div class="about">
-        <h3 class="heading--line text--uppercase">
-          Компания
-        </h3>
-        <div class="text--boxed">
-          ИНФРАДАТА – профессионал в области интеграции IT решений и надежный поставщик серверного, сетевого
-          оборудования и ТМЦ для среднего и крупного бизнеса, государственных предприятий и учреждений. Наши компетенции
-          позволяют закрыть все потребности заказчика в любой области информатизации его предприятия, тем самым
-          сократить материальные и трудовые затраты и обеспечить масштабируемость и гибкость реализуемых решений.
-        </div>
-      </div>
-      <div class="benefits m-md-t-0 m-lg-t-48 m-xl-t-60">
-        <div class="benefits__item">
-          <div class="benefits__item-image">
-            <img class="b-lazy"
-                 src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==
-                 data-src="assets/img/building.svg" alt="">
-          </div>
-          <h4 class="benefits__item-title">
-            Широкий ассортимент продукции
-          </h4>
-        </div>
-        <div class="benefits__item">
-          <div class="benefits__item-image">
-            <img class="b-lazy"
-                 src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==
-                 data-src="assets/img/hands.svg" alt="">
-          </div>
-          <h4 class="benefits__item-title">
-            Гибкие финансовые условия
-          </h4>
-        </div>
-        <div class="benefits__item">
-          <div class="benefits__item-image">
-            <img class="b-lazy"
-                 src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==
-                 data-src="assets/img/construct.svg" alt="">
-          </div>
-          <h4 class="benefits__item-title">
-            Профессиональная техническая экспертиза
-          </h4>
-        </div>
-        <div class="benefits__item">
-          <div class="benefits__item-image">
-            <img class="b-lazy"
-                 src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==
-                 data-src="assets/img/delivery.svg" alt="">
-          </div>
-          <h4 class="benefits__item-title">
-            Доставка <br>по всей России
-          </h4>
+        <div class="tab-stages-2">
+
         </div>
       </div>
     </div>
@@ -1700,209 +1486,6 @@
     </a>
   </div>
 </div>
-<div class="popup" id="popup-result-more-1">
-  <div class="popup__content">
-    <div>
-      <h3 class="heading--line m-xl-b-24">Название раздела</h3>
-    </div>
-    <div class="popup__content-main">
-      <div class="card card--pluses m-xl-b-20 popup__benefits"
-           style="background-image: url('assets/img/plus-1.svg')"
-      >
-        <h5 class="card--pluses__title text--uppercase text--white">
-          автоматизация бизнес-процессов
-        </h5>
-      </div>
-      <div class="card card--pluses m-xl-b-20 popup__benefits"
-           style="background-image: url('assets/img/plus-1.svg')"
-      >
-        <h5 class="card--pluses__title text--uppercase text--white">
-          автоматизация бизнес-процессов
-        </h5>
-      </div>
-      <div class="card card--pluses m-xl-b-20 popup__benefits"
-           style="background-image: url('assets/img/plus-1.svg')"
-      >
-        <h5 class="card--pluses__title text--uppercase text--white">
-          автоматизация бизнес-процессов
-        </h5>
-      </div>
-      <div class="card card--pluses m-xl-b-20 popup__benefits"
-           style="background-image: url('assets/img/plus-1.svg')"
-      >
-        <h5 class="card--pluses__title text--uppercase text--white">
-          автоматизация бизнес-процессов
-        </h5>
-      </div>
-    </div>
-  </div>
-  <div class="popup__bottom">
-    <a class="link text--accent popup-close" href="javascript:;">
-      Закрыть
-      <svg class="icon icon--accent">
-        <use xlink:href="#close"></use>
-      </svg>
-    </a>
-  </div>
-</div>
-<div class="popup" id="popup-result-more-2">
-  <div class="popup__content">
-    <div>
-      <h3 class="heading--line m-xl-b-24">Клиенты</h3>
-    </div>
-    <div class="popup__content-main">
-      <div class="w-100">
-        <div class="card card--who popup__who">
-          <div class="card--who__image">
-            <img src="assets/img/government.svg" alt="">
-          </div>
-          <h4>
-            Государственный сектор
-          </h4>
-        </div>
-        <div class="card card--who popup__who">
-          <div class="card--who__image">
-            <img src="assets/img/buisness.svg" alt="">
-          </div>
-          <h4>
-            Коммерческие организации
-          </h4>
-        </div>
-      </div>
-      <div class="w-100">
-        <h3 class="m-xl-b-20 m-xl-t-27">
-          Отрасли
-        </h3>
-        <ul class="list list--square w-100 popup__list">
-          <li class="list__item">Промышленные предприятия</li>
-          <li class="list__item">Финансовые организации</li>
-          <li class="list__item">Судостроительные заводы</li>
-          <li class="list__item">Ритейл</li>
-          <li class="list__item">Учебные учреждения</li>
-          <li class="list__item">Гостиницы</li>
-          <li class="list__item">Медицинские учреждения</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <div class="popup__bottom">
-    <a class="link text--accent popup-close" href="javascript:;">
-      Закрыть
-      <svg class="icon icon--accent">
-        <use xlink:href="#close"></use>
-      </svg>
-    </a>
-  </div>
-</div>
-<div class="popup" id="popup-result-more-3">
-  <div class="popup__content">
-    <div>
-      <h3 class="heading--line m-xl-b-24">Наши компетенции</h3>
-    </div>
-    <div class="popup__content-main">
-      <div class="card card--competence popup__competence">
-        <h4 class="text--white card--competence__title">
-          Проведение обследований IT-инфраструктуры;
-        </h4>
-        <div class="card--competence__image">
-          <img src="assets/img/wheel.svg" alt="">
-        </div>
-      </div>
-      <div class="card card--competence popup__competence">
-        <h4 class="text--white card--competence__title">
-          Проведение обследований IT-инфраструктуры;
-        </h4>
-        <div class="card--competence__image">
-          <img src="assets/img/wheel.svg" alt="">
-        </div>
-      </div>
-      <div class="card card--competence popup__competence">
-        <h4 class="text--white card--competence__title">
-          Проведение обследований IT-инфраструктуры;
-        </h4>
-        <div class="card--competence__image">
-          <img src="assets/img/wheel.svg" alt="">
-        </div>
-      </div>
-      <div class="card card--competence popup__competence">
-        <h4 class="text--white card--competence__title">
-          Проведение обследований IT-инфраструктуры;
-        </h4>
-        <div class="card--competence__image">
-          <img src="assets/img/wheel.svg" alt="">
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="popup__bottom">
-    <a class="link text--accent popup-close" href="javascript:;">
-      Закрыть
-      <svg class="icon icon--accent">
-        <use xlink:href="#close"></use>
-      </svg>
-    </a>
-  </div>
-</div>
-<div class="popup" id="popup-result-more">
-  <div class="popup__content">
-    <div>
-      <h3 class="heading--line m-xl-b-24">Процесс Работы</h3>
-    </div>
-    <div class="popup__content-main">
-      <div class="text--body">
-        Наши компетенции позволяют закрыть все потребности заказчика в любой области информатизации его предприятия,
-        тем самым сократить материальные и трудовые затраты и обеспечить
-        <a href="#">
-          масштабируемость и гибкость реализуемых решений.
-        </a>
-      </div>
-      <div>
-        <h3 class="m-xl-t-32 m-xl-b-20">
-          Ключевые шаги
-        </h3>
-        <div class="card card--process popup__process">
-          <div class="card--process__digit">
-            01
-          </div>
-          <h5 class="text--uppercase">
-            Формирование и согласование спецификации
-          </h5>
-        </div>
-        <div class="card card--process popup__process">
-          <div class="card--process__digit">
-            02
-          </div>
-          <h5 class="text--uppercase">
-            Подписание договора
-          </h5>
-        </div>
-        <div class="card card--process popup__process">
-          <div class="card--process__digit">
-            03
-          </div>
-          <h5 class="text--uppercase">
-            Реализация проекта или отгрузка оборудования
-          </h5>
-        </div>
-        <div class="card card--process popup__process">
-          <div class="card--process__digit">
-            04
-          </div>
-          <h5 class="text--uppercase">
-            Сервисное обслуживание и техническая поддержка
-          </h5>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="popup__bottom">
-    <a class="link text--accent popup-close" href="javascript:;">
-      Закрыть
-      <svg class="icon icon--accent">
-        <use xlink:href="#close"></use>
-      </svg>
-    </a>
-  </div>
-</div>
+
 <script type="text/javascript" src="/assets/js/vendors.d34acfbddfafc4fee03c.js"></script><script type="text/javascript" src="/assets/js/app.71dd730d6106bc00a877.js"></script></body>
 </html>

@@ -48,10 +48,13 @@ $(function () {
     let classes = $('.empty-cards').find('.card:first-child').attr('class');
     if (document.body.clientWidth > lg) {
       let i = count;
-      while (i < limitLg) {
-        $('.empty-cards').append('<div class="'+classes+' card--empty"></div>');
-        i++;
+      if (count % colLg !== 0) {
+        while (i < limitLg) {
+          $('.empty-cards').append('<div class="' + classes + ' card--empty"></div>');
+          i++;
+        }
       }
+
     }
     if ( document.body.clientWidth <= lg) {
       let i = count;

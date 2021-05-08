@@ -82,13 +82,12 @@
         margin-right: 0;
       }
       .btn{
-        @media (max-width: $smDesktopWidth){
+
           padding: rem(5);
-        }
+
         .icon{
-          @media (max-width: $smDesktopWidth){
             margin-left: 0;
-          }
+
         }
       }
     }

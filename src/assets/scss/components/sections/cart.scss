@@ -1,0 +1,45 @@
+.cart{
+  &__item{
+    padding: rem(16) rem(23);
+    border: 1px solid $gray-4;
+    margin-bottom: rem(16);
+    display: block;
+    .image{
+      max-width: rem(122);
+      margin-right: rem(62);
+    }
+    .title{
+      font-weight: bold;
+      font-size: rem(20);
+      line-height: rem(24);
+      letter-spacing: -0.005em;
+
+      a{
+        color: $mainFontColor;
+      }
+    }
+    .counter{
+
+    }
+    .price{
+      span{
+        font-size: rem(18);
+        line-height: rem(24);
+        font-weight: bold;
+        letter-spacing: -0.0075em;
+        color: $mainFontColor;
+      }
+    }
+    .remove{
+      .icon{
+        stroke: $mainFontColor;
+        cursor: pointer;
+      }
+    }
+  }
+}
+#msCart{
+  table{
+    width: 100%;
+  }
+}
