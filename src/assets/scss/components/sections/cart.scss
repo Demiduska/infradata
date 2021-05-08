@@ -40,7 +40,7 @@
       justify-content: center;
       margin-right: 0;
       @media (max-width: $tableWidth) {
-        justify-content: flex-start;
+
       }
       &__item{
         background: $accent;

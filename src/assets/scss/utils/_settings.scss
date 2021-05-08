@@ -491,6 +491,21 @@ footer{
       }
     }
   }
+  &--news{
+    &-single{
+      .news{
+        display: flex;
+        .card{
+          width: calc(100%/2 - 20px);
+          margin-right: rem(20);
+          margin-bottom: rem(40);
+          &:nth-child(even){
+            margin-right: 0;
+          }
+        }
+      }
+    }
+  }
 }
 .show-categories{
   background: $gray;
@@ -599,7 +614,8 @@ footer{
   margin-top: rem(60);
   display: flex;
   align-items: center;
+  justify-content: space-between;
   .btn--red{
-    background-color: $accent;
+    background-color: $accent!important;
   }
 }
