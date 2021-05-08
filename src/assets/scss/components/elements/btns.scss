@@ -1,5 +1,9 @@
 .btn{
   display: inline-block;
+  transition: all .3s ease;
+  .icon{
+    transition: all .3s ease;
+  }
   &-search{
     .icon{
       fill: $accent;
@@ -46,6 +50,20 @@
     &-icon{
       display: flex;
       align-items: center;
+    }
+  }
+  &--white{
+    border: 1px solid $accent;
+    color: $accent;
+    padding: rem(10) rem(18);
+    line-height: rem(20);
+    &:hover{
+      color: $default-color;
+      background: $accent;
+      .icon{
+        fill: $default-color;
+        stroke: $default-color;
+      }
     }
   }
 }

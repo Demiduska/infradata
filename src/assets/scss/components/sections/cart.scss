@@ -46,6 +46,9 @@
       }
     }
   }
+  &-rules{
+    position: relative;
+  }
 }
 #msCart{
   table{
@@ -86,4 +89,77 @@
 }
 .tab-stages-2{
   display: none;
+  &__content{
+    max-width: rem(711);
+    margin: 0 auto;
+    >div{
+      margin-bottom: rem(28);
+      label{
+        display: block;
+        margin-bottom: rem(8);
+        font-weight: bold;
+        font-size: rem(18);
+        line-height: rem(24);
+        letter-spacing: -0.0125em;
+        color: $mainFontColor;
+      }
+      input{
+        padding: rem(12);
+        font-size: rem(16);
+        line-height: rem(20);
+        color: $mainFontColor;
+        opacity: 0.5;
+        border: 1px solid $gray-4;
+        width: 100%;
+        height: rem(44);
+      }
+    }
+
+  }
+
+  .input--checkbox {
+    margin-right: .5rem;
+    position: relative;
+    &:before{
+      position: absolute;
+      content: "";
+      display: none;
+      left: 2px;
+      top: 1px;
+      width: 84%;
+      height: 84%;
+      background: $default-color;
+    }
+    &:checked{
+      background: $default-color;
+    }
+    +img{
+      opacity: 0;
+      visibility: hidden;
+      position: absolute;
+      left: .25rem;
+      top: .25rem;
+    }
+    &:checked{
+      &:before{
+        display: block;
+      }
+      +img{
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+
+  }
+}
+.order-buttons{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: rem(80);
+}
+.warning{
+  padding: rem(22) rem(20) rem(26) rem(20);
+  background: $warning;
+  margin-top: rem(48);
 }
