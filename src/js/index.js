@@ -543,17 +543,17 @@ $(function () {
       // console.log('товар добавлен');
     }
   }
-  if (typeof pdoPage !== 'undefined') {
-    pdoPage.callbacks['after'] = function (config, response) {
-      $('.card').each(function (){
-        if ($(this).find('img').data('src')){
-          let image = $(this).find('img').data('src');
-          $(this).find('img').attr('src',image);
-        }
-
-      });
-    }
-  }
+  // if (typeof pdoPage !== 'undefined') {
+  //   pdoPage.callbacks['after'] = function (config, response) {
+  //     $('.card').each(function (){
+  //       if ($(this).find('img').data('src')){
+  //         let image = $(this).find('img').data('src');
+  //         $(this).find('img').attr('src',image);
+  //       }
+  //
+  //     });
+  //   }
+  // }
 
 });
 
