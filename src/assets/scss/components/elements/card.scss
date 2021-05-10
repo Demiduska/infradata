@@ -142,6 +142,26 @@
         color: $accent;
       }
     }
+    &__head{
+      display: flex;
+      @media (max-width: $tableWidth) {
+        flex-wrap: wrap;
+      }
+    }
+    &__image{
+      max-width: rem(188);
+      margin-left: rem(16);
+      @media (max-width: $smDesktopWidth){
+        max-width: rem(126);
+      }
+      @media (max-width: $tableWidth) {
+        width: 100%;
+        order: -1;
+        margin-left: 0;
+        margin-bottom: rem(20);
+        max-width: 100%;
+      }
+    }
   }
   &--view{
     background: $default-color;

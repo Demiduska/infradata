@@ -545,7 +545,13 @@ $(function () {
   }
   if (typeof pdoPage !== 'undefined') {
     pdoPage.callbacks['after'] = function (config, response) {
-      const bLazy = new Blazy();
+      $('.card').each(function (){
+        if ($(this).find('img').data('src')){
+          let image = $(this).find('img').data('src');
+          $(this).find('img').attr('src',image);
+        }
+
+      });
     }
   }
 
