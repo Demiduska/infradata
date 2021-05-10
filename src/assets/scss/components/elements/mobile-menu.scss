@@ -155,3 +155,9 @@
   top: rem(12);
   font-weight: bold;
 }
+#mobile-menu-nav{
+  display: none;
+  @media (max-width: $smDesktopWidth) {
+    display: block;
+  }
+}
