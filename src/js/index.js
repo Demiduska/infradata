@@ -459,9 +459,9 @@ $(function () {
       const empty = (element) => element  !== '';
 
       if (checked.some(empty)) {
-        $('.header__search-form .advanced-search__block-reset').addClass('disabled');
-      } else{
         $('.header__search-form .advanced-search__block-reset').removeClass('disabled');
+      } else{
+        $('.header__search-form .advanced-search__block-reset').addClass('disabled');
       }
       console.log(checked);
     }

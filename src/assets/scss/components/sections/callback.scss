@@ -34,6 +34,11 @@
     }
     &-input{
       position: relative;
+      &:last-child{
+        >span.error{
+          margin-top: rem(24);
+        }
+      }
     }
     &-inputs,textarea{
       width: calc(100%/2 - 16px);
@@ -46,14 +51,23 @@
     input[name="an-phone"]{
       margin-bottom: 0;
     }
+    span.error{
+      position: relative;
+      width: 100%;
+      display: block;
+      background: $accent;
+      color: $default-color;
+      padding: 0 rem(5);
+      left: 0;
+      margin-top: rem(-20);
+      margin-bottom: rem(4);
+    }
+    .link{
+      display: inline-block;
+    }
   }
   input.input{
     width: 100%;
-    &:last-child{
-      +span.error{
-        margin-top: rem(24);
-      }
-    }
   }
   label{
     position: relative;
@@ -98,17 +112,6 @@
       width: 100%;
       margin-top: rem(36);
     }
-  }
-  >span.error{
-    position: relative;
-    width: 100%;
-    display: block;
-    background: $accent;
-    color: $default-color;
-    padding: 0 rem(5);
-    left: 0;
-    margin-top: rem(-20);
-    margin-bottom: rem(4);
   }
   input.error{
     border: 1px solid $accent;
