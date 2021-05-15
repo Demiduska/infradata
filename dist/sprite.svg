@@ -25,7 +25,7 @@
   <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="arrow-right">
     <path d="M3 12h17.5m0 0l-7-8m7 8l-7 8" stroke-width="2"></path>
   </symbol>
-  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="arrow-left">
+  <symbol  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="arrow-left">
     <path d="M21 12H3.5m0 0l7 8m-7-8l7-8" stroke-width="2"></path>
   </symbol>
   <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 28" id="map">
@@ -54,5 +54,16 @@
   <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="chevron-left">
     <path
       d="M8.182 12.466l5.029 5.34a.596.596 0 00.878 0l.586-.622a.689.689 0 00.002-.932L10.69 12l3.986-4.252a.689.689 0 00-.002-.932l-.586-.623a.596.596 0 00-.878 0l-5.029 5.34a.689.689 0 000 .933z"></path>
+  </symbol>
+  <symbol  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 17" id="filter_new">
+    <path d="M17.875.531H13v1.5H.062v1.875H13v1.5h4.875v-1.5h2.063V2.031h-2.063v-1.5zM.063 7.563H2.5v-1.5h4.875v1.5h12.563v1.875H7.374v1.5H2.5v-1.5H.062V7.562zM16 13.094h3.938v1.875H16v1.5h-4.875v-1.5H.062v-1.875h11.063v-1.5H16v1.5z" ></path>
+  </symbol>
+  <symbol  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 19" id="cart_new">
+    <path d="M4.319 16.7c0-.99.81-1.8 1.8-1.8s1.8.81 1.8 1.8-.81 1.8-1.8 1.8-1.8-.81-1.8-1.8z" ></path>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M.719 2.3V.5h2.97l.545 1.8h15.047l-4.5 8.09-8.662.01.36 1.8h10.44V14H5.03A423.005 423.005 0 002.52 2.3H.72zm4.078 1.763l1.031 4.593h7.875l2.578-4.594H4.797z" ></path>
+    <path d="M13.319 16.7c0-.99.81-1.8 1.8-1.8s1.8.81 1.8 1.8-.81 1.8-1.8 1.8-1.8-.81-1.8-1.8z" ></path>
+  </symbol>
+  <symbol  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 19" id="search_new">
+    <path d="M12.857 11.814l-.763-.755a6.386 6.386 0 001.277-3.873A6.673 6.673 0 006.686.5 6.672 6.672 0 000 7.186a6.672 6.672 0 006.686 6.685c1.645 0 3.017-.621 3.874-1.277l.754.763 5.143 5.143L18 16.957l-5.143-5.143zm-6.171 0a4.61 4.61 0 01-4.629-4.628 4.61 4.61 0 014.629-4.629 4.61 4.61 0 014.628 4.629 4.61 4.61 0 01-4.628 4.628z" ></path>
   </symbol>
 </svg>

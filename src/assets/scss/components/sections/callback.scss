@@ -32,6 +32,9 @@
     &-inputs{
       margin-right: rem(32);
     }
+    &-input{
+      position: relative;
+    }
     &-inputs,textarea{
       width: calc(100%/2 - 16px);
       @media (max-width: $tableWidth) {
@@ -47,7 +50,9 @@
   input.input{
     width: 100%;
     &:last-child{
-      margin-bottom: 0;
+      +span.error{
+        margin-top: rem(24);
+      }
     }
   }
   label{
@@ -78,8 +83,8 @@
       opacity: 0;
       visibility: hidden;
       position: absolute;
-      left: rem(4);
-      top: rem(4);
+      left: rem(2);
+      top: rem(2);
     }
     &:checked{
       +img{
@@ -94,9 +99,16 @@
       margin-top: rem(36);
     }
   }
-  span.error{
-    margin-top: rem(-15);
-    margin-bottom: rem(10);
+  >span.error{
+    position: relative;
+    width: 100%;
+    display: block;
+    background: $accent;
+    color: $default-color;
+    padding: 0 rem(5);
+    left: 0;
+    margin-top: rem(-20);
+    margin-bottom: rem(4);
   }
   input.error{
     border: 1px solid $accent;

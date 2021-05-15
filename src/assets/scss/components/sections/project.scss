@@ -15,7 +15,7 @@
   &-slider{
     .slick-dots{
       bottom: auto;
-      top: -44px;
+      top: -42px;
       left: 16px;
       text-align: left;
       li{
@@ -34,6 +34,11 @@
           height: rem(4);
           background: $gray-4;
           margin-right: 0;
+          @media (max-width: $tableWidth) {
+            width: rem(8);
+            height: rem(4);
+            padding: 0;
+          }
           &:before{
             display: none;
           }

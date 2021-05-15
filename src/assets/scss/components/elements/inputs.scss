@@ -32,12 +32,61 @@
     width: rem(20);
     height: rem(20);
   }
+  &--placeholder{
+    position: absolute;
+    font-size: rem(11);
+    line-height: rem(10);
+    color: #2F3338;
+    opacity: 0.5;
+    top: rem(6);
+    left: rem(52);
+    display: none;
+  }
 }
 .checkbox{
   margin-right: rem(8);
   width: rem(20);
   height: rem(20);
+  position: relative;
+  appearance: none;
+  &:after{
+    position: absolute;
+    content: "";
+    display: inline-block;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: $default-color;
+    border: 1px solid $gray-5;
+  }
+  &:before{
+    position: absolute;
+    content: "";
+    display: inline-block;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    z-index: 12;
+  }
+  +img{
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    left: .125rem;
+    top: .125rem;
+  }
+  &:checked{
+    +img{
+      z-index: 11;
+      opacity: 1;
+      visibility: visible;
+    }
+  }
   &-block{
+    position: relative;
     display: flex;
     align-items: center;
     margin-right: rem(36);

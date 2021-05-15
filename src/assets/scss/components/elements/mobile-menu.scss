@@ -29,6 +29,12 @@
       margin-right: rem(0);
       width: rem(64);
       padding: rem(13) rem(0);
+      @media (max-width: $smDesktopWidth) and (min-width: $tableWidth) {
+        margin-right: rem(12);
+      }
+      @media (max-width: $smDesktopWidth) {
+        padding: rem(8) rem(0);
+      }
       &:last-child{
         margin-right: 0;
       }
@@ -120,11 +126,24 @@
     width: 100%;
     bottom: rem(66);
     z-index: 300;
+    @media (max-width: $smDesktopWidth) {
+      bottom: rem(56);
+    }
   }
   .advanced-search{
     position: absolute;
     top: auto;
     bottom: 100%;
+  }
+  .advanced-search__bottom{
+    @media (max-width: $tableWidth) {
+      flex-wrap: wrap;
+    }
+  }
+  .advanced-search-button{
+    @media (max-width: $tableWidth) {
+      margin-top: rem(28);
+    }
   }
 }
 .mm-ocd {
@@ -133,7 +152,9 @@
   --mm-ocd-width: 100%;
   bottom: rem(66);
   visibility: hidden;
-
+  @media (max-width: $smDesktopWidth) {
+    bottom: rem(56);
+  }
   &--open{
     visibility: visible;
   }
@@ -143,6 +164,13 @@
       line-height: rem(24);
       letter-spacing: -0.02em;
       color: $mainFontColor;
+      @media (max-width: $smDesktopWidth) {
+        font-size: rem(16);
+        margin-top: rem(3);
+      }
+      @media (max-width: $tableWidth) {
+        font-size: rem(14);
+      }
     }
   }
 }
@@ -154,10 +182,16 @@
   color: $mainFontColor;
   top: rem(12);
   font-weight: bold;
+  text-align: left;
 }
 #mobile-menu-nav{
   display: none;
   @media (max-width: $smDesktopWidth) {
     display: block;
   }
+}
+.mm-spn ul{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }

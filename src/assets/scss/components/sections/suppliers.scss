@@ -15,3 +15,11 @@
     padding: rem(26) 0;
   }
 }
+.section--suppliers{
+  .link{
+    margin-top: rem(-14);
+    @media (max-width: $tableWidth) {
+      margin-top: rem(-18);
+    }
+  }
+}

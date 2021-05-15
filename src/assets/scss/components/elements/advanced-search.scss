@@ -19,7 +19,11 @@
       line-height: rem(24);
       letter-spacing: -0.0125em;
       color: $mainFontColor;
-      opacity: 0.5;
+      opacity: 1;
+      &.disabled{
+        pointer-events: none;
+        opacity: 0.25;
+      }
     }
   }
   &__bottom{
@@ -29,6 +33,9 @@
     align-items: center;
     &-checkboxes{
       display: flex;
+    }
+    button{
+      padding: rem(10) rem(10) rem(10) rem(18);
     }
   }
   &__filter{
@@ -42,6 +49,7 @@
     .items{
       padding: rem(12);
       background-color: $default-color;
+      border-radius: 0;
     }
     .item{
       line-height: rem(20);

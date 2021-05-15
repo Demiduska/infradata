@@ -28,7 +28,7 @@
   }
   &--small{
     &-2{
-      font-size: rem(12);
+      font-size: rem(16);
       line-height: rem(24);
     }
   }
@@ -52,9 +52,9 @@
       line-height: rem(28);
       letter-spacing: -0.0075em;
       color: $accent;
-      @media (max-width: $tableWidth){
+      @media (max-width: $smDesktopWidth) {
         font-size: rem(16);
-        line-height: rem(24);
+        line-height: rem(27);
       }
       &:hover{
         text-decoration: underline;

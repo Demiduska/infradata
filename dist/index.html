@@ -9,7 +9,7 @@
   <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
   <link rel="manifest" href="site.webmanifest">
   <title>Infradata</title>
-<link href="/assets/css/vendors.ae8073dddc79cd026d66.css" rel="stylesheet"><link href="/assets/css/app.c17ca626a46da9e27014.css" rel="stylesheet"></head>
+<link href="/assets/css/vendors.ae8073dddc79cd026d66.css" rel="stylesheet"><link href="/assets/css/app.549dbd50c92fb8e38613.css" rel="stylesheet"></head>
 <body data-svg-sprite-url="sprite.svg">
 <header class="header p-md-t-18 p-md-b-18 p-xl-b-16 p-xl-t-8 ">
   <div class="container">
@@ -31,18 +31,21 @@
           <label class="label header__search-form-label" for="header__input-search">
             <a class="header__search-form-filter" href="#">
               <svg class="icon icon--filter">
-                <use xlink:href="#filter"></use>
+                <use xlink:href="#filter_new"></use>
               </svg>
               <svg class="icon">
                 <use xlink:href="#close"></use>
               </svg>
             </a>
+            <div class="input--placeholder">
+              Введите название/артикул
+            </div>
             <input class="input input-search header__search-form-input" placeholder="Поиск по каталогу" type="text" id="header__input-search">
             <div class="cat-error"></div>
           </label>
           <button disabled class="btn-search" id="header__search-button">
             <svg class="icon icon--search">
-              <use xlink:href="#search"></use>
+              <use xlink:href="#search_new"></use>
             </svg>
           </button>
           <div class="advanced-search header__search-form-advanced">
@@ -51,7 +54,7 @@
                 <div class="advanced-search__block-title">
                   Категория
                 </div>
-                <a href="#" class="advanced-search__block-reset">
+                <a href="#" class="advanced-search__block-reset disabled">
                   Сбросить фильтр
                 </a>
               </div>
@@ -93,14 +96,17 @@
               <div class="advanced-search__bottom-checkboxes">
                 <div class="checkbox-block">
                   <input type="checkbox" class="checkbox" id="promo">
+                  <img src="assets/img/check.svg" alt="">
                   <label class="checkbox-label" for="promo">Акции</label>
                 </div>
                 <div class="checkbox-block">
                   <input type="checkbox" class="checkbox" id="new">
+                  <img src="assets/img/check.svg" alt="">
                   <label class="checkbox-label" for="new">Новинки</label>
                 </div>
                 <div class="checkbox-block">
                   <input type="checkbox" class="checkbox" id="hits">
+                  <img src="assets/img/check.svg" alt="">
                   <label class="checkbox-label" for="hits">Хиты</label>
                 </div>
               </div>
@@ -118,7 +124,7 @@
       <a href="#" class="header__cart">
         <div class="cart">
           <svg class="icon">
-            <use xlink:href="#cart"></use>
+            <use xlink:href="#cart_new"></use>
           </svg>
           <div class="cart__digit">
             10
@@ -1011,7 +1017,7 @@
       <button class="mobile-menu__list-item mobile-button-search">
         <div class="mobile-button-search__icons">
           <svg class="icon icon--white">
-            <use xlink:href="#search"></use>
+            <use xlink:href="#search_new"></use>
           </svg>
           <svg class="icon icon--white">
             <use xlink:href="#close"></use>
@@ -1032,7 +1038,7 @@
       </a>
       <a href="#" class="mobile-menu__list-item">
         <svg class="icon icon--white">
-          <use xlink:href="#cart"></use>
+          <use xlink:href="#cart_new"></use>
         </svg>
         <div class="mobile-menu__list-item-title">
           Корзина
@@ -1082,18 +1088,21 @@
       <label class="label header__search-form-label" for="header__input-search">
         <a class="header__search-form-filter" href="#">
           <svg class="icon icon--filter">
-            <use xlink:href="#filter"></use>
+            <use xlink:href="#filter_new"></use>
           </svg>
           <svg class="icon">
             <use xlink:href="#close"></use>
           </svg>
         </a>
+        <div class="input--placeholder">
+          Введите название/артикул
+        </div>
         <input class="input input-search header__search-form-input" placeholder="Поиск по каталогу" type="text"
                id="header__input-search-mobile">
       </label>
       <button disabled class="btn-search" id="header__search-button-mobile">
         <svg class="icon icon--search">
-          <use xlink:href="#search"></use>
+          <use xlink:href="#search_new"></use>
         </svg>
       </button>
       <div class="advanced-search header__search-form-advanced">
@@ -1102,7 +1111,7 @@
             <div class="advanced-search__block-title">
               Категория
             </div>
-            <a href="#" class="advanced-search__block-reset">
+            <a href="#" class="advanced-search__block-reset disabled">
               Сбросить фильтр
             </a>
           </div>
@@ -1144,14 +1153,17 @@
           <div class="advanced-search__bottom-checkboxes">
             <div class="checkbox-block">
               <input type="checkbox" class="checkbox" id="promo-1">
+              <img src="assets/img/check.svg" alt="">
               <label class="checkbox-label" for="promo-1">Акции</label>
             </div>
             <div class="checkbox-block">
               <input type="checkbox" class="checkbox" id="new-1">
+              <img src="assets/img/check.svg" alt="">
               <label class="checkbox-label" for="new-1">Новинки</label>
             </div>
             <div class="checkbox-block">
               <input type="checkbox" class="checkbox" id="hits-1">
+              <img src="assets/img/check.svg" alt="">
               <label class="checkbox-label" for="hits-1">Хиты</label>
             </div>
           </div>
@@ -1970,9 +1982,15 @@
           <form class="form" action="#">
             <div class="d-flex flex-wrap">
               <div class="callback__form-inputs">
+                <div class="callback__form-input">
                 <input required name="an-name" type="text" class="input input--form" placeholder="Имя">
+                </div>
+                <div class="callback__form-input">
                 <input required name="an-email" type="text" class="input input--form input--email" placeholder="E-mail">
+                </div>
+                <div class="callback__form-input">
                 <input required name="an-phone" type="tel" class="input input--form" placeholder="Телефон">
+                </div>
               </div>
               <textarea name="an-message" class="input input--textarea" cols="30" rows="10"
                         placeholder="Текст сообщения"></textarea>
@@ -1981,7 +1999,7 @@
               <label class="d-flex align-items-center">
                 <input class="input--checkbox" type="checkbox">
                 <img src="assets/img/check.svg" alt="">
-                <span class="text--gray-6">Даю согласие на <a class="link text--gray-6" href="#">обработку персональных данных</a></span>
+                <span class="text--gray-6">Даю согласие на <a class="link--2 text--gray-6" href="#">обработку персональных данных</a></span>
               </label>
               <button disabled class="btn btn--red">
                 Отправить сообщение
@@ -2093,6 +2111,18 @@
     </a>
   </div>
 </div>
+<div class="cookie">
+  <div class="cookie__content">
+    Мы используем cookie-файлы для улучшения предоставляемых услуг и сбора статистических данных. Продолжая навигацию по
+    сайту, Вы даете свое согласие на сбор и обработку персональных данных компанией ООО "Инфрадата".
+  </div>
+  <div class="d-flex justify-content-end m-xl-t-24">
+    <button class="btn btn--2" id="cookie-btn">
+      Ок
+    </button>
+  </div>
 
-<script type="text/javascript" src="/assets/js/vendors.43dbf2f759513615a3a2.js"></script><script type="text/javascript" src="/assets/js/app.4e99bed6270b6d0fee2b.js"></script></body>
+
+</div>
+<script type="text/javascript" src="/assets/js/vendors.43dbf2f759513615a3a2.js"></script><script type="text/javascript" src="/assets/js/app.89ef63a797eed388cdbf.js"></script></body>
 </html>

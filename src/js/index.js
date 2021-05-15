@@ -12,7 +12,7 @@ import './tabs';
 import Inputmask from "inputmask";
 import './cookie';
 
-const md = 768;
+const md = 767;
 const lg = 1024;
 
 $(function () {
@@ -33,7 +33,8 @@ $(function () {
         cursorwidth: "24px",
         cursorborderradius: "0",
         autohidemode: false,
-        cursordragontouch: true
+        cursordragontouch: true,
+        railpadding: { top: 0, right: 8, left: 0, bottom: 0 }
       });
     }
     // console.log(document.body.clientWidth);
@@ -87,7 +88,7 @@ $(function () {
         }
       },
       {
-        breakpoint: 768,
+        breakpoint: md,
         settings: {
           slidesToShow: 1,
         }
@@ -117,7 +118,7 @@ $(function () {
     infinite: true,
     responsive: [
       {
-        breakpoint: 768,
+        breakpoint: md,
         settings: {
           dots: true,
         }
@@ -135,7 +136,7 @@ $(function () {
     infinite: true,
     responsive: [
       {
-        breakpoint: 768,
+        breakpoint: md,
         settings: {
           dots: true,
 
@@ -162,7 +163,7 @@ $(function () {
         }
       },
       {
-        breakpoint: 768,
+        breakpoint: md,
         settings: {
           arrows: false,
           dots: true,
@@ -191,7 +192,8 @@ $(function () {
     cursorwidth: "24px",
     cursorborderradius: "0",
     autohidemode: false,
-    cursordragontouch: true
+    cursordragontouch: true,
+    railpadding: { top: 0, right: 8, left: 0, bottom: 0 }
   });
 
   $(document).on('click', '.header__search-form-filter', function (e) {
@@ -440,6 +442,42 @@ $(function () {
 
   }
 
+  const checkOnEmptyHeaderFilterFields = () => {
+    if ($('.header__search-form').length){
+      let checked = [];
+      $('.header__search-form input:checked').each(function() {
+        checked.push($(this).val());
+      });
+      $('.header__search-form .advanced-search__filter').each(function() {
+        checked.push($(this).val());
+      });
+
+      let countInputSearch = $('.header__search-form .input-search').val().length;
+      if (countInputSearch > 2){
+        checked.push(countInputSearch);
+      }
+      const empty = (element) => element  !== '';
+
+      if (checked.some(empty)) {
+        $('.header__search-form .advanced-search__block-reset').addClass('disabled');
+      } else{
+        $('.header__search-form .advanced-search__block-reset').removeClass('disabled');
+      }
+      console.log(checked);
+    }
+  }
+  checkOnEmptyHeaderFilterFields();
+
+  $(document).on('click','.header__search-form  .checkbox', function(e){
+    checkOnEmptyHeaderFilterFields();
+  });
+  $(document).on('change','.header__search-form .advanced-search__filter', function(e){
+    checkOnEmptyHeaderFilterFields();
+  });
+  $(document).on('input','.header__search-form .input-search', function(e){
+    checkOnEmptyHeaderFilterFields();
+  });
+
   $(document).on('click','.filter__checkbox input', function(e){
     checkOnEmptyFilterFields();
   });
@@ -533,9 +571,19 @@ $(function () {
     $('.tab-stages-1').fadeIn();
     $('.tab-stages-2').fadeOut();
   });
+  // show input placeholder on focus
+
+  $(document).on('focus','.input-search,.input-filter-search',function (e){
+    $(this).siblings('.input--placeholder').fadeIn();
+  });
+  $(document).on('blur','.input-search,.input-filter-search',function (e){
+    $(this).siblings('.input--placeholder').fadeOut();
+  });
+
+
 
   // Антиспам
-  $('.ajax_form').append('<input type="text" name="org" value="" class="_org" style="visibility:hidden; height: 0; width: 0; padding: 0; border:none;"/>')
+  $('.ajax_form').append('<input type="text" name="org" value="" class="_org" style="position:absolute; visibility:hidden; height: 0; width: 0; padding: 0; border:none;"/>')
   // Антиспам х
 
   if (typeof miniShop2 !== 'undefined'){

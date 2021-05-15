@@ -12,6 +12,12 @@
     &:last-child{
       margin-bottom: 0;
     }
+    &:nth-child(even){
+      @media (max-width: $smDesktopWidth) {
+        margin-right: 0;
+      }
+    }
+
     .btn--red{
       @media (max-width: $smDesktopWidth){
         padding: rem(6) rem(8) rem(6) rem(14);

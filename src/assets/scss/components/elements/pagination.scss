@@ -26,6 +26,9 @@
         cursor: default;
         opacity: .5;
       }
+      .icon{
+        opacity: .5;
+      }
     }
   }
   &-link{
@@ -36,5 +39,13 @@
     font-size: rem(18);
     line-height: rem(28);
     letter-spacing: -0.0075em;
+    &:hover{
+      .icon{
+        fill: $default-color;
+      }
+    }
+    &-icon{
+      padding: rem(4);
+    }
   }
 }

@@ -66,6 +66,12 @@
       left: rem(234);
     }
   }
+  .form-group{
+    position: relative;
+    .input--placeholder{
+      left: rem(13);
+    }
+  }
 }
 .input-filter-search{
   padding: rem(12);
@@ -80,4 +86,6 @@
 }
 .cat-error{
   color: $accent;
+  margin-left: rem(12);
+  margin-top: rem(2);
 }

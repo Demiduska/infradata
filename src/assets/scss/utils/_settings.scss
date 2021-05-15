@@ -23,7 +23,10 @@ p{
   line-height: rem(28);
   @media (max-width: $smDesktopWidth) {
     font-size: rem(16);
-    line-height: rem(24);
+    line-height: rem(26);
+  }
+  @media (max-width: $tableWidth){
+    line-height: rem(27);
   }
 }
 *,
@@ -177,12 +180,22 @@ section {
   line-height: rem(24);
   letter-spacing: -0.0125em;
   transition: all .3s linear;
+  display: flex;
+  align-items: center;
   @media (max-width:$tableWidth){
     font-size: rem(14);
     line-height: rem(24);
   }
   &:hover{
-    text-decoration: underline;
+    opacity: 0.5;
+  }
+  &--2{
+    @extend .link;
+    color: $default-color;
+    border-bottom: 1px solid $default-color;
+    &:hover{
+      opacity: 0.64;
+    }
   }
   &--show{
     display: none;
@@ -262,6 +275,19 @@ section {
         display: none;
       }
     }
+  }
+}
+h1{
+  &.heading--line{
+      padding-bottom: rem(12);
+    @media (max-width: $smDesktopWidth) {
+      padding-bottom: 8px;
+    }
+      &:after{
+        height: rem(8);
+        width: rem(48);
+      }
+
   }
 }
 h1{
