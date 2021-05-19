@@ -11,13 +11,14 @@
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-between;
-    order: 1;
+    order: 0;
     >*{
       display: inline-block;
       width: 100%;
     }
     @media (max-width: $tableWidth) {
       width: 100%;
+      order: 1;
       padding: rem(16) rem(12) rem(48) rem(12);
     }
     &-bottom{

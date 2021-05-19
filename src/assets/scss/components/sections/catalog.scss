@@ -5,6 +5,15 @@
     .card{
       width: calc(100%/4 - 60px/4);
       margin-right: 20px;
+      padding-left: rem(12);
+      padding-top: rem(11);
+      padding-bottom: rem(1);
+      &:hover{
+        background: $gray;
+        .card__link{
+          color: $default-color;
+        }
+      }
       @media (max-width: $smDesktopWidth) {
         width: calc(100%/3 - 32px/3);
         margin-right: 16px;

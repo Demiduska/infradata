@@ -78,7 +78,9 @@
         line-height: rem(20);
       }
     }
-
+    .text--gray-6{
+      width: calc(100% - 30px);
+    }
   }
   .input--checkbox{
     margin-right: rem(8);

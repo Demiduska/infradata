@@ -3,6 +3,21 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    @media (max-width: $smDesktopWidth) {
+      position: relative;
+    }
+    &:after{
+      @media (max-width: $smDesktopWidth){
+        display: block;
+        height: 1px;
+        width: 100%;
+        position: absolute;
+        content: '';
+        background: $gray-4;
+        bottom: rem(-24);
+      }
+
+    }
   }
 
   &__logo {
