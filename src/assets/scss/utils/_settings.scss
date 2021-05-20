@@ -816,6 +816,10 @@ footer {
         @media (max-width: $smDesktopWidth) {
           margin-bottom: rem(16);
         }
+        a{
+          color: $accent;
+          text-decoration: underline;
+        }
         &:last-child{
           margin-bottom: 0;
         }
