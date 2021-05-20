@@ -17,13 +17,13 @@
     position: absolute;
     top: rem(-42);
     width: rem(24);
-    padding: rem(12) rem(11);
+    padding: rem(7);
     border: 1px solid $accent;
     height: rem(24);
     box-sizing: content-box;
     transition: all .3s ease;
     @media (max-width: $smDesktopWidth) {
-      padding: rem(8);
+      padding: rem(5);
     }
     @media (max-width: $tableWidth) {
       top: rem(-48);
@@ -32,13 +32,13 @@
       display: none;
     }
     &.slick-next{
-      right: rem(10);
+      right: rem(0);
     }
     &.slick-prev{
-      right: rem(82);
+      right: rem(56);
       left: auto;
       @media (max-width: $smDesktopWidth) {
-        right: rem(60);
+        right: rem(52);
       }
     }
     .icon{

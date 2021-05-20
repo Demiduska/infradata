@@ -137,6 +137,18 @@
     @media (max-width: $smDesktopWidth){
       width: calc(100%/3 - 64px/3);
     }
+    &:hover{
+      background: $mainFontColor;
+      .card--news{
+        h5{
+          color: $default-color;
+        }
+        .date{
+          color: $gray-4;
+        }
+      }
+
+    }
     .date{
       opacity: .5;
     }
@@ -144,9 +156,7 @@
       transition: color .3s linear;
     }
     &:hover{
-      h5{
-        color: $accent;
-      }
+
     }
     &__head{
       display: flex;
@@ -274,12 +284,14 @@
       width: 100%;
       .h5{
         color: $mainFontColor;
+        min-height: rem(46);
+        display: block;
       }
     }
   }
   &--more{
     min-height: rem(212);
-    padding: rem(24) rem(28) rem(32) rem(20);
+    padding: rem(24) rem(12) rem(16) rem(16);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -289,7 +301,7 @@
     }
     @media (max-width: $tableWidth){
       min-height: rem(112);
-      padding: rem(16);
+      padding: rem(18) rem(12) rem(13) rem(16);
 
     }
     &__subtitle{

@@ -527,8 +527,23 @@ $(function () {
       form.submit();
     }
     else {
-      $('.filter .cat-error').html('Длина поиска меньше 3')
-      console.log('длина меньше 3');
+      let checked = [];
+      $('.filter__checkbox input:checked').each(function() {
+        checked.push($(this).val());
+      });
+      $('.filter .advanced-search__filter').each(function() {
+        checked.push($(this).val());
+      });
+
+      const empty = (element) => element  !== '';
+
+      if (checked.some(empty)) {
+
+      } else{
+        $('.filter .cat-error').html('Длина поиска меньше 3')
+        console.log('длина меньше 3');
+      }
+
     }
   });
 

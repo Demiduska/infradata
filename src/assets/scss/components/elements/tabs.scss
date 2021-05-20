@@ -40,6 +40,9 @@
     display: none;
     background: $gray-6;
     padding: rem(36) rem(36) rem(44) rem(36);
+    @media (max-width: $smDesktopWidth) {
+      padding: rem(28) rem(29) rem(32) rem(28);
+    }
     h3{
       margin-bottom: rem(16);
     }
@@ -49,5 +52,52 @@
     &.active{
       display: block;
     }
+  }
+}
+#tab-1{
+  line-height: rem(24);
+  font-size: rem(16);
+  padding-bottom: rem(28);
+  @media (max-width: $smDesktopWidth){
+    padding-bottom: rem(16);
+  }
+
+  >div{
+    max-width: rem(579);
+    @media (max-width: $smDesktopWidth){
+      width: 100%;
+    }
+  }
+}
+#tab-2{
+  padding-bottom: rem(37);
+  h3{
+    margin-top: rem(42);
+    margin-bottom: rem(27);
+    @media (max-width: $smDesktopWidth) {
+      margin-top: rem(43);
+      margin-bottom: rem(25);
+    }
+    &:first-child{
+      margin-top: 0;
+    }
+  }
+  p{
+    margin-bottom: rem(12);
+    @media (max-width: $smDesktopWidth) {
+      margin-bottom: rem(17);
+    }
+    &:last-child{
+
+    }
+  }
+}
+.mobile-char{
+  h3{
+    margin-top: rem(28);
+    margin-bottom: rem(16);
+  }
+  p{
+    margin-bottom: rem(8);
   }
 }

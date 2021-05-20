@@ -20,7 +20,9 @@
       padding: rem(20) rem(16);
     }
     &:last-child{
-      margin-bottom: rem(0);
+     @media (max-width: $smDesktopWidth) {
+       margin-bottom: 0;
+     }
     }
     &--product{
       &__image{
@@ -39,6 +41,7 @@
           @media (max-width: $tableWidth){
             margin: 0 auto;
             display: block;
+            max-width: 60%;
           }
         }
       }
@@ -62,6 +65,9 @@
       }
     }
     .code{
+      @media (max-width: $smDesktopWidth) {
+        font-size: rem(16);
+      }
       @media (max-width: $tableWidth){
         margin-top: rem(4);
       }
@@ -97,16 +103,24 @@
     }
     img{
       margin: 0 auto;
+      max-width: 60%;
     }
     .slick-dots{
+      position: relative;
+      bottom: 0;
       .slick-active{
         button{
           background: $accent;
         }
       }
-      button{
+      li{
         width: rem(12);
-        height: rem(12);
+        height: rem(8);
+      }
+      button{
+        padding: 0;
+        width: rem(12);
+        height: rem(8);
         background: $gray-4;
         &:before{
           display: none;
@@ -128,6 +142,9 @@
     ul{
       li{
         margin-bottom: rem(12);
+        &:last-child{
+          margin-bottom: 0;
+        }
       }
     }
   }
@@ -170,6 +187,7 @@
     }
   }
   .slick-dots{
+    margin-top: rem(24);
     @media (max-width: $smDesktopWidth) {
       position: relative;
     }
@@ -185,7 +203,7 @@
     &-links{
       display: none;
       @media (max-width: $tableWidth) {
-        margin-top: rem(44);
+        margin-top: rem(38);
         width: 100%;
         display: block;
       }

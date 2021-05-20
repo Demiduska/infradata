@@ -1,6 +1,9 @@
 .m{
   &-xl{
     &-t{
+      &-8{
+        margin-top: rem(8);
+      }
       &-12{
         margin-top: rem(12);
       }
@@ -89,6 +92,11 @@
           margin-top: rem(0);
         }
       }
+      &-4{
+        @media (max-width: $smDesktopWidth) {
+          margin-top: rem(4);
+        }
+      }
       &-20{
         @media (max-width: $smDesktopWidth) {
           margin-top: rem(20);
@@ -97,6 +105,11 @@
       &-24{
         @media (max-width: $smDesktopWidth) {
           margin-top: rem(24);
+        }
+      }
+      &-28{
+        @media (max-width: $smDesktopWidth) {
+          margin-top: rem(28);
         }
       }
       &-36{
