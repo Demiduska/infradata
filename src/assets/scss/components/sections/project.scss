@@ -11,11 +11,16 @@
     &:nth-child(3n+3){
       margin-right: 0;
     }
+    &:last-child{
+      @media (max-width: $tableWidth) {
+        margin-bottom: 0;
+      }
+    }
   }
   &-slider{
     .slick-dots{
       bottom: auto;
-      top: -42px;
+      top: -40px;
       left: 16px;
       text-align: left;
       li{
@@ -91,4 +96,10 @@
   .text--boxed{
     width: 100%;
   }
+}
+.section--solutions-project{
+  @media (max-width: $tableWidth) {
+    line-height: 28px;
+  }
+
 }

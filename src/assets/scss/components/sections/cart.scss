@@ -107,6 +107,13 @@
           margin-top: rem(24);
           order: 3;
         }
+        &-get-order{
+          font-size: 1.125rem;
+          line-height: 1.5rem;
+          font-weight: 700;
+          letter-spacing: -.0075em;
+          color: #2f3338;
+        }
       }
       .price{
         width: 20%;
@@ -157,11 +164,11 @@
       justify-content: flex-end;
       margin-top: rem(26);
       @media (max-width: $smDesktopWidth) {
-        margin-top: rem(16);
+        margin-top: rem(24);
       }
       @media (max-width: $tableWidth) {
         justify-content: flex-start;
-        margin-top: rem(22);
+        margin-top: rem(16);
         padding-left: 1px;
       }
     }
@@ -227,12 +234,13 @@
     &:before{
       position: absolute;
       content: "";
-      display: none;
-      left: 2px;
-      top: 1px;
-      width: 84%;
-      height: 84%;
+      display: block;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
       background: $default-color;
+      border: 1px solid $gray-4;
     }
     &:checked{
       background: $default-color;

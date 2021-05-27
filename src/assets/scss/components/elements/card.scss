@@ -4,7 +4,10 @@
   padding: rem(17) rem(22);
   position: relative;
   &--empty{
-    background: $gray-6;
+    background: $gray-6!important;
+    &:hover{
+      background: $gray-6;
+    }
   }
   &__link{
     transition: all .3s ease;
@@ -31,6 +34,12 @@
     }
     @media (max-width: $tableWidth) {
       min-height: rem(108);
+    }
+    &:hover{
+      background-color: #495057;
+      .card__link{
+        color: $default-color;
+      }
     }
   }
   &--catalog{
@@ -64,6 +73,7 @@
     width: calc(100%/3 - 40px);
     display: flex;
     flex-direction: column;
+    transition: all .3s ease;
     &__image{
       img{
         width: 100%;
@@ -75,13 +85,14 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      padding: rem(17) rem(12) rem(12) rem(16);
+      padding: 1.0625rem  .75rem .25rem 1rem;
       height: 100%;
       @media (max-width: $smDesktopWidth) {
-        padding: rem(16) rem(12);
+        padding: 1rem .75rem .25rem 1rem;
       }
       @media (max-width: $tableWidth) {
-        padding: rem(13) rem(8) rem(8) rem(12);
+        padding: .8rem .5rem .15rem .75rem;
+        min-height: rem(140);
       }
     }
     .card__link{
@@ -94,6 +105,12 @@
       padding: rem(8) rem(7);
       &:hover{
         background-color: $accent;
+      }
+    }
+    &:hover{
+      background-color: #495057;
+      .card__link{
+        color: $default-color;
       }
     }
   }
@@ -139,18 +156,18 @@
     }
     &:hover{
       background: $mainFontColor;
-      .card--news{
+
         h5{
           color: $default-color;
         }
         .date{
           color: $gray-4;
         }
-      }
+
 
     }
     .date{
-      opacity: .5;
+      opacity: 1;
     }
     h5{
       transition: color .3s linear;
@@ -191,6 +208,7 @@
       display: block;
       margin-bottom: rem(24);
       padding: rem(30) rem(46);
+      min-height: rem(200);
       @media (max-width: $smDesktopWidth) {
         margin-bottom: 20px;
       }
@@ -295,6 +313,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    transition: all .3s ease;
     @media (max-width: $smDesktopWidth) {
       padding: rem(20) rem(16) rem(24) rem(16);
       min-height: rem(248);
@@ -303,6 +322,9 @@
       min-height: rem(112);
       padding: rem(18) rem(12) rem(13) rem(16);
 
+    }
+    &:hover{
+      background-color: #6C7482;
     }
     &__subtitle{
       margin-top: rem(16);

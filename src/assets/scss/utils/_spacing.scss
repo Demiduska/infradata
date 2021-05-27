@@ -7,6 +7,9 @@
       &-12{
         margin-top: rem(12);
       }
+      &-15{
+        margin-top: rem(15);
+      }
       &-16{
         margin-top: rem(16);
       }
@@ -18,6 +21,9 @@
       }
       &-27{
         margin-top: rem(27);
+      }
+      &-28{
+        margin-top: rem(28);
       }
       &-32{
         margin-top: rem(32);
@@ -82,6 +88,11 @@
     &-r{
       &-0{
         margin-right: 0!important;
+      }
+    }
+    &-l{
+      &-38{
+        margin-left: rem(38);
       }
     }
   }
@@ -257,6 +268,9 @@
       &-8{
         padding-top: rem(8);
       }
+      &-15{
+        padding-top: rem(15);
+      }
       &-16{
         padding-top: rem(16);
       }
@@ -288,6 +302,9 @@
       }
       &-32{
         padding-bottom: rem(32);
+      }
+      &-44{
+        padding-bottom: rem(44);
       }
       &-48{
         padding-bottom: rem(48);
@@ -404,6 +421,11 @@
           padding-bottom: rem(16);
         }
       }
+      &-20{
+        @media (max-width:$tableWidth) {
+          padding-bottom: rem(20);
+        }
+      }
       &-18{
         @media (max-width:$tableWidth) {
           padding-bottom: rem(18);
@@ -422,6 +444,11 @@
       &-36{
         @media (max-width:$tableWidth) {
           padding-bottom: rem(36);
+        }
+      }
+      &-44{
+        @media (max-width:$tableWidth) {
+          padding-bottom: rem(44);
         }
       }
       &-60{

@@ -5,7 +5,7 @@
   height: 100vh;
   top: 0;
   left: 0;
-  background: $default-color;
+  background: #F5F6F7;
   z-index: 1000;
   overflow-y: scroll;
   &__content{
@@ -52,7 +52,7 @@
       margin-top: rem(36);
       padding: rem(6) rem(25);
       @media (max-width: $tableWidth) {
-        padding: rem(6) rem(24);
+        padding: 1rem 1rem .8125rem 1rem;
       }
       &:nth-child(3n+3){
         margin-right: 0;
@@ -164,6 +164,20 @@
     }
     p{
       margin-bottom: rem(8);
+    }
+  }
+  &__clients{
+    &-wrap{
+      position: relative;
+      &:after{
+        height: 1px;
+        width: 100%;
+        display: block;
+        content: "";
+        background: #cfd2d7;
+        position: absolute;
+        bottom: 0;
+      }
     }
   }
 }

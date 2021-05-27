@@ -95,6 +95,33 @@ button {
 }
 .selectize-control.single .selectize-input:after{
   top: 32%;
+  width: 11px;
+  height: 11px;
+  border-bottom: 3px solid #2F3338;
+  border-right: 3px solid #2F3338;
 }
-
+main{
+  margin-top: rem(122);
+  @media (max-width: $smDesktopWidth) {
+    margin-top: rem(57);
+  }
+}
+.selectize-control.single .selectize-input, .selectize-dropdown.single {
+  border-color: #cfd2d7;
+  &.input-active{
+    border-color: #6C7482;
+  }
+}
+.selectize-input{
+  height: rem(44);
+  .item {
+    width: 100%;
+    top: rem(12);
+    left: rem(12);
+    height: rem(44);
+    position: absolute;
+    z-index: 350;
+    cursor: pointer;
+  }
+}
 

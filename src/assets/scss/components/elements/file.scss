@@ -8,8 +8,11 @@
   border-bottom: 1px solid $gray-4;
   align-items: flex-start;
   @media (max-width: $smDesktopWidth) {
-    padding: rem(28) rem(35);
+    padding: 1.8rem 0 2.15rem;
     max-width: 100%;
+  }
+  @media (max-width: $tableWidth) {
+    padding: 2rem 0 2.15rem;
   }
   &:first-child{
     padding-top: 0;

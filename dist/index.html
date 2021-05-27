@@ -9,9 +9,9 @@
   <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
   <link rel="manifest" href="site.webmanifest">
   <title>Infradata</title>
-<link href="/assets/css/vendors.ae8073dddc79cd026d66.css" rel="stylesheet"><link href="/assets/css/app.b974cce93c91bcc5a93a.css" rel="stylesheet"></head>
+<link href="/assets/css/vendors.ae8073dddc79cd026d66.css" rel="stylesheet"><link href="/assets/css/app.dd633a98cccefbd9edb3.css" rel="stylesheet"></head>
 <body data-svg-sprite-url="sprite.svg">
-<header class="header p-md-t-18 p-md-b-18 p-xl-b-16 p-xl-t-8 ">
+<header class="header p-md-t-18 p-md-b-18 p-xl-b-16 p-xl-t-15 ">
   <div class="container">
     <div class="header__top">
       <a href="/" class="header__logo logo">
@@ -110,7 +110,7 @@
                   <label class="checkbox-label" for="hits">Хиты</label>
                 </div>
               </div>
-              <button disabled class="btn--red d-flex align-items-center advanced-search-button">
+              <button disabled class="btn--2 d-flex align-items-center advanced-search-button">
                 Найти
                 <svg class="icon">
                   <use xlink:href="#chevron-right"></use>
@@ -1111,9 +1111,6 @@
             <div class="advanced-search__block-title">
               Категория
             </div>
-            <a href="#" class="advanced-search__block-reset disabled">
-              Сбросить фильтр
-            </a>
           </div>
           <select class="advanced-search__filter">
             <option value="0">Поиск по каталогу</option>
@@ -1167,19 +1164,24 @@
               <label class="checkbox-label" for="hits-1">Хиты</label>
             </div>
           </div>
-          <button disabled class="btn--red d-flex align-items-center advanced-search-button">
-            Найти
-            <svg class="icon">
-              <use xlink:href="#chevron-right"></use>
-            </svg>
-          </button>
+          <div class="d-flex align-items-center w-100 m-xl-t-28">
+            <button disabled class="btn--red d-flex align-items-center advanced-search-button">
+              Найти
+              <svg class="icon">
+                <use xlink:href="#chevron-right"></use>
+              </svg>
+            </button>
+            <a href="#" class="advanced-search__block-reset disabled m-xl-l-38">
+              Сбросить фильтр
+            </a>
+          </div>
         </div>
       </div>
     </form>
   </div>
 </header>
 <main>
-  <section class="section section--hero m-md-b-28 m-md-t-0 m-xl-t-16 m-lg-b-60 m-xl-b-80">
+  <section class="section section--hero m-md-b-28 p-md-t-0 p-xl-t-16 m-lg-b-60 m-xl-b-80">
     <div class="container">
       <div class="hero">
         <div class="hero__content text--white">
@@ -1942,20 +1944,26 @@
             <div class="d-flex flex-wrap">
               <div class="callback__form-inputs">
                 <div class="callback__form-input">
+                  <div class="input--placeholder">Имя</div>
                 <input required name="an-name" type="text" class="input input--form" placeholder="Имя">
                   <span class="error_an-name error"> <span class="error">Это поле обязательно для заполнения.</span></span>
                 </div>
                 <div class="callback__form-input">
+                  <div class="input--placeholder">Email</div>
                 <input required name="an-email" type="text" class="input input--form input--email" placeholder="E-mail">
                   <span class="error_an-name error"> <span class="error">Это поле обязательно для заполнения.</span></span>
                 </div>
                 <div class="callback__form-input">
+                  <div class="input--placeholder">Телефон</div>
                 <input required name="an-phone" type="tel" class="input input--form" placeholder="Телефон">
                   <span class="error_an-name error"> <span class="error">Это поле обязательно для заполнения.</span></span>
                 </div>
               </div>
-              <textarea name="an-message" class="input input--textarea" cols="30" rows="10"
-                        placeholder="Текст сообщения"></textarea>
+              <div class="callback__form-textarea">
+                <div class="input--placeholder">Текст сообщения</div>
+                <textarea name="an-message" class="input input--textarea" cols="30" rows="10"
+                          placeholder="Текст сообщения"></textarea>
+              </div>
             </div>
             <div class="m-md-t-0 m-xl-t-32 d-flex justify-content-between align-items-center flex-wrap">
               <label class="d-flex align-items-center">
@@ -2086,5 +2094,5 @@
 
 
 </div>
-<script type="text/javascript" src="/assets/js/vendors.43dbf2f759513615a3a2.js"></script><script type="text/javascript" src="/assets/js/app.8142a16fc0cec366732f.js"></script></body>
+<script type="text/javascript" src="/assets/js/vendors.43dbf2f759513615a3a2.js"></script><script type="text/javascript" src="/assets/js/app.75a96ea7bae5c224210c.js"></script></body>
 </html>

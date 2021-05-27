@@ -9,7 +9,7 @@
       >.menu__link{
         color: $accent;
         .icon{
-          fill: $default-color;
+          fill: $accent;
           transform: rotate(-180deg);
         }
       }
@@ -21,6 +21,9 @@
           fill: $accent;
         }
       }
+    }
+    .icon{
+      padding: 3px;
     }
   }
   &__link{

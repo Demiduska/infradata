@@ -24,7 +24,7 @@
         padding: rem(9) rem(36);
       }
       &:hover{
-        background: $default-color;
+        background: $gray-6;
         color: $mainFontColor;
       }
       &.active{
@@ -55,15 +55,35 @@
   }
 }
 #tab-1{
-  line-height: rem(24);
-  font-size: rem(16);
+  line-height: 28px;
+  font-size: 18px;
   padding-bottom: rem(28);
   @media (max-width: $smDesktopWidth){
-    padding-bottom: rem(16);
+    padding-bottom: 36px
   }
-
+  @media (max-width: $tableWidth) {
+    line-height:1.6rem
+  }
+  ul{
+    li{
+      padding-left: rem(7);
+      display: flex;
+      align-items: center;
+      &:before{
+        margin-right: rem(15);
+        content: '';
+        display: block;
+        min-width: rem(8);
+        height: rem(8);
+        background: $accent;
+      }
+      a{
+        display: contents;
+      }
+    }
+  }
   >div{
-    max-width: rem(579);
+    max-width: rem(667);
     @media (max-width: $smDesktopWidth){
       width: 100%;
     }
@@ -71,12 +91,14 @@
 }
 #tab-2{
   padding-bottom: rem(37);
+  >*{
+    max-width: rem(667);
+  }
   h3{
-    margin-top: rem(42);
-    margin-bottom: rem(27);
+    margin-top: 32px;
+    margin-bottom: 16px;
     @media (max-width: $smDesktopWidth) {
-      margin-top: rem(43);
-      margin-bottom: rem(25);
+
     }
     &:first-child{
       margin-top: 0;
@@ -85,7 +107,7 @@
   p{
     margin-bottom: rem(12);
     @media (max-width: $smDesktopWidth) {
-      margin-bottom: rem(17);
+      margin-bottom: 4px;
     }
     &:last-child{
 
@@ -96,8 +118,14 @@
   h3{
     margin-top: rem(28);
     margin-bottom: rem(16);
+    @media (max-width: $tableWidth) {
+      margin-bottom: 14px;
+    }
   }
   p{
     margin-bottom: rem(8);
+    @media (max-width: $tableWidth) {
+      margin-bottom: 4px;
+    }
   }
 }

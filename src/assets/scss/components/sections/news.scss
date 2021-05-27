@@ -46,7 +46,11 @@
 }
 .section--news{
   .link{
-    margin-top: rem(-14);
+    margin-top: rem(-23);
+    z-index: 11;
+    @media (max-width: $smDesktopWidth) {
+      margin-top: rem(-16);
+    }
   }
 }
 

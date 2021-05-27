@@ -29,13 +29,14 @@
     &:disabled{
       color: $gray-3;
       cursor: default;
+      text-decoration: none;
     }
     margin-right: rem(26);
     font-size: rem(16);
     line-height: rem(20);
     letter-spacing: -0.0125em;
     color: $accent;
-    text-decoration: underline;
+    text-decoration: none;
     cursor: pointer;
   }
   &-filters{
@@ -59,6 +60,11 @@
       &:nth-child(2){
         display: none;
       }
+      p{
+        @media (min-width: 1280px) {
+          line-height: 1.65rem;
+        }
+      }
     }
     &.type-popular{
       left: rem(141);
@@ -78,9 +84,9 @@
   padding: rem(12);
   display: inline-block;
   width: 100%;
-  border: 1px solid #b8b8b8;
-  border-radius: 3px;
+  border: 1px solid #CFD2D7;
   color: $mainFontColor;
+  height: 44px;
   &::placeholder{
     color: $mainFontColor;
   }

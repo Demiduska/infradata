@@ -34,18 +34,41 @@
     }
     &-input{
       position: relative;
+      .input--placeholder{
+        left: rem(12);
+        color: $default-color;
+      }
       &:last-child{
         >span.error{
           margin-top: rem(24);
         }
       }
     }
-    &-inputs,textarea{
+    &-inputs,&-textarea{
       width: calc(100%/2 - 16px);
       @media (max-width: $tableWidth) {
         width: 100%;
         margin-right: 0;
         margin-bottom: rem(28);
+      }
+    }
+    &-textarea{
+      position: relative;
+      .input--textarea{
+        width: 100%;
+        transition: all .3s ease;
+        &:focus{
+          &::placeholder{
+            color: transparent;
+          }
+        }
+        &.focus{
+          padding-top: 18px;
+        }
+      }
+      .input--placeholder{
+        left: rem(12);
+        color: $default-color;
       }
     }
     input[name="an-phone"]{
@@ -63,11 +86,20 @@
       margin-bottom: rem(4);
     }
     .link{
-      display: inline-block;
+      display: inline;
     }
   }
   input.input{
     width: 100%;
+    transition: all .3s ease;
+    &:focus{
+      &::placeholder{
+        color: transparent;
+      }
+    }
+    &.focus{
+      padding-top: rem(18);
+    }
   }
   label{
     position: relative;

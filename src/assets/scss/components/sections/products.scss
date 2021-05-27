@@ -2,6 +2,9 @@
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 0!important;
+  @media (max-width: $tableWidth) {
+    line-height: 1.5rem;
+  }
   .card{
     width: calc(100%/2 - 10px);
     margin-right: rem(20);
@@ -84,6 +87,14 @@
       }
     }
   }
+  >.link--1{
+    @media (max-width: $tableWidth) {
+      margin-left: 0!important;
+      display: contents;
+      line-height: 1.5;
+      font-size: rem(16);
+    }
+  }
 }
 .product{
   display: flex;
@@ -103,7 +114,13 @@
     }
     img{
       margin: 0 auto;
-      max-width: 60%;
+      max-width: 500px;
+      @media (max-width: $smDesktopWidth) {
+        max-height: 312px;
+      }
+      @media (max-width: $tableWidth) {
+        max-height: 200px;
+      }
     }
     .slick-dots{
       position: relative;

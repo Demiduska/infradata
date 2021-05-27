@@ -1,6 +1,9 @@
 .who{
   &__list{
     margin-bottom: rem(-20);
+    @media (max-width: $tableWidth) {
+      margin-bottom: 0;
+    }
     li{
       min-width: rem(315);
       width: 50%;
@@ -37,12 +40,23 @@
         background: $gray-4;
         position: absolute;
         bottom: rem(-48);
+        @media (max-width: $smDesktopWidth) {
+          bottom: rem(-36);
+        }
       }
     }
   }
 }
 .section--who{
   .card{
-    width: 50%;
+    width: calc(50% - 10px);
+    margin-right: 20px;
+    @media (max-width: $smDesktopWidth) {
+      margin-right: 16px;
+      width: calc(50% - 8px);;
+    }
+    &:nth-child(even){
+      margin-right: 0;
+    }
   }
 }

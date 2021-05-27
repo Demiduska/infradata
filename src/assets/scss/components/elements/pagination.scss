@@ -40,6 +40,8 @@
     line-height: rem(28);
     letter-spacing: -0.0075em;
     &:hover{
+      background: $accent;
+      color: $default-color;
       .icon{
         fill: $default-color;
       }

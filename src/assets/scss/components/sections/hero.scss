@@ -16,6 +16,9 @@
       display: inline-block;
       width: 100%;
     }
+    @media (max-width: $smDesktopWidth) and (min-width: $tableWidth) {
+      padding: 1.55rem .85rem;
+    }
     @media (max-width: $tableWidth) {
       width: 100%;
       order: 1;
@@ -96,6 +99,7 @@
       @media (max-width: $tableWidth) {
         flex-wrap: wrap;
         padding-top: 0;
+        padding-bottom: 0;
       }
       &__content{
         position: relative;

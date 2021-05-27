@@ -26,9 +26,10 @@
 }
 .section--suppliers{
   .link{
-    margin-top: rem(-14);
-    @media (max-width: $tableWidth) {
-      margin-top: rem(-18);
+    margin-top: rem(-23);
+    z-index: 11;
+    @media (max-width: $smDesktopWidth) {
+      margin-top: rem(-16);
     }
   }
 }

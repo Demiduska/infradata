@@ -71,6 +71,10 @@
       button{
         width: rem(4);
         height: rem(4);
+        @media (max-width: $tableWidth) {
+          padding: 0;
+          width: rem(8);
+        }
         background: $gray-4;
         margin-right: 0;
         &:before{
