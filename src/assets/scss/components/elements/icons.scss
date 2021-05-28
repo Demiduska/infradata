@@ -1,9 +1,9 @@
 .icon{
   width: rem(24);
   height: rem(24);
+  fill: #2F3338;
   &--search{
-    width: rem(18);
-    height: rem(18);
+
   }
   &--filter{
     fill: $accent;
@@ -16,5 +16,8 @@
   }
   &--arrow-right{
     stroke: $default-color;
+  }
+  &--chevron-right{
+    padding: 4px 2px;
   }
 }

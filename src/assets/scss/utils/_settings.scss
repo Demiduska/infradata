@@ -647,6 +647,7 @@ footer {
   }
   &--delivery{
     margin-bottom: rem(4);
+
   }
   &--gallery{
     h3{
@@ -736,14 +737,13 @@ footer {
 
 .section--delivery {
   @media (max-width: $tableWidth) {
-    margin-bottom: .25rem;
+    margin-bottom: 1.25rem;
   }
 
   ul {
     li {
       padding-left: rem(7);
       display: flex;
-      align-items: center;
       margin-bottom: rem(20);
       @media (max-width: $tableWidth) {
         margin-bottom: rem(16);
@@ -849,8 +849,8 @@ footer {
     li{
       padding-left: rem(7);
       display: flex;
-      align-items: center;
       &:before{
+        margin-top: 8px;
         margin-right: rem(15);
         content: '';
         display: block;

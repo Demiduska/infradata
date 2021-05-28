@@ -95,10 +95,10 @@ button {
 }
 .selectize-control.single .selectize-input:after{
   top: 32%;
-  width: 11px;
-  height: 11px;
-  border-bottom: 3px solid #2F3338;
-  border-right: 3px solid #2F3338;
+  width: 10px;
+  height: 10px;
+  border-bottom: 2px solid #2f3338;
+  border-right: 2px solid #2f3338;
 }
 main{
   margin-top: rem(122);
@@ -112,6 +112,12 @@ main{
     border-color: #6C7482;
   }
 }
+.selectize-dropdown.single{
+  border-color: #6C7482;
+}
+.selectize-dropdown{
+  border-radius: 0;
+}
 .selectize-input{
   height: rem(44);
   .item {
@@ -124,4 +130,9 @@ main{
     cursor: pointer;
   }
 }
-
+.mm-spn li:before{
+  border-color: $mainFontColor;
+}
+.mm-spn.mm-spn--light,.mm-ocd__content  {
+  background: #F5F6F7;
+}

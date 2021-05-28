@@ -217,6 +217,11 @@
           margin-top: rem(24);
         }
       }
+      &-28{
+        @media (max-width:$tableWidth) {
+          margin-top: rem(28);
+        }
+      }
       &-36{
         @media (max-width:$tableWidth) {
           margin-top: rem(36);

@@ -90,14 +90,14 @@
         padding-left: 0;
         padding-right: 0;
         .icon{
-          height: rem(24);
+
         }
       }
       &-filter {
         height: rem(24);
         overflow-y: hidden;
         position: absolute;
-        left: 14px;
+        left: 10px;
 
         .icon {
           display: block;
@@ -109,7 +109,6 @@
         &.active {
           .icon {
             transform: translateY(-100%);
-            padding: 3px;
           }
         }
       }

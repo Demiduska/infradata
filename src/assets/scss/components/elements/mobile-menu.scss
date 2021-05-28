@@ -21,6 +21,12 @@
   }
   &__list{
     display: flex;
+    .icon{
+      @media (max-width: $smDesktopWidth) {
+        width: rem(20);
+        height: rem(20);
+      }
+    }
     @media (max-width: $tableWidth) {
       justify-content: space-between;
     }
@@ -132,7 +138,7 @@
   }
   &__icons{
     overflow-y: hidden;
-    height: rem(24);
+    height: rem(20);
   }
   .icon{
     transition: transform .3s ease;
@@ -164,6 +170,7 @@
   .advanced-search__bottom{
     @media (max-width: $tableWidth) {
       flex-wrap: wrap;
+      justify-content: flex-start;
     }
   }
   .advanced-search-button{
