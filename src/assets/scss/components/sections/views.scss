@@ -39,6 +39,12 @@
         }
       }
     }
+    .slick-track{
+      display: flex;
+    }
+    .card{
+      height: inherit;
+    }
   }
 }
 .section--views{

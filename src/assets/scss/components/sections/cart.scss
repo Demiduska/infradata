@@ -40,10 +40,18 @@
       justify-content: flex-start;
       margin-right: 0;
       @media (max-width: $tableWidth) {
-
+        justify-content: flex-end;
       }
       &__item{
         background: $accent;
+        &:hover{
+          border: 1px solid $accent;
+          background: $default-color;
+          .icon{
+            fill: $accent;
+            stroke: $accent;
+          }
+        }
         .icon{
           stroke: $default-color;
           fill: $default-color;
@@ -259,6 +267,7 @@
       +img{
         opacity: 1;
         visibility: visible;
+        z-index: 12;
       }
     }
 

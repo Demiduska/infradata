@@ -27,7 +27,25 @@ $(function () {
     } else {
       $('.header__search').empty().html(htmlForm);
       $('.header__search .advanced-search__filter').selectize({
-        'allowEmptyOption': true
+        'allowEmptyOption': true,
+        openOnFocus: false,
+
+        onInitialize: function () {
+          var that = this;
+
+          this.$control.on("click", function () {
+            that.ignoreFocusOpen = true;
+            setTimeout(function () {
+              that.ignoreFocusOpen = false;
+            }, 50);
+          });
+        },
+
+        onFocus: function () {
+          if (!this.ignoreFocusOpen) {
+            this.open();
+          }
+        }
       });
       $(".header__search .selectize-dropdown ").niceScroll({
         cursorcolor: "#f82249",
@@ -185,7 +203,25 @@ $(function () {
   });
   //style select in advansed filter
   $('.advanced-search__filter').selectize({
-    'allowEmptyOption': true
+    'allowEmptyOption': true,
+    openOnFocus: false,
+
+    onInitialize: function () {
+      var that = this;
+
+      this.$control.on("click", function () {
+        that.ignoreFocusOpen = true;
+        setTimeout(function () {
+          that.ignoreFocusOpen = false;
+        }, 50);
+      });
+    },
+
+    onFocus: function () {
+      if (!this.ignoreFocusOpen) {
+        this.open();
+      }
+    }
   });
 
   $(".selectize-dropdown ").niceScroll({
@@ -210,11 +246,10 @@ $(function () {
     mask: '+9 (999) 999 9999',
   });
   const email = new Inputmask({
-    mask: "*{1,20}[.*{1,20}][.*{1,20}][.*{1,20}]@*{1,20}[.*{2,6}][.*{1,2}]",
     greedy: false,
     definitions: {
       '*': {
-        validator: "[0-9A-Za-zйцукенгшщзхъфывапролджэячсмитьбю!#$%&'*+/=?^_`{|}~\-]",
+        validator: "[0-9A-Za-zйцукенгшщзхъфывапролджэячсмитьбю@!#$%&'*+/=?^_`{|}~\-]",
         casing: "lower"
       }
     }

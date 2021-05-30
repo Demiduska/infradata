@@ -170,7 +170,6 @@
   .advanced-search__bottom{
     @media (max-width: $tableWidth) {
       flex-wrap: wrap;
-      justify-content: flex-start;
     }
   }
   .advanced-search-button{

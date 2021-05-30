@@ -122,6 +122,9 @@
         height: 100%;
         img{
           height: 100%;
+          @media (max-width: $smDesktopWidth) {
+            width: 100%;
+          }
         }
         @media (max-width: $smDesktopWidth) {
           width: 70%;

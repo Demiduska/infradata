@@ -108,6 +108,7 @@ main{
 }
 .selectize-control.single .selectize-input, .selectize-dropdown.single {
   border-color: #cfd2d7;
+  box-shadow: none;
   &.input-active{
     border-color: #6C7482;
   }
@@ -117,6 +118,7 @@ main{
 }
 .selectize-dropdown{
   border-radius: 0;
+  z-index: 13;
 }
 .selectize-input{
   height: rem(44);
@@ -135,4 +137,7 @@ main{
 }
 .mm-spn.mm-spn--light,.mm-ocd__content  {
   background: #F5F6F7;
+}
+.selectize-input input[type="select-one"] {
+  display: none!important;
 }

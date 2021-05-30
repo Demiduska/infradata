@@ -208,7 +208,6 @@
       display: block;
       margin-bottom: rem(24);
       padding: rem(30) rem(46);
-      min-height: rem(200);
       @media (max-width: $smDesktopWidth) {
         margin-bottom: 20px;
       }
@@ -300,9 +299,11 @@
     }
     &__content{
       width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
       .h5{
         color: $mainFontColor;
-        min-height: rem(46);
         display: block;
       }
     }

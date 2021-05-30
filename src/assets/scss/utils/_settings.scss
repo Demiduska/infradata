@@ -142,8 +142,8 @@ h4, .h4 {
     line-height: rem(20);
   }
   @media (max-width: $tableWidth) {
-    font-size: rem(16);
-    line-height: rem(24);
+    font-size: 1rem;
+    line-height: 1.25rem;
   }
 }
 
@@ -317,7 +317,7 @@ section {
 
 h1 {
   &.heading--line {
-    padding-bottom: rem(20);
+    padding-bottom: 1rem;
     @media (max-width: $smDesktopWidth) {
       padding-bottom: rem(15);
     }
@@ -607,6 +607,27 @@ footer {
         }
       }
     }
+    .link{
+      margin-right: -8px;
+    }
+    &-slider{
+      .link{
+        margin-right: -8px;
+        z-index: 10;
+      }
+    }
+  }
+
+  &--suppliers{
+    .link{
+      margin-right: -8px;
+    }
+    &-slider{
+      .link{
+        margin-right: -8px;
+        z-index: 10;
+      }
+    }
   }
 
   &--news {
@@ -642,6 +663,34 @@ footer {
             }
           }
         }
+      }
+      ul{
+        margin-top: 24px;
+        @media (max-width: $smDesktopWidth) {
+          margin-top: 20px;
+        }
+        @media ($tableWidth) {
+          margin-top: 16px;
+        }
+        li{
+          margin-bottom: 20px;
+          @media (max-width: $smDesktopWidth) {
+            margin-bottom: 16px;
+          }
+          &:last-child{
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+
+    .link{
+      margin-right: -8px;
+    }
+    &-mobile{
+      .link{
+        margin-right: -8px;
+        z-index: 10;
       }
     }
   }
@@ -705,39 +754,29 @@ footer {
     min-width: auto !important;
     max-width: 100% !important;
   }
+  >button.jGrowl-close{
+    font-size: 0;
+    width: 24px;
+    height: 24px;
+    background-repeat:no-repeat;
+    padding: 0;
+    background-image: url("/assets/img/close-white.svg");
+  }
 }
 .jGrowl-message{
   font-size: 16px;
   line-height: 24px;
   letter-spacing: -0.0075em;
+  font-family: $mainFont;
 }
 .ms2-message-success {
   background-color: $mainFontColor !important;
   padding: rem(20) rem(16) !important;
 }
 
-.product__main {
-  ul {
-    li {
-      padding-left: rem(7);
-      display: flex;
-      align-items: center;
-
-      &:before {
-        margin-right: rem(15);
-        content: '';
-        display: block;
-        width: rem(8);
-        height: rem(8);
-        background: $accent;
-      }
-    }
-  }
-}
-
 .section--delivery {
   @media (max-width: $tableWidth) {
-    margin-bottom: 1.25rem;
+    margin-bottom: .25rem;
   }
 
   ul {
@@ -798,12 +837,16 @@ footer {
   .btn--white{
     border: none;
     margin-right: 28px;
+    font-family: $mainFont;
   }
   .btn--red {
     background-color: $accent !important;
     font-weight: 400 !important;
     font-size: 16px;
     line-height: 20px;
+  }
+  @media (max-width: $tableWidth) {
+    flex-wrap: wrap;
   }
 }
 

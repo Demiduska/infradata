@@ -87,12 +87,15 @@
       }
     }
   }
-  >.link--1{
-    @media (max-width: $tableWidth) {
-      margin-left: 0!important;
-      display: contents;
-      line-height: 1.5;
-      font-size: rem(16);
+  .not-found{
+    width: 100%;
+    line-height: 1.5rem;
+    .link--1{
+      @media (max-width: $tableWidth) {
+        display: contents;
+        line-height: 1.5rem;
+        font-size: rem(16);
+      }
     }
   }
 }
@@ -120,6 +123,7 @@
       }
       @media (max-width: $tableWidth) {
         max-height: 200px;
+        max-width: 200px;
       }
     }
     .slick-dots{
@@ -133,6 +137,10 @@
       li{
         width: rem(12);
         height: rem(8);
+        margin-right: 10px;
+        &:last-child{
+          margin-right: 0;
+        }
       }
       button{
         padding: 0;
@@ -207,9 +215,10 @@
     margin-top: rem(24);
     @media (max-width: $smDesktopWidth) {
       position: relative;
+      margin-top: 1rem;
     }
     @media (max-width: $tableWidth) {
-      margin-top: rem(16);
+      margin-top: .5rem;
       bottom: 0;
     }
   }

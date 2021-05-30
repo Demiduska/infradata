@@ -137,6 +137,7 @@
     &:checked{
       +img{
         opacity: 1;
+        z-index: 13;
         visibility: visible;
       }
     }
@@ -149,5 +150,8 @@
   }
   input.error{
     border: 1px solid $accent;
+  }
+  .link--2{
+    line-height: rem(20);
   }
 }
