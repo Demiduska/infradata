@@ -75,13 +75,26 @@
       .icon{
         stroke: $mainFontColor;
         cursor: pointer;
+        width: 1.25rem;
+        height: 1.25rem;
+        @media (max-width:$tableWidth) {
+          margin-left: -10px;
+          height: 16px;
+          width: 16px;
+        }
       }
     }
   }
   &-rules{
     position: relative;
+    @media (max-width: $tableWidth) {
+      align-items: flex-start;
+    }
     .link{
-      display: inline-block;
+      display: contents;
+      @media (max-width: $tableWidth) {
+        font-size: 1rem;
+      }
     }
   }
 }
@@ -239,6 +252,9 @@
   .input--checkbox {
     margin-right: .5rem;
     position: relative;
+    @media (max-width: $tableWidth) {
+      min-width: 20px;
+    }
     &:before{
       position: absolute;
       content: "";
@@ -332,5 +348,12 @@
   padding: rem(12) rem(18) rem(12) rem(26);
   @media (max-width: $tableWidth) {
     justify-content: center;
+  }
+}
+.section--cart{
+  .btn--red{
+    .icon{
+      height: 16px;
+    }
   }
 }

@@ -9,7 +9,7 @@
     margin-right: rem(4);
     &:first-child,&:last-child{
       @media (max-width: $tableWidth) {
-        display: none;
+        padding: 4px 4px;
       }
     }
     &:last-child{
@@ -39,6 +39,12 @@
     font-size: rem(18);
     line-height: rem(28);
     letter-spacing: -0.0075em;
+    @media (max-width: $tableWidth) {
+      padding: 4px 6px;
+    }
+    @media (max-width: 375px) {
+      padding: 4px;
+    }
     &:hover{
       background: $accent;
       color: $default-color;

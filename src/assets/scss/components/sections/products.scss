@@ -119,6 +119,7 @@
       margin: 0 auto;
       max-width: 500px;
       @media (max-width: $smDesktopWidth) {
+        max-width: 100%;
         max-height: 312px;
       }
       @media (max-width: $tableWidth) {
@@ -166,7 +167,23 @@
     }
     ul{
       li{
-        margin-bottom: rem(12);
+        padding-left: rem(7);
+        display: flex;
+        margin-bottom: 12px;
+        font-size: rem(18);
+        line-height: rem(24);
+        @media (max-width: $tableWidth) {
+          margin-bottom: 16px;
+        }
+        &:before{
+          margin-top: 8px;
+          margin-right: rem(15);
+          content: '';
+          display: block;
+          min-width: rem(8);
+          height: rem(8);
+          background: $accent;
+        }
         &:last-child{
           margin-bottom: 0;
         }

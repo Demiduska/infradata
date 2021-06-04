@@ -466,6 +466,11 @@
           padding-bottom: rem(60);
         }
       }
+      &-112{
+        @media (max-width:$tableWidth) {
+          padding-bottom: rem(112);
+        }
+      }
      }
   }
 }

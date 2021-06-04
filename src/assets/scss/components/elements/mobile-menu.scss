@@ -93,6 +93,9 @@
       height: 1.5rem;
       overflow-y: hidden;
     }
+    &.active{
+      background: $mainFontColor;
+    }
   }
 }
 .mobile-menu__button{
@@ -229,7 +232,17 @@
 }
 .mm-spn li:before{
   opacity: 1;
+  width: 8px;
+  height: 8px;
 }
 .mm-spn.mm-spn--navbar:before {
   opacity: 1;
+}
+.catalog__search-form{
+  .advanced-search__block-head{
+    flex-wrap: wrap;
+  }
+  .header__search-form-input{
+
+  }
 }

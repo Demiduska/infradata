@@ -46,7 +46,7 @@
     }
   }
   &__bottom{
-    background: $default-color;
+    background-color: #F5F6F7;
     padding: rem(18) rem(16);
     position: fixed;
     bottom: 0;
@@ -120,6 +120,9 @@
         width: rem(24);
         height: rem(24);
       }
+    }
+    h5{
+      text-transform: uppercase;
     }
   }
   &__links{
@@ -216,8 +219,8 @@
 #popup-result-product{
   p{
     @media (max-width: $tableWidth) {
-      margin-top: 16px;
-      margin-bottom: 24px;
+      margin-top: 5px;
+      margin-bottom: 4px;
     }
 
   }
@@ -227,11 +230,17 @@
       margin-bottom: 24px;
     }
     li{
+      @media (max-width: $smDesktopWidth) {
+        line-height: 1.5rem;
+      }
       @media (max-width: $tableWidth) {
         margin-bottom: 16px;
         font-size: 1rem;
       }
       a{
+        @media (max-width: $smDesktopWidth) {
+          line-height: 1.5rem;
+        }
         @media (max-width: $tableWidth) {
           font-size: 1rem;
         }

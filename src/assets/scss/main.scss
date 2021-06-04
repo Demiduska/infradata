@@ -141,3 +141,16 @@ main{
 .selectize-input input[type="select-one"] {
   display: none!important;
 }
+.selectize-control.single .selectize-input, .selectize-dropdown.single{
+  border-color: $default-color;
+}
+#ui-id-2.ui-autocomplete{
+  @media (max-width: $smDesktopWidth) {
+    position: fixed;
+    top: auto!important;
+    bottom: 100px!important;
+  }
+}
+#ui-id-3.ui-autocomplete{
+  max-width: 359px!important;
+}

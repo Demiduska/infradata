@@ -20,4 +20,7 @@
   &--chevron-right{
     padding: 4px 2px;
   }
+  &--chevron-left{
+    transform: rotate(180deg);
+  }
 }

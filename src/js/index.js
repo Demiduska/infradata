@@ -32,12 +32,17 @@ $(function () {
 
         onInitialize: function () {
           var that = this;
+          let open = false;
 
           this.$control.on("click", function () {
             that.ignoreFocusOpen = true;
             setTimeout(function () {
               that.ignoreFocusOpen = false;
             }, 50);
+            if(open === false){
+              that.open();
+            }
+            open = !open;
           });
         },
 
@@ -208,12 +213,17 @@ $(function () {
 
     onInitialize: function () {
       var that = this;
+      let open = false;
 
       this.$control.on("click", function () {
         that.ignoreFocusOpen = true;
         setTimeout(function () {
           that.ignoreFocusOpen = false;
         }, 50);
+        if(open === false){
+          that.open();
+        }
+        open = !open;
       });
     },
 
@@ -236,10 +246,18 @@ $(function () {
   $(document).on('click', '.header__search-form-filter,.mobile-menu__filter', function (e) {
     e.preventDefault();
     $(this).toggleClass('active');
-    if ($(this).hasClass('.mobile-menu__filter')){
-
+    if ($(this).hasClass('mobile-menu__filter')){
+      if($(this).hasClass('active')){
+        $(this).html('Закрыть фильтры <svg class="icon"><use xlink:href="#close"></use></svg>');
+        $('.filter').fadeIn();
+      } else{
+        $(this).html('Показать фильтры <svg class="icon"><use xlink:href="#filter"></use></svg>');
+        $('.filter').fadeOut();
+      }
+    } else{
+      $(this).parents('header').find('.header__search-form-advanced').slideToggle();
     }
-    $(this).parents('header').find('.header__search-form-advanced').slideToggle();
+
   })
 
   const phone = new Inputmask({

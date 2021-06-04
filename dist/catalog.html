@@ -9,7 +9,7 @@
   <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
   <link rel="manifest" href="site.webmanifest">
   <title>Infradata</title>
-<link href="/assets/css/vendors.ae8073dddc79cd026d66.css" rel="stylesheet"><link href="/assets/css/app.6e973ea882883e25fc18.css" rel="stylesheet"></head>
+<link href="/assets/css/vendors.ae8073dddc79cd026d66.css" rel="stylesheet"><link href="/assets/css/app.5de7db76eb72793d30cf.css" rel="stylesheet"></head>
 <body data-svg-sprite-url="sprite.svg">
 <header class="header p-md-t-18 p-md-b-18 p-xl-b-16 p-xl-t-8 ">
   <div class="container">
@@ -1047,7 +1047,7 @@
     </div>
   </div>
   <button class="mobile-menu__filter">
-    Фильтры
+    Показать фильтры
     <div class="mobile-menu__filter-icons">
       <svg class="icon">
         <use xlink:href="#filter"></use>
@@ -1096,7 +1096,7 @@
       <label class="label header__search-form-label" for="header__input-search">
         <a class="header__search-form-filter" href="#">
           <svg class="icon icon--filter">
-            <use xlink:href="#filter"></use>
+            <use xlink:href="#filter_new"></use>
           </svg>
           <svg class="icon">
             <use xlink:href="#close"></use>
@@ -1110,7 +1110,7 @@
       </label>
       <button disabled class="btn-search" id="header__search-button-mobile">
         <svg class="icon icon--search">
-          <use xlink:href="#search"></use>
+          <use xlink:href="#search_new"></use>
         </svg>
       </button>
       <div class="advanced-search header__search-form-advanced">
@@ -1119,9 +1119,6 @@
             <div class="advanced-search__block-title">
               Категория
             </div>
-            <a href="#" class="advanced-search__block-reset">
-              Сбросить фильтр
-            </a>
           </div>
           <select class="advanced-search__filter">
             <option value="0">Поиск по каталогу</option>
@@ -1158,26 +1155,33 @@
           </select>
         </div>
         <div class="advanced-search__bottom">
-          <div class="advanced-search__bottom-checkboxes">
+          <div class="advanced-search__bottom-checkboxes m-md-b-28">
             <div class="checkbox-block">
               <input type="checkbox" class="checkbox" id="promo-1">
+              <img src="assets/img/check.svg" alt="">
               <label class="checkbox-label" for="promo-1">Акции</label>
             </div>
             <div class="checkbox-block">
               <input type="checkbox" class="checkbox" id="new-1">
+              <img src="assets/img/check.svg" alt="">
               <label class="checkbox-label" for="new-1">Новинки</label>
             </div>
             <div class="checkbox-block">
               <input type="checkbox" class="checkbox" id="hits-1">
+              <img src="assets/img/check.svg" alt="">
               <label class="checkbox-label" for="hits-1">Хиты</label>
             </div>
           </div>
+
           <button disabled class="btn--red d-flex align-items-center advanced-search-button">
             Найти
-            <svg class="icon">
+            <svg class="icon icon--chevron-right">
               <use xlink:href="#chevron-right"></use>
             </svg>
           </button>
+          <a href="#" class="advanced-search__block-reset disabled m-xl-l-38">
+            Сбросить фильтр
+          </a>
         </div>
       </div>
     </form>
@@ -1590,5 +1594,5 @@
 
 </div>
 
-<script type="text/javascript" src="/assets/js/vendors.43dbf2f759513615a3a2.js"></script><script type="text/javascript" src="/assets/js/app.4d3d6683b6909f093b1e.js"></script></body>
+<script type="text/javascript" src="/assets/js/vendors.43dbf2f759513615a3a2.js"></script><script type="text/javascript" src="/assets/js/app.fd22d89d284d2f8641c3.js"></script></body>
 </html>

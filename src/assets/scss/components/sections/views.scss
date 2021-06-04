@@ -53,5 +53,9 @@
       max-width: 70%;
       min-width: 200px;
     }
+    @media (max-width: 370px) {
+      max-width: 200px;
+      min-width: auto;
+    }
   }
 }

@@ -17,18 +17,7 @@ $(function () {
     $(this).children('ul').fadeOut();
   });
 
-  // $(document).on('click','.mobile-menu__button', function (e){
-  //   e.preventDefault();
-  //   if ($('.mobile-button-search').hasClass('active')){
-  //     $('.mobile-button-search').trigger('click');
-  //   }
-  //   $(this).toggleClass('active');
-  //   if ($(this).hasClass('active')){
-  //     $('.mobile-menu-nav').fadeIn();
-  //   } else{
-  //     $('.mobile-menu-nav').fadeOut();
-  //   }
-  // });
+
   $(document).on('click','.mobile-button-search', function (e){
     e.preventDefault();
     if ($('.mobile-menu__button').hasClass('active')){
