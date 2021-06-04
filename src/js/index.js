@@ -62,6 +62,8 @@ $(function () {
       });
     }
     // console.log(document.body.clientWidth);
+    checkOnEmptyHeaderFilterFields();
+    checkOnEmptyFilterFields();
   });
   const setEmptyCards = () => {
     let colMd = $('.empty-cards').data('md');

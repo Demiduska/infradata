@@ -2,6 +2,16 @@
   .card{
     width: calc(100%/4 - 60px/4);
     margin-right: rem(20);
+    @media (max-width: $tableWidth) {
+      width: calc(50% - 6px);
+      margin-right: 12px;
+      margin-bottom: 12px;
+    }
+    &:nth-child(even){
+      @media (max-width: $tableWidth) {
+        margin-right: 0;
+      }
+    }
     &:hover{
       background: $mainFontColor;
       img{
@@ -23,6 +33,17 @@
     align-items: center;
     max-width: rem(174);
   }
+  h3.heading--line{
+    @media (max-width: $tableWidth) {
+      padding-bottom: 0;
+    }
+    &:after{
+      @media (max-width: $tableWidth) {
+        display: none;
+      }
+    }
+
+  }
 }
 .section--suppliers{
   .link{
@@ -30,6 +51,10 @@
     z-index: 11;
     @media (max-width: $smDesktopWidth) {
       margin-top: rem(-16);
+    }
+    @media (max-width: $tableWidth) {
+      margin-top: 0;
+      margin-bottom: 16px;
     }
   }
 }
