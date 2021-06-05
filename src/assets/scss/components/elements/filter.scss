@@ -64,8 +64,11 @@
       width: 100%;
     }
     >.w-100{
-      margin-top: 48px;
-      justify-content: space-between;
+      @media (max-width: $smDesktopWidth) {
+        margin-top: 48px;
+        justify-content: space-between;
+      }
+
     }
   }
   &__vendor{

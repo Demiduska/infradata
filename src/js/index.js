@@ -515,7 +515,11 @@ $(function () {
       if (countInputSearch >= 2){
         checked.push(countInputSearch);
       }
+
+
       const empty = (element) => element  !== '';
+
+
 
       if (checked.some(empty)) {
         $('.header__search-form .advanced-search__block-reset').removeClass('disabled');
