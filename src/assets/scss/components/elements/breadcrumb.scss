@@ -5,6 +5,9 @@
     flex-wrap: wrap;
     margin-bottom: rem(8);
   }
+  @media (max-width: 370px) {
+    max-width: 200px;
+  }
   &__item{
     margin-right: rem(10);
     color: $gray-4;

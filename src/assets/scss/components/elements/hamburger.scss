@@ -2,7 +2,6 @@
   margin: 0 auto;
   display: block;
   height: rem(20);
-  margin-top: rem(4);
   width: rem(20);
   span{
     display: block;
@@ -16,19 +15,20 @@
     &:after{
       position: absolute;
       display: block;
-      width: rem(20);
-      height: calc(10px/4);
+      width: .95rem;
+      height: 2px;
       background: $default-color;
       content: '';
       margin: 0 auto rem(2) auto;
-      top: rem(4);
+      top: 6px;
       transition: 300ms ease all;
     }
     &:before{
+      top: 2px;
       position: absolute;
       display: block;
-      width: rem(20);
-      height: calc(10px/4);
+      width: .95rem;
+      height: 2px;
       background: $default-color;
       content: '';
       margin: 0 auto rem(2) auto;

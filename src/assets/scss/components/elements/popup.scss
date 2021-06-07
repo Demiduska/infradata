@@ -123,6 +123,9 @@
     }
     h5{
       text-transform: uppercase;
+      @media (max-width: $tableWidth) {
+        max-width: 140px;
+      }
     }
   }
   &__links{

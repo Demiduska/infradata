@@ -30,6 +30,11 @@
         opacity: .5;
       }
     }
+    &--arrow{
+      @media (max-width: $tableWidth) {
+        display: none;
+      }
+    }
   }
   &-link{
     padding: rem(4) rem(12);
@@ -43,7 +48,7 @@
       padding: 4px 6px;
     }
     @media (max-width: 375px) {
-      padding: 4px;
+
     }
     &:hover{
       background: $accent;

@@ -851,6 +851,7 @@ footer {
     margin-right: 28px;
     font-family: $mainFont;
     @media (max-width: $tableWidth){
+      text-align: center;
       width: 100%;
       margin-right: 0;
       margin-bottom: 20px;
@@ -981,6 +982,12 @@ footer {
           width: 10px;
           height: 10px;
           background: $accent;
+          @media (max-width: $smDesktopWidth) {
+            width: 8px;
+            height: 8px;
+            min-width: 8px;
+            margin-top: 7px;
+          }
         }
         a{
           font-size: 18px;

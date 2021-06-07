@@ -202,7 +202,7 @@ $(function () {
   //check input length
   $(document).on('input', '.input-search', function (e) {
     let count = $(this).val().length;
-    if (count >= 2) {
+    if (count >= 3) {
       $(this).parents('form').find('button').prop('disabled', false);
     } else {
       $(this).parents('form').find('button').prop('disabled', true);
@@ -455,7 +455,7 @@ $(function () {
       });
 
       let countInputSearch = $('.filter .input-filter-search').val().length;
-      if (countInputSearch >= 2){
+      if (countInputSearch >= 3){
         checked.push(countInputSearch);
       }
       const empty = (element) => element  !== '';
@@ -512,21 +512,23 @@ $(function () {
       });
 
       let countInputSearch = $('.header__search-form .input-search').val().length;
-      if (countInputSearch >= 2){
+      if (countInputSearch >= 3){
         checked.push(countInputSearch);
       }
 
 
-      const empty = (element) => element  !== '';
+      const empty = (element) => element  !== '' || element !==0;
 
 
 
       if (checked.some(empty)) {
         $('.header__search-form .advanced-search__block-reset').removeClass('disabled');
+
       } else{
         $('.header__search-form .advanced-search__block-reset').addClass('disabled');
+
       }
-      // console.log(checked);
+      console.log(checked);
     }
   }
   checkOnEmptyHeaderFilterFields();
@@ -586,7 +588,7 @@ $(function () {
     }
     let l = 0;
     l = $('.search-cat input[name="query"]').val().length;
-    if (l>=2) {
+    if (l>=3) {
       form.submit();
     }
     else {
@@ -612,6 +614,10 @@ $(function () {
 
   $(document).on('click','#header__search-button,.advanced-search-button',function (e){
     e.preventDefault();
+    let inputValue = $('.header__search-form-input').val();
+    if ( inputValue.length>=3 && inputValue!==''){
+      inputValue.addAttr('disabled');
+    }
     let selVenHead = $('.select-ven-header').val();
     if (selVenHead!=''){
       $('#ven-hid-header').removeAttr('disabled');

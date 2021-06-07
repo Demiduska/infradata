@@ -29,13 +29,13 @@
         }
       }
       .icon{
-        stroke: $accent;
+        fill: $accent;
         transition: all .3s ease;
       }
       &:hover{
         background: $accent;
         .icon{
-          stroke: $default-color;
+          fill: $default-color;
         }
       }
     }

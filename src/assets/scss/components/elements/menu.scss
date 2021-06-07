@@ -13,6 +13,11 @@
           transform: rotate(-180deg);
         }
       }
+      .menu__item-sub.active{
+        .icon{
+          fill: $default-color;
+        }
+      }
     }
     &.current{
       >.menu__link{
