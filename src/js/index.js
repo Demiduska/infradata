@@ -528,7 +528,7 @@ $(function () {
         $('.header__search-form .advanced-search__block-reset').addClass('disabled');
 
       }
-      console.log(checked);
+      // console.log(checked);
     }
   }
   checkOnEmptyHeaderFilterFields();
@@ -614,9 +614,10 @@ $(function () {
 
   $(document).on('click','#header__search-button,.advanced-search-button',function (e){
     e.preventDefault();
-    let inputValue = $('.header__search-form-input').val();
-    if ( inputValue.length>=3 && inputValue!==''){
-      inputValue.addAttr('disabled');
+    let inputValue = $(this).parents('form').find('.input-search').val();
+    // console.log(inputValue);
+    if ( inputValue.length<=3){
+      $(this).parents('form').find('.input-search').attr('disabled', true);
     }
     let selVenHead = $('.select-ven-header').val();
     if (selVenHead!=''){
