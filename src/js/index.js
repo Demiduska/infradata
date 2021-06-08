@@ -4,7 +4,6 @@ window.$ = global.$ = global.jQuery = $;
 import Blazy from 'blazy';
 import 'selectize';
 import 'jquery.nicescroll';
-import 'jquery-validation';
 import 'slick-carousel'
 import '@fancyapps/fancybox';
 import './menu';
@@ -313,27 +312,6 @@ $(function () {
       }
     }
     button.parent().find("input").val(newValue);
-  });
-
-  $("#contact-form").validate({
-    submitHandler: function (e) {
-      $('#loader').fadeIn();
-      let form = $('#contact-form').serialize();
-      $(this).submit();
-      $.ajax({
-        type: 'POST',
-        url: 'form.php',
-        data: form,
-        success: function (data) {
-          $('#loader').fadeOut();
-          $("#results").html('Thanks for your question! We will reply you soon.');
-        },
-        error: function (xhr, str) {
-          $('#loader').fadeOut();
-          alert("Something wrong!");
-        }
-      })
-    }
   });
 
   //ajax
