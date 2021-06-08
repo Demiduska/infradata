@@ -594,7 +594,7 @@ $(function () {
     e.preventDefault();
     let inputValue = $(this).parents('form').find('.input-search').val();
     // console.log(inputValue);
-    if ( inputValue.length<=3){
+    if ( inputValue.length<3){
       $(this).parents('form').find('.input-search').attr('disabled', true);
     }
     let selVenHead = $('.select-ven-header').val();
