@@ -39,7 +39,7 @@
         margin-right: rem(12);
       }
       @media (max-width: $smDesktopWidth) {
-        padding: rem(8) rem(0);
+        padding: .65rem 0;
       }
       &:last-child{
         margin-right: 0;
@@ -109,11 +109,11 @@
         }
         &:before{
           transform: translate(0) rotate(-45deg);
-          top: rem(6);
+          top: rem(9);
         }
         &:after{
           transform: translate(0) rotate(45deg);
-          top: rem(6);
+          top: rem(9);
         }
       }
     }

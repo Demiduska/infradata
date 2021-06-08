@@ -275,7 +275,7 @@ section {
     width: 100%;
 
     .icon {
-      stroke: $default-color;
+      fill: $default-color;
     }
   }
 }
@@ -374,6 +374,7 @@ h1 {
   @media (max-width: $smDesktopWidth) {
     font-size: rem(15);
     margin-right: rem(28);
+    line-height: 1.5;
   }
 }
 
@@ -1018,4 +1019,7 @@ footer {
       color: $accent-hover;
     }
   }
+}
+.ui-autocomplete-loading {
+  background: none!important;
 }

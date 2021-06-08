@@ -144,6 +144,9 @@ main{
 .selectize-control.single .selectize-input, .selectize-dropdown.single{
   border-color: #6c7482;
 }
+.selectize-control.single .selectize-input{
+  border-color: #cfd2d7;
+}
 .body{
   #ui-id-2.ui-autocomplete{
     @media (max-width: $smDesktopWidth) {
