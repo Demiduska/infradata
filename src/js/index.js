@@ -436,7 +436,15 @@ $(function () {
       if (countInputSearch >= 3){
         checked.push(countInputSearch);
       }
-      const empty = (element) => element  !== '';
+      const empty = (element) =>  {
+        if(element !==''){
+          if(element !== '0'){
+            return true;
+          }
+        } else {
+          return false;
+        }
+      };
 
       if (checked.some(empty)) {
         $('.filter .filter-reset').prop('disabled', false);
@@ -495,7 +503,15 @@ $(function () {
       }
 
 
-      const empty = (element) => element  !== '' || element !==0;
+      const empty = (element) =>  {
+        if(element !==''){
+          if(element !== '0'){
+            return true;
+          }
+        } else {
+          return false;
+        }
+      };
 
 
 
@@ -506,7 +522,8 @@ $(function () {
         $('.header__search-form .advanced-search__block-reset').addClass('disabled');
 
       }
-      // console.log(checked);
+      console.log(checked);
+      console.log(checked.some(empty));
     }
   }
   checkOnEmptyHeaderFilterFields();
