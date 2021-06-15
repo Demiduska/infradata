@@ -68,6 +68,36 @@
       background: $mainFontColor;
       color: $default-color;
     }
+    ul{
+      margin-bottom: 32px;
+      @media (max-width: $smDesktopWidth) {
+        margin-top: 16px;
+        margin-bottom: 28px;
+      }
+      @media (max-width: $tableWidth) {
+        margin-bottom: 24px;
+      }
+      li{
+        padding-left: rem(7);
+        display: flex;
+        @media (max-width: $smDesktopWidth) {
+
+        }
+        &:before{
+          margin-top: 8px;
+          margin-right: rem(15);
+          content: '';
+          display: block;
+          min-width: rem(8);
+          height: rem(8);
+          background: $accent;
+        }
+        a{
+          display: contents;
+        }
+      }
+    }
+
   }
   &--body{
     @media(max-width: $tableWidth){

@@ -522,8 +522,8 @@ $(function () {
         $('.header__search-form .advanced-search__block-reset').addClass('disabled');
 
       }
-      console.log(checked);
-      console.log(checked.some(empty));
+      // console.log(checked);
+      // console.log(checked.some(empty));
     }
   }
   checkOnEmptyHeaderFilterFields();
@@ -601,7 +601,7 @@ $(function () {
 
       } else{
         $('.filter .cat-error').html('Длина поиска меньше 3')
-        console.log('длина меньше 3');
+        // console.log('длина меньше 3');
       }
 
     }

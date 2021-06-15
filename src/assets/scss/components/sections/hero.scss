@@ -16,6 +16,34 @@
       display: inline-block;
       width: 100%;
     }
+    ul{
+
+      @media (max-width: $smDesktopWidth) {
+
+      }
+      @media (max-width: $tableWidth) {
+
+      }
+      li{
+        padding-left: rem(7);
+        display: flex;
+        @media (max-width: $smDesktopWidth) {
+
+        }
+        &:before{
+          margin-top: 8px;
+          margin-right: rem(15);
+          content: '';
+          display: block;
+          min-width: rem(8);
+          height: rem(8);
+          background: $accent;
+        }
+        a{
+          display: contents;
+        }
+      }
+    }
     @media (max-width: $smDesktopWidth) and (min-width: $tableWidth) {
       padding: 1.55rem .85rem;
     }

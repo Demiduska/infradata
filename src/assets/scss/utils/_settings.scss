@@ -219,7 +219,7 @@ section {
     @extend .link;
     color: $default-color;
     border-bottom: 1px solid $default-color;
-
+    display: inline;
     &:hover {
       opacity: 0.64;
     }
@@ -1001,7 +1001,7 @@ footer {
             line-height: 20px;
           }
           &:hover{
-            text-decoration: underline;
+            text-decoration: none;
             color: $accent-hover;
           }
         }

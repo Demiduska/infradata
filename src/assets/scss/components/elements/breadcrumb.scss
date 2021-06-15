@@ -1,13 +1,11 @@
 .breadcrumb{
   display: flex;
   align-items: center;
-  @media (max-width: $smDesktopWidth) {
-    flex-wrap: wrap;
-    margin-bottom: rem(8);
-    border-top: 1px solid #CFD2D7;
-    padding-top: 16px;
-    margin-top: 64px;
-  }
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+  border-top: 1px solid #CFD2D7;
+  padding-top: 16px;
+  margin-top: 64px;
   @media (max-width: 370px) {
 
   }
