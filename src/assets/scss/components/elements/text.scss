@@ -37,17 +37,17 @@
   }
   &--boxed{
     background: $gray-6;
-    padding: rem(36) rem(36) rem(44) rem(36);
+    padding: 2.25rem 2.25rem 6px;
     font-size: rem(18);
     line-height: rem(28);
     letter-spacing: -0.0075em;
     @media (max-width: $smDesktopWidth) {
       font-size: rem(16);
       line-height: rem(24);
-      padding: rem(28) rem(28) rem(32) rem(28);
+      padding: 1.75rem 1.75rem 2px;
     }
     @media (max-width: $tableWidth){
-      padding: rem(20) rem(16);
+      padding: 1.25rem 1rem 6px;
       line-height: rem(28);
     }
     a{
@@ -67,6 +67,18 @@
       @extend .text--boxed;
       background: $mainFontColor;
       color: $default-color;
+    }
+    h2,h4{
+      margin-top: 24px;
+      margin-bottom: 24px;
+      @media (max-width: $smDesktopWidth) {
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+      @media (max-width: $tableWidth) {
+        margin-top: 16px;
+        margin-bottom: 16px;
+      }
     }
     ul{
       margin-bottom: 32px;
@@ -95,6 +107,21 @@
         a{
           display: contents;
         }
+      }
+    }
+    p{
+      margin-top: 24px;
+      margin-bottom: 32px;
+      &:first-child{
+        margin-top: 0;
+      }
+      @media (max-width: $smDesktopWidth) {
+        margin-top: 20px;
+        margin-bottom: 28px;
+      }
+      @media (max-width: $tableWidth) {
+        margin-top: 16px;
+        margin-bottom: 24px;
       }
     }
 
