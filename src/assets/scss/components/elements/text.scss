@@ -37,17 +37,17 @@
   }
   &--boxed{
     background: $gray-6;
-    padding: 2.25rem 2.25rem 6px;
+    padding: 2.75rem 2.25rem 12px;
     font-size: rem(18);
     line-height: rem(28);
     letter-spacing: -0.0075em;
     @media (max-width: $smDesktopWidth) {
       font-size: rem(16);
       line-height: rem(24);
-      padding: 1.75rem 1.75rem 2px;
+      padding: 2.15rem 1.75rem 6px
     }
     @media (max-width: $tableWidth){
-      padding: 1.25rem 1rem 6px;
+      padding: 1.75rem 1rem 6px;
       line-height: rem(28);
     }
     a{
@@ -111,17 +111,17 @@
     }
     p{
       margin-top: 24px;
-      margin-bottom: 32px;
+      margin-bottom: 24px;
       &:first-child{
         margin-top: 0;
       }
       @media (max-width: $smDesktopWidth) {
         margin-top: 20px;
-        margin-bottom: 28px;
+        margin-bottom: 20px;
       }
       @media (max-width: $tableWidth) {
         margin-top: 16px;
-        margin-bottom: 24px;
+        margin-bottom: 16px;
       }
     }
 
