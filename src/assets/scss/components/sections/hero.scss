@@ -71,6 +71,9 @@
         margin-top: 16px;
         margin-bottom: 24px;
       }
+      &.hero__content-bottom{
+        margin-bottom: 0;
+      }
     }
     @media (max-width: $smDesktopWidth) and (min-width: $tableWidth) {
       padding: 1.55rem .85rem;

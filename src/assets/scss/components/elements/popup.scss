@@ -120,6 +120,15 @@
         width: rem(24);
         height: rem(24);
       }
+      &--red{
+        &:hover{
+          background: #b81a37;
+          border:1px solid transparent;
+          .icon{
+            fill: $default-color;
+          }
+        }
+      }
     }
     h5{
       text-transform: uppercase;
