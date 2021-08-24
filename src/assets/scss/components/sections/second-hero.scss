@@ -35,14 +35,23 @@
         margin-bottom: 24px;
       }
       li{
-        padding-left: rem(7);
         display: flex;
+        flex-wrap: wrap;
+        br{
+          content: '';
+        }
+        strong{
+          display: contents;
+        }
+        position: relative;
+        padding-left: 23px;
         @media (max-width: $smDesktopWidth) {
 
         }
         &:before{
           margin-top: 8px;
-          margin-right: rem(15);
+          position: absolute;
+          left: 0;
           content: '';
           display: block;
           min-width: rem(8);

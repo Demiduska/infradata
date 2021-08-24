@@ -16,8 +16,9 @@ const lg = 1024;
 
 $(function () {
   const htmlForm = $('.header__search').html();
+  const bLazy = new Blazy();
   $(window).on('load resize', function () {
-    const bLazy = new Blazy();
+    //const bLazy = new Blazy();
     bLazy.revalidate();
     console.log('resize');
     setEmptyCards();

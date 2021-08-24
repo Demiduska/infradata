@@ -164,6 +164,7 @@
         position: relative;
         z-index: 50;
         width: 70%;
+        padding-bottom: 44px;
         @media (max-width: $smDesktopWidth) {
           width: 85%;
         }
@@ -185,6 +186,9 @@
           @media (max-width: $smDesktopWidth) {
             width: 100%;
           }
+        }
+        &-project{
+          filter: grayscale(100%);
         }
         @media (max-width: $smDesktopWidth) {
           width: 70%;
