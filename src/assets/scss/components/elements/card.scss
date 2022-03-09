@@ -5,6 +5,9 @@
   position: relative;
   &--empty{
     background: $gray-6!important;
+    @media (max-width: $tableWidth) {
+      display: none;
+    }
     &:hover{
       background: $gray-6;
     }
@@ -99,12 +102,13 @@
       justify-content: space-between;
       padding: 1.0625rem  .75rem .25rem 1rem;
       height: 100%;
+      min-height: 11rem;
       @media (max-width: $smDesktopWidth) {
         padding: 1rem .75rem .25rem 1rem;
       }
       @media (max-width: $tableWidth) {
         padding: .8rem .5rem .15rem .75rem;
-        min-height: rem(140);
+        min-height: 11rem;
       }
     }
     .card__link{
@@ -152,6 +156,14 @@
           max-height: rem(32);
         }
       }
+      &-search{
+        img{
+          max-width: 97px;
+          height: auto!important;
+          filter:grayscale(100%);
+        }
+
+      }
     }
   }
   &--news{
@@ -163,6 +175,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin-right: 32px;
     @media (max-width: $smDesktopWidth){
       width: calc(100%/3 - 64px/3);
     }
@@ -304,6 +317,9 @@
     background: $default-color;
     padding: rem(28) rem(24);
     border: 1px solid $gray-4;
+    &:hover{
+      border: 1px solid $accent;
+    }
     &__image{
       padding: rem(30) rem(20);
       max-width: rem(184);

@@ -91,6 +91,68 @@
       }
     }
   }
+  &__search{
+    &-wrap{
+      max-width: 87%;
+    }
+    .card{
+      margin: 0 10px;
+      width: auto;
+      &:nth-child(3n+3){
+        margin: 0 0 0 10px;
+        @media (max-width: $smDesktopWidth){
+          margin: 0 5px;
+        }
+      }
+      @media (max-width: $smDesktopWidth){
+        margin: 0 5px;
+      }
+      @media (max-width: $tableWidth) {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+      }
+    }
+    .slick-arrow{
+      position: absolute;
+      top: rem(-42);
+      width: rem(24);
+      padding: .53rem .53rem;
+      border: 1px solid $accent;
+      height: rem(24);
+      box-sizing: content-box;
+      transition: all .3s ease;
+      @media (max-width: $smDesktopWidth) {
+        padding: 0.4rem;
+      }
+      @media (max-width: $tableWidth) {
+        top: rem(-48);
+      }
+      &:before{
+        display: none;
+      }
+      &.slick-next{
+        right: 0;
+      }
+      &.slick-prev{
+        right: rem(62);
+        left: auto;
+        @media (max-width: $smDesktopWidth) {
+          right: 4rem;
+        }
+      }
+      .icon{
+        fill: $accent;
+        transition: all .3s ease;
+      }
+      &:hover{
+        background: $accent;
+        .icon{
+          fill: $default-color;
+        }
+      }
+    }
+  }
 }
 .section-result-project{
   .text--boxed{

@@ -11,6 +11,9 @@
       fill: $accent;
     }
   }
+  &--gray-2{
+    color: $gray-2;
+  }
   &--gray-3{
     color: $gray-3;
   }
@@ -33,6 +36,9 @@
     &-2{
       font-size: rem(16);
       line-height: rem(24);
+      @media (max-width: $smDesktopWidth) {
+        font-size: 0.85rem
+      }
     }
   }
   &--boxed{
@@ -96,7 +102,7 @@
 
         }
         &:before{
-          margin-top: 8px;
+          margin-top: 11px;
           margin-right: rem(15);
           content: '';
           display: block;

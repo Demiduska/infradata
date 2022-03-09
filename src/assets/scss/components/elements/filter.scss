@@ -1,8 +1,17 @@
 .filter {
-  padding: rem(36);
+  padding: rem(10) rem(16);
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   position: relative;
+  align-items: center;
+  &.fixed{
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    max-width: 79%;
+    margin: 0 auto;
+  }
   @media (max-width: $smDesktopWidth) {
     display: none;
     position: fixed;
@@ -17,7 +26,6 @@
   }
   &__item {
     width: calc(100%/3 - 16px);
-    margin-right: 24px;
     @media (max-width: $smDesktopWidth) {
       margin-right: 0;
       width: 100%;
@@ -51,11 +59,9 @@
     cursor: pointer;
   }
   &-filters{
-    width: calc(100% - (100%/3) - 16px);
     display: flex;
     flex-wrap: wrap;
     .filter__item{
-      width: calc(100%/2 - 12px);
       @media (max-width: $smDesktopWidth) {
         width: 100%;
       }
@@ -115,7 +121,16 @@
   color: $mainFontColor;
   height: 44px;
   &::placeholder{
-    color: $mainFontColor;
+    color: rgba(47, 51, 56, .5);
+  }
+  &+.btn-search{
+    position: absolute;
+    right: 0;
+    height: 100%;
+    cursor: pointer;
+    &:disabled{
+      cursor: default;
+    }
   }
 }
 .cat-error{

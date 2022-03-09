@@ -37,6 +37,16 @@
       li{
         display: flex;
         flex-wrap: wrap;
+        margin-bottom: 16px;
+        line-height: 1.75rem;
+        @media (max-width: $smDesktopWidth){
+          margin-bottom: 12px;
+          font-size: 1rem;
+          line-height: 1.625rem;
+        }
+        @media (max-width: $tableWidth){
+          line-height: 1.6875rem;
+        }
         br{
           content: '';
         }

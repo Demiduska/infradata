@@ -1,0 +1,141 @@
+.footer{
+  background: #2F3338;
+  padding-top: 32px;
+  padding-bottom: 24px;
+  @media (max-width: $smDesktopWidth){
+    padding-top: 28px;
+  }
+  @media (max-width: $tableWidth){
+    padding-top: 24px;
+  }
+  h6{
+    font-size: 1.05rem;
+    color: $default-color;
+    @media (max-width: $tableWidth){
+      margin-top: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .icon{
+      display: none;
+      transition: all .3s ease;
+      @media (max-width: $tableWidth){
+        display: block;
+      }
+    }
+    &.active{
+      .icon{
+        transform: rotate(-180deg);
+      }
+    }
+  }
+  &__top{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) 123px;
+    @media (max-width: $smDesktopWidth){
+      grid-template-columns: repeat(3, 1fr) 90px;
+    }
+    @media (max-width: $tableWidth){
+      grid-template-columns:100%;
+    }
+    &-menu{
+      max-width: 183px;
+      @media (max-width: $tableWidth){
+        max-width: 100%;
+        display: none;
+      }
+      li{
+        margin-top: 8px;
+        a{
+          font-size: 17px;
+          line-height: 20px;
+          opacity: 0.48;
+          letter-spacing: -0.0125em;
+          color: $default-color;
+          &:hover{
+            color: $accent;
+          }
+        }
+      }
+    }
+    &-logo{
+      @media (max-width: $tableWidth){
+        grid-row: 1;
+        margin-bottom: 8px;
+      }
+    }
+  }
+  &__bottom{
+    margin-top: 24px;
+    padding-top: 24px;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    line-height: 16px;
+    color: #F5F6F7;
+    @media (max-width: $smDesktopWidth){
+      flex-wrap: wrap;
+      padding-top: 0;
+    }
+    @media (max-width: $tableWidth){
+      margin-top: 17px;
+
+    }
+    &-menu{
+      display: flex;
+      @media (max-width: $smDesktopWidth){
+        width: 100%;
+        padding-top: 20px;
+      }
+      @media (max-width: $tableWidth){
+        flex-wrap: wrap;
+        padding-top: 5px;
+      }
+      li{
+        margin-right: 36px;
+        @media (max-width: $tableWidth){
+          width: 100%;
+          margin-right: 0;
+          margin-top: 12px;
+        }
+        a{
+          color: $default-color;
+          font-size: 16px;
+          line-height: 20px;
+          letter-spacing: -0.0125em;
+          &:hover{
+            color: $accent;
+          }
+        }
+      }
+    }
+    &-copyright{
+      @media (max-width: $smDesktopWidth){
+        width: 100%;
+        padding: 20px 0;
+        background: #292C2E;
+        color: $default-color;
+      }
+    }
+    .footer__bottom-copyright{
+      @media (max-width: $smDesktopWidth){
+        display: none;
+      }
+    }
+  }
+  &__bottom-copyright-section{
+    display: none;
+    background: #292C2E;
+    @media (max-width: $smDesktopWidth){
+      display: block;
+    }
+    @media (max-width: $tableWidth){
+      text-align: center;
+      font-size: 14px;
+      line-height: 16px;
+    }
+  }
+}

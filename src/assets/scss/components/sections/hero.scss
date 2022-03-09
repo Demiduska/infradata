@@ -171,6 +171,7 @@
         @media (max-width: $tableWidth) {
           width: 100%;
           order: 1;
+          padding-bottom: 32px;
         }
       }
       &__image{

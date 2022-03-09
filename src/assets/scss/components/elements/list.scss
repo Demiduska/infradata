@@ -20,6 +20,9 @@
         min-width: rem(8);
         height: rem(8);
         background: $accent;
+        @media (max-width: 360px) {
+          margin-right: 8px;
+        }
       }
     }
   }

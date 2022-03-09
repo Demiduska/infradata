@@ -185,6 +185,11 @@
           margin-bottom: rem(48);
         }
       }
+      &-56{
+        @media (max-width: $smDesktopWidth) {
+          margin-bottom: rem(56);
+        }
+      }
       &-60{
         @media (max-width: $smDesktopWidth) {
           margin-bottom: rem(60);
@@ -267,6 +272,11 @@
       &-36{
         @media (max-width:$tableWidth) {
           margin-bottom: rem(36);
+        }
+      }
+      &-68{
+        @media (max-width:$tableWidth) {
+          margin-bottom: rem(68);
         }
       }
     }
@@ -417,6 +427,11 @@
           padding-top: rem(36);
         }
       }
+      &-48{
+        @media (max-width:$tableWidth) {
+          padding-top: rem(48);
+        }
+      }
       &-52{
         @media (max-width:$tableWidth) {
           padding-top: rem(52);
@@ -467,6 +482,11 @@
       &-44{
         @media (max-width:$tableWidth) {
           padding-bottom: rem(44);
+        }
+      }
+      &-48{
+        @media (max-width:$tableWidth) {
+          padding-bottom: rem(48);
         }
       }
       &-60{

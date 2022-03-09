@@ -23,6 +23,30 @@
     line-height: rem(24);
     letter-spacing: -0.02em;
     transition: all .3s ease;
+    &--back{
+      color: $accent;
+      align-items: center;
+      position: relative;
+      &:before{
+        position: absolute;
+        left: 1.5rem;
+        bottom: 0;
+        width: calc(100% - 2.125rem - 6px);
+        background: transparent;
+        height: 1px;
+        display: block;
+        content: '';
+        transition: all .3s ease;
+      }
+      &:hover{
+        &:before{
+          background: $accent;
+        }
+      }
+      .icon{
+        height: 1rem;
+      }
+    }
 
     &:hover{
       color: $accent;

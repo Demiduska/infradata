@@ -97,8 +97,9 @@ h1, .h1 {
   line-height: rem(44);
   letter-spacing: -0.0125em;
   @media (max-width: $smDesktopWidth) {
-    font-size: rem(24);
-    line-height: rem(32);
+    font-size: 1.75rem;
+    line-height: 2.25rem;
+    letter-spacing: -0.025em;
   }
 }
 
@@ -293,6 +294,9 @@ section {
       background: $accent;
       display: block;
       content: '';
+      @media (max-width: $tableWidth) {
+        height: 0.25rem;
+      }
     }
   }
 
@@ -313,6 +317,22 @@ section {
       }
     }
   }
+
+  &--dropdown{
+    cursor: pointer;
+    position: relative;
+    h1{
+      .icon{
+        transition: all .3s ease;
+      }
+      &.active{
+        .icon{
+          transform: rotate(-180deg);
+        }
+      }
+    }
+
+  }
 }
 
 h1 {
@@ -321,10 +341,18 @@ h1 {
     @media (max-width: $smDesktopWidth) {
       padding-bottom: rem(15);
     }
-
+    @media (max-width: $tableWidth) {
+      padding-bottom: 0.75rem;
+      font-size: 1.5rem;
+      line-height: 2rem;
+    }
     &:after {
       height: rem(8);
       width: rem(48);
+      @media (max-width: $tableWidth) {
+        width: 2rem;
+        height: 0.25rem!important;
+      }
     }
 
   }
@@ -376,14 +404,6 @@ h1 {
     margin-right: rem(28);
     line-height: 1.5;
   }
-}
-
-footer {
-  background: #292C2E;
-  font-size: rem(14);
-  line-height: rem(16);
-  text-align: center;
-  color: $default-color;
 }
 
 .background {
@@ -618,6 +638,10 @@ footer {
     }
     .link{
       margin-right: -8px;
+      margin-top: -7px;
+      @media (max-width: $smDesktopWidth){
+        margin-top: -15px;
+      }
     }
     &-slider{
       .link{
@@ -682,9 +706,12 @@ footer {
           margin-top: 16px;
         }
         li{
-          margin-bottom: 20px;
+          margin-bottom: 16px;
           @media (max-width: $smDesktopWidth) {
-            margin-bottom: 16px;
+            margin-bottom: 12px;
+          }
+          @media ($tableWidth) {
+            margin-bottom: 12px;
           }
           &:last-child{
             margin-bottom: 0;
@@ -720,6 +747,21 @@ footer {
         }
       }
 
+    }
+  }
+  &--search{
+    .link--more{
+      background: $mainFontColor;
+      &__text{
+        display: flex;
+        justify-content: space-between;
+        padding-right: 15px;
+        width: 100%;
+      }
+      &__count{
+        font-weight: normal;
+        color: $gray-4;
+      }
     }
   }
 }
@@ -827,7 +869,7 @@ footer {
     @media (max-width: $tableWidth) {
       width: 100%;
       max-width: 100%;
-      margin-bottom: rem(16);
+      margin-bottom: 12px;
     }
 
     &:last-child {
@@ -889,25 +931,25 @@ footer {
     line-height: rem(24);
   }
   h2{
-    margin-top: 24px;
+    margin-top: 56px;
     margin-bottom: 24px;
     @media (max-width: $smDesktopWidth) {
-      margin-top: 20px;
+      margin-top: 48px;
       margin-bottom: 20px;
     }
     @media (max-width: $tableWidth) {
-      margin-top: 16px;
-      margin-bottom: 16px;
+      margin-top: 40px;
+      margin-bottom: 20px;
     }
   }
   ul{
-    margin-bottom: 32px;
+
     @media (max-width: $smDesktopWidth) {
       margin-top: 16px;
-      margin-bottom: 28px;
+
     }
     @media (max-width: $tableWidth) {
-      margin-bottom: 24px;
+
     }
     li{
       padding-left: rem(7);
@@ -930,15 +972,12 @@ footer {
     }
   }
   p{
-    margin-top: 24px;
-    margin-bottom: 32px;
+    margin-top: 28px;
     @media (max-width: $smDesktopWidth) {
-      margin-top: 20px;
-      margin-bottom: 28px;
+      margin-top: 24px;
     }
     @media (max-width: $tableWidth) {
       margin-top: 16px;
-      margin-bottom: 24px;
     }
   }
   &-404{
@@ -1022,4 +1061,31 @@ footer {
 }
 .ui-autocomplete-loading {
   background: none!important;
+}
+.search{
+  &__products{
+    max-width: 87%;
+    @media (max-width: $smDesktopWidth){
+      width: 80%;
+    }
+    @media (max-width: $tableWidth){
+      width: 100%;
+    }
+    .link{
+      margin-top: -30px;
+      position: relative;
+      @media (max-width: $tableWidth){
+        margin-top: 0;
+      }
+    }
+  }
+}
+#mse2_ms\|type_shd,#mse2_ms\|type_shell_shd,#mse2_ms\|form_faktor_hdd,#mse2_ms\|value_hdd,#mse2_ms\|count_hdd_bays,#mse2_ms\|i_support_hdd,#mse2_ms\|drive_type,#mse2_ms\|cartridge_type,#mse2_ms\|psu_power,#mse2_ms\|size_units,#mse2_ms\|type_option_5{
+  display: none;
+}
+#mse2_ms\|view_shd .filter-checkbox{
+  border-radius: 20px;
+}
+.ui-autocomplete-loading{
+  background-color: #fff!important;
 }

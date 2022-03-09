@@ -18,15 +18,27 @@
         width: calc(100%/3 - 32px/3);
         margin-right: 16px;
       }
+      @media (max-width: $tableWidth) {
+        width: 100%;
+        margin-right: 0;
+      }
       &:nth-child(3n+3){
         @media (max-width: $smDesktopWidth){
           margin-right: 0px;
+        }
+        @media (max-width: $tableWidth) {
+          width: 100%;
+          margin-right: 0;
         }
       }
       &:nth-child(4n+4){
         margin-right: 0;
         @media (max-width: $smDesktopWidth){
           margin-right: 16px;
+        }
+        @media (max-width: $tableWidth) {
+          width: 100%;
+          margin-right: 0;
         }
       }
     }

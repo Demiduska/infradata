@@ -22,6 +22,15 @@
       margin-right: 0;
     }
   }
+  &--search{
+    .card--suppliers__image{
+      align-items: center;
+      img{
+        height: 98px;
+        width: auto;
+      }
+    }
+  }
 }
 
 .suppliers-slider{

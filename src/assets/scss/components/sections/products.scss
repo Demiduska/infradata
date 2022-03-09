@@ -86,12 +86,29 @@
         line-height: rem(24);
       }
     }
+    .ms2_form{
+      .btn-compare{
+        margin-right: 20px;
+        @media (max-width: $tableWidth){
+          margin-right: 16px;
+        }
+      }
+    }
   }
   .not-found{
-    width: 100%;
+    max-width: 720px;
     line-height: 1.5rem;
+    margin: 0 auto;
+    padding: 82px 0 62px 0;
+    @media (max-width: $smDesktopWidth) {
+
+    }
+    @media (max-width: $tableWidth) {
+
+    }
     .link--1{
       display: contents;
+      font-size: 18px;
       @media (max-width: $tableWidth) {
         line-height: 1.5rem;
         font-size: rem(16);

@@ -77,6 +77,10 @@
         cursor: pointer;
         width: 1.25rem;
         height: 1.25rem;
+        &:hover{
+          stroke: $accent;
+          fill: $accent;
+        }
         @media (max-width:$tableWidth) {
           margin-left: -10px;
           height: 16px;
@@ -184,6 +188,9 @@
       display: flex;
       justify-content: flex-end;
       margin-top: rem(26);
+      background: transparent;
+      padding-top: 0;
+      padding-bottom: 0;
       @media (max-width: $smDesktopWidth) {
         margin-top: rem(24);
       }
@@ -196,6 +203,7 @@
     +div{
       @media (max-width: $tableWidth) {
         width: 100%;
+        flex-wrap: wrap;
       }
       .btn{
         @media (max-width: $tableWidth) {
@@ -287,6 +295,14 @@
       }
     }
 
+  }
+}
+.tab-stages-1{
+  .warning{
+    margin-top: 0;
+    @media (max-width: $tableWidth) {
+      margin-bottom: 68px;
+    }
   }
 }
 

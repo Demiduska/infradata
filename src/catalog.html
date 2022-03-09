@@ -58,7 +58,7 @@
                   Сбросить фильтр
                 </a>
               </div>
-              <select class="advanced-search__filter">
+              <select class="advanced-search__filter" multiple>
                 <option value="0">Поиск по каталогу</option>
                 <option value="1">Категория 1</option>
                 <option value="2">Категория 2</option>
@@ -1213,11 +1213,21 @@
           <input type="hidden" name="ms|vendor" disabled="" id="ven-hid">
         </form>
         <form class="filter-filters" action="" method="post" id="mse2_filters">
-          <div class="filter__item" id="mse2_resource|parent">
+          <div class="filter__item select-category" id="mse2_resource|parent">
             <label class="filter__item-title">Категория</label>
             <select class="advanced-search__filter" name="resource|parent" id="resource|parent_0">
-              <option value="">Категории</option>
-              <option value="1">Категория 1</option>
+                <option value="0">Поиск по каталогу</option>
+                <option value="1">Категория 1</option>
+                <option value="2">Категория 2</option>
+                <option value="3">Категория 3</option>
+                <option value="4">Категория 4</option>
+                <option value="5">Категория 5</option>
+                <option value="6">Категория 6</option>
+                <option value="7">Категория 7</option>
+                <option value="8">Категория 8</option>
+                <option value="9">Категория 9</option>
+                <option value="10">Категория 10</option>
+
             </select>
           </div>
           <div class="filter__item filter__vendor" id="mse2_ms|vendor">

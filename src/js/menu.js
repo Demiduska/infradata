@@ -26,6 +26,7 @@ $(function () {
     $(this).toggleClass('active');
     if ($(this).hasClass('active')){
       $('.mobile-search').fadeIn();
+      $('#header__input-search')[0].focus();
     } else{
       $('.mobile-search').fadeOut();
     }

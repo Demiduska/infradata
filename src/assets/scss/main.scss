@@ -46,8 +46,10 @@
 @import "components/sections/brand";
 @import "components/sections/gallery";
 @import "components/sections/cart";
+@import "components/sections/footer";
 @import "components/elements/popup";
 @import "components/elements/cookie";
+@import "components/elements/categories";
 
 
 
@@ -101,7 +103,7 @@ button {
   border-right: 2px solid #2f3338;
 }
 main{
-  margin-top: rem(122);
+  margin-top: rem(123);
   @media (max-width: $smDesktopWidth) {
     margin-top: rem(57);
   }
@@ -173,5 +175,11 @@ main{
       top: auto!important;
       bottom: 100px!important;
     }
+  }
+}
+.slick-arrow{
+  .icon{
+    width: 1.25rem;
+    height: 1.25rem;
   }
 }
